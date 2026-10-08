@@ -9,24 +9,59 @@ const appState = {
     currentWord: null
 };
 
+// Auth Credentials (Client-side Gate)
+const AUTH_EMAIL = 'merser572@gmail.com';
+const AUTH_PASS = 'Hasanboy0412';
+
 // UI Elements
 const els = {
     streak: document.getElementById('streak'),
     xp: document.getElementById('xp'),
     lives: document.getElementById('lives'),
-    mascot: document.querySelector('.mascot'),
-    wotdSection: document.querySelector('.wotd-section'),
+    mascot: document.querySelector('.mascot-wrapper'),
     wotdTitle: document.querySelector('.wotd-section h2'),
     wotdSubtitle: document.querySelector('.wotd-section .subtitle'),
-    ttsButtons: document.querySelectorAll('.action-btn, .icon-btn')
+    ttsButtons: document.querySelectorAll('.tts-btn, .icon-btn')
 };
 
 // Initialize App
 async function initApp() {
+    setupAuth();
     updateStats();
     attachListeners();
     await loadVocabulary();
+    lucide.createIcons(); // Initialize Lucide Icons
     console.log("WunderDeutsch Initialized!");
+}
+
+function setupAuth() {
+    const loginOverlay = document.getElementById('login-overlay');
+    const appContainer = document.getElementById('app-container');
+    const loginBtn = document.getElementById('login-btn');
+    const emailInput = document.getElementById('login-email');
+    const passInput = document.getElementById('login-password');
+    const errorMsg = document.getElementById('login-error');
+
+    // Check if already authenticated in this browser
+    if (localStorage.getItem('wunderdeutsch_auth') === 'true') {
+        loginOverlay.style.display = 'none';
+        appContainer.style.display = 'block';
+    } else {
+        loginOverlay.style.display = 'flex';
+        appContainer.style.display = 'none';
+    }
+
+    loginBtn.addEventListener('click', () => {
+        if (emailInput.value === AUTH_EMAIL && passInput.value === AUTH_PASS) {
+            localStorage.setItem('wunderdeutsch_auth', 'true');
+            loginOverlay.style.display = 'none';
+            appContainer.style.display = 'block';
+            lucide.createIcons(); // Re-init icons for newly visible container
+        } else {
+            errorMsg.style.display = 'block';
+            setTimeout(() => { errorMsg.style.display = 'none'; }, 3000);
+        }
+    });
 }
 
 async function loadVocabulary() {
