@@ -145,7 +145,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v20
+                App version: v22
             </div>
         </div>
 
@@ -269,7 +269,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=21').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=22').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });
