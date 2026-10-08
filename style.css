@@ -220,3 +220,43 @@ input:checked + .slider:before { transform: translateX(22px); }
 
 
 
+
+/* Satzbau (Sentence Builder) */
+.satz-dropzone {
+    min-height: 80px;
+    background: var(--bg-card);
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-content: flex-start;
+}
+.satz-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.satz-tile {
+    background: white;
+    border: 2px solid #e5e5e5;
+    border-bottom: 4px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: transform 0.1s, border-bottom-width 0.1s;
+    user-select: none;
+}
+.satz-tile:active {
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+}
+.satz-tile.hidden {
+    visibility: hidden;
+}

@@ -14,7 +14,7 @@ const TRANSLATIONS = {
         "coming_soon": "Coming soon!", "coming_desc1": "I am preparing this feature!", "coming_desc2": "Grammar rules will be here soon!",
         "private_access": "Private Access Only", "btn_login": "Login", "msg_wrong": "Incorrect credentials.",
         "mascot_hello": "<strong>Hello! I'm Fritz.</strong>", "mascot_sub": "Let's learn with your own vocabulary!",
-        "msg_correct": "Correct! Great job! 🎉", "msg_ohno": "Oh no! It is"
+        "msg_correct": "Correct! Great job! 🎉", "msg_ohno": "Oh no! It is", "check": "Check"
     },
     de: {
         "title_home": "Home", "title_ddd": "Der Die Das", "title_dict": "Wörterbuch", "title_settings": "Einstellungen",
@@ -29,7 +29,7 @@ const TRANSLATIONS = {
         "coming_soon": "Kommt bald!", "coming_desc1": "Ich bereite diese Funktion noch vor!", "coming_desc2": "Hier kommen bald Grammatikregeln hin!",
         "private_access": "Nur privater Zugang", "btn_login": "Einloggen", "msg_wrong": "Falsche Zugangsdaten.",
         "mascot_hello": "<strong>Hallo! Ich bin Fritz.</strong>", "mascot_sub": "Lass uns mit deinen eigenen Vokabeln lernen!",
-        "msg_correct": "Richtig! Super gemacht! 🎉", "msg_ohno": "Oh nein! Es heißt"
+        "msg_correct": "Richtig! Super gemacht! 🎉", "msg_ohno": "Oh nein! Es heißt", "check": "Prüfen"
     },
     uz: {
         "title_home": "Asosiy", "title_ddd": "Der Die Das", "title_dict": "Lug'at", "title_settings": "Sozlamalar",
@@ -44,7 +44,7 @@ const TRANSLATIONS = {
         "coming_soon": "Tez orada!", "coming_desc1": "Men ushbu xususiyatni tayyorlayapman!", "coming_desc2": "Grammatika qoidalari tez orada bu yerda bo'ladi!",
         "private_access": "Faqat shaxsiy kirish", "btn_login": "Kirish", "msg_wrong": "Parol noto'g'ri.",
         "mascot_hello": "<strong>Salom! Men Fritsman.</strong>", "mascot_sub": "Keling, o'zingizning so'zlaringiz bilan o'rganamiz!",
-        "msg_correct": "To'g'ri! Barakalla! 🎉", "msg_ohno": "Afsus! To'g'risi:"
+        "msg_correct": "To'g'ri! Barakalla! 🎉", "msg_ohno": "Afsus! To'g'risi:", "check": "Tekshirish"
     }
 };
 
@@ -174,7 +174,10 @@ async function loadVocabulary() {
         const response = await fetch('words.json');
         appState.words = await response.json();
         setWordOfTheMoment();
-    } catch (e) { console.error("Failed to load vocabulary:", e); }
+        
+        const resSentences = await fetch('sentences.json');
+        appState.satzSentences = await resSentences.json();
+    } catch (e) { console.error("Failed to load vocabulary or sentences:", e); }
 }
 
 function setWordOfTheMoment() {
@@ -220,6 +223,7 @@ function executeSwitchView(viewId) {
     appState.currentView = viewId;
     if (viewId === 'derdiedas') initDerDieDas();
     if (viewId === 'dictionary') renderDictionary();
+    if (viewId === 'satzbau') loadSatzbau();
 }
 
 function initDerDieDas() {
@@ -324,6 +328,12 @@ function triggerVibrate(pattern) {
 
 function playSound(type) {
     if (!appState.settings.sound) return;
+    
+    if (window.Sfx) {
+        if (type === 'success') { window.Sfx.playSuccessChime(); return; }
+        if (type === 'error') { window.Sfx.playSlipperBonk(); return; }
+    }
+
     try {
         const ctx = new (window.AudioContext || window.webkitAudioContext)();
         const osc = ctx.createOscillator();
@@ -358,3 +368,119 @@ function speakText(text) {
 }
 
 window.addEventListener('DOMContentLoaded', initApp);
+
+// --- SATZBAU LOGIC ---
+function loadSatzbau() {
+    if (!appState.satzSentences || appState.satzSentences.length === 0) return;
+    
+    // Reset state
+    appState.satzLives = 5;
+    document.getElementById('satz-lives').textContent = appState.satzLives;
+    
+    startSatzbauRound();
+}
+
+function startSatzbauRound() {
+    const sentence = appState.satzSentences[Math.floor(Math.random() * appState.satzSentences.length)];
+    appState.currentSentence = sentence;
+    
+    document.getElementById('satz-translation').textContent = sentence.uz;
+    
+    const words = sentence.de.replace(/[.!?]/g, '').split(' ');
+    const cleanWords = words.filter(w => w.trim().length > 0);
+    
+    for(let i = cleanWords.length - 1; i > 0; i--){
+        const j = Math.floor(Math.random() * (i + 1));
+        [cleanWords[i], cleanWords[j]] = [cleanWords[j], cleanWords[i]];
+    }
+    
+    appState.satzAvailableWords = cleanWords;
+    appState.satzSelectedWords = [];
+    
+    renderSatzbau();
+}
+
+function renderSatzbau() {
+    const tilesContainer = document.getElementById('satz-tiles');
+    const dropzone = document.getElementById('satz-dropzone');
+    const checkBtn = document.getElementById('satz-check-btn');
+    
+    tilesContainer.innerHTML = '';
+    dropzone.innerHTML = '';
+    
+    appState.satzAvailableWords.forEach((word, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'satz-tile';
+        btn.textContent = word;
+        if(word === null) {
+            btn.classList.add('hidden');
+        } else {
+            btn.onclick = () => {
+                if(window.Sfx) window.Sfx.playTap();
+                appState.satzSelectedWords.push({word: word, origIdx: idx});
+                appState.satzAvailableWords[idx] = null;
+                renderSatzbau();
+            };
+        }
+        tilesContainer.appendChild(btn);
+    });
+    
+    appState.satzSelectedWords.forEach((item, selIdx) => {
+        const btn = document.createElement('button');
+        btn.className = 'satz-tile';
+        btn.textContent = item.word;
+        btn.onclick = () => {
+            if(window.Sfx) window.Sfx.playTap();
+            appState.satzAvailableWords[item.origIdx] = item.word;
+            appState.satzSelectedWords.splice(selIdx, 1);
+            renderSatzbau();
+        };
+        dropzone.appendChild(btn);
+    });
+    
+    if(appState.satzSelectedWords.length > 0) {
+        checkBtn.style.display = 'block';
+    } else {
+        checkBtn.style.display = 'none';
+    }
+}
+
+function checkSatzbau() {
+    const target = appState.currentSentence.de.replace(/[.!?]/g, '').toLowerCase().trim();
+    const current = appState.satzSelectedWords.map(w => w.word).join(' ').toLowerCase().trim();
+    
+    const dropzone = document.getElementById('satz-dropzone');
+    
+    if (current === target) {
+        if(window.Sfx) window.Sfx.playSuccessChime();
+        appState.xp += 15;
+        updateStats();
+        dropzone.style.borderColor = 'var(--green-btn)';
+        dropzone.style.backgroundColor = '#e8fce8';
+        
+        setTimeout(() => {
+            dropzone.style.borderColor = '#ccc';
+            dropzone.style.backgroundColor = 'var(--bg-card)';
+            startSatzbauRound();
+        }, 1500);
+    } else {
+        if(window.Sfx) window.Sfx.playSlipperBonk();
+        appState.satzLives = Math.max(0, appState.satzLives - 1);
+        document.getElementById('satz-lives').textContent = appState.satzLives;
+        
+        dropzone.style.borderColor = 'var(--red-btn)';
+        
+        // Shake animation
+        dropzone.style.transition = 'transform 0.05s';
+        dropzone.style.transform = 'translateX(5px)';
+        setTimeout(() => dropzone.style.transform = 'translateX(-5px)', 50);
+        setTimeout(() => dropzone.style.transform = 'translateX(5px)', 100);
+        setTimeout(() => dropzone.style.transform = 'translateX(-5px)', 150);
+        setTimeout(() => dropzone.style.transform = 'translateX(0)', 200);
+        
+        setTimeout(() => {
+            dropzone.style.transition = '';
+            dropzone.style.borderColor = '#ccc';
+        }, 1000);
+    }
+}

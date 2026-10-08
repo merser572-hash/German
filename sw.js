@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wunderdeutsch-v12';
+const CACHE_NAME = 'wunderdeutsch-v13';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
@@ -6,7 +6,8 @@ const ASSETS_TO_CACHE = [
     './grammar-rules.js',
     './app.js',
     './manifest.json',
-    './words.json'
+    './words.json',
+    './sentences.json'
 ];
 
 self.addEventListener('install', event => {

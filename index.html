@@ -189,13 +189,20 @@
         <div id="view-satzbau" class="view" style="display: none;">
             <header class="top-bar">
                 <button class="icon-btn" onclick="switchView('home')"><i data-lucide="arrow-left"></i></button>
-                <h3 style="font-weight: 800;" data-i18n="title_satzbau">Satzbau</h3>
-                <div style="width:44px"></div>
+                <div class="stat heart"><i data-lucide="heart"></i> <span id="satz-lives">5</span></div>
             </header>
-            <div class="coming-soon">
-                <div class="animated-mascot" style="font-size: 80px;">🦊</div>
-                <h2 data-i18n="coming_soon">Coming soon!</h2>
-                <p data-i18n="coming_desc1">I am preparing this feature!</p>
+            <div class="game-container">
+                <div class="game-prompt" id="satz-translation" style="margin-bottom: 20px; font-weight: bold; min-height: 28px;">Loading...</div>
+                
+                <div class="satz-dropzone" id="satz-dropzone">
+                    <!-- Selected words go here -->
+                </div>
+                
+                <div class="satz-tiles" id="satz-tiles">
+                    <!-- Available scrambled words go here -->
+                </div>
+                
+                <button class="action-btn primary-btn" id="satz-check-btn" onclick="checkSatzbau()" style="margin-top: 30px; display: none;" data-i18n="check">Tekshirish</button>
             </div>
         </div>
         
@@ -229,11 +236,12 @@
     </div>
 
     <script src="grammar-rules.js"></script>
+    <script src="audio-engine.js"></script>
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=12').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=13').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });
