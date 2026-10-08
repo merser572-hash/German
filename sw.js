@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wunderdeutsch-v1';
+const CACHE_NAME = 'wunderdeutsch-v3';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
@@ -8,7 +8,6 @@ const ASSETS_TO_CACHE = [
     './words.json'
 ];
 
-// Install Event - cache core assets
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
@@ -17,7 +16,6 @@ self.addEventListener('install', event => {
     );
 });
 
-// Activate Event - clean up old caches
 self.addEventListener('activate', event => {
     event.waitUntil(
         caches.keys().then(keys => {
@@ -26,16 +24,23 @@ self.addEventListener('activate', event => {
                     if (key !== CACHE_NAME) return caches.delete(key);
                 })
             );
-        })
+        }).then(() => self.clients.claim())
     );
 });
 
-// Fetch Event - serve from cache, fallback to network
+// Stale-While-Revalidate Strategy (Allows offline, but forces updates)
 self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.match(event.request)
-        .then(response => {
-            return response || fetch(event.request);
+        caches.match(event.request).then(cachedResponse => {
+            const fetchPromise = fetch(event.request).then(networkResponse => {
+                caches.open(CACHE_NAME).then(cache => {
+                    cache.put(event.request, networkResponse.clone());
+                });
+                return networkResponse;
+            }).catch(() => {
+                // Ignore network errors if offline
+            });
+            return cachedResponse || fetchPromise;
         })
     );
 });

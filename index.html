@@ -34,11 +34,11 @@
                 <div class="stat star"><i data-lucide="star"></i> <span id="xp">120</span></div>
                 <div class="stat heart"><i data-lucide="heart"></i> <span id="lives">5</span></div>
                 <div class="controls">
-                    <button class="icon-btn"><i data-lucide="bar-chart-2"></i></button>
+                    <button class="icon-btn" onclick="switchView('settings')"><i data-lucide="settings"></i></button>
                 </div>
             </header>
 
-            <section class="mascot-section">
+            <section class="mascot-section" onclick="triggerMascotGreeting()">
                 <div class="mascot-wrapper" style="background:transparent; border:none; box-shadow:none;">
                     <div class="animated-mascot">🦊</div>
                 </div>
@@ -79,6 +79,48 @@
                     <i data-lucide="volume-2"></i> Aussprache hören
                 </button>
             </section>
+        </div>
+
+        <!-- ================= SETTINGS VIEW ================= -->
+        <div id="view-settings" class="view" style="display: none;">
+            <header class="top-bar">
+                <button class="icon-btn" onclick="switchView('home')"><i data-lucide="arrow-left"></i></button>
+                <h3 style="font-weight: 800;">Einstellungen</h3>
+                <div style="width:44px"></div>
+            </header>
+            
+            <div class="card">
+                <h3 style="margin-bottom:16px;">Präferenzen</h3>
+                <div class="setting-row">
+                    <span><i data-lucide="volume-2"></i> Ton (Sound)</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-sound" onchange="toggleSetting('sound')">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-row">
+                    <span><i data-lucide="vibrate"></i> Vibration</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-vibration" onchange="toggleSetting('vibration')">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-bottom:12px;">Über WunderDeutsch</h3>
+                <p style="font-size:0.95rem; color:var(--text-muted); line-height:1.5;">
+                    <strong>WunderDeutsch</strong> ist eine interaktive Lern-App, die speziell entwickelt wurde, um Deutsch auf spielerische Weise zu meistern. Lerne Vokabeln, trainiere Artikel und baue Sätze!
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="margin-bottom:12px;">Kontakt</h3>
+                <div style="display:flex; flex-direction:column; gap:12px; font-size:0.95rem; font-weight:700;">
+                    <a href="mailto:merser572@gmail.com" style="color:var(--blue-btn); text-decoration:none; display:flex; align-items:center; gap:8px;"><i data-lucide="mail" style="width:20px;"></i> merser572@gmail.com</a>
+                    <a href="tel:+998333371005" style="color:var(--blue-btn); text-decoration:none; display:flex; align-items:center; gap:8px;"><i data-lucide="phone" style="width:20px;"></i> +998 33 337 10 05</a>
+                </div>
+            </div>
         </div>
 
         <!-- ================= DER DIE DAS VIEW ================= -->

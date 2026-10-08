@@ -6,7 +6,11 @@ const appState = {
     lives: 5,
     words: [],
     currentWotd: null,
-    dddWord: null
+    dddWord: null,
+    settings: {
+        sound: true,
+        vibration: true
+    }
 };
 
 // Auth Credentials
@@ -24,24 +28,47 @@ const els = {
     homeTtsBtn: document.getElementById('home-tts-btn'),
     dddWord: document.getElementById('ddd-word'),
     dddTrans: document.getElementById('ddd-translation'),
-    dddSearch: document.getElementById('dict-search-input')
+    dddSearch: document.getElementById('dict-search-input'),
+    dddTtsBtn: document.getElementById('ddd-tts-btn')
 };
 
 // Initialize App
 async function initApp() {
+    loadSettings();
     setupAuth();
     updateStats();
     await loadVocabulary();
     lucide.createIcons();
     
     els.homeTtsBtn.addEventListener('click', () => {
+        triggerVibrate(50);
         if(appState.currentWotd) {
             const t = appState.currentWotd.article ? `${appState.currentWotd.article} ${appState.currentWotd.word}` : appState.currentWotd.word;
             speakText(t);
         }
     });
 
+    els.dddTtsBtn.addEventListener('click', () => {
+        if(appState.dddWord) speakText(appState.dddWord.word);
+    });
+
     els.dddSearch.addEventListener('input', renderDictionary);
+}
+
+function loadSettings() {
+    const saved = localStorage.getItem('wunderdeutsch_settings');
+    if (saved) {
+        appState.settings = JSON.parse(saved);
+    }
+    document.getElementById('toggle-sound').checked = appState.settings.sound;
+    document.getElementById('toggle-vibration').checked = appState.settings.vibration;
+}
+
+function toggleSetting(key) {
+    appState.settings[key] = !appState.settings[key];
+    localStorage.setItem('wunderdeutsch_settings', JSON.stringify(appState.settings));
+    if (appState.settings.sound && key === 'sound') playPopSound();
+    if (appState.settings.vibration && key === 'vibration') triggerVibrate(50);
 }
 
 function setupAuth() {
@@ -99,12 +126,11 @@ function updateStats() {
 
 // ---- VIEW ROUTER ----
 function switchView(viewId) {
+    triggerVibrate(30);
     document.querySelectorAll('.view').forEach(v => v.style.display = 'none');
     document.getElementById('view-' + viewId).style.display = 'block';
     
-    // Update bottom nav active state
     document.querySelectorAll('.nav-item').forEach(btn => btn.classList.remove('active'));
-    // basic mapping for icons
     const iconMap = { 'home': 0, 'derdiedas': 1, 'satzbau': 2, 'dictionary': 3, 'grammar': 4 };
     if (iconMap[viewId] !== undefined) {
         document.querySelectorAll('.nav-item')[iconMap[viewId]].classList.add('active');
@@ -125,6 +151,7 @@ function initDerDieDas() {
 }
 
 function checkArticle(guess) {
+    triggerVibrate(40);
     if(!appState.dddWord) return;
     if(guess === appState.dddWord.article.toLowerCase()) {
         appState.xp += 10;
@@ -133,6 +160,7 @@ function checkArticle(guess) {
         showMascot("Richtig! Super gemacht! 🎉");
         setTimeout(initDerDieDas, 1500);
     } else {
+        triggerVibrate([100, 50, 100]); // Error vibration pattern
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
         showMascot(`Oh nein! Es heißt "${appState.dddWord.article} ${appState.dddWord.word}".`);
@@ -179,8 +207,22 @@ function showMascot(text) {
     setTimeout(() => { mascot.classList.remove('show'); }, 3500);
 }
 
-// ---- AUDIO ----
+function triggerMascotGreeting() {
+    triggerVibrate(30);
+    playPopSound();
+    speakText("Hallo, ich bin Fritz!");
+    showMascot("Lass uns lernen! 🦊");
+}
+
+// ---- AUDIO & HAPTICS ----
+function triggerVibrate(pattern) {
+    if (appState.settings.vibration && 'vibrate' in navigator) {
+        navigator.vibrate(pattern);
+    }
+}
+
 function playPopSound() {
+    if (!appState.settings.sound) return;
     try {
         const ctx = new (window.AudioContext || window.webkitAudioContext)();
         const osc = ctx.createOscillator();
@@ -196,7 +238,10 @@ function playPopSound() {
 }
 
 function speakText(text) {
+    if (!appState.settings.sound) return;
     if ('speechSynthesis' in window) {
+        // Fix: Cancel any queued speech so it doesn't spam infinitely
+        window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'de-DE';
         window.speechSynthesis.speak(utterance);
