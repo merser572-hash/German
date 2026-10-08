@@ -1260,7 +1260,7 @@ function initDerDieDas() {
     
     // reset extra info
     document.getElementById('ddd-extra-info').style.display = 'none';
-    document.getElementById('ddd-buttons-container').style.display = 'flex';
+    document.getElementById('ddd-buttons-container').style.display = 'grid';
 
     appState.dddWord = nouns[Math.floor(Math.random() * nouns.length)];
     els.dddWord.textContent = appState.dddWord.word;
