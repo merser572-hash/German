@@ -279,7 +279,7 @@ function checkArticle(guess) {
         
         playSound('error');
         triggerVibrate([100, 50, 100]);
-        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".<br><span style="font-size:14px; opacity:0.9; margin-top:5px; display:block; font-weight:normal;">${explanation}</span>`, 4500);
+        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".<br><span style="font-size:14px; opacity:0.9; margin-top:5px; display:block; font-weight:normal;">${explanation}</span>`, 0);
         
         // Disable ONLY the button they just incorrectly tapped
         const wrongBtn = document.querySelector(`.btn-${guess}`);
@@ -319,7 +319,9 @@ function showMascot(text, duration = 3500) {
     const mascot = document.getElementById('global-mascot');
     mascot.classList.add('show');
     if(window.mascotTimeout) clearTimeout(window.mascotTimeout);
-    window.mascotTimeout = setTimeout(() => { mascot.classList.remove('show'); }, duration);
+    if(duration > 0) {
+        window.mascotTimeout = setTimeout(() => { mascot.classList.remove('show'); }, duration);
+    }
 }
 
 function triggerVibrate(pattern) {

@@ -201,9 +201,9 @@ body {
 .floating-mascot.show { bottom: 90px; }
 .mascot-bubble {
     background: white; border: 2px solid var(--border-color);
-    border-radius: 16px; padding: 12px 16px; margin-bottom: 12px;
+    border-radius: 16px; padding: 14px 18px; margin-bottom: 12px; margin-left: 20px;
     box-shadow: 0 4px 0 var(--border-color); font-weight: 800; font-size: 1rem;
-    max-width: 250px; text-align: right;
+    max-width: 320px; text-align: center; line-height: 1.4;
 }
 
 /* Bottom Nav */
