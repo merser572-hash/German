@@ -10960,5 +10960,1706 @@
         "plural_suffix": "",
         "translation": "binafsha (rang)",
         "category": "Lektion 20"
+    },
+    {
+        "id": "1219",
+        "word": "werfen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "uloqmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1220",
+        "word": "verboten",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "taqiqlangan",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1221",
+        "word": "erlaubt",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ruxsat etilgan",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1222",
+        "word": "Helm",
+        "article": "der",
+        "plural": "die Helme",
+        "plural_suffix": "-e",
+        "translation": "shlem",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1223",
+        "word": "gefährlich",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "xavfli",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1224",
+        "word": "nutzen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "foydalamoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1225",
+        "word": "Fahrer",
+        "article": "der",
+        "plural": "die Fahrer",
+        "plural_suffix": "-",
+        "translation": "haydovchi",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1226",
+        "word": "grillen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "go‘sht qovurmoq (barbekyu qilmoq)",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1227",
+        "word": "stören",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "bezovta qilmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1228",
+        "word": "Nachbar",
+        "article": "der",
+        "plural": "die Nachbarn",
+        "plural_suffix": "-n",
+        "translation": "qo‘shni",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1229",
+        "word": "Region",
+        "article": "die",
+        "plural": "die Regionen",
+        "plural_suffix": "-en",
+        "translation": "mintaqa",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1230",
+        "word": "unglaublich",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ishonib bo‘lmaydigan, aql bovar qilmas",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1231",
+        "word": "total",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "butunlay, juda",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1232",
+        "word": "Grill",
+        "article": "der",
+        "plural": "die Grills",
+        "plural_suffix": "-s",
+        "translation": "grill qurilmasi",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1233",
+        "word": "Grillfest",
+        "article": "das",
+        "plural": "die Grillfeste",
+        "plural_suffix": "-e",
+        "translation": "grill bayrami",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1234",
+        "word": "Terrasse",
+        "article": "die",
+        "plural": "die Terrassen",
+        "plural_suffix": "-n",
+        "translation": "ayvon, terras",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1235",
+        "word": "Grillfleisch (Sg.)",
+        "article": "das",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "grill go‘shti",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1236",
+        "word": "Bekannte",
+        "article": "der",
+        "plural": "die Bekannten",
+        "plural_suffix": "-n",
+        "translation": "tanish",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1237",
+        "word": "schwierig",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "qiyin",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1238",
+        "word": "nämlich",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ya’ni, aslida",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1239",
+        "word": "dürfen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ruxsat bo‘lmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1240",
+        "word": "Mieter",
+        "article": "der",
+        "plural": "die Mieter",
+        "plural_suffix": "-",
+        "translation": "ijarachi",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1241",
+        "word": "müssen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "kerak bo‘lmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1242",
+        "word": "Hausordnung",
+        "article": "die",
+        "plural": "die Hausordnungen",
+        "plural_suffix": "-en",
+        "translation": "uy qoidalari",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1243",
+        "word": "darin",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ichida",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1244",
+        "word": "meinen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "o‘ylamoq, fikr bildirmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1245",
+        "word": "Rauch (Sg.)",
+        "article": "der",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tutun",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1246",
+        "word": "gemeinsam",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "birgalikda",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1247",
+        "word": "Umwelt (Sg.)",
+        "article": "die",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "atrof-muhit",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1248",
+        "word": "Gemüse (Sg.)",
+        "article": "das",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "sabzavot",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1249",
+        "word": "Tofu (Sg.)",
+        "article": "der",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tofu (soya pishlog‘i)",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1250",
+        "word": "tragen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ko‘tarmoq, kiyib yurmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1251",
+        "word": "zelten",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "chodir qurib yashamoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1252",
+        "word": "baden",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "cho‘milmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1253",
+        "word": "abladen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tushirmoq (yukni)",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1254",
+        "word": "parken",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "mashina qo‘ymoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1255",
+        "word": "langsam",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "sekin",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1256",
+        "word": "Leine",
+        "article": "die",
+        "plural": "die Leinen",
+        "plural_suffix": "-n",
+        "translation": "arqon, bog‘",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1257",
+        "word": "schieben",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "itarmoq, surmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1258",
+        "word": "Wiese",
+        "article": "die",
+        "plural": "die Wiesen",
+        "plural_suffix": "-n",
+        "translation": "o‘tloq, maysa",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1259",
+        "word": "wegwerfen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tashlab yubormoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1260",
+        "word": "Lokal",
+        "article": "das",
+        "plural": "die Lokale",
+        "plural_suffix": "-e",
+        "translation": "kichik restoran, kafeteriy",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1261",
+        "word": "mitnehmen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "o‘zi bilan olib ketmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1262",
+        "word": "Verbot",
+        "article": "das",
+        "plural": "die Verbote",
+        "plural_suffix": "-e",
+        "translation": "taqiq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1263",
+        "word": "Grundschule",
+        "article": "die",
+        "plural": "die Grundschulen",
+        "plural_suffix": "-n",
+        "translation": "boshlang‘ich maktab",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1264",
+        "word": "mitbringen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "olib kelmoq",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1265",
+        "word": "angenehm",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "yoqimli",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1266",
+        "word": "mega",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "juda, nihoyatda",
+        "category": "Lektion 21"
+    },
+    {
+        "id": "1267",
+        "word": "Kleidung",
+        "article": "die",
+        "plural": "die Kleidungen",
+        "plural_suffix": "-en",
+        "translation": "kiyim",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1268",
+        "word": "Gewand",
+        "article": "das",
+        "plural": "die Gewander",
+        "plural_suffix": "-¨er",
+        "translation": "kiyim",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1269",
+        "word": "Platz",
+        "article": "der",
+        "plural": "die Plätze",
+        "plural_suffix": "-¨e",
+        "translation": "joy",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1270",
+        "word": "Unordnung",
+        "article": "die",
+        "plural": "die Unordnungen",
+        "plural_suffix": "-en",
+        "translation": "tartibsizlik",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1271",
+        "word": "Jeans",
+        "article": "die",
+        "plural": "die Jeans",
+        "plural_suffix": "-",
+        "translation": "jinsi shim",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1272",
+        "word": "Kleidungsstück",
+        "article": "das",
+        "plural": "die Kleidungsstücke",
+        "plural_suffix": "-e",
+        "translation": "kiyim boʻlagi",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1273",
+        "word": "circa",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "taxminan",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1274",
+        "word": "pro",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "har biri uchun",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1275",
+        "word": "anziehen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "kiymoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1276",
+        "word": "zweimal",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ikki marta",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1277",
+        "word": "Wahnsinn",
+        "article": "der",
+        "plural": "die Wahnsinn",
+        "plural_suffix": "-",
+        "translation": "telbalik",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1278",
+        "word": "Billigkleidung",
+        "article": "die",
+        "plural": "die Billigkleidungen",
+        "plural_suffix": "-en",
+        "translation": "arzon kiyim",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1279",
+        "word": "anhaben",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ustida kiyim bo‘lmoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1280",
+        "word": "Pullover",
+        "article": "der",
+        "plural": "die Pullover",
+        "plural_suffix": "-",
+        "translation": "sviter",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1281",
+        "word": "Hemd",
+        "article": "das",
+        "plural": "die Hemden",
+        "plural_suffix": "-en",
+        "translation": "ko‘ylak",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1282",
+        "word": "Hose",
+        "article": "die",
+        "plural": "die Hosen",
+        "plural_suffix": "-n",
+        "translation": "shim",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1283",
+        "word": "Mantel",
+        "article": "der",
+        "plural": "die Mantel",
+        "plural_suffix": "-¨",
+        "translation": "palto",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1284",
+        "word": "Bluse",
+        "article": "die",
+        "plural": "die Blusen",
+        "plural_suffix": "-n",
+        "translation": "bluzka",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1285",
+        "word": "Hut",
+        "article": "der",
+        "plural": "die Hüte",
+        "plural_suffix": "-¨e",
+        "translation": "shlyapa",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1286",
+        "word": "Mütze",
+        "article": "die",
+        "plural": "die Mützen",
+        "plural_suffix": "-n",
+        "translation": "shapka",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1287",
+        "word": "Haube",
+        "article": "die",
+        "plural": "die Hauben",
+        "plural_suffix": "-n",
+        "translation": "qalpoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1288",
+        "word": "Kappe",
+        "article": "die",
+        "plural": "die Kappen",
+        "plural_suffix": "-n",
+        "translation": "kepka",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1289",
+        "word": "Kleid",
+        "article": "das",
+        "plural": "die Kleider",
+        "plural_suffix": "-er",
+        "translation": "ko‘ylak",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1290",
+        "word": "Rock",
+        "article": "der",
+        "plural": "die Rocke",
+        "plural_suffix": "-¨e",
+        "translation": "yubka",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1291",
+        "word": "Jupe",
+        "article": "der",
+        "plural": "die Jupes",
+        "plural_suffix": "-s",
+        "translation": "yubka",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1292",
+        "word": "Anzug",
+        "article": "der",
+        "plural": "die Anzüge",
+        "plural_suffix": "-¨e",
+        "translation": "kostyum",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1293",
+        "word": "Socke",
+        "article": "die",
+        "plural": "die Socken",
+        "plural_suffix": "-n",
+        "translation": "paypoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1294",
+        "word": "Schuh",
+        "article": "der",
+        "plural": "die Schuhe",
+        "plural_suffix": "-e",
+        "translation": "oyoq kiyim",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1295",
+        "word": "Stiefel",
+        "article": "der",
+        "plural": "die Stiefel",
+        "plural_suffix": "-",
+        "translation": "etik",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1296",
+        "word": "Strumpf",
+        "article": "der",
+        "plural": "die Strümpfe",
+        "plural_suffix": "-¨e",
+        "translation": "uzun paypoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1297",
+        "word": "Kniesocke",
+        "article": "die",
+        "plural": "die Kniesocken",
+        "plural_suffix": "-n",
+        "translation": "tizzagacha paypoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1298",
+        "word": "Qualität",
+        "article": "die",
+        "plural": "die Qualitäten",
+        "plural_suffix": "-en",
+        "translation": "sifat",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1299",
+        "word": "tauschen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "almashtirmoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1300",
+        "word": "Billigladen",
+        "article": "der",
+        "plural": "die Billigladen",
+        "plural_suffix": "-¨",
+        "translation": "arzon do‘kon",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1301",
+        "word": "Möglichkeit",
+        "article": "die",
+        "plural": "die Möglichkeiten",
+        "plural_suffix": "-en",
+        "translation": "imkoniyat",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1302",
+        "word": "Sachen",
+        "article": "die",
+        "plural": "die Sachen",
+        "plural_suffix": "-",
+        "translation": "narsalar",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1303",
+        "word": "Klamotten",
+        "article": "die",
+        "plural": "die Klamotten",
+        "plural_suffix": "-",
+        "translation": "kiyim-kechak",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1304",
+        "word": "nähen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tikmoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1305",
+        "word": "am liebsten",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "eng yoqadigan tarzda",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1306",
+        "word": "meistens",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ko‘pincha",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1307",
+        "word": "verschieden",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "har xil",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1308",
+        "word": "zusammenpassen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "bir-biriga mos kelmoq",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1309",
+        "word": "am meisten",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "eng ko‘p",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1310",
+        "word": "Roman",
+        "article": "der",
+        "plural": "die Romane",
+        "plural_suffix": "-e",
+        "translation": "roman",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1311",
+        "word": "hoch",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "baland",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1312",
+        "word": "welcher, welches, welche",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "qaysi",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1313",
+        "word": "witzig",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "kulgili",
+        "category": "Lektion 22"
+    },
+    {
+        "id": "1314",
+        "word": "draußen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tashqarida",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1315",
+        "word": "glücklich",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "baxtli",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1316",
+        "word": "Heimat",
+        "article": "die",
+        "plural": "die Heimaten",
+        "plural_suffix": "-en",
+        "translation": "vatan",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1317",
+        "word": "sonnig",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "quyoshli",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1318",
+        "word": "kühl",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "salqin",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1319",
+        "word": "kalt",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "sovuq",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1320",
+        "word": "warm",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "iliq",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1321",
+        "word": "Regen",
+        "article": "der",
+        "plural": "die Regen",
+        "plural_suffix": "-",
+        "translation": "yomg‘ir",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1322",
+        "word": "Schnee",
+        "article": "der",
+        "plural": "die Schnee",
+        "plural_suffix": "-",
+        "translation": "qor",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1323",
+        "word": "Gewitter",
+        "article": "das",
+        "plural": "die Gewitter",
+        "plural_suffix": "-",
+        "translation": "momaqaldiroq",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1324",
+        "word": "Hagel",
+        "article": "der",
+        "plural": "die Hagel",
+        "plural_suffix": "-",
+        "translation": "do‘l",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1325",
+        "word": "Wolke",
+        "article": "die",
+        "plural": "die Wolken",
+        "plural_suffix": "-n",
+        "translation": "bulut",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1326",
+        "word": "Wind",
+        "article": "der",
+        "plural": "die Winde",
+        "plural_suffix": "-e",
+        "translation": "shamol",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1327",
+        "word": "Nebel",
+        "article": "der",
+        "plural": "die Nebel",
+        "plural_suffix": "-",
+        "translation": "tuman",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1328",
+        "word": "Grad",
+        "article": "das",
+        "plural": "die Grade",
+        "plural_suffix": "-e",
+        "translation": "daraja",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1329",
+        "word": "Meer",
+        "article": "das",
+        "plural": "die Meere",
+        "plural_suffix": "-e",
+        "translation": "dengiz",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1330",
+        "word": "stark",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "kuchli",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1331",
+        "word": "wohl",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "yaxshi",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1332",
+        "word": "scheinen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "porlamoq, nur sochmoq",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1333",
+        "word": "Himmel",
+        "article": "der",
+        "plural": "die Himmel",
+        "plural_suffix": "-",
+        "translation": "osmon",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1334",
+        "word": "irgendwie",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "qandaydir tarzda",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1335",
+        "word": "Schneemann",
+        "article": "der",
+        "plural": "die Schneemanner",
+        "plural_suffix": "-¨er",
+        "translation": "qor odam",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1336",
+        "word": "Hai",
+        "article": "der",
+        "plural": "die Haie",
+        "plural_suffix": "-e",
+        "translation": "akula",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1337",
+        "word": "warum",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "nima uchun",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1338",
+        "word": "Angebot",
+        "article": "das",
+        "plural": "die Angebote",
+        "plural_suffix": "-e",
+        "translation": "taklif",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1339",
+        "word": "Mond",
+        "article": "der",
+        "plural": "die Monde",
+        "plural_suffix": "-e",
+        "translation": "oy",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1340",
+        "word": "verfügbar",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "mavjud",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1341",
+        "word": "Reisebüro",
+        "article": "das",
+        "plural": "die Reisebüros",
+        "plural_suffix": "-s",
+        "translation": "sayohat byurosi",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1342",
+        "word": "still",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "sokin, jim",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1343",
+        "word": "Zelt",
+        "article": "das",
+        "plural": "die Zelte",
+        "plural_suffix": "-e",
+        "translation": "chodir",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1344",
+        "word": "Kamel",
+        "article": "das",
+        "plural": "die Kamele",
+        "plural_suffix": "-e",
+        "translation": "tuya",
+        "category": "Lektion 23"
+    },
+    {
+        "id": "1345",
+        "word": "Ostern",
+        "article": "das",
+        "plural": "die Ostern",
+        "plural_suffix": "-",
+        "translation": "Pasxa bayrami",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1346",
+        "word": "eigentlich",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "aslida",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1347",
+        "word": "schaffen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "uddalamoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1348",
+        "word": "Liebe",
+        "article": "die",
+        "plural": "die Lieben",
+        "plural_suffix": "-n",
+        "translation": "sevgi",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1349",
+        "word": "Blick",
+        "article": "der",
+        "plural": "die Blicke",
+        "plural_suffix": "-e",
+        "translation": "nigoh",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1350",
+        "word": "Katze",
+        "article": "die",
+        "plural": "die Katzen",
+        "plural_suffix": "-n",
+        "translation": "mushuk",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1351",
+        "word": "Unfall",
+        "article": "der",
+        "plural": "die Unfalle",
+        "plural_suffix": "-¨e",
+        "translation": "baxtsiz hodisa",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1352",
+        "word": "sterben",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "o‘lmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1353",
+        "word": "Paar",
+        "article": "das",
+        "plural": "die Paare",
+        "plural_suffix": "-e",
+        "translation": "juft, er-xotin",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1354",
+        "word": "Datum",
+        "article": "das",
+        "plural": "die Datumen",
+        "plural_suffix": "-en",
+        "translation": "sana",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1355",
+        "word": "Ereignis",
+        "article": "das",
+        "plural": "die Ereignisse",
+        "plural_suffix": "-se",
+        "translation": "hodisa",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1356",
+        "word": "Neujahr",
+        "article": "das",
+        "plural": "die Neujahre",
+        "plural_suffix": "-e",
+        "translation": "yangi yil",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1357",
+        "word": "Karneval",
+        "article": "der",
+        "plural": "die Karnevale",
+        "plural_suffix": "-e",
+        "translation": "karnaval",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1358",
+        "word": "Fasching",
+        "article": "der",
+        "plural": "die Faschinge",
+        "plural_suffix": "-e",
+        "translation": "karnaval (jan. Germaniya)",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1359",
+        "word": "Fastnacht",
+        "article": "die",
+        "plural": "die Fastnachten",
+        "plural_suffix": "-en",
+        "translation": "karnaval (jan. Germaniya)",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1360",
+        "word": "Feiertag",
+        "article": "der",
+        "plural": "die Feiertage",
+        "plural_suffix": "-e",
+        "translation": "bayram kuni",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1361",
+        "word": "Hochzeit",
+        "article": "die",
+        "plural": "die Hochzeiten",
+        "plural_suffix": "-en",
+        "translation": "to‘y",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1362",
+        "word": "bestehen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "imtihondan o‘tmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1363",
+        "word": "Prüfung",
+        "article": "die",
+        "plural": "die Prüfungen",
+        "plural_suffix": "-en",
+        "translation": "imtihon",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1364",
+        "word": "Glückwunsch",
+        "article": "der",
+        "plural": "die Glückwunsche",
+        "plural_suffix": "-¨e",
+        "translation": "tabrik",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1365",
+        "word": "alles Gute",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "eng ezgu tilaklar",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1366",
+        "word": "gratulieren",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tabriklamoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1367",
+        "word": "Aktion",
+        "article": "die",
+        "plural": "die Aktionen",
+        "plural_suffix": "-en",
+        "translation": "harakat, aktsiya",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1368",
+        "word": "Lösung",
+        "article": "die",
+        "plural": "die Lösungen",
+        "plural_suffix": "-en",
+        "translation": "yechim",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1369",
+        "word": "beachten",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "e’tibor bermoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1370",
+        "word": "Mitmensch",
+        "article": "der",
+        "plural": "die Mitmenschen",
+        "plural_suffix": "-en",
+        "translation": "inson, atrofdagi odam",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1371",
+        "word": "weltweit",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "butun dunyo bo‘ylab",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1372",
+        "word": "stattfinden",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "bo‘lib o‘tmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1373",
+        "word": "Freude",
+        "article": "die",
+        "plural": "die Freuden",
+        "plural_suffix": "-n",
+        "translation": "quvonch, zavq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1374",
+        "word": "wünschen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tilamoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1375",
+        "word": "es geht um",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "...haqida gap ketmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1376",
+        "word": "Sympathie",
+        "article": "die",
+        "plural": "die Sympathien",
+        "plural_suffix": "-n",
+        "translation": "yoqtirish, samimiylik",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1377",
+        "word": "zusammengehören",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "bir-biriga tegishli bo‘lmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1378",
+        "word": "Haustier",
+        "article": "das",
+        "plural": "die Haustiere",
+        "plural_suffix": "-e",
+        "translation": "uy hayvoni",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1379",
+        "word": "Insekt",
+        "article": "das",
+        "plural": "die Insekten",
+        "plural_suffix": "-en",
+        "translation": "hasharot",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1380",
+        "word": "mitmachen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "qatnashmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1381",
+        "word": "Generation",
+        "article": "die",
+        "plural": "die Generationen",
+        "plural_suffix": "-en",
+        "translation": "avlod",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1382",
+        "word": "Veranstaltung",
+        "article": "die",
+        "plural": "die Veranstaltungen",
+        "plural_suffix": "-en",
+        "translation": "tadbir",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1383",
+        "word": "im Freien",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ochiq havoda",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1384",
+        "word": "nachsehen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tekshirib ko‘rmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1385",
+        "word": "Kommentar",
+        "article": "der",
+        "plural": "die Kommentare",
+        "plural_suffix": "-e",
+        "translation": "izoh",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1386",
+        "word": "wunderbar",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "ajoyib",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1387",
+        "word": "umarmen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "quchoqlamoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1388",
+        "word": "niemals",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "hech qachon",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1389",
+        "word": "doof",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "tentak, ahmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1390",
+        "word": "fast",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "deyarli",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1391",
+        "word": "Kompliment",
+        "article": "das",
+        "plural": "die Komplimente",
+        "plural_suffix": "-e",
+        "translation": "maqtov",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1392",
+        "word": "faulenzen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "dangasalik qilmoq, bekor yotmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1393",
+        "word": "Gesundheit",
+        "article": "die",
+        "plural": "die Gesundheiten",
+        "plural_suffix": "-en",
+        "translation": "sog‘liq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1394",
+        "word": "Projektleitung",
+        "article": "die",
+        "plural": "die Projektleitungen",
+        "plural_suffix": "-en",
+        "translation": "loyiha rahbari, loyiha boshlig‘i",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1395",
+        "word": "Bürogemeinschaft",
+        "article": "die",
+        "plural": "die Bürogemeinschaften",
+        "plural_suffix": "-en",
+        "translation": "umumiy ofis (bir nechta odam ishlaydigan joy)",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1396",
+        "word": "kommunizieren",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "muloqot qilmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1397",
+        "word": "mini",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "juda kichik",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1398",
+        "word": "eine Mini-Firma",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "juda kichik firma",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1399",
+        "word": "Ziel",
+        "article": "das",
+        "plural": "die Ziele",
+        "plural_suffix": "-e",
+        "translation": "maqsad",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1400",
+        "word": "Besprechung",
+        "article": "die",
+        "plural": "die Besprechungen",
+        "plural_suffix": "-en",
+        "translation": "yig‘ilish, muhokama",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1401",
+        "word": "Programm",
+        "article": "das",
+        "plural": "die Programme",
+        "plural_suffix": "-e",
+        "translation": "dastur",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1402",
+        "word": "lösen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "yechmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1403",
+        "word": "übernehmen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "zimmasiga olmoq, mas’uliyatni o‘z bo‘yniga olmoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1404",
+        "word": "unterstützen",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "qo‘llab-quvvatlamoq",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1405",
+        "word": "Homeoffice",
+        "article": "das",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "uydan ishlash",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1406",
+        "word": "Video",
+        "article": "das",
+        "plural": "die Videos",
+        "plural_suffix": "-s",
+        "translation": "video",
+        "category": "Lektion 24"
+    },
+    {
+        "id": "1407",
+        "word": "kümmern",
+        "article": "",
+        "plural": "",
+        "plural_suffix": "",
+        "translation": "g‘amxo‘rlik qilmoq, mas’ul bo‘lmoq",
+        "category": "Lektion 24"
     }
 ]
