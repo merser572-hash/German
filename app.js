@@ -383,6 +383,8 @@ function loadSatzbau() {
     startSatzbauRound();
 }
 
+let satzSortableDropzone, satzSortableTiles;
+
 function startSatzbauRound() {
     const sentence = appState.satzSentences[Math.floor(Math.random() * appState.satzSentences.length)];
     appState.currentSentence = sentence;
@@ -398,8 +400,6 @@ function startSatzbauRound() {
     }
     
     appState.satzAvailableWords = cleanWords;
-    appState.satzSelectedWords = [];
-    
     renderSatzbau();
 }
 
@@ -410,49 +410,51 @@ function renderSatzbau() {
     
     tilesContainer.innerHTML = '';
     dropzone.innerHTML = '';
+    checkBtn.style.display = 'block'; // Always show button, or check dynamically
     
-    appState.satzAvailableWords.forEach((word, idx) => {
+    appState.satzAvailableWords.forEach((word) => {
         const btn = document.createElement('button');
         btn.className = 'satz-tile';
         btn.textContent = word;
-        if(word === null) {
-            btn.classList.add('hidden');
-        } else {
-            btn.onclick = () => {
-                playSound('tap');
-                appState.satzSelectedWords.push({word: word, origIdx: idx});
-                appState.satzAvailableWords[idx] = null;
-                renderSatzbau();
-            };
-        }
+        btn.onclick = () => {
+            playSound('tap');
+            if (btn.parentElement === tilesContainer) {
+                dropzone.appendChild(btn);
+            } else {
+                tilesContainer.appendChild(btn);
+            }
+        };
         tilesContainer.appendChild(btn);
     });
     
-    appState.satzSelectedWords.forEach((item, selIdx) => {
-        const btn = document.createElement('button');
-        btn.className = 'satz-tile';
-        btn.textContent = item.word;
-        btn.onclick = () => {
-            playSound('tap');
-            appState.satzAvailableWords[item.origIdx] = item.word;
-            appState.satzSelectedWords.splice(selIdx, 1);
-            renderSatzbau();
-        };
-        dropzone.appendChild(btn);
-    });
-    
-    if(appState.satzSelectedWords.length > 0) {
-        checkBtn.style.display = 'block';
-    } else {
-        checkBtn.style.display = 'none';
+    // Initialize SortableJS
+    if (window.Sortable) {
+        if (satzSortableDropzone) satzSortableDropzone.destroy();
+        if (satzSortableTiles) satzSortableTiles.destroy();
+        
+        satzSortableDropzone = new Sortable(dropzone, {
+            group: 'satzbau',
+            animation: 150,
+            onEnd: () => playSound('tap')
+        });
+        
+        satzSortableTiles = new Sortable(tilesContainer, {
+            group: 'satzbau',
+            animation: 150,
+            onEnd: () => playSound('tap')
+        });
     }
 }
 
 function checkSatzbau() {
     const target = appState.currentSentence.de.replace(/[.!?]/g, '').toLowerCase().trim();
-    const current = appState.satzSelectedWords.map(w => w.word).join(' ').toLowerCase().trim();
     
     const dropzone = document.getElementById('satz-dropzone');
+    const currentWords = [];
+    dropzone.querySelectorAll('.satz-tile').forEach(btn => {
+        currentWords.push(btn.textContent);
+    });
+    const current = currentWords.join(' ').toLowerCase().trim();
     
     if (current === target) {
         playSound('success');
@@ -463,7 +465,7 @@ function checkSatzbau() {
         
         setTimeout(() => {
             dropzone.style.borderColor = '#ccc';
-            dropzone.style.backgroundColor = 'var(--bg-card)';
+            dropzone.style.backgroundColor = '#f7f7f7';
             startSatzbauRound();
         }, 1500);
     } else {

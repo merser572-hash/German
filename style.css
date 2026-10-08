@@ -155,7 +155,15 @@ body {
     width: 100%; text-align: center; box-shadow: 0 4px 0 var(--border-color); margin-bottom: 32px;
     position: relative;
 }
-.game-word-box h2 { font-size: 2.8rem; font-weight: 900; margin-bottom: 12px;}
+.game-word-box h2 { 
+    font-size: clamp(1.8rem, 8vw, 2.8rem); 
+    font-weight: 900; 
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.1;
+}
 .game-word-box p { font-size: 1.2rem; color: var(--text-muted); font-weight: 700;}
 .game-word-box .small-btn { position: absolute; top: 16px; right: 16px; }
 

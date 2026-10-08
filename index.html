@@ -235,13 +235,13 @@
         </div>
     </div>
 
+    <script src="sortable.min.js"></script>
     <script src="grammar-rules.js"></script>
-    <script src="audio-engine.js"></script>
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=15').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=16').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });
