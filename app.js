@@ -239,6 +239,8 @@ function initDerDieDas() {
 function checkArticle(guess) {
     if(!appState.dddWord) return;
     
+    const correctArticle = appState.dddWord.article.toLowerCase();
+
     // Immediately disable buttons and turn them gray
     document.querySelectorAll('.ddd-controls .btn-3d').forEach(b => {
         b.disabled = true;
@@ -248,20 +250,27 @@ function checkArticle(guess) {
     const correctMsg = TRANSLATIONS[appState.settings.language]['msg_correct'];
     const wrongMsg = TRANSLATIONS[appState.settings.language]['msg_ohno'];
 
-    if(guess === appState.dddWord.article.toLowerCase()) {
+    if(guess === correctArticle) {
         appState.xp += 10;
         updateStats();
         playSound('success');
         triggerVibrate(40);
         showMascot(correctMsg, 1200); // Shorter mascot duration
-        setTimeout(initDerDieDas, 600); // Very fast next word (600ms)
+        setTimeout(initDerDieDas, 700); // Very fast next word on correct
     } else {
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
         playSound('error');
         triggerVibrate([100, 50, 100]);
-        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`, 2000);
-        setTimeout(initDerDieDas, 1500); // Wait slightly longer on error so they can read the correction
+        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`, 3500);
+        
+        // Highlight the correct button by removing the disabled styling from it
+        const correctBtn = document.querySelector(`.btn-${correctArticle}`);
+        if(correctBtn) {
+            correctBtn.classList.remove('btn-disabled');
+        }
+
+        setTimeout(initDerDieDas, 3500); // Wait a full 3.5 seconds so they can read and memorize the correct answer
     }
 }
 
