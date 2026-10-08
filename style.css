@@ -67,6 +67,19 @@ body {
 }
 .btn-3d:active { transform: translateY(4px); box-shadow: 0 0 0 transparent !important; }
 
+.action-btn { 
+    border: none;
+    border-radius: 16px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    user-select: none;
+}
+.action-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 transparent !important;
+}
 .primary-btn {
     background: var(--green-btn); box-shadow: 0 4px 0 var(--green-shadow); 
     width: 100%; padding: 14px; font-size: 1.1rem;
@@ -223,16 +236,18 @@ input:checked + .slider:before { transform: translateX(22px); }
 
 /* Satzbau (Sentence Builder) */
 .satz-dropzone {
-    min-height: 80px;
-    background: var(--bg-card);
-    border: 2px dashed #ccc;
+    min-height: 70px;
+    background: #f7f7f7;
+    border: 2px dashed #cccccc;
     border-radius: 16px;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     align-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
 }
 .satz-tiles {
     display: flex;

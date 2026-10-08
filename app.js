@@ -328,11 +328,6 @@ function triggerVibrate(pattern) {
 
 function playSound(type) {
     if (!appState.settings.sound) return;
-    
-    if (window.Sfx) {
-        if (type === 'success') { window.Sfx.playSuccessChime(); return; }
-        if (type === 'error') { window.Sfx.playSlipperBonk(); return; }
-    }
 
     try {
         const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -353,6 +348,12 @@ function playSound(type) {
             gain.gain.setValueAtTime(0.5, ctx.currentTime);
             gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
             osc.start(); osc.stop(ctx.currentTime + 0.3);
+        } else if (type === 'tap') {
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(600, ctx.currentTime);
+            gain.gain.setValueAtTime(0.05, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
+            osc.start(); osc.stop(ctx.currentTime + 0.05);
         }
     } catch(e) {}
 }
@@ -416,7 +417,7 @@ function renderSatzbau() {
             btn.classList.add('hidden');
         } else {
             btn.onclick = () => {
-                if(window.Sfx) window.Sfx.playTap();
+                playSound('tap');
                 appState.satzSelectedWords.push({word: word, origIdx: idx});
                 appState.satzAvailableWords[idx] = null;
                 renderSatzbau();
@@ -430,7 +431,7 @@ function renderSatzbau() {
         btn.className = 'satz-tile';
         btn.textContent = item.word;
         btn.onclick = () => {
-            if(window.Sfx) window.Sfx.playTap();
+            playSound('tap');
             appState.satzAvailableWords[item.origIdx] = item.word;
             appState.satzSelectedWords.splice(selIdx, 1);
             renderSatzbau();
@@ -452,7 +453,7 @@ function checkSatzbau() {
     const dropzone = document.getElementById('satz-dropzone');
     
     if (current === target) {
-        if(window.Sfx) window.Sfx.playSuccessChime();
+        playSound('success');
         appState.xp += 15;
         updateStats();
         dropzone.style.borderColor = 'var(--green-btn)';
@@ -464,7 +465,7 @@ function checkSatzbau() {
             startSatzbauRound();
         }, 1500);
     } else {
-        if(window.Sfx) window.Sfx.playSlipperBonk();
+        playSound('error');
         appState.satzLives = Math.max(0, appState.satzLives - 1);
         document.getElementById('satz-lives').textContent = appState.satzLives;
         
