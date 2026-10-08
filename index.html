@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WunderDeutsch</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#fcf8f2">
+</head>
+<body>
+    <header class="top-bar card">
+        <div class="stat"><span class="icon">🔥</span> <span id="streak">3</span></div>
+        <div class="stat"><span class="icon">⭐</span> <span id="xp">120</span></div>
+        <div class="stat"><span class="icon">❤️</span> <span id="lives">5</span></div>
+        <div class="controls">
+            <button class="icon-btn">🔊</button>
+            <button class="icon-btn">📊</button>
+        </div>
+    </header>
+
+    <section class="mascot-section card">
+        <div class="mascot">🦊</div>
+        <div class="speech-bubble">
+            <p><strong>Hallo! Ich bin Fritz.</strong> Lass uns spielerisch Deutsch lernen! 🦊❤️</p>
+            <p class="small">Tippe auf mich für Ermutigung & Aussprache!</p>
+        </div>
+    </section>
+
+    <section class="main-grid">
+        <button class="menu-card blue">
+            <div class="circle blue-bg"></div>
+            <h3>Der Die Das</h3>
+            <p>Gender Trainer</p>
+        </button>
+        <button class="menu-card yellow">
+            <div class="icon">🧩</div>
+            <h3>Satzbau</h3>
+            <p>Sentence Puzzle</p>
+        </button>
+        <button class="menu-card mint">
+            <div class="icon">📖</div>
+            <h3>~1500 Wörter</h3>
+            <p>Dictionary & Cards</p>
+        </button>
+        <button class="menu-card pink">
+            <div class="icon">🎓</div>
+            <h3>Grammatik</h3>
+            <p>10 A1 Lessons</p>
+        </button>
+    </section>
+
+    <section class="goal-section card">
+        <div class="goal-header">
+            <h3>Tagesziel (Daily Goal)</h3>
+            <span class="blue-text">14 / 20 Wörter</span>
+        </div>
+        <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+        <p class="small">Super fleißig! Noch 6 Aktivitäten bis zum täglichen Bonus! 🌟</p>
+    </section>
+
+    <section class="wotd-section card">
+        <p class="section-label">WORT DES MOMENTS</p>
+        <h2>das Brötchen</h2>
+        <p class="subtitle">the bread roll (die Brötchen)</p>
+        <button class="action-btn">🔊 Aussprache hören</button>
+    </section>
+
+    <nav class="bottom-nav">
+        <button class="nav-item active">
+            <div class="nav-icon-container"><span class="icon">🏠</span></div>
+            Home
+        </button>
+        <button class="nav-item">
+            <div class="circle blue-bg small"></div>
+            DerDieDas
+        </button>
+        <button class="nav-item">
+            <span class="icon">🧩</span>
+            Sätze
+        </button>
+        <button class="nav-item">
+            <span class="icon">📖</span>
+            Wörter
+        </button>
+        <button class="nav-item">
+            <span class="icon">🎓</span>
+            Grammatik
+        </button>
+    </nav>
+
+    <script src="app.js"></script>
+    <script>
+        // Register Service Worker for Offline PWA support
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registered!', reg))
+                    .catch(err => console.error('Service Worker registration failed', err));
+            });
+        }
+    </script>
+</body>
+</html>
