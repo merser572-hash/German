@@ -553,8 +553,8 @@ function openGrammarChapter(idx) {
     rulesBox.innerHTML = '';
     activeGrammarChap.rules.forEach(r => {
         const div = document.createElement('div');
-        div.style.marginBottom = '8px';
-        div.innerHTML = `<span style="font-weight:800; font-size:13px; color:#0984E3;">• ${r.label}:</span> <span style="font-size:13px; color:#2D3436;">${r.tip}</span>`;
+        div.style.marginBottom = '10px';
+        div.innerHTML = `<span style="font-weight:800; font-size:16px; color:#0984E3;">• ${r.label}:</span> <span style="font-size:15px; color:#2D3436; line-height:1.5;">${r.tip}</span>`;
         rulesBox.appendChild(div);
     });
 
@@ -563,29 +563,29 @@ function openGrammarChapter(idx) {
     if (activeGrammarChap.table) {
         let ths = activeGrammarChap.table.headers.map(h => `<th>${h}</th>`).join('');
         let trs = activeGrammarChap.table.rows.map(row => `<tr>${row.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
-        tableBox.innerHTML = `<table class="rule-table"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
+        tableBox.innerHTML = `<div style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 16px;"><table class="rule-table" style="min-width: 450px;"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table></div>`;
     }
 
     const quizBox = document.getElementById('gm-quiz-container');
     quizBox.innerHTML = '';
     activeGrammarChap.quiz.forEach((qObj, qIdx) => {
         const qDiv = document.createElement('div');
-        qDiv.style.margin = '10px 0';
+        qDiv.style.margin = '14px 0';
         qDiv.style.background = '#F8F9FA';
         qDiv.style.border = '2px solid var(--border-color)';
         qDiv.style.borderRadius = '14px';
-        qDiv.style.padding = '10px 12px';
+        qDiv.style.padding = '14px 16px';
         
         let opts = qObj.options.map((opt, oIdx) => `
-            <button class="action-btn" style="margin-top:6px; font-size:13px; padding:6px 10px; width: 100%;" onclick="answerGrammarQuiz(${qIdx}, ${oIdx}, this)">
+            <button style="margin-top:8px; font-size:15px; font-weight:800; color:#2D3436; background:#fff; border:2px solid var(--border-color); border-radius:12px; padding:12px 16px; width: 100%; text-align:left; cursor:pointer; box-shadow: 0 4px 0 var(--border-color);" onclick="answerGrammarQuiz(${qIdx}, ${oIdx}, this)">
                 ${opt}
             </button>
         `).join('');
 
         qDiv.innerHTML = `
-            <div style="font-weight:700; font-size:13px; margin-bottom:4px;">Frage ${qIdx + 1}: ${qObj.q}</div>
+            <div style="font-weight:800; font-size:16px; margin-bottom:8px; color:#2D3436;">Frage ${qIdx + 1}: ${qObj.q}</div>
             <div class="opts-group" id="quiz-opts-${qIdx}">${opts}</div>
-            <div id="quiz-feedback-${qIdx}" style="font-size:12px; font-weight:700; margin-top:6px; display:none;"></div>
+            <div id="quiz-feedback-${qIdx}" style="font-size:14px; font-weight:700; margin-top:10px; display:none; line-height:1.5;"></div>
         `;
         quizBox.appendChild(qDiv);
     });

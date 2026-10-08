@@ -235,25 +235,25 @@
 
     <!-- MODAL: Grammar Lesson Detail & Quiz -->
     <div class="login-overlay" id="modal-grammar-detail" style="display: none; z-index: 2000;">
-        <div class="login-card" style="max-height: 85vh; overflow-y: auto; text-align: left; position: relative;">
+        <div class="login-card" style="width: 95%; max-width: 600px; max-height: 90vh; overflow-y: auto; text-align: left; position: relative; padding: 24px 20px;">
             <button class="action-btn" style="position: absolute; top: 14px; right: 14px; padding: 4px 10px; width: auto; font-size: 14px;" onclick="closeGrammarModal()">✕</button>
-            <h3 style="font-size:20px; font-weight:900; margin-bottom:8px;" id="gm-title">Chapter Title</h3>
-            <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px;" id="gm-summary">Summary...</p>
+            <h3 style="font-size:24px; font-weight:900; margin-bottom:10px; margin-top:20px; color:#2D3436;" id="gm-title">Chapter Title</h3>
+            <p style="font-size:15px; color:var(--text-main); margin-bottom:18px; line-height:1.5;" id="gm-summary">Summary...</p>
 
-            <div id="gm-rules-list" style="margin-bottom:14px;"></div>
+            <div id="gm-rules-list" style="margin-bottom:18px;"></div>
             <div id="gm-table-container"></div>
 
-            <div class="grammar-item active" style="margin:14px 0; border-color:#FDCB6E;">
-                <div class="grammar-header" style="background:#FFFDF7;">
-                    <span style="font-weight:800; font-size:14px; color:#D35400;">🦊 <span data-i18n="fritz_tip_label">Fritz's Secret Tip:</span></span>
+            <div class="grammar-item active" style="margin:18px 0; border-color:#FDCB6E;">
+                <div class="grammar-header" style="background:#FFFDF7; padding: 14px;">
+                    <span style="font-weight:800; font-size:15px; color:#D35400;">🦊 <span data-i18n="fritz_tip_label">Fritz's Secret Tip:</span></span>
                 </div>
-                <div class="grammar-body" style="padding: 10px 20px 20px 20px; background:#FFFDF7;">
-                    <p id="gm-fritz-tip">Tip...</p>
+                <div class="grammar-body" style="padding: 10px 14px 18px 14px; background:#FFFDF7;">
+                    <p id="gm-fritz-tip" style="font-size: 15px; line-height:1.5; font-weight:600;">Tip...</p>
                 </div>
             </div>
 
-            <div style="margin-top:18px;">
-                <h4 style="font-size:16px; font-weight:800; margin-bottom:8px;" data-i18n="mini_quiz_title">🎯 Mini-Quiz (3 Questions)</h4>
+            <div style="margin-top:22px;">
+                <h4 style="font-size:18px; font-weight:800; margin-bottom:12px; color:#2D3436;" data-i18n="mini_quiz_title">🎯 Mini-Quiz (3 Questions)</h4>
                 <div id="gm-quiz-container"></div>
             </div>
         </div>
@@ -265,7 +265,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=19').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=20').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });
