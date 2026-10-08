@@ -1,40 +1,67 @@
-// WunderDeutsch Core Logic
+// WunderDeutsch Core Logic & i18n Engine
 
-const appState = {
-    streak: 3,
-    xp: 120,
-    lives: 5,
-    words: [],
-    currentWotd: null,
-    dddWord: null,
-    settings: {
-        sound: true,
-        vibration: true
+const TRANSLATIONS = {
+    en: {
+        "title_home": "Home", "title_ddd": "Der Die Das", "title_dict": "Dictionary", "title_settings": "Settings",
+        "subtitle_ddd": "Gender Trainer", "subtitle_dict": "Your Vocabulary", "title_satzbau": "Sentence Puzzle", "subtitle_satzbau": "Sentence Puzzle",
+        "title_grammar": "Grammar", "subtitle_grammar": "Rules", "daily_goal": "Daily Goal", "wotd": "WORD OF THE MOMENT",
+        "listen": "Listen", "search": "Search word...", "settings_pref": "Preferences", "settings_sound": "Sound",
+        "settings_vib": "Vibration", "settings_lang": "Language", "about_title": "About WunderDeutsch",
+        "about_text": "WunderDeutsch is an interactive learning app specifically designed to master German playfully. Learn vocabulary, train articles, and build sentences!",
+        "contact_title": "Contact", "game_prompt": "Which article is correct?", "leave_guard": "Are you sure you want to leave your homework? Progress might be lost.",
+        "coming_soon": "Coming soon!", "coming_desc1": "I am preparing this feature!", "coming_desc2": "Grammar rules will be here soon!",
+        "private_access": "Private Access Only", "btn_login": "Login", "msg_wrong": "Incorrect credentials.",
+        "mascot_hello": "<strong>Hello! I'm Fritz.</strong>", "mascot_sub": "Let's learn with your own vocabulary!",
+        "msg_correct": "Correct! Great job! 🎉", "msg_ohno": "Oh no! It is"
+    },
+    de: {
+        "title_home": "Home", "title_ddd": "Der Die Das", "title_dict": "Wörterbuch", "title_settings": "Einstellungen",
+        "subtitle_ddd": "Artikel Trainer", "subtitle_dict": "Deine Vokabeln", "title_satzbau": "Satzbau", "subtitle_satzbau": "Satz-Puzzle",
+        "title_grammar": "Grammatik", "subtitle_grammar": "Regeln", "daily_goal": "Tagesziel", "wotd": "WORT DES MOMENTS",
+        "listen": "Aussprache hören", "search": "Wort suchen...", "settings_pref": "Präferenzen", "settings_sound": "Ton",
+        "settings_vib": "Vibration", "settings_lang": "Sprache", "about_title": "Über WunderDeutsch",
+        "about_text": "WunderDeutsch ist eine interaktive Lern-App, die speziell entwickelt wurde, um Deutsch auf spielerische Weise zu meistern. Lerne Vokabeln, trainiere Artikel und baue Sätze!",
+        "contact_title": "Kontakt", "game_prompt": "Welcher Artikel ist richtig?", "leave_guard": "Bist du sicher, dass du deine Hausaufgaben verlassen möchtest?",
+        "coming_soon": "Kommt bald!", "coming_desc1": "Ich bereite diese Funktion noch vor!", "coming_desc2": "Hier kommen bald Grammatikregeln hin!",
+        "private_access": "Nur privater Zugang", "btn_login": "Einloggen", "msg_wrong": "Falsche Zugangsdaten.",
+        "mascot_hello": "<strong>Hallo! Ich bin Fritz.</strong>", "mascot_sub": "Lass uns mit deinen eigenen Vokabeln lernen!",
+        "msg_correct": "Richtig! Super gemacht! 🎉", "msg_ohno": "Oh nein! Es heißt"
+    },
+    uz: {
+        "title_home": "Asosiy", "title_ddd": "Der Die Das", "title_dict": "Lug'at", "title_settings": "Sozlamalar",
+        "subtitle_ddd": "Artikl Mashqi", "subtitle_dict": "Sizning so'zlaringiz", "title_satzbau": "Gap tuzish", "subtitle_satzbau": "Gap Pazzli",
+        "title_grammar": "Grammatika", "subtitle_grammar": "Qoidalar", "daily_goal": "Kunlik maqsad", "wotd": "KUN SO'ZI",
+        "listen": "Talaffuzni eshitish", "search": "So'z qidirish...", "settings_pref": "Afzalliklar", "settings_sound": "Ovoz",
+        "settings_vib": "Vibratsiya", "settings_lang": "Til", "about_title": "WunderDeutsch haqida",
+        "about_text": "WunderDeutsch - nemis tilini o'yin orqali o'rganish uchun maxsus ishlab chiqilgan interaktiv ilova. So'zlarni yodlang, artikllarni mashq qiling va gaplar tuzing!",
+        "contact_title": "Aloqa", "game_prompt": "Qaysi artikl to'g'ri?", "leave_guard": "Haqiqatan ham vazifani tark etmoqchimisiz?",
+        "coming_soon": "Tez orada!", "coming_desc1": "Men ushbu xususiyatni tayyorlayapman!", "coming_desc2": "Grammatika qoidalari tez orada bu yerda bo'ladi!",
+        "private_access": "Faqat shaxsiy kirish", "btn_login": "Kirish", "msg_wrong": "Parol noto'g'ri.",
+        "mascot_hello": "<strong>Salom! Men Fritsman.</strong>", "mascot_sub": "Keling, o'zingizning so'zlaringiz bilan o'rganamiz!",
+        "msg_correct": "To'g'ri! Barakalla! 🎉", "msg_ohno": "Afsus! To'g'risi:"
     }
 };
 
-// Auth Credentials
+const appState = {
+    streak: 3, xp: 120, lives: 5, words: [], currentWotd: null, dddWord: null, currentView: 'home',
+    settings: { sound: true, vibration: true, language: 'en' }
+};
+
 const AUTH_EMAIL = 'merser572@gmail.com';
 const AUTH_PASS = 'Hasanboy0412';
 
-// UI Elements
 const els = {
-    streak: document.getElementById('streak'),
-    xp: document.getElementById('xp'),
-    lives: document.getElementById('lives'),
-    dddLives: document.getElementById('ddd-lives'),
-    homeWotdTitle: document.getElementById('home-wotd-title'),
-    homeWotdSub: document.getElementById('home-wotd-sub'),
-    homeTtsBtn: document.getElementById('home-tts-btn'),
-    dddWord: document.getElementById('ddd-word'),
-    dddTrans: document.getElementById('ddd-translation'),
-    dddSearch: document.getElementById('dict-search-input'),
+    streak: document.getElementById('streak'), xp: document.getElementById('xp'),
+    lives: document.getElementById('lives'), dddLives: document.getElementById('ddd-lives'),
+    homeWotdTitle: document.getElementById('home-wotd-title'), homeWotdSub: document.getElementById('home-wotd-sub'),
+    homeTtsBtn: document.getElementById('home-tts-btn'), dddWord: document.getElementById('ddd-word'),
+    dddTrans: document.getElementById('ddd-translation'), dddSearch: document.getElementById('dict-search-input'),
     dddTtsBtn: document.getElementById('ddd-tts-btn')
 };
 
-// Initialize App
 async function initApp() {
     loadSettings();
+    applyLanguage();
     setupAuth();
     updateStats();
     await loadVocabulary();
@@ -59,35 +86,61 @@ function loadSettings() {
     const saved = localStorage.getItem('wunderdeutsch_settings');
     if (saved) {
         appState.settings = JSON.parse(saved);
+        if(!appState.settings.language) appState.settings.language = 'en';
     }
     document.getElementById('toggle-sound').checked = appState.settings.sound;
     document.getElementById('toggle-vibration').checked = appState.settings.vibration;
+    document.getElementById('lang-select').value = appState.settings.language;
 }
 
 function toggleSetting(key) {
     appState.settings[key] = !appState.settings[key];
-    localStorage.setItem('wunderdeutsch_settings', JSON.stringify(appState.settings));
-    if (appState.settings.sound && key === 'sound') playPopSound();
+    saveSettings();
+    if (appState.settings.sound && key === 'sound') playSound('success');
     if (appState.settings.vibration && key === 'vibration') triggerVibrate(50);
+}
+
+function changeLanguage(lang) {
+    appState.settings.language = lang;
+    saveSettings();
+    applyLanguage();
+}
+
+function saveSettings() {
+    localStorage.setItem('wunderdeutsch_settings', JSON.stringify(appState.settings));
+}
+
+function applyLanguage() {
+    const lang = appState.settings.language;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+            if (el.tagName === 'INPUT' && el.hasAttribute('placeholder')) {
+                el.setAttribute('placeholder', TRANSLATIONS[lang][key]);
+            } else {
+                el.innerHTML = TRANSLATIONS[lang][key];
+            }
+        }
+    });
 }
 
 function setupAuth() {
     if (localStorage.getItem('wunderdeutsch_auth') === 'true') {
         document.getElementById('login-overlay').style.display = 'none';
         document.getElementById('app-container').style.display = 'block';
+        playIntroAnimation();
     } else {
         document.getElementById('login-overlay').style.display = 'flex';
         document.getElementById('app-container').style.display = 'none';
     }
 
     document.getElementById('login-btn').addEventListener('click', () => {
-        const email = document.getElementById('login-email').value;
-        const pass = document.getElementById('login-password').value;
-        if (email === AUTH_EMAIL && pass === AUTH_PASS) {
+        if (document.getElementById('login-email').value === AUTH_EMAIL && document.getElementById('login-password').value === AUTH_PASS) {
             localStorage.setItem('wunderdeutsch_auth', 'true');
             document.getElementById('login-overlay').style.display = 'none';
             document.getElementById('app-container').style.display = 'block';
             lucide.createIcons();
+            playIntroAnimation();
         } else {
             document.getElementById('login-error').style.display = 'block';
             setTimeout(() => { document.getElementById('login-error').style.display = 'none'; }, 3000);
@@ -95,14 +148,36 @@ function setupAuth() {
     });
 }
 
+function playIntroAnimation() {
+    // Fox playing phone -> drops it -> waves hello
+    const playing = document.getElementById('intro-playing');
+    const shock = document.getElementById('intro-shock');
+    const hello = document.getElementById('intro-hello');
+    const phone = document.getElementById('intro-phone');
+    if(!playing) return;
+
+    playing.style.opacity = 1; shock.style.opacity = 0; hello.style.opacity = 0; phone.style.opacity = 0;
+    phone.style.transform = 'translateY(0) rotate(0deg)';
+    hello.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+        playing.style.opacity = 0; shock.style.opacity = 1; // Realizes user is there
+        setTimeout(() => {
+            shock.style.opacity = 0;
+            phone.style.opacity = 1;
+            phone.style.transform = 'translateY(50px) rotate(90deg)'; // Drops phone
+            hello.style.opacity = 1;
+            hello.style.transform = 'translateY(0px)'; // Comes up waving
+        }, 500);
+    }, 1200);
+}
+
 async function loadVocabulary() {
     try {
         const response = await fetch('words.json');
         appState.words = await response.json();
         setWordOfTheMoment();
-    } catch (e) {
-        console.error("Failed to load vocabulary:", e);
-    }
+    } catch (e) { console.error("Failed to load vocabulary:", e); }
 }
 
 function setWordOfTheMoment() {
@@ -124,8 +199,13 @@ function updateStats() {
     els.dddLives.textContent = appState.lives;
 }
 
-// ---- VIEW ROUTER ----
 function switchView(viewId) {
+    // Navigation Guard for DerDieDas
+    if (appState.currentView === 'derdiedas' && viewId !== 'derdiedas') {
+        const msg = TRANSLATIONS[appState.settings.language]['leave_guard'];
+        if (!confirm(msg)) return; // Abort navigation
+    }
+
     triggerVibrate(30);
     document.querySelectorAll('.view').forEach(v => v.style.display = 'none');
     document.getElementById('view-' + viewId).style.display = 'block';
@@ -136,111 +216,134 @@ function switchView(viewId) {
         document.querySelectorAll('.nav-item')[iconMap[viewId]].classList.add('active');
     }
 
+    appState.currentView = viewId;
     if (viewId === 'derdiedas') initDerDieDas();
     if (viewId === 'dictionary') renderDictionary();
 }
 
-// ---- DER DIE DAS GAME ----
 function initDerDieDas() {
+    // Reset animations
+    document.getElementById('mom-fox').style.right = '-120px';
+    document.getElementById('fast-fox').style.left = '-120px';
+    document.getElementById('student-fox').style.opacity = 1;
+
     const nouns = appState.words.filter(w => w.article && ['der', 'die', 'das'].includes(w.article.toLowerCase()));
     if(nouns.length === 0) return;
     appState.dddWord = nouns[Math.floor(Math.random() * nouns.length)];
-    
     els.dddWord.textContent = appState.dddWord.word;
     els.dddTrans.textContent = appState.dddWord.translation;
 }
 
 function checkArticle(guess) {
-    triggerVibrate(40);
     if(!appState.dddWord) return;
+    
+    const correctMsg = TRANSLATIONS[appState.settings.language]['msg_correct'];
+    const wrongMsg = TRANSLATIONS[appState.settings.language]['msg_ohno'];
+
     if(guess === appState.dddWord.article.toLowerCase()) {
         appState.xp += 10;
         updateStats();
-        playPopSound();
-        showMascot("Richtig! Super gemacht! 🎉");
-        setTimeout(initDerDieDas, 1500);
+        playSound('success');
+        triggerVibrate(40);
+        showMascot(correctMsg);
+        playRightAnswerAnimation();
+        setTimeout(initDerDieDas, 2000);
     } else {
-        triggerVibrate([100, 50, 100]); // Error vibration pattern
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
-        showMascot(`Oh nein! Es heißt "${appState.dddWord.article} ${appState.dddWord.word}".`);
+        playSound('error');
+        triggerVibrate([100, 50, 100]);
+        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`);
+        playWrongAnswerAnimation();
     }
 }
 
-// ---- DICTIONARY ----
+function playWrongAnswerAnimation() {
+    const mom = document.getElementById('mom-fox');
+    mom.style.right = '20px'; // Runs in
+    setTimeout(() => {
+        mom.style.transform = 'scaleX(-1) rotate(15deg)';
+        setTimeout(() => mom.style.transform = 'scaleX(-1) rotate(-15deg)', 150);
+        setTimeout(() => mom.style.transform = 'scaleX(-1) rotate(15deg)', 300);
+        setTimeout(() => mom.style.transform = 'scaleX(-1) rotate(0deg)', 450);
+    }, 300);
+    setTimeout(() => mom.style.right = '-120px', 2000); // Leaves
+}
+
+function playRightAnswerAnimation() {
+    const fast = document.getElementById('fast-fox');
+    fast.style.left = 'calc(50% - 30px)'; // Runs to center
+    setTimeout(() => {
+        // Breathe
+        fast.style.transform = 'scale(1.1)';
+        setTimeout(() => fast.style.transform = 'scale(1.0)', 150);
+        setTimeout(() => fast.style.transform = 'scale(1.1)', 300);
+        setTimeout(() => fast.style.transform = 'scale(1.0)', 450);
+    }, 400);
+    setTimeout(() => fast.style.left = '-120px', 1800); // Leaves
+}
+
 function renderDictionary() {
     const query = els.dddSearch.value.toLowerCase();
     const list = document.getElementById('dict-list');
     list.innerHTML = '';
-    
-    const filtered = appState.words.filter(w => 
-        w.word.toLowerCase().includes(query) || 
-        w.translation.toLowerCase().includes(query)
-    );
-    
+    const filtered = appState.words.filter(w => w.word.toLowerCase().includes(query) || w.translation.toLowerCase().includes(query));
     filtered.forEach(w => {
         const div = document.createElement('div');
         div.className = 'dict-item';
-        
         let artHtml = w.article ? `<span class="artikel">${w.article}</span> ` : '';
         let pluralHtml = w.plural ? ` (Pl: ${w.plural})` : '';
-        
         div.innerHTML = `
             <div>
                 <h4>${artHtml}${w.word}</h4>
                 <p>${w.translation}${pluralHtml}</p>
             </div>
-            <button class="icon-btn small-btn" onclick="speakText('${w.article ? w.article + ' ' : ''}${w.word}')">
-                <i data-lucide="volume-2"></i>
-            </button>
+            <button class="icon-btn small-btn" onclick="speakText('${w.article ? w.article + ' ' : ''}${w.word}')"><i data-lucide="volume-2"></i></button>
         `;
         list.appendChild(div);
     });
     lucide.createIcons();
 }
 
-// ---- MASCOT NOTIFICATIONS ----
 function showMascot(text) {
-    document.getElementById('mascot-msg').textContent = text;
+    document.getElementById('mascot-msg').innerHTML = text;
     const mascot = document.getElementById('global-mascot');
     mascot.classList.add('show');
     setTimeout(() => { mascot.classList.remove('show'); }, 3500);
 }
 
-function triggerMascotGreeting() {
-    triggerVibrate(30);
-    playPopSound();
-    speakText("Hallo, ich bin Fritz!");
-    showMascot("Lass uns lernen! 🦊");
-}
-
-// ---- AUDIO & HAPTICS ----
 function triggerVibrate(pattern) {
-    if (appState.settings.vibration && 'vibrate' in navigator) {
-        navigator.vibrate(pattern);
-    }
+    if (appState.settings.vibration && 'vibrate' in navigator) navigator.vibrate(pattern);
 }
 
-function playPopSound() {
+function playSound(type) {
     if (!appState.settings.sound) return;
     try {
         const ctx = new (window.AudioContext || window.webkitAudioContext)();
         const osc = ctx.createOscillator();
         const gain = ctx.createGain();
         osc.connect(gain); gain.connect(ctx.destination);
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(800, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
-        gain.gain.setValueAtTime(0.5, ctx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
-        osc.start(); osc.stop(ctx.currentTime + 0.1);
+        if (type === 'success') {
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(800, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
+            gain.gain.setValueAtTime(0.5, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
+            osc.start(); osc.stop(ctx.currentTime + 0.1);
+        } else if (type === 'error') {
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(150, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(80, ctx.currentTime + 0.3);
+            gain.gain.setValueAtTime(0.5, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+            osc.start(); osc.stop(ctx.currentTime + 0.3);
+        }
     } catch(e) {}
 }
 
 function speakText(text) {
     if (!appState.settings.sound) return;
     if ('speechSynthesis' in window) {
-        // Fix: Cancel any queued speech so it doesn't spam infinitely
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'de-DE';

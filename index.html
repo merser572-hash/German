@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,11 +16,11 @@
         <div class="login-card">
             <i data-lucide="lock" class="login-icon"></i>
             <h2>WunderDeutsch</h2>
-            <p>Private Access Only</p>
-            <input type="email" id="login-email" placeholder="Email (admin)" />
+            <p data-i18n="private_access">Private Access Only</p>
+            <input type="email" id="login-email" placeholder="Email" />
             <input type="password" id="login-password" placeholder="Password" />
-            <button id="login-btn" class="action-btn primary-btn">Login</button>
-            <p id="login-error" class="error-msg">Incorrect credentials.</p>
+            <button id="login-btn" class="action-btn primary-btn" data-i18n="btn_login">Login</button>
+            <p id="login-error" class="error-msg" data-i18n="msg_wrong">Incorrect credentials.</p>
         </div>
     </div>
 
@@ -38,45 +38,49 @@
                 </div>
             </header>
 
-            <section class="mascot-section" onclick="triggerMascotGreeting()">
-                <div class="mascot-wrapper" style="background:transparent; border:none; box-shadow:none;">
-                    <div class="animated-mascot">🦊</div>
+            <section class="mascot-section">
+                <!-- EMOJI THEATRE: INTRO ANIMATION -->
+                <div class="mascot-wrapper" style="background:transparent; border:none; box-shadow:none; position:relative; width: 80px; height: 80px; display:flex; justify-content:center; align-items:center;">
+                    <div id="intro-playing" style="position:absolute; font-size:65px; transition:opacity 0.2s;">🦊📱</div>
+                    <div id="intro-shock" style="position:absolute; font-size:65px; opacity:0; transition:opacity 0.2s;">🦊😲</div>
+                    <div id="intro-hello" style="position:absolute; font-size:65px; opacity:0; transform:translateY(20px); transition:all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">🦊👋</div>
+                    <div id="intro-phone" style="position:absolute; font-size:30px; opacity:0; top: 30px; transition:all 0.4s;">📱</div>
                 </div>
                 <div class="speech-bubble">
-                    <p><strong>Hallo! Ich bin Fritz.</strong></p>
-                    <p class="small">Lass uns mit deinen eigenen Vokabeln lernen!</p>
+                    <p data-i18n="mascot_hello"><strong>Hello! I'm Fritz.</strong></p>
+                    <p class="small" data-i18n="mascot_sub">Let's learn with your own vocabulary!</p>
                 </div>
             </section>
 
             <section class="main-grid">
                 <button class="menu-card blue" onclick="switchView('derdiedas')">
                     <i data-lucide="disc-3" class="menu-icon"></i>
-                    <h3>Der Die Das</h3>
-                    <p>Gender Trainer</p>
+                    <h3 data-i18n="title_ddd">Der Die Das</h3>
+                    <p data-i18n="subtitle_ddd">Gender Trainer</p>
                 </button>
                 <button class="menu-card green" onclick="switchView('satzbau')">
                     <i data-lucide="puzzle" class="menu-icon"></i>
-                    <h3>Satzbau</h3>
-                    <p>Sentence Puzzle</p>
+                    <h3 data-i18n="title_satzbau">Satzbau</h3>
+                    <p data-i18n="subtitle_satzbau">Sentence Puzzle</p>
                 </button>
                 <button class="menu-card yellow" onclick="switchView('dictionary')">
                     <i data-lucide="book-open" class="menu-icon"></i>
-                    <h3>Wörterbuch</h3>
-                    <p>Deine Vokabeln</p>
+                    <h3 data-i18n="title_dict">Dictionary</h3>
+                    <p data-i18n="subtitle_dict">Your Vocabulary</p>
                 </button>
                 <button class="menu-card red" onclick="switchView('grammar')">
                     <i data-lucide="graduation-cap" class="menu-icon"></i>
-                    <h3>Grammatik</h3>
-                    <p>Regeln</p>
+                    <h3 data-i18n="title_grammar">Grammar</h3>
+                    <p data-i18n="subtitle_grammar">Rules</p>
                 </button>
             </section>
 
             <section class="wotd-section card">
-                <p class="section-label">WORT DES MOMENTS</p>
+                <p class="section-label" data-i18n="wotd">WORD OF THE MOMENT</p>
                 <h2 id="home-wotd-title">Laden...</h2>
                 <p class="subtitle" id="home-wotd-sub">...</p>
                 <button class="action-btn primary-btn tts-btn" id="home-tts-btn">
-                    <i data-lucide="volume-2"></i> Aussprache hören
+                    <i data-lucide="volume-2"></i> <span data-i18n="listen">Listen</span>
                 </button>
             </section>
         </div>
@@ -85,37 +89,45 @@
         <div id="view-settings" class="view" style="display: none;">
             <header class="top-bar">
                 <button class="icon-btn" onclick="switchView('home')"><i data-lucide="arrow-left"></i></button>
-                <h3 style="font-weight: 800;">Einstellungen</h3>
+                <h3 style="font-weight: 800;" data-i18n="title_settings">Settings</h3>
                 <div style="width:44px"></div>
             </header>
             
             <div class="card">
-                <h3 style="margin-bottom:16px;">Präferenzen</h3>
+                <h3 style="margin-bottom:16px;" data-i18n="settings_pref">Preferences</h3>
                 <div class="setting-row">
-                    <span><i data-lucide="volume-2"></i> Ton (Sound)</span>
+                    <span><i data-lucide="volume-2"></i> <span data-i18n="settings_sound">Sound</span></span>
                     <label class="switch">
                         <input type="checkbox" id="toggle-sound" onchange="toggleSetting('sound')">
                         <span class="slider"></span>
                     </label>
                 </div>
                 <div class="setting-row">
-                    <span><i data-lucide="vibrate"></i> Vibration</span>
+                    <span><i data-lucide="vibrate"></i> <span data-i18n="settings_vib">Vibration</span></span>
                     <label class="switch">
                         <input type="checkbox" id="toggle-vibration" onchange="toggleSetting('vibration')">
                         <span class="slider"></span>
                     </label>
                 </div>
+                <div class="setting-row">
+                    <span><i data-lucide="globe"></i> <span data-i18n="settings_lang">Language</span></span>
+                    <select id="lang-select" onchange="changeLanguage(this.value)" style="padding: 6px; border-radius: 8px; border: 2px solid var(--border-color); font-weight:700; outline:none;">
+                        <option value="en">English</option>
+                        <option value="de">Deutsch</option>
+                        <option value="uz">O'zbek</option>
+                    </select>
+                </div>
             </div>
 
             <div class="card">
-                <h3 style="margin-bottom:12px;">Über WunderDeutsch</h3>
-                <p style="font-size:0.95rem; color:var(--text-muted); line-height:1.5;">
-                    <strong>WunderDeutsch</strong> ist eine interaktive Lern-App, die speziell entwickelt wurde, um Deutsch auf spielerische Weise zu meistern. Lerne Vokabeln, trainiere Artikel und baue Sätze!
+                <h3 style="margin-bottom:12px;" data-i18n="about_title">About WunderDeutsch</h3>
+                <p style="font-size:0.95rem; color:var(--text-muted); line-height:1.5;" data-i18n="about_text">
+                    WunderDeutsch is an interactive learning app specifically designed to master German playfully. Learn vocabulary, train articles, and build sentences!
                 </p>
             </div>
 
             <div class="card">
-                <h3 style="margin-bottom:12px;">Kontakt</h3>
+                <h3 style="margin-bottom:12px;" data-i18n="contact_title">Contact</h3>
                 <div style="display:flex; flex-direction:column; gap:12px; font-size:0.95rem; font-weight:700;">
                     <a href="mailto:merser572@gmail.com" style="color:var(--blue-btn); text-decoration:none; display:flex; align-items:center; gap:8px;"><i data-lucide="mail" style="width:20px;"></i> merser572@gmail.com</a>
                     <a href="tel:+998333371005" style="color:var(--blue-btn); text-decoration:none; display:flex; align-items:center; gap:8px;"><i data-lucide="phone" style="width:20px;"></i> +998 33 337 10 05</a>
@@ -131,7 +143,14 @@
             </header>
             
             <div class="game-container">
-                <div class="game-prompt">Welcher Artikel ist richtig?</div>
+                <!-- EMOJI THEATRE: GAME SCENE -->
+                <div id="game-scene" class="emoji-scene">
+                     <div id="student-fox">🦊✍️📚</div>
+                     <div id="mom-fox">🧕🦊🩴</div>
+                     <div id="fast-fox">🦊💦👍</div>
+                </div>
+
+                <div class="game-prompt" data-i18n="game_prompt">Which article is correct?</div>
                 <div class="game-word-box">
                     <h2 id="ddd-word">...</h2>
                     <p id="ddd-translation">...</p>
@@ -150,12 +169,12 @@
         <div id="view-dictionary" class="view" style="display: none;">
             <header class="top-bar">
                 <button class="icon-btn" onclick="switchView('home')"><i data-lucide="arrow-left"></i></button>
-                <h3 style="font-weight: 800;">Wörterbuch</h3>
+                <h3 style="font-weight: 800;" data-i18n="title_dict">Dictionary</h3>
                 <div style="width:44px"></div>
             </header>
             
             <div class="dict-search">
-                <input type="text" id="dict-search-input" placeholder="Wort suchen..." />
+                <input type="text" id="dict-search-input" placeholder="Search word..." data-i18n="search" />
             </div>
             
             <div class="dict-list" id="dict-list">
@@ -167,36 +186,36 @@
         <div id="view-satzbau" class="view" style="display: none;">
             <header class="top-bar">
                 <button class="icon-btn" onclick="switchView('home')"><i data-lucide="arrow-left"></i></button>
-                <h3 style="font-weight: 800;">Satzbau</h3>
+                <h3 style="font-weight: 800;" data-i18n="title_satzbau">Satzbau</h3>
                 <div style="width:44px"></div>
             </header>
             <div class="coming-soon">
                 <div class="animated-mascot" style="font-size: 80px;">🦊</div>
-                <h2>Kommt bald!</h2>
-                <p>Ich bereite diese Funktion noch vor!</p>
+                <h2 data-i18n="coming_soon">Coming soon!</h2>
+                <p data-i18n="coming_desc1">I am preparing this feature!</p>
             </div>
         </div>
         
         <div id="view-grammar" class="view" style="display: none;">
             <header class="top-bar">
                 <button class="icon-btn" onclick="switchView('home')"><i data-lucide="arrow-left"></i></button>
-                <h3 style="font-weight: 800;">Grammatik</h3>
+                <h3 style="font-weight: 800;" data-i18n="title_grammar">Grammar</h3>
                 <div style="width:44px"></div>
             </header>
             <div class="coming-soon">
                 <div class="animated-mascot" style="font-size: 80px;">🦊</div>
-                <h2>Kommt bald!</h2>
-                <p>Hier kommen bald Grammatikregeln hin!</p>
+                <h2 data-i18n="coming_soon">Coming soon!</h2>
+                <p data-i18n="coming_desc2">Grammar rules will be here soon!</p>
             </div>
         </div>
 
         <!-- ================= BOTTOM NAV ================= -->
         <nav class="bottom-nav">
-            <button class="nav-item active" onclick="switchView('home')"><i data-lucide="home"></i><span>Home</span></button>
-            <button class="nav-item" onclick="switchView('derdiedas')"><i data-lucide="disc-3"></i><span>DerDieDas</span></button>
-            <button class="nav-item" onclick="switchView('satzbau')"><i data-lucide="puzzle"></i><span>Sätze</span></button>
-            <button class="nav-item" onclick="switchView('dictionary')"><i data-lucide="book-open"></i><span>Wörter</span></button>
-            <button class="nav-item" onclick="switchView('grammar')"><i data-lucide="graduation-cap"></i><span>Grammatik</span></button>
+            <button class="nav-item active" onclick="switchView('home')"><i data-lucide="home"></i><span data-i18n="title_home">Home</span></button>
+            <button class="nav-item" onclick="switchView('derdiedas')"><i data-lucide="disc-3"></i><span data-i18n="title_ddd">DerDieDas</span></button>
+            <button class="nav-item" onclick="switchView('satzbau')"><i data-lucide="puzzle"></i><span data-i18n="title_satzbau">Satzbau</span></button>
+            <button class="nav-item" onclick="switchView('dictionary')"><i data-lucide="book-open"></i><span data-i18n="title_dict">Dictionary</span></button>
+            <button class="nav-item" onclick="switchView('grammar')"><i data-lucide="graduation-cap"></i><span data-i18n="title_grammar">Grammar</span></button>
         </nav>
 
         <!-- GLOBAL FLOATING MASCOT -->
