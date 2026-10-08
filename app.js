@@ -1220,7 +1220,7 @@ function executeSwitchView(viewId) {
     playSound('tap');
     
     const mascot = document.getElementById('global-mascot');
-    if (mascot) mascot.style.display = 'none';
+    if (mascot) mascot.classList.remove('show');
     
     // reset fox state
     const fox = document.getElementById('ddd-mascot-inner');
@@ -1415,7 +1415,7 @@ function renderCategories() {
     
     const cats = [...new Set(appState.words.map(w => w.category).filter(Boolean))];
     
-    let html = `<button class="category-chip ${appState.selectedCategory === 'all' ? 'active' : ''}" onclick="selectCategory('all')">all_categories</button>`;
+    let html = `<button class="category-chip ${appState.selectedCategory === 'all' ? 'active' : ''}" onclick="selectCategory('all')">All</button>`;
     cats.forEach(c => {
         html += `<button class="category-chip ${appState.selectedCategory === c ? 'active' : ''}" onclick="selectCategory('${c.replace(/'/g, "\'")}')">${c}</button>`;
     });
@@ -1426,8 +1426,7 @@ function selectCategory(cat) {
     playSound('tap');
     appState.selectedCategory = cat;
     renderCategories();
-    renderCategories();
-        renderDictionary();
+    renderDictionary();
 }
 
 // Intercept renderDictionary to filter by category
