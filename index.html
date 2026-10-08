@@ -121,11 +121,11 @@
                 </div>
                 <div class="setting-row">
                     <span><i data-lucide="globe"></i> <span data-i18n="settings_lang">Language</span></span>
-                    <select id="lang-select" onchange="changeLanguage(this.value)" style="padding: 6px; border-radius: 8px; border: 2px solid var(--border-color); font-weight:700; outline:none;">
-                        <option value="en">English</option>
-                        <option value="de">Deutsch</option>
-                        <option value="uz">O'zbek</option>
-                    </select>
+                    <div class="lang-toggle" id="lang-toggle">
+                        <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">EN</button>
+                        <button class="lang-btn" onclick="changeLanguage('de')" data-lang="de">DE</button>
+                        <button class="lang-btn" onclick="changeLanguage('uz')" data-lang="uz">UZ</button>
+                    </div>
                 </div>
             </div>
 
@@ -212,10 +212,8 @@
                 <h3 style="font-weight: 800;" data-i18n="title_grammar">Grammar</h3>
                 <div style="width:44px"></div>
             </header>
-            <div class="coming-soon">
-                <div class="animated-mascot" style="font-size: 80px;">🦊</div>
-                <h2 data-i18n="coming_soon">Coming soon!</h2>
-                <p data-i18n="coming_desc2">Grammar rules will be here soon!</p>
+            <div id="grammar-content" class="grammar-accordion" style="padding-bottom: 20px;">
+                <!-- Grammar sections rendered dynamically via app.js -->
             </div>
         </div>
 
@@ -241,7 +239,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=16').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=17').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });

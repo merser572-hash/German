@@ -1,4 +1,4 @@
-const CACHE_NAME = 'wunderdeutsch-v16';
+const CACHE_NAME = 'wunderdeutsch-v17';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',

@@ -98,7 +98,14 @@ function loadSettings() {
     }
     document.getElementById('toggle-sound').checked = appState.settings.sound;
     document.getElementById('toggle-vibration').checked = appState.settings.vibration;
-    document.getElementById('lang-select').value = appState.settings.language;
+    
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if(btn.getAttribute('data-lang') === appState.settings.language) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
 }
 
 function toggleSetting(key) {
@@ -112,6 +119,18 @@ function changeLanguage(lang) {
     appState.settings.language = lang;
     saveSettings();
     applyLanguage();
+    
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if(btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+    
+    if (appState.currentView === 'grammar') {
+        renderGrammar();
+    }
 }
 
 function saveSettings() {
@@ -224,6 +243,7 @@ function executeSwitchView(viewId) {
     if (viewId === 'derdiedas') initDerDieDas();
     if (viewId === 'dictionary') renderDictionary();
     if (viewId === 'satzbau') loadSatzbau();
+    if (viewId === 'grammar') renderGrammar();
 }
 
 function initDerDieDas() {
@@ -487,5 +507,72 @@ function checkSatzbau() {
             dropzone.style.transition = '';
             dropzone.style.borderColor = '#ccc';
         }, 1000);
+    }
+}
+
+// --- GRAMMAR TAB LOGIC ---
+const A1_GRAMMAR = {
+    en: [
+        { title: "Articles (Der, Die, Das)", content: "In German, nouns have three genders...<br><b>der</b> (masculine)<br><b>die</b> (feminine)<br><b>das</b> (neuter).<br><br>Rules:<br>Words ending in <b>-ung, -heit, -keit, -schaft, -tion</b> are almost always <b>die</b>.<br>Words ending in <b>-chen, -lein, -ment</b> are almost always <b>das</b>.<br>Words ending in <b>-ismus, -or, -ling</b> are almost always <b>der</b>." },
+        { title: "Plurals", content: "There are 5 main ways to form plurals:<br>1. <b>-e</b> (der Tag -> die Tage)<br>2. <b>-er</b> (das Kind -> die Kinder)<br>3. <b>-(e)n</b> (die Frau -> die Frauen)<br>4. <b>-s</b> (das Auto -> die Autos)<br>5. <b>No change</b> (der Lehrer -> die Lehrer)" },
+        { title: "Personal Pronouns", content: "<b>ich</b> = I<br><b>du</b> = you (informal)<br><b>er/sie/es</b> = he/she/it<br><b>wir</b> = we<br><b>ihr</b> = you all<br><b>sie/Sie</b> = they / you (formal)" },
+        { title: "Regular Verb Conjugation", content: "Example: <b>machen</b> (to do/make)<br>ich mach<b>e</b><br>du mach<b>st</b><br>er/sie/es mach<b>t</b><br>wir mach<b>en</b><br>ihr mach<b>t</b><br>sie/Sie mach<b>en</b>" },
+        { title: "Important Irregular Verbs", content: "<b>sein (to be):</b><br>ich bin, du bist, er ist, wir sind, ihr seid, sie sind.<br><br><b>haben (to have):</b><br>ich habe, du hast, er hat, wir haben, ihr habt, sie haben." },
+        { title: "Sentence Structure (Satzbau)", content: "<b>Rule 1:</b> The conjugated verb is always in position 2 in a normal sentence.<br>Example: Ich <b>gehe</b> heute ins Kino.<br><br><b>Rule 2:</b> If you start with time, the verb stays in position 2, and the subject moves to position 3.<br>Example: Heute <b>gehe</b> ich ins Kino." },
+        { title: "Accusative Case", content: "The accusative case is used for the direct object. Only masculine (der) changes!<br><b>der -> den / ein -> einen / kein -> keinen</b><br>die -> die / eine -> eine / keine -> keine<br>das -> das / ein -> ein / kein -> kein<br><br>Example: Ich habe <b>einen</b> Hund (der Hund)." }
+    ],
+    de: [
+        { title: "Artikel (Der, Die, Das)", content: "Im Deutschen haben Nomen drei Geschlechter...<br><b>der</b> (männlich)<br><b>die</b> (weiblich)<br><b>das</b> (sächlich).<br><br>Regeln:<br>Wörter auf <b>-ung, -heit, -keit, -schaft, -tion</b> sind fast immer <b>die</b>.<br>Wörter auf <b>-chen, -lein, -ment</b> sind fast immer <b>das</b>.<br>Wörter auf <b>-ismus, -or, -ling</b> sind fast immer <b>der</b>." },
+        { title: "Pluralbildung", content: "Es gibt 5 Hauptwege, den Plural zu bilden:<br>1. <b>-e</b> (der Tag -> die Tage)<br>2. <b>-er</b> (das Kind -> die Kinder)<br>3. <b>-(e)n</b> (die Frau -> die Frauen)<br>4. <b>-s</b> (das Auto -> die Autos)<br>5. <b>Keine Änderung</b> (der Lehrer -> die Lehrer)" },
+        { title: "Personalpronomen", content: "<b>ich</b> = ich<br><b>du</b> = du<br><b>er/sie/es</b> = er/sie/es<br><b>wir</b> = wir<br><b>ihr</b> = ihr<br><b>sie/Sie</b> = sie/Sie (Höflichkeitsform)" },
+        { title: "Regelmäßige Verben", content: "Beispiel: <b>machen</b><br>ich mach<b>e</b><br>du mach<b>st</b><br>er/sie/es mach<b>t</b><br>wir mach<b>en</b><br>ihr mach<b>t</b><br>sie/Sie mach<b>en</b>" },
+        { title: "Wichtige unregelmäßige Verben", content: "<b>sein:</b><br>ich bin, du bist, er ist, wir sind, ihr seid, sie sind.<br><br><b>haben:</b><br>ich habe, du hast, er hat, wir haben, ihr habt, sie haben." },
+        { title: "Satzbau", content: "<b>Regel 1:</b> Das konjugierte Verb steht im Hauptsatz immer an Position 2.<br>Beispiel: Ich <b>gehe</b> heute ins Kino.<br><br><b>Regel 2:</b> Wenn der Satz mit einer Zeitangabe beginnt, bleibt das Verb auf Position 2, und das Subjekt rückt auf Position 3.<br>Beispiel: Heute <b>gehe</b> ich ins Kino." },
+        { title: "Akkusativ", content: "Der Akkusativ wird für das direkte Objekt verwendet. Nur maskulin (der) ändert sich!<br><b>der -> den / ein -> einen / kein -> keinen</b><br>die -> die / eine -> eine / keine -> keine<br>das -> das / ein -> ein / kein -> kein<br><br>Beispiel: Ich habe <b>einen</b> Hund (der Hund)." }
+    ],
+    uz: [
+        { title: "Artikllar (Der, Die, Das)", content: "Nemis tilida otlar uchta jinsga ega...<br><b>der</b> (muzskoy)<br><b>die</b> (jenskiy)<br><b>das</b> (sredniy).<br><br>Qoidalar:<br><b>-ung, -heit, -keit, -schaft, -tion</b> bilan tugaydigan so'zlar deyarli har doim <b>die</b> bo'ladi.<br><b>-chen, -lein, -ment</b> bilan tugaydigan so'zlar deyarli har doim <b>das</b> bo'ladi.<br><b>-ismus, -or, -ling</b> bilan tugaydigan so'zlar deyarli har doim <b>der</b> bo'ladi." },
+        { title: "Ko'plik shakli (Plural)", content: "Ko'plikni hosil qilishning 5 ta asosiy usuli bor:<br>1. <b>-e</b> (der Tag -> die Tage)<br>2. <b>-er</b> (das Kind -> die Kinder)<br>3. <b>-(e)n</b> (die Frau -> die Frauen)<br>4. <b>-s</b> (das Auto -> die Autos)<br>5. <b>O'zgarmas</b> (der Lehrer -> die Lehrer)" },
+        { title: "Kishilik olmoshlari", content: "<b>ich</b> = men<br><b>du</b> = sen<br><b>er/sie/es</b> = u<br><b>wir</b> = biz<br><b>ihr</b> = sizlar<br><b>sie/Sie</b> = ular / Siz (hurmat uchun)" },
+        { title: "To'g'ri fe'llar tuslanishi", content: "Misol: <b>machen</b> (qilmoq)<br>ich mach<b>e</b><br>du mach<b>st</b><br>er/sie/es mach<b>t</b><br>wir mach<b>en</b><br>ihr mach<b>t</b><br>sie/Sie mach<b>en</b>" },
+        { title: "Muhim noto'g'ri fe'llar", content: "<b>sein (bo'lmoq):</b><br>ich bin, du bist, er ist, wir sind, ihr seid, sie sind.<br><br><b>haben (ega bo'lmoq):</b><br>ich habe, du hast, er hat, wir haben, ihr habt, sie haben." },
+        { title: "Gap qurilishi (Satzbau)", content: "<b>1-Qoida:</b> Oddiy gapda tuslangan fe'l doim 2-o'rinda keladi.<br>Misol: Ich <b>gehe</b> heute ins Kino.<br><br><b>2-Qoida:</b> Agar gap vaqt bilan boshlansa, fe'l baribir 2-o'rinda qoladi, eganing o'zi 3-o'ringa o'tadi.<br>Misol: Heute <b>gehe</b> ich ins Kino." },
+        { title: "Tushum kelishigi (Akkusativ)", content: "Akkusativ ob'yekt uchun ishlatiladi. Faqat muzskoy (der) jins o'zgaradi!<br><b>der -> den / ein -> einen / kein -> keinen</b><br>die -> die / eine -> eine / keine -> keine<br>das -> das / ein -> ein / kein -> kein<br><br>Misol: Ich habe <b>einen</b> Hund (der Hund)." }
+    ]
+};
+
+function renderGrammar() {
+    const container = document.getElementById('grammar-content');
+    if (!container) return;
+    
+    container.innerHTML = '';
+    const rules = A1_GRAMMAR[appState.settings.language] || A1_GRAMMAR['en'];
+    
+    rules.forEach(rule => {
+        const item = document.createElement('div');
+        item.className = 'grammar-item';
+        
+        const header = document.createElement('div');
+        header.className = 'grammar-header';
+        header.innerHTML = `<h3>${rule.title}</h3><i data-lucide="chevron-down"></i>`;
+        
+        const body = document.createElement('div');
+        body.className = 'grammar-body';
+        body.innerHTML = `<p>${rule.content}</p>`;
+        
+        header.onclick = () => {
+            playSound('tap');
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.grammar-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        };
+        
+        item.appendChild(header);
+        item.appendChild(body);
+        container.appendChild(item);
+    });
+    
+    if (window.lucide) {
+        lucide.createIcons();
     }
 }
