@@ -954,7 +954,7 @@ const TRANSLATIONS = {
         "title_home": "Home", "title_ddd": "Der Die Das", "title_dict": "Dictionary", "title_settings": "Settings",
         "subtitle_ddd": "Gender Trainer", "subtitle_dict": "Your Vocabulary", "title_satzbau": "Sentence Puzzle", "subtitle_satzbau": "Sentence Puzzle",
         "title_grammar": "Grammar", "subtitle_grammar": "Rules", "daily_goal": "Daily Goal", "wotd": "WORD OF THE MOMENT",
-        "listen": "Listen", "search": "Search word...", "settings_pref": "Preferences", "settings_sound": "Sound",
+        "settings_offline": "Offline Mode", "settings_clear_cache": "Clear Cache & Reload", "listen": "Listen", "search": "Search word...", "settings_pref": "Preferences", "settings_sound": "Sound",
         "settings_vib": "Vibration", "settings_lang": "Language", "about_title": "About WunderDeutsch",
         "about_text": "WunderDeutsch is an interactive learning app specifically designed to master German playfully. Learn vocabulary, train articles, and build sentences!",
         "contact_title": "Contact", "game_prompt": "Which article is correct?", 
@@ -969,7 +969,7 @@ const TRANSLATIONS = {
         "title_home": "Home", "title_ddd": "Der Die Das", "title_dict": "Wörterbuch", "title_settings": "Einstellungen",
         "subtitle_ddd": "Artikel Trainer", "subtitle_dict": "Deine Vokabeln", "title_satzbau": "Satzbau", "subtitle_satzbau": "Satz-Puzzle",
         "title_grammar": "Grammatik", "subtitle_grammar": "Regeln", "daily_goal": "Tagesziel", "wotd": "WORT DES MOMENTS",
-        "listen": "Aussprache hören", "search": "Wort suchen...", "settings_pref": "Präferenzen", "settings_sound": "Ton",
+        "settings_offline": "Offline-Modus", "settings_clear_cache": "Cache leeren & neuladen", "listen": "Aussprache hören", "search": "Wort suchen...", "settings_pref": "Präferenzen", "settings_sound": "Ton",
         "settings_vib": "Vibration", "settings_lang": "Sprache", "about_title": "Über WunderDeutsch",
         "about_text": "WunderDeutsch ist eine interaktive Lern-App, die speziell entwickelt wurde, um Deutsch auf spielerische Weise zu meistern. Lerne Vokabeln, trainiere Artikel und baue Sätze!",
         "contact_title": "Kontakt", "game_prompt": "Welcher Artikel ist richtig?", 
@@ -984,7 +984,7 @@ const TRANSLATIONS = {
         "title_home": "Asosiy", "title_ddd": "Der Die Das", "title_dict": "Lug'at", "title_settings": "Sozlamalar",
         "subtitle_ddd": "Artikl Mashqi", "subtitle_dict": "Sizning so'zlaringiz", "title_satzbau": "Gap tuzish", "subtitle_satzbau": "Gap Pazzli",
         "title_grammar": "Grammatika", "subtitle_grammar": "Qoidalar", "daily_goal": "Kunlik maqsad", "wotd": "KUN SO'ZI",
-        "listen": "Talaffuzni eshitish", "search": "So'z qidirish...", "settings_pref": "Afzalliklar", "settings_sound": "Ovoz",
+        "settings_offline": "Offlayn rejim", "settings_clear_cache": "Keshni tozalash va yangilash", "listen": "Talaffuzni eshitish", "search": "So'z qidirish...", "settings_pref": "Afzalliklar", "settings_sound": "Ovoz",
         "settings_vib": "Vibratsiya", "settings_lang": "Til", "about_title": "WunderDeutsch haqida",
         "about_text": "WunderDeutsch - nemis tilini o'yin orqali o'rganish uchun maxsus ishlab chiqilgan interaktiv ilova. So'zlarni yodlang, artikllarni mashq qiling va gaplar tuzing!",
         "contact_title": "Aloqa", "game_prompt": "Qaysi artikl to'g'ri?", 
@@ -999,7 +999,7 @@ const TRANSLATIONS = {
 
 const appState = {
     streak: 3, xp: 120, lives: 5, words: [], currentWotd: null, dddWord: null, currentView: 'home',
-    settings: { sound: true, vibration: true, language: 'en' }
+    settings: { sound: true, vibration: true, offline: true, language: 'en' }
 };
 
 const AUTH_EMAIL = 'merser572@gmail.com';
@@ -1021,6 +1021,7 @@ async function initApp() {
     setupAuth();
     setupModals();
     updateStats();
+    updateOfflineMode(); // conditionally register SW on startup
     await loadVocabulary();
     lucide.createIcons();
     
@@ -1047,6 +1048,7 @@ function loadSettings() {
     }
     document.getElementById('toggle-sound').checked = appState.settings.sound;
     document.getElementById('toggle-vibration').checked = appState.settings.vibration;
+    document.getElementById('toggle-offline').checked = appState.settings.offline;
     
     document.querySelectorAll('.lang-btn').forEach(btn => {
         if(btn.getAttribute('data-lang') === appState.settings.language) {
@@ -1057,11 +1059,47 @@ function loadSettings() {
     });
 }
 
+
+function clearAllCaches() {
+    triggerVibrate(50);
+    playSound('tap');
+    if ('caches' in window) {
+        caches.keys().then(names => {
+            return Promise.all(names.map(name => caches.delete(name)));
+        }).then(() => {
+            window.location.reload(true);
+        });
+    } else {
+        window.location.reload(true);
+    }
+}
+
+function updateOfflineMode() {
+    if (appState.settings.offline) {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js?v=25');
+        }
+    } else {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                for(let registration of registrations) {
+                    registration.unregister();
+                }
+            });
+            // also clear caches so offline doesn't work next time
+            if ('caches' in window) {
+                caches.keys().then(names => Promise.all(names.map(name => caches.delete(name))));
+            }
+        }
+    }
+}
+
 function toggleSetting(key) {
     appState.settings[key] = !appState.settings[key];
     saveSettings();
     if (appState.settings.sound && key === 'sound') playSound('success');
     if (appState.settings.vibration && key === 'vibration') triggerVibrate(50);
+    if (key === 'offline') updateOfflineMode();
 }
 
 function changeLanguage(lang) {
@@ -1233,6 +1271,7 @@ function checkArticle(guess) {
         if (!appState.failedCurrentWord) {
             appState.xp += 10;
             updateStats();
+    updateOfflineMode(); // conditionally register SW on startup
         }
 
         playSound('success');
@@ -1244,6 +1283,7 @@ function checkArticle(guess) {
         appState.failedCurrentWord = true;
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
+    updateOfflineMode(); // conditionally register SW on startup
         
         const explanation = typeof getGrammarExplanation === 'function' ? getGrammarExplanation(appState.dddWord, appState.settings.language) : '';
         
@@ -1430,6 +1470,7 @@ function checkSatzbau() {
         playSound('success');
         appState.xp += 15;
         updateStats();
+    updateOfflineMode(); // conditionally register SW on startup
         dropzone.style.borderColor = 'var(--green-btn)';
         dropzone.style.backgroundColor = '#e8fce8';
         
@@ -1559,6 +1600,7 @@ function answerGrammarQuiz(qIdx, oIdx, btn) {
         feed.innerText = '✅ Richtig! ' + qObj.hint;
         appState.xp += 10;
         updateStats();
+    updateOfflineMode(); // conditionally register SW on startup
     } else {
         playSound('error');
         btn.style.background = '#FF7675';
