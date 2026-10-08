@@ -1021,7 +1021,7 @@ async function initApp() {
     setupAuth();
     setupModals();
     updateStats();
-    updateOfflineMode(); // conditionally register SW on startup
+    updateOfflineMode();
     await loadVocabulary();
     lucide.createIcons();
     
@@ -1316,7 +1316,6 @@ function checkArticle(guess) {
         if (!appState.failedCurrentWord) {
             appState.xp += 10;
             updateStats();
-    updateOfflineMode(); // conditionally register SW on startup
         }
 
         playSound('success');
@@ -1328,7 +1327,6 @@ function checkArticle(guess) {
         appState.failedCurrentWord = true;
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
-    updateOfflineMode(); // conditionally register SW on startup
         
         const explanation = typeof getGrammarExplanation === 'function' ? getGrammarExplanation(appState.dddWord, appState.settings.language) : '';
         
@@ -1602,7 +1600,6 @@ function checkSatzbau() {
         playSound('success');
         appState.xp += 15;
         updateStats();
-    updateOfflineMode(); // conditionally register SW on startup
         dropzone.style.borderColor = 'var(--green-btn)';
         dropzone.style.backgroundColor = '#e8fce8';
         
@@ -1732,7 +1729,6 @@ function answerGrammarQuiz(qIdx, oIdx, btn) {
         feed.innerText = '✅ Richtig! ' + qObj.hint;
         appState.xp += 10;
         updateStats();
-    updateOfflineMode(); // conditionally register SW on startup
     } else {
         playSound('error');
         btn.style.background = '#FF7675';
