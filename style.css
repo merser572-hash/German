@@ -362,3 +362,19 @@ input:checked + .slider:before { transform: translateX(22px); }
 .grammar-body b {
     color: var(--blue-btn);
 }
+
+.rule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13px;
+}
+.rule-table th, .rule-table td {
+    border: 2px solid var(--border-color);
+    padding: 8px 10px;
+    text-align: left;
+}
+.rule-table th {
+    background: var(--bg-card);
+    font-weight: 800;
+}

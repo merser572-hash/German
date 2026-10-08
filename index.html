@@ -212,7 +212,7 @@
                 <h3 style="font-weight: 800;" data-i18n="title_grammar">Grammar</h3>
                 <div style="width:44px"></div>
             </header>
-            <div id="grammar-content" class="grammar-accordion" style="padding-bottom: 20px;">
+            <div id="grammar-cards-container" style="padding-bottom: 20px;">
                 <!-- Grammar sections rendered dynamically via app.js -->
             </div>
         </div>
@@ -233,13 +233,39 @@
         </div>
     </div>
 
+    <!-- MODAL: Grammar Lesson Detail & Quiz -->
+    <div class="login-overlay" id="modal-grammar-detail" style="display: none; z-index: 2000;">
+        <div class="login-card" style="max-height: 85vh; overflow-y: auto; text-align: left; position: relative;">
+            <button class="action-btn" style="position: absolute; top: 14px; right: 14px; padding: 4px 10px; width: auto; font-size: 14px;" onclick="closeGrammarModal()">✕</button>
+            <h3 style="font-size:20px; font-weight:900; margin-bottom:8px;" id="gm-title">Chapter Title</h3>
+            <p style="font-size:13px; color:var(--text-muted); margin-bottom:14px;" id="gm-summary">Summary...</p>
+
+            <div id="gm-rules-list" style="margin-bottom:14px;"></div>
+            <div id="gm-table-container"></div>
+
+            <div class="grammar-item active" style="margin:14px 0; border-color:#FDCB6E;">
+                <div class="grammar-header" style="background:#FFFDF7;">
+                    <span style="font-weight:800; font-size:14px; color:#D35400;">🦊 <span data-i18n="fritz_tip_label">Fritz's Secret Tip:</span></span>
+                </div>
+                <div class="grammar-body" style="padding: 10px 20px 20px 20px; background:#FFFDF7;">
+                    <p id="gm-fritz-tip">Tip...</p>
+                </div>
+            </div>
+
+            <div style="margin-top:18px;">
+                <h4 style="font-size:16px; font-weight:800; margin-bottom:8px;" data-i18n="mini_quiz_title">🎯 Mini-Quiz (3 Questions)</h4>
+                <div id="gm-quiz-container"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="sortable.min.js"></script>
     <script src="grammar-rules.js"></script>
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=18').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=19').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });

@@ -511,77 +511,114 @@ function checkSatzbau() {
 }
 
 // --- GRAMMAR TAB LOGIC ---
-const A1_GRAMMAR = {
-    en: [
-        { title: "Articles (Der, Die, Das)", content: "In German, nouns have three genders...<br><b>der</b> (masculine)<br><b>die</b> (feminine)<br><b>das</b> (neuter).<br><br>Rules:<br>Words ending in <b>-ung, -heit, -keit, -schaft, -tion</b> are almost always <b>die</b>.<br>Words ending in <b>-chen, -lein, -ment</b> are almost always <b>das</b>.<br>Words ending in <b>-ismus, -or, -ling</b> are almost always <b>der</b>." },
-        { title: "Plurals", content: "There are 5 main ways to form plurals:<br>1. <b>-e</b> (der Tag -> die Tage)<br>2. <b>-er</b> (das Kind -> die Kinder)<br>3. <b>-(e)n</b> (die Frau -> die Frauen)<br>4. <b>-s</b> (das Auto -> die Autos)<br>5. <b>No change</b> (der Lehrer -> die Lehrer)" },
-        { title: "Personal Pronouns", content: "<b>ich</b> = I<br><b>du</b> = you (informal)<br><b>er/sie/es</b> = he/she/it<br><b>wir</b> = we<br><b>ihr</b> = you all<br><b>sie/Sie</b> = they / you (formal)" },
-        { title: "Regular Verb Conjugation", content: "Example: <b>machen</b> (to do/make)<br>ich mach<b>e</b><br>du mach<b>st</b><br>er/sie/es mach<b>t</b><br>wir mach<b>en</b><br>ihr mach<b>t</b><br>sie/Sie mach<b>en</b>" },
-        { title: "Special Verb Endings", content: "<b>heißen (to be called):</b> Verbs ending in -s, -ß, -z drop the extra 's' for 'du'.<br>ich heiße, du <b>heißt</b>, er heißt.<br><br><b>arbeiten (to work):</b> Verbs ending in -t or -d add an extra 'e' for pronunciation.<br>ich arbeite, du arbeit<b>e</b>st, er arbeit<b>e</b>t." },
-        { title: "Modal Verbs", content: "For modal verbs, 'ich' and 'er/sie/es' are exactly the same and take NO ending!<br><br><b>können (can/be able to):</b><br>ich kann, du kannst, er kann, wir können, ihr könnt, sie können.<br><br><b>müssen (must):</b><br>ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen.<br><br><b>wollen (want to):</b><br>ich will, du willst, er will, wir wollen, ihr wollt, sie wollen.<br><br><b>möchten (would like to):</b><br>ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten." },
-        { title: "Irregular Verbs (Vowel Change)", content: "Some verbs change their stem vowel for <b>du</b> and <b>er/sie/es</b>.<br><br><b>e -> i/ie (sprechen, lesen, sehen, essen):</b><br>sprechen: ich spreche, du <b>sprichst</b>, er <b>spricht</b><br>lesen: ich lese, du <b>liest</b>, er <b>liest</b><br><br><b>a -> ä (fahren, schlafen):</b><br>fahren: ich fahre, du <b>fährst</b>, er <b>fährt</b>" },
-        { title: "Important Irregular Verbs", content: "<b>sein (to be):</b><br>ich bin, du bist, er ist, wir sind, ihr seid, sie sind.<br><br><b>haben (to have):</b><br>ich habe, du hast, er hat, wir haben, ihr habt, sie haben." },
-        { title: "Sentence Structure (Satzbau)", content: "<b>Rule 1:</b> The conjugated verb is always in position 2 in a normal sentence.<br>Example: Ich <b>gehe</b> heute ins Kino.<br><br><b>Rule 2:</b> If you start with time, the verb stays in position 2, and the subject moves to position 3.<br>Example: Heute <b>gehe</b> ich ins Kino." },
-        { title: "Accusative Case", content: "The accusative case is used for the direct object. Only masculine (der) changes!<br><b>der -> den / ein -> einen / kein -> keinen</b><br>die -> die / eine -> eine / keine -> keine<br>das -> das / ein -> ein / kein -> kein<br><br>Example: Ich habe <b>einen</b> Hund (der Hund)." }
-    ],
-    de: [
-        { title: "Artikel (Der, Die, Das)", content: "Im Deutschen haben Nomen drei Geschlechter...<br><b>der</b> (männlich)<br><b>die</b> (weiblich)<br><b>das</b> (sächlich).<br><br>Regeln:<br>Wörter auf <b>-ung, -heit, -keit, -schaft, -tion</b> sind fast immer <b>die</b>.<br>Wörter auf <b>-chen, -lein, -ment</b> sind fast immer <b>das</b>.<br>Wörter auf <b>-ismus, -or, -ling</b> sind fast immer <b>der</b>." },
-        { title: "Pluralbildung", content: "Es gibt 5 Hauptwege, den Plural zu bilden:<br>1. <b>-e</b> (der Tag -> die Tage)<br>2. <b>-er</b> (das Kind -> die Kinder)<br>3. <b>-(e)n</b> (die Frau -> die Frauen)<br>4. <b>-s</b> (das Auto -> die Autos)<br>5. <b>Keine Änderung</b> (der Lehrer -> die Lehrer)" },
-        { title: "Personalpronomen", content: "<b>ich</b> = ich<br><b>du</b> = du<br><b>er/sie/es</b> = er/sie/es<br><b>wir</b> = wir<br><b>ihr</b> = ihr<br><b>sie/Sie</b> = sie/Sie (Höflichkeitsform)" },
-        { title: "Regelmäßige Verben", content: "Beispiel: <b>machen</b><br>ich mach<b>e</b><br>du mach<b>st</b><br>er/sie/es mach<b>t</b><br>wir mach<b>en</b><br>ihr mach<b>t</b><br>sie/Sie mach<b>en</b>" },
-        { title: "Besondere Verben (heißen, arbeiten)", content: "<b>heißen:</b> Bei Verben auf -s, -ß, -z entfällt das 's' bei 'du'.<br>ich heiße, du <b>heißt</b>, er heißt.<br><br><b>arbeiten:</b> Bei Verben auf -t, -d wird ein 'e' eingeschoben.<br>ich arbeite, du arbeit<b>e</b>st, er arbeit<b>e</b>t." },
-        { title: "Modalverben", content: "Bei Modalverben sind 'ich' und 'er/sie/es' identisch und haben KEINE Endung!<br><br><b>können:</b><br>ich kann, du kannst, er kann, wir können, ihr könnt, sie können.<br><br><b>müssen:</b><br>ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen.<br><br><b>wollen:</b><br>ich will, du willst, er will, wir wollen, ihr wollt, sie wollen.<br><br><b>möchten:</b><br>ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten." },
-        { title: "Unregelmäßige Verben (Vokalwechsel)", content: "Einige Verben wechseln den Stammvokal bei <b>du</b> und <b>er/sie/es</b>.<br><br><b>e -> i/ie (sprechen, lesen, sehen, essen):</b><br>sprechen: ich spreche, du <b>sprichst</b>, er <b>spricht</b><br>lesen: ich lese, du <b>liest</b>, er <b>liest</b><br><br><b>a -> ä (fahren, schlafen):</b><br>fahren: ich fahre, du <b>fährst</b>, er <b>fährt</b>" },
-        { title: "Wichtige unregelmäßige Verben", content: "<b>sein:</b><br>ich bin, du bist, er ist, wir sind, ihr seid, sie sind.<br><br><b>haben:</b><br>ich habe, du hast, er hat, wir haben, ihr habt, sie haben." },
-        { title: "Satzbau", content: "<b>Regel 1:</b> Das konjugierte Verb steht im Hauptsatz immer an Position 2.<br>Beispiel: Ich <b>gehe</b> heute ins Kino.<br><br><b>Regel 2:</b> Wenn der Satz mit einer Zeitangabe beginnt, bleibt das Verb auf Position 2, und das Subjekt rückt auf Position 3.<br>Beispiel: Heute <b>gehe</b> ich ins Kino." },
-        { title: "Akkusativ", content: "Der Akkusativ wird für das direkte Objekt verwendet. Nur maskulin (der) ändert sich!<br><b>der -> den / ein -> einen / kein -> keinen</b><br>die -> die / eine -> eine / keine -> keine<br>das -> das / ein -> ein / kein -> kein<br><br>Beispiel: Ich habe <b>einen</b> Hund (der Hund)." }
-    ],
-    uz: [
-        { title: "Artikllar (Der, Die, Das)", content: "Nemis tilida otlar uchta jinsga ega...<br><b>der</b> (muzskoy)<br><b>die</b> (jenskiy)<br><b>das</b> (sredniy).<br><br>Qoidalar:<br><b>-ung, -heit, -keit, -schaft, -tion</b> bilan tugaydigan so'zlar deyarli har doim <b>die</b> bo'ladi.<br><b>-chen, -lein, -ment</b> bilan tugaydigan so'zlar deyarli har doim <b>das</b> bo'ladi.<br><b>-ismus, -or, -ling</b> bilan tugaydigan so'zlar deyarli har doim <b>der</b> bo'ladi." },
-        { title: "Ko'plik shakli (Plural)", content: "Ko'plikni hosil qilishning 5 ta asosiy usuli bor:<br>1. <b>-e</b> (der Tag -> die Tage)<br>2. <b>-er</b> (das Kind -> die Kinder)<br>3. <b>-(e)n</b> (die Frau -> die Frauen)<br>4. <b>-s</b> (das Auto -> die Autos)<br>5. <b>O'zgarmas</b> (der Lehrer -> die Lehrer)" },
-        { title: "Kishilik olmoshlari", content: "<b>ich</b> = men<br><b>du</b> = sen<br><b>er/sie/es</b> = u<br><b>wir</b> = biz<br><b>ihr</b> = sizlar<br><b>sie/Sie</b> = ular / Siz (hurmat uchun)" },
-        { title: "To'g'ri fe'llar tuslanishi", content: "Misol: <b>machen</b> (qilmoq)<br>ich mach<b>e</b><br>du mach<b>st</b><br>er/sie/es mach<b>t</b><br>wir mach<b>en</b><br>ihr mach<b>t</b><br>sie/Sie mach<b>en</b>" },
-        { title: "Maxsus fe'llar (heißen, arbeiten)", content: "<b>heißen (ismi bo'lmoq):</b> -s, -ß, -z bilan tugagan fe'llarda 'du' shaxsida qo'shimcha 's' tushib qoladi.<br>ich heiße, du <b>heißt</b>, er heißt.<br><br><b>arbeiten (ishlamoq):</b> -t, -d bilan tugagan fe'llarga talaffuz oson bo'lishi uchun 'e' qo'shiladi.<br>ich arbeite, du arbeit<b>e</b>st, er arbeit<b>e</b>t." },
-        { title: "Modal fe'llar", content: "Modal fe'llarda 'ich' va 'er/sie/es' (I va III shaxs) bir xil bo'ladi va ularga HECH QANDAY qo'shimcha qo'shilmaydi!<br><br><b>können (qila olmoq):</b><br>ich kann, du kannst, er kann, wir können, ihr könnt, sie können.<br><br><b>müssen (shart/majbur):</b><br>ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen.<br><br><b>wollen (xohlamoq):</b><br>ich will, du willst, er will, wir wollen, ihr wollt, sie wollen.<br><br><b>möchten (xohlardim):</b><br>ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie möchten." },
-        { title: "Noto'g'ri fe'llar (O'zak o'zgarishi)", content: "Ba'zi fe'llarda <b>du</b> va <b>er/sie/es</b> shaxslarida o'zak unlisi o'zgaradi.<br><br><b>e -> i/ie (sprechen, lesen, sehen, essen):</b><br>sprechen: ich spreche, du <b>sprichst</b>, er <b>spricht</b><br>lesen: ich lese, du <b>liest</b>, er <b>liest</b><br><br><b>a -> ä (fahren, schlafen):</b><br>fahren: ich fahre, du <b>fährst</b>, er <b>fährt</b>" },
-        { title: "Muhim noto'g'ri fe'llar", content: "<b>sein (bo'lmoq):</b><br>ich bin, du bist, er ist, wir sind, ihr seid, sie sind.<br><br><b>haben (ega bo'lmoq):</b><br>ich habe, du hast, er hat, wir haben, ihr habt, sie haben." },
-        { title: "Gap qurilishi (Satzbau)", content: "<b>1-Qoida:</b> Oddiy gapda tuslangan fe'l doim 2-o'rinda keladi.<br>Misol: Ich <b>gehe</b> heute ins Kino.<br><br><b>2-Qoida:</b> Agar gap vaqt bilan boshlansa, fe'l baribir 2-o'rinda qoladi, eganing o'zi 3-o'ringa o'tadi.<br>Misol: Heute <b>gehe</b> ich ins Kino." },
-        { title: "Tushum kelishigi (Akkusativ)", content: "Akkusativ ob'yekt uchun ishlatiladi. Faqat muzskoy (der) jins o'zgaradi!<br><b>der -> den / ein -> einen / kein -> keinen</b><br>die -> die / eine -> eine / keine -> keine<br>das -> das / ein -> ein / kein -> kein<br><br>Misol: Ich habe <b>einen</b> Hund (der Hund)." }
-    ]
-};
+
+const GRAMMAR_DATA = [{"id": "gender_articles", "title": "1. Der, Die, Das & Gender Clues", "tag": "Articles", "summary": "German nouns have three genders: Masculine (der), Feminine (die), and Neuter (das). Plural nouns always use 'die'.", "color": "#74B9FF", "rules": [{"label": "Der (Masculine)", "tip": "Male people/animals, days, months, seasons, and nouns ending in -er, -ling, -or, -ismus (der Sommer, der Montag, der Lehrer)."}, {"label": "Die (Feminine)", "tip": "Female people/animals, and nouns ending in -ung, -heit, -keit, -schaft, -tion, -tät, -ei (die Zeitung, die Freiheit, die Bäckerei)."}, {"label": "Das (Neuter)", "tip": "Diminutives ending in -chen, -lein, infinitive nouns, and endings in -ment, -um, -tum (das Mädchen, das Brötchen, das Essen, das Museum)."}, {"label": "Die (Plural)", "tip": "All plural nouns use 'die' in the nominative case regardless of their original singular gender!"}], "table": {"headers": ["Gender", "Definite (The)", "Indefinite (A/An)", "Negative (No/None)"], "rows": [["Masculine", "der Tisch", "ein Tisch", "kein Tisch"], ["Feminine", "die Katze", "eine Katze", "keine Katze"], ["Neuter", "das Buch", "ein Buch", "kein Buch"], ["Plural", "die Kinder", "(kein Plural-ein)", "keine Kinder"]]}, "fritz_tip": "Look at the ending of the word! 99% of words ending in -ung, -heit, -keit, and -schaft are DIE. Words ending in -chen or -lein are always DAS (even das Mädchen)! 🦊💡", "quiz": [{"q": "What is the article for 'Zeitung' (newspaper)?", "options": ["der", "die", "das"], "answer": 1, "hint": "Words ending in -ung are always feminine!"}, {"q": "What is the article for 'Mädchen' (girl)?", "options": ["der", "die", "das"], "answer": 2, "hint": "The diminutive ending -chen always makes a noun neuter!"}, {"q": "Which article do all plural nouns take in Nominative?", "options": ["der", "die", "das"], "answer": 1, "hint": "Plural always takes 'die' in Nominative."}]}, {"id": "cases_nom_akk", "title": "2. Cases: Nominative vs. Accusative", "tag": "Cases", "summary": "The Nominative case marks the SUBJECT (who does the action). The Accusative case marks the DIRECT OBJECT (who/what receives the action).", "color": "#FF7675", "rules": [{"label": "The Magic Shift", "tip": "ONLY the masculine gender changes in Accusative: der -> den, ein -> einen, kein -> keinen. Feminine, Neuter, and Plural do not change!"}, {"label": "Subject (Wer/Was?)", "tip": "Der Mann trinkt einen Kaffee. -> 'Der Mann' is the subject (Nominative)."}, {"label": "Direct Object (Wen/Was?)", "tip": "Er trinkt den Kaffee. -> 'den Kaffee' is the direct object (Accusative)."}, {"label": "Fixed Accusative Prepositions", "tip": "bis, durch, für, gegen, ohne, um (Mnemonic: DOGFU / BDFGOU). These prepositions ALWAYS require Accusative!"}], "table": {"headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural"], "rows": [["Nominative", "der / ein / kein", "die / eine / keine", "das / ein / kein", "die / - / keine"], ["Accusative", "den / einen / keinen", "die / eine / keine", "das / ein / kein", "die / - / keine"]]}, "fritz_tip": "Remember: Only the masculine gets the 'N' in Accusative! 'Ich habe EINEN Hund (m), EINE Katze (f), EIN Auto (n)'. 🦊🐶", "quiz": [{"q": "Fill in the blank: 'Ich kaufe _____ Apfel (m)'.", "options": ["ein", "einen", "eine"], "answer": 1, "hint": "Apfel is masculine and is the direct object: ein -> einen."}, {"q": "Which preposition ALWAYS takes the Accusative case?", "options": ["mit", "nach", "für"], "answer": 2, "hint": "'für' is always accusative (Das ist für dich!)."}, {"q": "What happens to feminine nouns ('die Tasche') in Accusative?", "options": ["Changes to 'den'", "Changes to 'der'", "Stays 'die'"], "answer": 2, "hint": "Feminine and Neuter never change between Nominative and Accusative."}]}, {"id": "cases_dative", "title": "3. Dative Case Basics", "tag": "Cases", "summary": "The Dative case marks the INDIRECT OBJECT (to whom / for whom) and is required after key everyday prepositions.", "color": "#55EFC4", "rules": [{"label": "Dative Article Shifts", "tip": "der -> dem, das -> dem, die -> der, die (pl) -> den + n on the noun!"}, {"label": "Fixed Dative Prepositions", "tip": "aus, bei, mit, nach, seit, von, zu (Sing to the melody of Blue Danube: aus-bei-mit, nach-seit-von-zu!)."}, {"label": "Common Dative Verbs", "tip": "helfen (hilf mir!), danken (ich danke dir), gefallen (das gefällt mir), schmecken (das schmeckt mir)."}], "table": {"headers": ["Gender", "Nominative", "Accusative", "Dative"], "rows": [["Masculine", "der / ein", "den / einen", "dem / einem"], ["Feminine", "die / eine", "die / eine", "der / einer"], ["Neuter", "das / ein", "das / ein", "dem / einem"], ["Plural", "die / -", "die / -", "den / - (+n)"]]}, "fritz_tip": "Sing the magic rhyme: 'Aus, bei, mit, nach, seit, von, zu — immer mit dem Dativ, du!' 🎶🦊", "quiz": [{"q": "Fill in: 'Ich fahre mit _____ Bus (m)'.", "options": ["den", "dem", "der"], "answer": 1, "hint": "'mit' requires Dative, so 'der' becomes 'dem'."}, {"q": "What does feminine 'die' turn into in Dative?", "options": ["dem", "der", "den"], "answer": 1, "hint": "Feminine 'die' flips to 'der' in the Dative case."}, {"q": "Which verb always takes a Dative object?", "options": ["helfen", "kaufen", "sehen"], "answer": 0, "hint": "'helfen' takes Dative: 'Ich helfe dir'."}]}, {"id": "verb_conjugation", "title": "4. Present Tense Verb Conjugation", "tag": "Verbs", "summary": "German verbs change their endings based on the subject pronoun: -e, -st, -t, -en, -t, -en.", "color": "#FFEAA7", "rules": [{"label": "Regular Endings", "tip": "ich -e | du -st | er/sie/es -t | wir -en | ihr -t | sie/Sie -en."}, {"label": "Vowel Changers (du / er)", "tip": "e -> i/ie (sprechen -> du sprichst, lesen -> er liest); a -> ä (fahren -> du fährst, schlafen -> er schläft)."}, {"label": "Verbs ending in -t / -d", "tip": "Add an extra 'e' for pronunciation: arbeiten -> du arbeitest, er arbeitet."}], "table": {"headers": ["Pronoun", "lernen (regular)", "fahren (a->ä)", "sprechen (e->i)"], "rows": [["ich", "lerne", "fahre", "spreche"], ["du", "lernst", "fährst", "sprichst"], ["er / sie / es", "lernt", "fährt", "spricht"], ["wir", "lernen", "fahren", "sprechen"], ["ihr", "lernt", "fahrt", "sprecht"], ["sie / Sie", "lernen", "fahren", "sprechen"]]}, "fritz_tip": "Remember the formula: 'E - ST - T - EN - T - EN'. Just drop the -en from the infinitive and snap on the matching ending! 🦊✨", "quiz": [{"q": "Conjugate: 'Du _____ (sprechen) sehr gut Deutsch.'", "options": ["sprechtest", "sprechst", "sprichst"], "answer": 2, "hint": "'sprechen' has an e -> i vowel change for 'du' and 'er/sie/es'."}, {"q": "Conjugate: 'Er _____ (fahren) mit dem Zug.'", "options": ["fahrt", "fährst", "fährt"], "answer": 2, "hint": "'fahren' takes an umlaut (ä) in the 3rd person singular."}, {"q": "What is the ending for 'wir' (we)?", "options": ["-e", "-t", "-en"], "answer": 2, "hint": "'wir' always takes the '-en' ending (identical to the infinitive)."}]}, {"id": "sein_haben", "title": "5. The Big Three: Sein, Haben & Werden", "tag": "Verbs", "summary": "These three irregular auxiliary verbs are the absolute backbone of German conversation and future/past tenses.", "color": "#A29BFE", "rules": [{"label": "sein (to be)", "tip": "Essential for identity, adjectives, professions, and location: 'Ich bin glücklich'."}, {"label": "haben (to have)", "tip": "Expresses possession and many idioms: 'Ich habe Hunger/Durst/Zeit'."}, {"label": "werden (to become)", "tip": "Used for changes of state and future tense: 'Es wird kalt'."}], "table": {"headers": ["Pronoun", "sein (to be)", "haben (to have)", "werden (to become)"], "rows": [["ich", "bin", "habe", "werde"], ["du", "bist", "hast", "wirst"], ["er / sie / es", "ist", "hat", "wird"], ["wir", "sind", "haben", "werden"], ["ihr", "seid", "habt", "werdet"], ["sie / Sie", "sind", "haben", "werden"]]}, "fritz_tip": "Watch out for 'ihr seid' (you all are) vs. 'sie sind' (they are). They are easy to mix up! 🦊", "quiz": [{"q": "Fill in: 'Wir _____ zwei Brüder.'", "options": ["sind", "haben", "werdet"], "answer": 1, "hint": "Having family members uses 'haben'."}, {"q": "Fill in: 'Wie alt _____ du?'", "options": ["hast", "bist", "wirst"], "answer": 1, "hint": "In German, you 'are' your age (sein), you don't 'have' it."}, {"q": "What is 'ihr' for the verb 'sein'?", "options": ["sind", "seid", "bist"], "answer": 1, "hint": "'ihr seid' is the 2nd person plural form."}]}, {"id": "modal_verbs", "title": "6. Modal Verbs & The Sentence Bracket", "tag": "Modal Verbs", "summary": "Modal verbs express ability, necessity, or desire. They send the main infinitive verb to the end of the sentence!", "color": "#FDCB6E", "rules": [{"label": "können (can / able)", "tip": "ich kann, du kannst, er kann, wir können"}, {"label": "müssen (must / have to)", "tip": "ich muss, du musst, er muss, wir müssen"}, {"label": "wollen (want to)", "tip": "ich will, du willst, er will, wir wollen"}, {"label": "möchten (would like)", "tip": "ich möchte, du möchtest, er möchte, wir möchten"}, {"label": "dürfen (may / allowed)", "tip": "ich darf, du darfst, er darf, wir dürfen"}, {"label": "sollen (should / ought)", "tip": "ich soll, du sollst, er soll, wir sollen"}], "table": {"headers": ["Position 1", "Position 2 (Modal)", "Middle (Time/Place/Object)", "End (Infinitive)"], "rows": [["Ich", "kann", "gut Deutsch", "sprechen."], ["Wir", "müssen", "heute die Hausaufgaben", "machen."], ["Er", "möchte", "einen Kaffee", "trinken."]]}, "fritz_tip": "Notice that 'ich' and 'er/sie/es' have the EXACT same form with all modal verbs: 'ich kann' = 'er kann'! 🦊🎉", "quiz": [{"q": "Where does the second verb go when using a modal verb?", "options": ["Right after the modal verb", "At the very end of the sentence", "Before the subject"], "answer": 1, "hint": "The main verb in infinitive form closes the bracket at the very end."}, {"q": "Conjugate: 'Er _____ (können) sehr schnell laufen.'", "options": ["kann", "könnt", "kannst"], "answer": 0, "hint": "3rd person singular of können is 'kann' (no -t ending!)."}, {"q": "Which modal verb expresses 'permission'?", "options": ["müssen", "wollen", "dürfen"], "answer": 2, "hint": "'dürfen' means to be allowed / permitted."}]}, {"id": "word_order", "title": "7. Word Order & The V2 Golden Rule", "tag": "Syntax", "summary": "In main clauses, the conjugated verb ALWAYS occupies the 2nd position. Even if you start with time or place!", "color": "#00B894", "rules": [{"label": "Standard SVO", "tip": "[Position 1: Subject] + [Position 2: VERB] + [Rest]. Example: 'Ich lerne heute Deutsch.'"}, {"label": "Inversion (Time first)", "tip": "[Position 1: Time/Place] + [Position 2: VERB] + [Position 3: Subject]. Example: 'Heute lerne ich Deutsch.'"}, {"label": "Questions", "tip": "Yes/No questions put Verb in Position 1: 'Lernst du Deutsch?' W-questions put W-word in Pos 1, Verb in Pos 2: 'Wo lernst du Deutsch?'"}], "table": {"headers": ["Type", "Pos 1", "Pos 2 (VERB)", "Pos 3", "End"], "rows": [["Subject First", "Ich", "trinke", "morgens Kaffee", "-"], ["Time First", "Morgens", "trinke", "ich", "Kaffee"], ["Yes/No Question", "Trinkst", "du", "morgens Kaffee", "?"], ["W-Question", "Wann", "trinkst", "du Kaffee", "?"]]}, "fritz_tip": "Position 2 does NOT mean the second word — it means the second grammatical block! 'Meine liebe Oma [1] kocht [2] die Suppe.' 🦊🍲", "quiz": [{"q": "What happens if a sentence starts with 'Gestern' (Yesterday)?", "options": ["Subject comes next", "Verb comes next", "Object comes next"], "answer": 1, "hint": "The verb MUST stay in Position 2: 'Gestern ging ich...'."}, {"q": "Which sentence has correct word order?", "options": ["Heute ich fahre nach Berlin.", "Heute fahre ich nach Berlin.", "Fahre heute ich nach Berlin."], "answer": 1, "hint": "Pos 1: Heute, Pos 2: fahre, Pos 3: ich."}, {"q": "Where does the verb sit in a Yes/No question?", "options": ["Position 1", "Position 2", "At the end"], "answer": 0, "hint": "'Kommst du morgen?' -> Verb is in Position 1."}]}, {"id": "negation", "title": "8. Negation: Nicht vs. Kein", "tag": "Grammar", "summary": "Never mix them up: use 'kein' for nouns with indefinite or zero articles, and 'nicht' for verbs, adjectives, and specific nouns.", "color": "#E17055", "rules": [{"label": "When to use KEIN", "tip": "Replaces 'ein' or zero-article nouns: 'Ich habe EIN Auto' -> 'Ich habe KEIN Auto'. 'Ich habe Zeit' -> 'Ich habe KEINE Zeit'."}, {"label": "When to use NICHT", "tip": "Negates verbs, adjectives, adverbs, pronouns, and nouns with definite articles ('der/die/das'): 'Ich schlafe NICHT', 'Das ist NICHT gut', 'Ich kenne DEN Mann NICHT'."}, {"label": "Doch!", "tip": "If someone asks a negative question ('Kommst du nicht?') and you want to say yes, use 'DOCH!' instead of 'Ja'."}], "table": {"headers": ["Item to Negate", "Use", "Affirmative Example", "Negative Example"], "rows": [["Noun with 'ein'", "kein", "Ich habe ein Buch.", "Ich habe kein Buch."], ["Noun with no article", "keine", "Ich trinke Milch.", "Ich trinke keine Milch."], ["Verb / Entire action", "nicht", "Ich schwimme gern.", "Ich schwimme nicht gern."], ["Adjective", "nicht", "Das Hotel ist teuer.", "Das Hotel ist nicht teuer."], ["Specific noun (der/die/das)", "nicht", "Ich suche den Schlüssel.", "Ich suche den Schlüssel nicht."]]}, "fritz_tip": "If you could say 'no/not any' in English, use 'kein'. For everything else, use 'nicht'! 🦊⛔", "quiz": [{"q": "Fill in: 'Ich habe _____ Zeit.' (Zeit is feminine, zero article)", "options": ["nicht", "keine", "keinen"], "answer": 1, "hint": "Negating a zero-article feminine noun takes 'keine'."}, {"q": "Fill in: 'Das Essen ist _____ teuer.'", "options": ["nicht", "kein", "keine"], "answer": 0, "hint": "Negating an adjective ('teuer') takes 'nicht'."}, {"q": "Someone asks: 'Hast du keinen Hunger?' You are very hungry. You answer:", "options": ["Ja!", "Doch!", "Nein!"], "answer": 1, "hint": "'Doch' contradicts a negative question."}]}, {"id": "prepositions", "title": "9. Common Prepositions & Cases", "tag": "Prepositions", "summary": "Prepositions dictate the case of the noun that follows them. Master the essential A1 prepositions!", "color": "#0984E3", "rules": [{"label": "Dative Prepositions", "tip": "aus (from), bei (at/with), mit (with), nach (after/to), seit (since), von (from/of), zu (to). ALWAYS Dative!"}, {"label": "Accusative Prepositions", "tip": "bis (until), durch (through), für (for), gegen (against/around), ohne (without), um (at/around). ALWAYS Accusative!"}, {"label": "Contractions", "tip": "in + dem = im | an + dem = am | zu + dem = zum | zu + der = zur | bei + dem = beim | für + das = fürs."}], "table": {"headers": ["Preposition", "Case", "Meaning", "Example"], "rows": [["mit", "Dativ", "with / by (transit)", "Ich fahre mit dem Bus."], ["für", "Akkusativ", "for", "Das Geschenk ist für dich."], ["zu", "Dativ", "to", "Ich gehe zum Arzt."], ["ohne", "Akkusativ", "without", "Kaffee ohne Zucker bitte."], ["bei", "Dativ", "at / with", "Ich wohne bei meinen Eltern."], ["nach", "Dativ", "after / to (city/country)", "Nach dem Essen schlafe ich."]]}, "fritz_tip": "Remember: 'zum' = zu dem (masc/neut), 'zur' = zu der (fem). 'Ich gehe zum Arzt, aber zur Bank!' 🦊🏦", "quiz": [{"q": "Fill in: 'Ein Kaffee _____ (without) Milch bitte.'", "options": ["mit", "ohne", "für"], "answer": 1, "hint": "'ohne' means without."}, {"q": "What is the contraction for 'in dem'?", "options": ["im", "am", "ans"], "answer": 0, "hint": "'in + dem' contracts to 'im'."}, {"q": "Which preposition means 'since' and takes Dative?", "options": ["nach", "seit", "von"], "answer": 1, "hint": "'seit' means since / for a period of time: 'seit einem Jahr'."}]}, {"id": "plurals", "title": "10. Plural Patterns & Noun Endings", "tag": "Nouns", "summary": "Unlike English (-s), German has 5 main plural patterns: -e, -(e)n, -er, -s, and no ending (often with umlauts).", "color": "#6C5CE7", "rules": [{"label": "Pattern 1: -e (often with Umlaut)", "tip": "Common for masculine & neuter nouns: der Tisch -> die Tische, der Baum -> die Bäume."}, {"label": "Pattern 2: -(e)n", "tip": "Standard for ~90% of feminine nouns: die Frau -> die Frauen, die Lampe -> die Lampen."}, {"label": "Pattern 3: -er (usually with Umlaut)", "tip": "Mostly short neuter nouns: das Kind -> die Kinder, das Buch -> die Bücher, das Bild -> die Bilder."}, {"label": "Pattern 4: -s", "tip": "Foreign loanwords and abbreviations: das Auto -> die Autos, das Sofa -> die Sofas, das Handy -> die Handys."}, {"label": "Pattern 5: No ending (or just Umlaut)", "tip": "Nouns ending in -el, -en, -er: der Lehrer -> die Lehrer, der Apfel -> die Äpfel, der Computer -> die Computer."}], "table": {"headers": ["Singular", "Plural", "Pattern", "English"], "rows": [["der Tag", "die Tage", "+e", "day -> days"], ["die Zeitung", "die Zeitungen", "+en", "newspaper -> newspapers"], ["das Kind", "die Kinder", "+er", "child -> children"], ["das Auto", "die Autos", "+s", "car -> cars"], ["der Apfel", "die Äpfel", "Umlaut only", "apple -> apples"]]}, "fritz_tip": "Whenever you learn a German noun, always learn it with its article AND its plural: 'der Tisch, die Tische'! 🦊📚", "quiz": [{"q": "What is the plural of 'das Buch'?", "options": ["die Buche", "die Büchen", "die Bücher"], "answer": 2, "hint": "Das Buch takes an umlaut and -er: die Bücher."}, {"q": "What is the plural ending for most feminine nouns ending in -ung?", "options": ["-e", "-en", "-s"], "answer": 1, "hint": "die Zeitung -> die Zeitungen."}, {"q": "What is the plural of 'das Auto'?", "options": ["die Autos", "die Auton", "die Autoe"], "answer": 0, "hint": "Loanwords usually take -s."}]}];
 
 function renderGrammar() {
-    const container = document.getElementById('grammar-content');
+    const container = document.getElementById('grammar-cards-container');
     if (!container) return;
-    
     container.innerHTML = '';
-    const rules = A1_GRAMMAR[appState.settings.language] || A1_GRAMMAR['en'];
-    
-    rules.forEach(rule => {
-        const item = document.createElement('div');
-        item.className = 'grammar-item';
+
+    GRAMMAR_DATA.forEach((chap, idx) => {
+        const card = document.createElement('div');
+        card.className = 'grammar-item';
+        card.style.marginBottom = '12px';
+        card.style.cursor = 'pointer';
         
-        const header = document.createElement('div');
-        header.className = 'grammar-header';
-        header.innerHTML = `<h3>${rule.title}</h3><i data-lucide="chevron-down"></i>`;
+        card.innerHTML = `
+            <div class="grammar-header" style="background: #fff;">
+                <span style="font-size: 16px; font-weight: 800; color: #2D3436;">${chap.title}</span>
+                <span style="font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 12px; background: #E8F8F5; color: #16A085; border: 1px solid #16A085;">${chap.tag}</span>
+            </div>
+            <div class="grammar-body" style="display: block; max-height: none; padding: 0 20px 15px 20px; background: #fff; border-bottom: 2px solid transparent;">
+                <p style="font-size:13px; color:var(--text-muted); line-height:1.4;">${chap.summary}</p>
+            </div>
+        `;
         
-        const body = document.createElement('div');
-        body.className = 'grammar-body';
-        body.innerHTML = `<p>${rule.content}</p>`;
-        
-        header.onclick = () => {
-            playSound('tap');
-            const isActive = item.classList.contains('active');
-            document.querySelectorAll('.grammar-item').forEach(i => i.classList.remove('active'));
-            if (!isActive) item.classList.add('active');
-        };
-        
-        item.appendChild(header);
-        item.appendChild(body);
-        container.appendChild(item);
+        card.onclick = () => openGrammarChapter(idx);
+        container.appendChild(card);
     });
-    
-    if (window.lucide) {
-        lucide.createIcons();
+}
+
+let activeGrammarChap = null;
+
+function openGrammarChapter(idx) {
+    playSound('tap');
+    activeGrammarChap = GRAMMAR_DATA[idx];
+    document.getElementById('gm-title').innerText = activeGrammarChap.title;
+    document.getElementById('gm-summary').innerText = activeGrammarChap.summary;
+    document.getElementById('gm-fritz-tip').innerText = activeGrammarChap.fritz_tip;
+
+    const rulesBox = document.getElementById('gm-rules-list');
+    rulesBox.innerHTML = '';
+    activeGrammarChap.rules.forEach(r => {
+        const div = document.createElement('div');
+        div.style.marginBottom = '8px';
+        div.innerHTML = `<span style="font-weight:800; font-size:13px; color:#0984E3;">• ${r.label}:</span> <span style="font-size:13px; color:#2D3436;">${r.tip}</span>`;
+        rulesBox.appendChild(div);
+    });
+
+    const tableBox = document.getElementById('gm-table-container');
+    tableBox.innerHTML = '';
+    if (activeGrammarChap.table) {
+        let ths = activeGrammarChap.table.headers.map(h => `<th>${h}</th>`).join('');
+        let trs = activeGrammarChap.table.rows.map(row => `<tr>${row.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
+        tableBox.innerHTML = `<table class="rule-table"><thead><tr>${ths}</tr></thead><tbody>${trs}</tbody></table>`;
     }
+
+    const quizBox = document.getElementById('gm-quiz-container');
+    quizBox.innerHTML = '';
+    activeGrammarChap.quiz.forEach((qObj, qIdx) => {
+        const qDiv = document.createElement('div');
+        qDiv.style.margin = '10px 0';
+        qDiv.style.background = '#F8F9FA';
+        qDiv.style.border = '2px solid var(--border-color)';
+        qDiv.style.borderRadius = '14px';
+        qDiv.style.padding = '10px 12px';
+        
+        let opts = qObj.options.map((opt, oIdx) => `
+            <button class="action-btn" style="margin-top:6px; font-size:13px; padding:6px 10px; width: 100%;" onclick="answerGrammarQuiz(${qIdx}, ${oIdx}, this)">
+                ${opt}
+            </button>
+        `).join('');
+
+        qDiv.innerHTML = `
+            <div style="font-weight:700; font-size:13px; margin-bottom:4px;">Frage ${qIdx + 1}: ${qObj.q}</div>
+            <div class="opts-group" id="quiz-opts-${qIdx}">${opts}</div>
+            <div id="quiz-feedback-${qIdx}" style="font-size:12px; font-weight:700; margin-top:6px; display:none;"></div>
+        `;
+        quizBox.appendChild(qDiv);
+    });
+
+    const modal = document.getElementById('modal-grammar-detail');
+    modal.style.display = 'flex';
+}
+
+function answerGrammarQuiz(qIdx, oIdx, btn) {
+    if (!activeGrammarChap) return;
+    const qObj = activeGrammarChap.quiz[qIdx];
+    const feed = document.getElementById(`quiz-feedback-${qIdx}`);
+    const parent = document.getElementById(`quiz-opts-${qIdx}`);
+    
+    parent.querySelectorAll('button').forEach(b => b.disabled = true);
+    
+    feed.style.display = 'block';
+    if (oIdx === qObj.answer) {
+        playSound('success');
+        btn.style.background = '#55EFC4';
+        feed.style.color = '#00B894';
+        feed.innerText = '✅ Richtig! ' + qObj.hint;
+        appState.xp += 10;
+        updateStats();
+    } else {
+        playSound('error');
+        btn.style.background = '#FF7675';
+        feed.style.color = '#D63031';
+        feed.innerText = '❌ Nicht ganz: ' + qObj.hint;
+    }
+}
+
+function closeGrammarModal() {
+    playSound('tap');
+    document.getElementById('modal-grammar-detail').style.display = 'none';
 }
