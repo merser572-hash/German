@@ -145,7 +145,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v22
+                App version: v23
             </div>
         </div>
 
@@ -263,13 +263,13 @@
         </div>
     </div>
 
-    <script src="sortable.min.js"></script>
-    <script src="grammar-rules.js"></script>
-    <script src="app.js"></script>
+    <script src="sortable.min.js?v=23"></script>
+    <script src="grammar-rules.js?v=23"></script>
+    <script src="app.js?v=23"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=22').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=23').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });

@@ -1179,6 +1179,7 @@ function switchView(viewId) {
 
 function executeSwitchView(viewId) {
     triggerVibrate(30);
+    playSound('tap');
     document.querySelectorAll('.view').forEach(v => v.style.display = 'none');
     document.getElementById('view-' + viewId).style.display = 'block';
     
