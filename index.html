@@ -24,6 +24,19 @@
         </div>
     </div>
 
+    <!-- CUSTOM CONFIRM MODAL (Replaces Native Alert) -->
+    <div id="custom-modal-overlay" class="login-overlay" style="display: none; z-index: 2000;">
+        <div class="login-card">
+            <i data-lucide="alert-triangle" class="login-icon" style="color: var(--red-btn);"></i>
+            <h2 data-i18n="leave_guard_title">Are you sure?</h2>
+            <p data-i18n="leave_guard">Are you sure you want to leave your homework?</p>
+            <div style="display: flex; gap: 12px; margin-top: 24px;">
+                <button id="modal-cancel-btn" class="btn-3d" style="flex:1; padding: 14px; background:#f0f0f0; color:var(--text-main); box-shadow:0 4px 0 #d0d0d0;" data-i18n="btn_stay">Stay</button>
+                <button id="modal-confirm-btn" class="btn-3d" style="flex:1; padding: 14px; background:var(--red-btn); box-shadow:0 4px 0 var(--red-shadow);" data-i18n="btn_leave">Leave</button>
+            </div>
+        </div>
+    </div>
+
     <!-- MAIN APP WRAPPER -->
     <div id="app-container" style="display: none;">
         
@@ -39,8 +52,9 @@
             </header>
 
             <section class="mascot-section">
-                <div class="mascot-wrapper" style="background:var(--blue-btn); border-radius:24px; box-shadow:0 4px 0 var(--blue-shadow); width: 70px; height: 70px; display:flex; justify-content:center; align-items:center;">
-                    <i data-lucide="graduation-cap" style="color:white; width: 40px; height: 40px;"></i>
+                <!-- STATIC CUTE MASCOT -->
+                <div class="mascot-wrapper" style="background:var(--blue-btn); border-radius:24px; box-shadow:0 4px 0 var(--blue-shadow); width: 75px; height: 75px; display:flex; justify-content:center; align-items:center;">
+                    <div class="animated-mascot floating" style="font-size: 50px; line-height: 1; margin-bottom: -5px;">🦊</div>
                 </div>
                 <div class="speech-bubble">
                     <p data-i18n="mascot_hello"><strong>Hello! I'm Fritz.</strong></p>

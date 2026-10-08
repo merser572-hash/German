@@ -8,7 +8,9 @@ const TRANSLATIONS = {
         "listen": "Listen", "search": "Search word...", "settings_pref": "Preferences", "settings_sound": "Sound",
         "settings_vib": "Vibration", "settings_lang": "Language", "about_title": "About WunderDeutsch",
         "about_text": "WunderDeutsch is an interactive learning app specifically designed to master German playfully. Learn vocabulary, train articles, and build sentences!",
-        "contact_title": "Contact", "game_prompt": "Which article is correct?", "leave_guard": "Are you sure you want to leave your homework? Progress might be lost.",
+        "contact_title": "Contact", "game_prompt": "Which article is correct?", 
+        "leave_guard_title": "Are you sure?", "leave_guard": "Are you sure you want to leave your homework? Progress might be lost.",
+        "btn_stay": "Stay", "btn_leave": "Leave",
         "coming_soon": "Coming soon!", "coming_desc1": "I am preparing this feature!", "coming_desc2": "Grammar rules will be here soon!",
         "private_access": "Private Access Only", "btn_login": "Login", "msg_wrong": "Incorrect credentials.",
         "mascot_hello": "<strong>Hello! I'm Fritz.</strong>", "mascot_sub": "Let's learn with your own vocabulary!",
@@ -21,7 +23,9 @@ const TRANSLATIONS = {
         "listen": "Aussprache hören", "search": "Wort suchen...", "settings_pref": "Präferenzen", "settings_sound": "Ton",
         "settings_vib": "Vibration", "settings_lang": "Sprache", "about_title": "Über WunderDeutsch",
         "about_text": "WunderDeutsch ist eine interaktive Lern-App, die speziell entwickelt wurde, um Deutsch auf spielerische Weise zu meistern. Lerne Vokabeln, trainiere Artikel und baue Sätze!",
-        "contact_title": "Kontakt", "game_prompt": "Welcher Artikel ist richtig?", "leave_guard": "Bist du sicher, dass du deine Hausaufgaben verlassen möchtest?",
+        "contact_title": "Kontakt", "game_prompt": "Welcher Artikel ist richtig?", 
+        "leave_guard_title": "Bist du sicher?", "leave_guard": "Bist du sicher, dass du deine Hausaufgaben verlassen möchtest?",
+        "btn_stay": "Bleiben", "btn_leave": "Verlassen",
         "coming_soon": "Kommt bald!", "coming_desc1": "Ich bereite diese Funktion noch vor!", "coming_desc2": "Hier kommen bald Grammatikregeln hin!",
         "private_access": "Nur privater Zugang", "btn_login": "Einloggen", "msg_wrong": "Falsche Zugangsdaten.",
         "mascot_hello": "<strong>Hallo! Ich bin Fritz.</strong>", "mascot_sub": "Lass uns mit deinen eigenen Vokabeln lernen!",
@@ -34,7 +38,9 @@ const TRANSLATIONS = {
         "listen": "Talaffuzni eshitish", "search": "So'z qidirish...", "settings_pref": "Afzalliklar", "settings_sound": "Ovoz",
         "settings_vib": "Vibratsiya", "settings_lang": "Til", "about_title": "WunderDeutsch haqida",
         "about_text": "WunderDeutsch - nemis tilini o'yin orqali o'rganish uchun maxsus ishlab chiqilgan interaktiv ilova. So'zlarni yodlang, artikllarni mashq qiling va gaplar tuzing!",
-        "contact_title": "Aloqa", "game_prompt": "Qaysi artikl to'g'ri?", "leave_guard": "Haqiqatan ham vazifani tark etmoqchimisiz?",
+        "contact_title": "Aloqa", "game_prompt": "Qaysi artikl to'g'ri?", 
+        "leave_guard_title": "Ishonchingiz komilmi?", "leave_guard": "Haqiqatan ham vazifani tark etmoqchimisiz?",
+        "btn_stay": "Qolish", "btn_leave": "Chiqish",
         "coming_soon": "Tez orada!", "coming_desc1": "Men ushbu xususiyatni tayyorlayapman!", "coming_desc2": "Grammatika qoidalari tez orada bu yerda bo'ladi!",
         "private_access": "Faqat shaxsiy kirish", "btn_login": "Kirish", "msg_wrong": "Parol noto'g'ri.",
         "mascot_hello": "<strong>Salom! Men Fritsman.</strong>", "mascot_sub": "Keling, o'zingizning so'zlaringiz bilan o'rganamiz!",
@@ -49,6 +55,7 @@ const appState = {
 
 const AUTH_EMAIL = 'merser572@gmail.com';
 const AUTH_PASS = 'Hasanboy0412';
+let pendingView = null;
 
 const els = {
     streak: document.getElementById('streak'), xp: document.getElementById('xp'),
@@ -63,6 +70,7 @@ async function initApp() {
     loadSettings();
     applyLanguage();
     setupAuth();
+    setupModals();
     updateStats();
     await loadVocabulary();
     lucide.createIcons();
@@ -146,6 +154,21 @@ function setupAuth() {
     });
 }
 
+function setupModals() {
+    document.getElementById('modal-cancel-btn').addEventListener('click', () => {
+        document.getElementById('custom-modal-overlay').style.display = 'none';
+        pendingView = null;
+    });
+
+    document.getElementById('modal-confirm-btn').addEventListener('click', () => {
+        document.getElementById('custom-modal-overlay').style.display = 'none';
+        if (pendingView) {
+            executeSwitchView(pendingView);
+            pendingView = null;
+        }
+    });
+}
+
 async function loadVocabulary() {
     try {
         const response = await fetch('words.json');
@@ -174,12 +197,16 @@ function updateStats() {
 }
 
 function switchView(viewId) {
-    // Navigation Guard for DerDieDas
+    // Custom Navigation Guard
     if (appState.currentView === 'derdiedas' && viewId !== 'derdiedas') {
-        const msg = TRANSLATIONS[appState.settings.language]['leave_guard'];
-        if (!confirm(msg)) return; // Abort navigation
+        pendingView = viewId;
+        document.getElementById('custom-modal-overlay').style.display = 'flex';
+        return; // Wait for modal response
     }
+    executeSwitchView(viewId);
+}
 
+function executeSwitchView(viewId) {
     triggerVibrate(30);
     document.querySelectorAll('.view').forEach(v => v.style.display = 'none');
     document.getElementById('view-' + viewId).style.display = 'block';
