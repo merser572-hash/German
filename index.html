@@ -161,7 +161,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v28
+                App version: v29
             </div>
         </div>
 
@@ -188,20 +188,20 @@
                 </div>
                 
                 <div id="ddd-extra-info" style="display:none; margin-top: 24px; text-align:left; animation: scaleIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
-                <div style="border: 2px dashed #B2BEC3; border-radius: 16px; padding: 16px; position:relative; background:#fff;">
-                    <span id="ddd-mnemonic-badge" style="font-size:11px; font-weight:900; background:#FFEAA7; color:#2D3436; padding:4px 10px; border-radius:12px; position:absolute; top:-14px; left:16px;">Mnemonic Hook</span>
-                    <div id="ddd-mnemonic-title" style="font-weight:900; font-size:18px; margin-bottom:6px; margin-top:4px;">DER Hals</div>
-                    <div id="ddd-mnemonic-text" style="font-size:14px; color:var(--text-muted); line-height:1.4; margin-bottom:16px;">Fritz Tip: Picture masculine words as active, bold characters or in vibrant blue.</div>
-                    <button class="action-btn" style="width:100%; background:var(--green-btn); color:white; padding:12px; box-shadow:0 4px 0 var(--green-shadow);" onclick="initDerDieDas()">Next Word -> </button>
+                    <div style="border: 2px dashed #B2BEC3; border-radius: 16px; padding: 16px; position:relative; background:#fff;">
+                        <span id="ddd-mnemonic-badge" style="font-size:11px; font-weight:900; background:#FFEAA7; color:#2D3436; padding:4px 10px; border-radius:12px; position:absolute; top:-14px; left:16px;">Mnemonic Hook</span>
+                        <div id="ddd-mnemonic-title" style="font-weight:900; font-size:18px; margin-bottom:6px; margin-top:4px;">DER Hals</div>
+                        <div id="ddd-mnemonic-text" style="font-size:14px; color:var(--text-muted); line-height:1.4; margin-bottom:16px;">Fritz Tip: Picture masculine words as active, bold characters or in vibrant blue.</div>
+                        <button class="action-btn" style="width:100%; background:var(--green-btn); color:white; padding:12px; box-shadow:0 4px 0 var(--green-shadow);" onclick="initDerDieDas()">Keyingi so'z &#8594;</button>
+                    </div>
+                    <div style="background:#f1f2f6; border-radius:16px; padding:16px; margin-top:16px; border:2px solid #DFE6E9;">
+                        <div style="font-weight:900; font-size:12px; color:#636E72; margin-bottom:6px; text-transform:uppercase;">Misol jumla:</div>
+                        <div id="ddd-example-de" style="font-weight:800; font-size:16px; color:#2D3436; margin-bottom:4px;">Ich habe Halsschmerzen und Husten.</div>
+                        <div id="ddd-example-uz" style="font-style:italic; font-size:14px; color:var(--text-muted);">I have a sore throat and cough.</div>
+                    </div>
                 </div>
-                
-                <div style="background:#f1f2f6; border-radius:16px; padding:16px; margin-top:16px; border:2px solid #DFE6E9;">
-                    <div style="font-weight:900; font-size:12px; color:#636E72; margin-bottom:6px; text-transform:uppercase;">Misol jumla:</div>
-                    <div id="ddd-example-de" style="font-weight:800; font-size:16px; color:#2D3436; margin-bottom:4px;">Ich habe Halsschmerzen und Husten.</div>
-                    <div id="ddd-example-uz" style="font-style:italic; font-size:14px; color:var(--text-muted);">I have a sore throat and cough.</div>
-                </div>
-            </div>
-            <div class="ddd-controls" id="ddd-buttons-container">
+
+                <div class="ddd-controls" id="ddd-buttons-container">
                     <button class="btn-3d btn-der" onclick="checkArticle('der')">DER</button>
                     <button class="btn-3d btn-die" onclick="checkArticle('die')">DIE</button>
                     <button class="btn-3d btn-das" onclick="checkArticle('das')">DAS</button>
@@ -216,15 +216,26 @@
                 <h3 style="font-weight: 800;" data-i18n="title_dict">Dictionary</h3>
                 <div style="width:44px"></div>
             </header>
-            
-            <div class="dict-search">
-                <input type="text" id="dict-search-input" placeholder="Search word..." data-i18n="search" />
+
+            <div style="display:flex; gap:8px; margin-bottom:12px;">
+                <div style="flex:1; position:relative;">
+                    <i data-lucide="search" style="position:absolute; left:12px; top:50%; transform:translateY(-50%); color:#B2BEC3; width:18px;"></i>
+                    <input type="text" id="dict-search" data-i18n="search" placeholder="Search word..." style="width:100%; padding:12px 12px 12px 38px; border:2px solid #DFE6E9; border-radius:12px; font-family:'Nunito', sans-serif; font-size:15px; font-weight:700; outline:none; box-sizing:border-box;" oninput="renderDictionary()">
+                </div>
+                <button class="action-btn" style="background:#FFEAA7; color:#2D3436; box-shadow:0 4px 0 #FDCB6E; padding:0 14px; width:auto; border:2px solid #2D3436;" onclick="openFlashcards()">
+                    <i data-lucide="layers" style="width:22px;"></i>
+                </button>
             </div>
-            
+
+            <div id="dict-categories" style="display:flex; overflow-x:auto; gap:8px; padding-bottom:10px; margin-bottom:8px; scrollbar-width:none; -webkit-overflow-scrolling:touch;">
+                <!-- Dynamically populated -->
+            </div>
+
             <div class="dict-list" id="dict-list">
                 <!-- Populated by JS -->
             </div>
         </div>
+
         
         <!-- ================= PLACEHOLDER VIEWS ================= -->
         <div id="view-satzbau" class="view" style="display: none;">
@@ -300,9 +311,9 @@
         </div>
     </div>
 
-    <script src="sortable.min.js?v=28"></script>
-    <script src="grammar-rules.js?v=28"></script>
-    <script src="app.js?v=28"></script>
+    <script src="sortable.min.js?v=29"></script>
+    <script src="grammar-rules.js?v=29"></script>
+    <script src="app.js?v=29"></script>
     
 
     <!-- MODAL: FLASHCARDS -->

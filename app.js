@@ -1011,7 +1011,7 @@ const els = {
     lives: document.getElementById('lives'), dddLives: document.getElementById('ddd-lives'),
     homeWotdTitle: document.getElementById('home-wotd-title'), homeWotdSub: document.getElementById('home-wotd-sub'),
     homeTtsBtn: document.getElementById('home-tts-btn'), dddWord: document.getElementById('ddd-word'),
-    dddTrans: document.getElementById('ddd-translation'), dddSearch: document.getElementById('dict-search-input'),
+    dddTrans: document.getElementById('ddd-translation'), dddSearch: document.getElementById('dict-search'),
     dddTtsBtn: document.getElementById('ddd-tts-btn')
 };
 
