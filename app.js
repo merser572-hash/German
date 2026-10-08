@@ -1,3 +1,952 @@
+const GRAMMAR_DATA = [
+  {
+    "id": "gender_articles",
+    "title": "1. Der, Die, Das & Rod belgilari",
+    "tag": "Artikllar",
+    "summary": "Nemis tilida otlar 3 ta rodga ega: Muzskoy (der), Jenskiy (die) va Sredniy (das). Ko'plikdagi otlar doim 'die' artiklini oladi.",
+    "color": "#74B9FF",
+    "rules": [
+      {
+        "label": "Der (Muzskoy)",
+        "tip": "Erkak kishilar/hayvonlar, kunlar, oylar, fasllar va -er, -ling, -or, -ismus bilan tugovchi otlar (der Sommer, der Montag, der Lehrer)."
+      },
+      {
+        "label": "Die (Jenskiy)",
+        "tip": "Ayol kishilar/hayvonlar, va -ung, -heit, -keit, -schaft, -tion, -tät, -ei bilan tugovchi otlar (die Zeitung, die Freiheit, die Bäckerei)."
+      },
+      {
+        "label": "Das (Sredniy)",
+        "tip": "-chen, -lein kichraytirish qo'shimchalari, fe'ldan yasalgan otlar va -ment, -um, -tum bilan tugovchi otlar (das Mädchen, das Brötchen, das Essen, das Museum)."
+      },
+      {
+        "label": "Die (Ko'plik)",
+        "tip": "Barcha ko'plikdagi otlar, original rodidan qat'i nazar, Nominativ kelishigida 'die' oladi!"
+      }
+    ],
+    "table": {
+      "headers": [
+        "Rod",
+        "Aniq (The)",
+        "Noaniq (A/An)",
+        "Inkor (No/None)"
+      ],
+      "rows": [
+        [
+          "Muzskoy",
+          "der Tisch",
+          "ein Tisch",
+          "kein Tisch"
+        ],
+        [
+          "Jenskiy",
+          "die Katze",
+          "eine Katze",
+          "keine Katze"
+        ],
+        [
+          "Sredniy",
+          "das Buch",
+          "ein Buch",
+          "kein Buch"
+        ],
+        [
+          "Ko'plik",
+          "die Kinder",
+          "(ko'plik yo'q)",
+          "keine Kinder"
+        ]
+      ]
+    },
+    "fritz_tip": "So'zning oxiriga e'tibor bering! -ung, -heit, -keit, va -schaft bilan tugaydigan so'zlarning 99% qismi DIE hisoblanadi. -chen yoki -lein bilan tugaydiganlar esa doim DAS (hatto das Mädchen ham)! 🦊💡",
+    "quiz": [
+      {
+        "q": "'Zeitung' (gazeta) uchun artikl qaysi?",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 1,
+        "hint": "-ung bilan tugovchi so'zlar doim jenskiy rodda!"
+      },
+      {
+        "q": "'Mädchen' (qiz) uchun artikl qaysi?",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 2,
+        "hint": "-chen kichraytirish qo'shimchasi otni doim sredniy rodga aylantiradi!"
+      },
+      {
+        "q": "Ko'plikdagi otlar Nominativda qaysi artiklni oladi?",
+        "options": [
+          "der",
+          "die",
+          "das"
+        ],
+        "answer": 1,
+        "hint": "Ko'plik doim Nominativda 'die' oladi."
+      }
+    ]
+  },
+  {
+    "id": "cases_nom_akk",
+    "title": "2. Kelishiklar: Nominativ va Akkusativ",
+    "tag": "Kelishiklar",
+    "summary": "Nominativ kelishigi EGANI (harakatni bajaruvchini) bildiradi. Akkusativ kelishigi esa TO'LDIRUVCHINI (harakat kimga/nimaga qaratilganligini) bildiradi.",
+    "color": "#FF7675",
+    "rules": [
+      {
+        "label": "Sehrli o'zgarish",
+        "tip": "Akkusativda FAQAT muzskoy rod o'zgaradi: der -> den, ein -> einen, kein -> keinen. Jenskiy, Sredniy va Ko'plik o'zgarmaydi!"
+      },
+      {
+        "label": "Ega (Wer/Was? - Kim/Nima?)",
+        "tip": "Der Mann trinkt einen Kaffee. -> 'Der Mann' bu yerda ega (Nominativ)."
+      },
+      {
+        "label": "To'ldiruvchi (Wen/Was? - Kimni/Nimani?)",
+        "tip": "Er trinkt den Kaffee. -> 'den Kaffee' bu yerda to'ldiruvchi (Akkusativ)."
+      },
+      {
+        "label": "Akkusativ talab qiluvchi predloglar",
+        "tip": "bis, durch, für, gegen, ohne, um. Bu predloglardan keyin DOIM Akkusativ keladi!"
+      }
+    ],
+    "table": {
+      "headers": [
+        "Kelishik",
+        "Muzskoy",
+        "Jenskiy",
+        "Sredniy",
+        "Ko'plik"
+      ],
+      "rows": [
+        [
+          "Nominativ",
+          "der / ein / kein",
+          "die / eine / keine",
+          "das / ein / kein",
+          "die / - / keine"
+        ],
+        [
+          "Akkusativ",
+          "den / einen / keinen",
+          "die / eine / keine",
+          "das / ein / kein",
+          "die / - / keine"
+        ]
+      ]
+    },
+    "fritz_tip": "Eslab qoling: Akkusativda faqat muzskoy rod 'N' harfini oladi! 'Ich habe EINEN Hund (m), EINE Katze (f), EIN Auto (n)'. 🦊🐶",
+    "quiz": [
+      {
+        "q": "Bo'sh joyni to'ldiring: 'Ich kaufe _____ Apfel (m)'.",
+        "options": [
+          "ein",
+          "einen",
+          "eine"
+        ],
+        "answer": 1,
+        "hint": "Apfel muzskoy rod va bu yerda to'ldiruvchi: ein -> einen."
+      },
+      {
+        "q": "Qaysi predlog DOIM Akkusativ talab qiladi?",
+        "options": [
+          "mit",
+          "nach",
+          "für"
+        ],
+        "answer": 2,
+        "hint": "'für' doim akkusativ oladi (Das ist für dich!)."
+      },
+      {
+        "q": "Jenskiy roddagi 'die Tasche' Akkusativda qanday o'zgaradi?",
+        "options": [
+          "'den' ga",
+          "'der' ga",
+          "'die' bo'lib qoladi"
+        ],
+        "answer": 2,
+        "hint": "Jenskiy va Sredniy rodlar Nominativ va Akkusativda umuman o'zgarmaydi."
+      }
+    ]
+  },
+  {
+    "id": "cases_dative",
+    "title": "3. Dativ kelishigi asoslari",
+    "tag": "Kelishiklar",
+    "summary": "Dativ kelishigi VOSITALI TO'LDIRUVCHINI (kimga / kim uchun) bildiradi va ba'zi muhim predloglardan keyin ishlatiladi.",
+    "color": "#55EFC4",
+    "rules": [
+      {
+        "label": "Dativ artikl o'zgarishlari",
+        "tip": "der -> dem, das -> dem, die -> der, die (ko'plik) -> den + ot oxiriga 'n' qo'shiladi!"
+      },
+      {
+        "label": "Dativ talab qiluvchi predloglar",
+        "tip": "aus, bei, mit, nach, seit, von, zu (Yodlab oling: aus-bei-mit, nach-seit-von-zu!)."
+      },
+      {
+        "label": "Dativ oluvchi ko'p uchraydigan fe'llar",
+        "tip": "helfen (hilf mir!), danken (ich danke dir), gefallen (das gefällt mir), schmecken (das schmeckt mir)."
+      }
+    ],
+    "table": {
+      "headers": [
+        "Rod",
+        "Nominativ",
+        "Akkusativ",
+        "Dativ"
+      ],
+      "rows": [
+        [
+          "Muzskoy",
+          "der / ein",
+          "den / einen",
+          "dem / einem"
+        ],
+        [
+          "Jenskiy",
+          "die / eine",
+          "die / eine",
+          "der / einer"
+        ],
+        [
+          "Sredniy",
+          "das / ein",
+          "das / ein",
+          "dem / einem"
+        ],
+        [
+          "Ko'plik",
+          "die / -",
+          "die / -",
+          "den / - (+n)"
+        ]
+      ]
+    },
+    "fritz_tip": "Sehrli qofiyani kuylang: 'Aus, bei, mit, nach, seit, von, zu — immer mit dem Dativ, du!' 🎶🦊",
+    "quiz": [
+      {
+        "q": "To'ldiring: 'Ich fahre mit _____ Bus (m)'.",
+        "options": [
+          "den",
+          "dem",
+          "der"
+        ],
+        "answer": 1,
+        "hint": "'mit' predlogi Dativ talab qiladi, shuning uchun 'der' 'dem' ga aylanadi."
+      },
+      {
+        "q": "Jenskiy roddagi 'die' Dativda nimaga aylanadi?",
+        "options": [
+          "dem",
+          "der",
+          "den"
+        ],
+        "answer": 1,
+        "hint": "Jenskiy 'die' Dativda 'der' ga aylanadi."
+      },
+      {
+        "q": "Qaysi fe'l doim Dativ to'ldiruvchi oladi?",
+        "options": [
+          "helfen",
+          "kaufen",
+          "sehen"
+        ],
+        "answer": 0,
+        "hint": "'helfen' Dativ oladi: 'Ich helfe dir'."
+      }
+    ]
+  },
+  {
+    "id": "verb_conjugation",
+    "title": "4. Hozirgi zamon fe'l tuslanishi",
+    "tag": "Fe'llar",
+    "summary": "Nemis tilida fe'llar egaga qarab o'z qo'shimchalarini o'zgartiradi: -e, -st, -t, -en, -t, -en.",
+    "color": "#FFEAA7",
+    "rules": [
+      {
+        "label": "To'g'ri (Muntazam) qo'shimchalar",
+        "tip": "ich -e | du -st | er/sie/es -t | wir -en | ihr -t | sie/Sie -en."
+      },
+      {
+        "label": "O'zak unlisi o'zgaradigan fe'llar (du/er)",
+        "tip": "e -> i/ie (sprechen -> du sprichst, lesen -> er liest); a -> ä (fahren -> du fährst, schlafen -> er schläft)."
+      },
+      {
+        "label": "-t yoki -d bilan tugaydigan fe'llar",
+        "tip": "Talaffuz uchun qo'shimcha 'e' qo'shiladi: arbeiten -> du arbeitest, er arbeitet."
+      }
+    ],
+    "table": {
+      "headers": [
+        "Olmosh",
+        "lernen (to'g'ri)",
+        "fahren (a->ä)",
+        "sprechen (e->i)"
+      ],
+      "rows": [
+        [
+          "ich",
+          "lerne",
+          "fahre",
+          "spreche"
+        ],
+        [
+          "du",
+          "lernst",
+          "fährst",
+          "sprichst"
+        ],
+        [
+          "er / sie / es",
+          "lernt",
+          "fährt",
+          "spricht"
+        ],
+        [
+          "wir",
+          "lernen",
+          "fahren",
+          "sprechen"
+        ],
+        [
+          "ihr",
+          "lernt",
+          "fahrt",
+          "sprecht"
+        ],
+        [
+          "sie / Sie",
+          "lernen",
+          "fahren",
+          "sprechen"
+        ]
+      ]
+    },
+    "fritz_tip": "Eslab qoling: 'E - ST - T - EN - T - EN'. Infinitivdan -en ni olib tashlang va mos qo'shimchani qo'shing! 🦊✨",
+    "quiz": [
+      {
+        "q": "Tuslang: 'Du _____ (sprechen) sehr gut Deutsch.'",
+        "options": [
+          "sprechtest",
+          "sprechst",
+          "sprichst"
+        ],
+        "answer": 2,
+        "hint": "'sprechen' dagi 'e' unlisi 'du' va 'er/sie/es' uchun 'i' ga o'zgaradi."
+      },
+      {
+        "q": "Tuslang: 'Er _____ (fahren) mit dem Zug.'",
+        "options": [
+          "fahrt",
+          "fährst",
+          "fährt"
+        ],
+        "answer": 2,
+        "hint": "'fahren' 3-shaxs birlikda umlaut (ä) oladi."
+      },
+      {
+        "q": "'wir' (biz) uchun fe'l qo'shimchasi qanday?",
+        "options": [
+          "-e",
+          "-t",
+          "-en"
+        ],
+        "answer": 2,
+        "hint": "'wir' doim '-en' oladi (infinitiv bilan bir xil)."
+      }
+    ]
+  },
+  {
+    "id": "sein_haben",
+    "title": "5. Katta Uchtalik: Sein, Haben va Werden",
+    "tag": "Fe'llar",
+    "summary": "Bu uchta noto'g'ri yordamchi fe'l nemis tili so'zlashuvining va o'tgan/kelasi zamonlarning asosiy poydevori hisoblanadi.",
+    "color": "#A29BFE",
+    "rules": [
+      {
+        "label": "sein (bo'lmoq)",
+        "tip": "Shaxsni, kasbni, joylashuvni va sifatlarni ifodalash uchun muhim: 'Ich bin glücklich' (Men baxtliman)."
+      },
+      {
+        "label": "haben (ega bo'lmoq)",
+        "tip": "Egalikni va ko'plab iboralarni ifodalaydi: 'Ich habe Hunger/Durst/Zeit'."
+      },
+      {
+        "label": "werden (aylanmoq/bo'lmoq)",
+        "tip": "Holat o'zgarishi va kelasi zamon uchun ishlatiladi: 'Es wird kalt' (Sovuq bo'lyapti)."
+      }
+    ],
+    "table": {
+      "headers": [
+        "Olmosh",
+        "sein (bo'lmoq)",
+        "haben (ega bo'lmoq)",
+        "werden (aylanmoq)"
+      ],
+      "rows": [
+        [
+          "ich",
+          "bin",
+          "habe",
+          "werde"
+        ],
+        [
+          "du",
+          "bist",
+          "hast",
+          "wirst"
+        ],
+        [
+          "er / sie / es",
+          "ist",
+          "hat",
+          "wird"
+        ],
+        [
+          "wir",
+          "sind",
+          "haben",
+          "werden"
+        ],
+        [
+          "ihr",
+          "seid",
+          "habt",
+          "werdet"
+        ],
+        [
+          "sie / Sie",
+          "sind",
+          "haben",
+          "werden"
+        ]
+      ]
+    },
+    "fritz_tip": "'ihr seid' (sizlar) va 'sie sind' (ular) farqiga e'tibor bering. Ularni adashtirib qo'yish juda oson! 🦊",
+    "quiz": [
+      {
+        "q": "To'ldiring: 'Wir _____ zwei Brüder.' (Bizning ikkita akamiz bor).",
+        "options": [
+          "sind",
+          "haben",
+          "werdet"
+        ],
+        "answer": 1,
+        "hint": "Oila a'zolariga ega bo'lish uchun 'haben' ishlatiladi."
+      },
+      {
+        "q": "To'ldiring: 'Wie alt _____ du?' (Yoshing nechada?).",
+        "options": [
+          "hast",
+          "bist",
+          "wirst"
+        ],
+        "answer": 1,
+        "hint": "Nemis tilida yosh 'sein' (bo'lmoq) fe'li bilan aytiladi, 'haben' bilan emas."
+      },
+      {
+        "q": "'sein' fe'lining 'ihr' (sizlar) shakli qanday?",
+        "options": [
+          "sind",
+          "seid",
+          "bist"
+        ],
+        "answer": 1,
+        "hint": "'ihr seid' bu 2-shaxs ko'plik shakli."
+      }
+    ]
+  },
+  {
+    "id": "modal_verbs",
+    "title": "6. Modal fe'llar va Gap qavsi",
+    "tag": "Modal Fe'llar",
+    "summary": "Modal fe'llar qobiliyat, zaruriyat yoki xohishni ifodalaydi. Ular asosiy fe'lni (infinitivda) gapning eng oxiriga surib yuboradi!",
+    "color": "#FDCB6E",
+    "rules": [
+      {
+        "label": "können (qila olmoq)",
+        "tip": "ich kann, du kannst, er kann, wir können"
+      },
+      {
+        "label": "müssen (shart/majbur)",
+        "tip": "ich muss, du musst, er muss, wir müssen"
+      },
+      {
+        "label": "wollen (xohlamoq/istamoq)",
+        "tip": "ich will, du willst, er will, wir wollen"
+      },
+      {
+        "label": "möchten (xohlardim)",
+        "tip": "ich möchte, du möchtest, er möchte, wir möchten"
+      },
+      {
+        "label": "dürfen (ruxsat bo'lmoq)",
+        "tip": "ich darf, du darfst, er darf, wir dürfen"
+      },
+      {
+        "label": "sollen (kerak/lozim)",
+        "tip": "ich soll, du sollst, er soll, wir sollen"
+      }
+    ],
+    "table": {
+      "headers": [
+        "1-o'rin",
+        "2-o'rin (Modal)",
+        "O'rta (Vaqt/Joy/Obyekt)",
+        "Oxiri (Infinitiv)"
+      ],
+      "rows": [
+        [
+          "Ich",
+          "kann",
+          "gut Deutsch",
+          "sprechen."
+        ],
+        [
+          "Wir",
+          "müssen",
+          "heute die Hausaufgaben",
+          "machen."
+        ],
+        [
+          "Er",
+          "möchte",
+          "einen Kaffee",
+          "trinken."
+        ]
+      ]
+    },
+    "fritz_tip": "E'tibor bering: barcha modal fe'llarda 'ich' va 'er/sie/es' shakllari BIR XIL: 'ich kann' = 'er kann'! 🦊🎉",
+    "quiz": [
+      {
+        "q": "Modal fe'l qatnashgan gapda ikkinchi asosiy fe'l qayerda keladi?",
+        "options": [
+          "Modal fe'ldan darhol keyin",
+          "Gapning eng oxirida",
+          "Egadan oldin"
+        ],
+        "answer": 1,
+        "hint": "Infinitiv shakldagi asosiy fe'l gapni oxirida yopib turadi (qavs)."
+      },
+      {
+        "q": "Tuslang: 'Er _____ (können) sehr schnell laufen.'",
+        "options": [
+          "kann",
+          "könnt",
+          "kannst"
+        ],
+        "answer": 0,
+        "hint": "'können' ning 3-shaxs birlik shakli 'kann' (-t qo'shilmaydi!)."
+      },
+      {
+        "q": "Qaysi modal fe'l 'ruxsat' ma'nosini bildiradi?",
+        "options": [
+          "müssen",
+          "wollen",
+          "dürfen"
+        ],
+        "answer": 2,
+        "hint": "'dürfen' ruxsat etilgan, mumkin degan ma'noni bildiradi."
+      }
+    ]
+  },
+  {
+    "id": "word_order",
+    "title": "7. So'z tartibi va Oltin V2 qoidasi",
+    "tag": "Sintaksis",
+    "summary": "Asosiy gaplarda tuslangan fe'l DOIM 2-o'rinda keladi. Hatto gapni vaqt yoki joy bilan boshlasangiz ham!",
+    "color": "#00B894",
+    "rules": [
+      {
+        "label": "Standart tartib (SVO)",
+        "tip": "[1-o'rin: Ega] + [2-o'rin: FE'L] + [Qolganlar]. Misol: 'Ich lerne heute Deutsch.'"
+      },
+      {
+        "label": "Inversiya (Vaqt/Joy birinchi)",
+        "tip": "[1-o'rin: Vaqt/Joy] + [2-o'rin: FE'L] + [3-o'rin: Ega]. Misol: 'Heute lerne ich Deutsch.'"
+      },
+      {
+        "label": "So'roq gaplar",
+        "tip": "Ha/Yo'q so'roq gaplarida Fe'l 1-o'ringa o'tadi: 'Lernst du Deutsch?' So'roq so'zli gaplarda So'roq so'z 1-o'rinda, Fe'l 2-o'rinda: 'Wo lernst du Deutsch?'"
+      }
+    ],
+    "table": {
+      "headers": [
+        "Turi",
+        "1-o'rin",
+        "2-o'rin (FE'L)",
+        "3-o'rin",
+        "Oxiri"
+      ],
+      "rows": [
+        [
+          "Ega birinchi",
+          "Ich",
+          "trinke",
+          "morgens Kaffee",
+          "-"
+        ],
+        [
+          "Vaqt birinchi",
+          "Morgens",
+          "trinke",
+          "ich",
+          "Kaffee"
+        ],
+        [
+          "Ha/Yo'q so'roq",
+          "Trinkst",
+          "du",
+          "morgens Kaffee",
+          "?"
+        ],
+        [
+          "Maxsus so'roq",
+          "Wann",
+          "trinkst",
+          "du Kaffee",
+          "?"
+        ]
+      ]
+    },
+    "fritz_tip": "2-o'rin degani bu ikkinchi so'z degani EMAS — bu ikkinchi grammatik blok degani! 'Meine liebe Oma [1] kocht [2] die Suppe.' 🦊🍲",
+    "quiz": [
+      {
+        "q": "Agar gap 'Gestern' (Kecha) bilan boshlansa, nima bo'ladi?",
+        "options": [
+          "Keyin ega keladi",
+          "Keyin fe'l keladi",
+          "Keyin to'ldiruvchi keladi"
+        ],
+        "answer": 1,
+        "hint": "Fe'l DOIM 2-o'rinda qolishi shart: 'Gestern ging ich...'."
+      },
+      {
+        "q": "Qaysi gapda so'z tartibi to'g'ri?",
+        "options": [
+          "Heute ich fahre nach Berlin.",
+          "Heute fahre ich nach Berlin.",
+          "Fahre heute ich nach Berlin."
+        ],
+        "answer": 1,
+        "hint": "1-o'rin: Heute, 2-o'rin: fahre, 3-o'rin: ich."
+      },
+      {
+        "q": "Ha/Yo'q so'roq gapida fe'l qayerda keladi?",
+        "options": [
+          "1-o'rinda",
+          "2-o'rinda",
+          "Oxirida"
+        ],
+        "answer": 0,
+        "hint": "'Kommst du morgen?' -> Fe'l 1-o'rinda."
+      }
+    ]
+  },
+  {
+    "id": "negation",
+    "title": "8. Inkor: Nicht va Kein",
+    "tag": "Grammatika",
+    "summary": "Ularni aslo adashtirmang: noaniq artiklli yoki artiklsiz otlarni inkor qilish uchun 'kein', fe'llar, sifatlar va aniq otlar uchun 'nicht' ishlatiladi.",
+    "color": "#E17055",
+    "rules": [
+      {
+        "label": "Qachon KEIN ishlatiladi",
+        "tip": "'ein' yoki artiklsiz otlarni inkor qilganda: 'Ich habe EIN Auto' -> 'Ich habe KEIN Auto'. 'Ich habe Zeit' -> 'Ich habe KEINE Zeit'."
+      },
+      {
+        "label": "Qachon NICHT ishlatiladi",
+        "tip": "Fe'llarni, sifatlarni, ravishlarni va aniq artiklli ('der/die/das') otlarni inkor qilganda: 'Ich schlafe NICHT', 'Das ist NICHT gut', 'Ich kenne DEN Mann NICHT'."
+      },
+      {
+        "label": "Doch!",
+        "tip": "Agar kimdir inkorli savol bersa ('Kommst du nicht?') va siz 'ha' deb tasdiqlamoqchi bo'lsangiz, 'Ja' o'rniga 'DOCH!' ishlating."
+      }
+    ],
+    "table": {
+      "headers": [
+        "Inkor qilinuvchi",
+        "Ishlatiladi",
+        "Tasdiq misol",
+        "Inkor misol"
+      ],
+      "rows": [
+        [
+          "'ein' li ot",
+          "kein",
+          "Ich habe ein Buch.",
+          "Ich habe kein Buch."
+        ],
+        [
+          "Artiklsiz ot",
+          "keine",
+          "Ich trinke Milch.",
+          "Ich trinke keine Milch."
+        ],
+        [
+          "Fe'l / Harakat",
+          "nicht",
+          "Ich schwimme gern.",
+          "Ich schwimme nicht gern."
+        ],
+        [
+          "Sifat",
+          "nicht",
+          "Das Hotel ist teuer.",
+          "Das Hotel ist nicht teuer."
+        ],
+        [
+          "Aniq ot",
+          "nicht",
+          "Ich suche den Schlüssel.",
+          "Ich suche den Schlüssel nicht."
+        ]
+      ]
+    },
+    "fritz_tip": "Agar ingliz tilida 'no/not any' deyish mumkin bo'lsa, nemis tilida 'kein' ishlating. Qolgan hamma narsa uchun 'nicht'! 🦊⛔",
+    "quiz": [
+      {
+        "q": "To'ldiring: 'Ich habe _____ Zeit.' (Zeit - jenskiy, artiklsiz ot).",
+        "options": [
+          "nicht",
+          "keine",
+          "keinen"
+        ],
+        "answer": 1,
+        "hint": "Artiklsiz jenskiy otni inkor qilish 'keine' oladi."
+      },
+      {
+        "q": "To'ldiring: 'Das Essen ist _____ teuer.'",
+        "options": [
+          "nicht",
+          "kein",
+          "keine"
+        ],
+        "answer": 0,
+        "hint": "Sifatni ('teuer') inkor qilish 'nicht' oladi."
+      },
+      {
+        "q": "Birov so'radi: 'Hast du keinen Hunger?' Siz judayam ochsiz. Nima deysiz?",
+        "options": [
+          "Ja!",
+          "Doch!",
+          "Nein!"
+        ],
+        "answer": 1,
+        "hint": "'Doch' inkorli savolga ijobiy javob berish (haqiqatni tasdiqlash) uchun ishlatiladi."
+      }
+    ]
+  },
+  {
+    "id": "prepositions",
+    "title": "9. Eng muhim predloglar va Kelishiklar",
+    "tag": "Predloglar",
+    "summary": "Predloglar o'zlaridan keyin keluvchi otning kelishigini belgilab beradi. A1 darajasi uchun muhim predloglarni yodlab oling!",
+    "color": "#0984E3",
+    "rules": [
+      {
+        "label": "Dativ Predloglar",
+        "tip": "aus (dan), bei (da/yonida), mit (bilan), nach (keyin/ga), seit (-dan beri), von (-ning/dan), zu (ga). DOIM Dativ!"
+      },
+      {
+        "label": "Akkusativ Predloglar",
+        "tip": "bis (gacha), durch (orqali), für (uchun), gegen (qarshi/atrofida), ohne (siz), um (da/atrofida). DOIM Akkusativ!"
+      },
+      {
+        "label": "Qisqartmalar",
+        "tip": "in + dem = im | an + dem = am | zu + dem = zum | zu + der = zur | bei + dem = beim | für + das = fürs."
+      }
+    ],
+    "table": {
+      "headers": [
+        "Predlog",
+        "Kelishik",
+        "Ma'nosi",
+        "Misol"
+      ],
+      "rows": [
+        [
+          "mit",
+          "Dativ",
+          "bilan / orqali",
+          "Ich fahre mit dem Bus."
+        ],
+        [
+          "für",
+          "Akkusativ",
+          "uchun",
+          "Das Geschenk ist für dich."
+        ],
+        [
+          "zu",
+          "Dativ",
+          "ga / tomon",
+          "Ich gehe zum Arzt."
+        ],
+        [
+          "ohne",
+          "Akkusativ",
+          "siz (without)",
+          "Kaffee ohne Zucker bitte."
+        ],
+        [
+          "bei",
+          "Dativ",
+          "da / yonida",
+          "Ich wohne bei meinen Eltern."
+        ],
+        [
+          "nach",
+          "Dativ",
+          "keyin / ga",
+          "Nach dem Essen schlafe ich."
+        ]
+      ]
+    },
+    "fritz_tip": "Yodda tuting: 'zum' = zu dem (muzskoy/sredniy), 'zur' = zu der (jenskiy). 'Ich gehe zum Arzt, aber zur Bank!' 🦊🏦",
+    "quiz": [
+      {
+        "q": "To'ldiring: 'Ein Kaffee _____ (sutsiz) Milch bitte.'",
+        "options": [
+          "mit",
+          "ohne",
+          "für"
+        ],
+        "answer": 1,
+        "hint": "'ohne' -siz degani (without)."
+      },
+      {
+        "q": "'in dem' ning qisqartmasi nima?",
+        "options": [
+          "im",
+          "am",
+          "ans"
+        ],
+        "answer": 0,
+        "hint": "'in + dem' 'im' ga qisqaradi."
+      },
+      {
+        "q": "Qaysi predlog '-dan beri' ma'nosini bildiradi va Dativ talab qiladi?",
+        "options": [
+          "nach",
+          "seit",
+          "von"
+        ],
+        "answer": 1,
+        "hint": "'seit' vaqt davriydiligini bildiradi: 'seit einem Jahr'."
+      }
+    ]
+  },
+  {
+    "id": "plurals",
+    "title": "10. Ko'plik shakllari va Ot qo'shimchalari",
+    "tag": "Otlar",
+    "summary": "Ingliz tilidan (-s) farqli o'laroq, nemis tilida 5 ta asosiy ko'plik shakli mavjud: -e, -(e)n, -er, -s, va qo'shimchasiz (ko'pincha umlaut bilan).",
+    "color": "#6C5CE7",
+    "rules": [
+      {
+        "label": "1-shakl: -e (ko'pincha Umlaut bilan)",
+        "tip": "Muzskoy va sredniy otlarda ko'p uchraydi: der Tisch -> die Tische, der Baum -> die Bäume."
+      },
+      {
+        "label": "2-shakl: -(e)n",
+        "tip": "Jenskiy otlarning ~90% uchun standart: die Frau -> die Frauen, die Lampe -> die Lampen."
+      },
+      {
+        "label": "3-shakl: -er (odatda Umlaut bilan)",
+        "tip": "Ko'pincha qisqa sredniy otlarda: das Kind -> die Kinder, das Buch -> die Bücher, das Bild -> die Bilder."
+      },
+      {
+        "label": "4-shakl: -s",
+        "tip": "Chet tilidan kirgan so'zlar va qisqartmalar: das Auto -> die Autos, das Sofa -> die Sofas, das Handy -> die Handys."
+      },
+      {
+        "label": "5-shakl: Qo'shimchasiz (yoki faqat Umlaut)",
+        "tip": "-el, -en, -er bilan tugovchi otlar: der Lehrer -> die Lehrer, der Apfel -> die Äpfel, der Computer -> die Computer."
+      }
+    ],
+    "table": {
+      "headers": [
+        "Birlik",
+        "Ko'plik",
+        "Shakl",
+        "Ma'nosi"
+      ],
+      "rows": [
+        [
+          "der Tag",
+          "die Tage",
+          "+e",
+          "kun -> kunlar"
+        ],
+        [
+          "die Zeitung",
+          "die Zeitungen",
+          "+en",
+          "gazeta -> gazetalar"
+        ],
+        [
+          "das Kind",
+          "die Kinder",
+          "+er",
+          "bola -> bolalar"
+        ],
+        [
+          "das Auto",
+          "die Autos",
+          "+s",
+          "mashina -> mashinalar"
+        ],
+        [
+          "der Apfel",
+          "die Äpfel",
+          "Faqat Umlaut",
+          "olma -> olmalar"
+        ]
+      ]
+    },
+    "fritz_tip": "Nemis tilida biror otni yodlaganda, uni DOIM artikli VA ko'pligi bilan birga yodlang: 'der Tisch, die Tische'! 🦊📚",
+    "quiz": [
+      {
+        "q": "'das Buch' (kitob) ning ko'pligi nima?",
+        "options": [
+          "die Buche",
+          "die Büchen",
+          "die Bücher"
+        ],
+        "answer": 2,
+        "hint": "Das Buch umlaut va -er oladi: die Bücher."
+      },
+      {
+        "q": "-ung bilan tugaydigan ko'pchilik jenskiy otlarning ko'plik qo'shimchasi nima?",
+        "options": [
+          "-e",
+          "-en",
+          "-s"
+        ],
+        "answer": 1,
+        "hint": "die Zeitung -> die Zeitungen."
+      },
+      {
+        "q": "'das Auto' ning ko'pligi nima?",
+        "options": [
+          "die Autos",
+          "die Auton",
+          "die Autoe"
+        ],
+        "answer": 0,
+        "hint": "Chet tilidan kirgan so'zlar odatda -s oladi."
+      }
+    ]
+  }
+];
+
 // WunderDeutsch Core Logic & i18n Engine
 
 const TRANSLATIONS = {
@@ -512,7 +1461,6 @@ function checkSatzbau() {
 
 // --- GRAMMAR TAB LOGIC ---
 
-const GRAMMAR_DATA = [{"id": "gender_articles", "title": "1. Der, Die, Das & Gender Clues", "tag": "Articles", "summary": "German nouns have three genders: Masculine (der), Feminine (die), and Neuter (das). Plural nouns always use 'die'.", "color": "#74B9FF", "rules": [{"label": "Der (Masculine)", "tip": "Male people/animals, days, months, seasons, and nouns ending in -er, -ling, -or, -ismus (der Sommer, der Montag, der Lehrer)."}, {"label": "Die (Feminine)", "tip": "Female people/animals, and nouns ending in -ung, -heit, -keit, -schaft, -tion, -tät, -ei (die Zeitung, die Freiheit, die Bäckerei)."}, {"label": "Das (Neuter)", "tip": "Diminutives ending in -chen, -lein, infinitive nouns, and endings in -ment, -um, -tum (das Mädchen, das Brötchen, das Essen, das Museum)."}, {"label": "Die (Plural)", "tip": "All plural nouns use 'die' in the nominative case regardless of their original singular gender!"}], "table": {"headers": ["Gender", "Definite (The)", "Indefinite (A/An)", "Negative (No/None)"], "rows": [["Masculine", "der Tisch", "ein Tisch", "kein Tisch"], ["Feminine", "die Katze", "eine Katze", "keine Katze"], ["Neuter", "das Buch", "ein Buch", "kein Buch"], ["Plural", "die Kinder", "(kein Plural-ein)", "keine Kinder"]]}, "fritz_tip": "Look at the ending of the word! 99% of words ending in -ung, -heit, -keit, and -schaft are DIE. Words ending in -chen or -lein are always DAS (even das Mädchen)! 🦊💡", "quiz": [{"q": "What is the article for 'Zeitung' (newspaper)?", "options": ["der", "die", "das"], "answer": 1, "hint": "Words ending in -ung are always feminine!"}, {"q": "What is the article for 'Mädchen' (girl)?", "options": ["der", "die", "das"], "answer": 2, "hint": "The diminutive ending -chen always makes a noun neuter!"}, {"q": "Which article do all plural nouns take in Nominative?", "options": ["der", "die", "das"], "answer": 1, "hint": "Plural always takes 'die' in Nominative."}]}, {"id": "cases_nom_akk", "title": "2. Cases: Nominative vs. Accusative", "tag": "Cases", "summary": "The Nominative case marks the SUBJECT (who does the action). The Accusative case marks the DIRECT OBJECT (who/what receives the action).", "color": "#FF7675", "rules": [{"label": "The Magic Shift", "tip": "ONLY the masculine gender changes in Accusative: der -> den, ein -> einen, kein -> keinen. Feminine, Neuter, and Plural do not change!"}, {"label": "Subject (Wer/Was?)", "tip": "Der Mann trinkt einen Kaffee. -> 'Der Mann' is the subject (Nominative)."}, {"label": "Direct Object (Wen/Was?)", "tip": "Er trinkt den Kaffee. -> 'den Kaffee' is the direct object (Accusative)."}, {"label": "Fixed Accusative Prepositions", "tip": "bis, durch, für, gegen, ohne, um (Mnemonic: DOGFU / BDFGOU). These prepositions ALWAYS require Accusative!"}], "table": {"headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural"], "rows": [["Nominative", "der / ein / kein", "die / eine / keine", "das / ein / kein", "die / - / keine"], ["Accusative", "den / einen / keinen", "die / eine / keine", "das / ein / kein", "die / - / keine"]]}, "fritz_tip": "Remember: Only the masculine gets the 'N' in Accusative! 'Ich habe EINEN Hund (m), EINE Katze (f), EIN Auto (n)'. 🦊🐶", "quiz": [{"q": "Fill in the blank: 'Ich kaufe _____ Apfel (m)'.", "options": ["ein", "einen", "eine"], "answer": 1, "hint": "Apfel is masculine and is the direct object: ein -> einen."}, {"q": "Which preposition ALWAYS takes the Accusative case?", "options": ["mit", "nach", "für"], "answer": 2, "hint": "'für' is always accusative (Das ist für dich!)."}, {"q": "What happens to feminine nouns ('die Tasche') in Accusative?", "options": ["Changes to 'den'", "Changes to 'der'", "Stays 'die'"], "answer": 2, "hint": "Feminine and Neuter never change between Nominative and Accusative."}]}, {"id": "cases_dative", "title": "3. Dative Case Basics", "tag": "Cases", "summary": "The Dative case marks the INDIRECT OBJECT (to whom / for whom) and is required after key everyday prepositions.", "color": "#55EFC4", "rules": [{"label": "Dative Article Shifts", "tip": "der -> dem, das -> dem, die -> der, die (pl) -> den + n on the noun!"}, {"label": "Fixed Dative Prepositions", "tip": "aus, bei, mit, nach, seit, von, zu (Sing to the melody of Blue Danube: aus-bei-mit, nach-seit-von-zu!)."}, {"label": "Common Dative Verbs", "tip": "helfen (hilf mir!), danken (ich danke dir), gefallen (das gefällt mir), schmecken (das schmeckt mir)."}], "table": {"headers": ["Gender", "Nominative", "Accusative", "Dative"], "rows": [["Masculine", "der / ein", "den / einen", "dem / einem"], ["Feminine", "die / eine", "die / eine", "der / einer"], ["Neuter", "das / ein", "das / ein", "dem / einem"], ["Plural", "die / -", "die / -", "den / - (+n)"]]}, "fritz_tip": "Sing the magic rhyme: 'Aus, bei, mit, nach, seit, von, zu — immer mit dem Dativ, du!' 🎶🦊", "quiz": [{"q": "Fill in: 'Ich fahre mit _____ Bus (m)'.", "options": ["den", "dem", "der"], "answer": 1, "hint": "'mit' requires Dative, so 'der' becomes 'dem'."}, {"q": "What does feminine 'die' turn into in Dative?", "options": ["dem", "der", "den"], "answer": 1, "hint": "Feminine 'die' flips to 'der' in the Dative case."}, {"q": "Which verb always takes a Dative object?", "options": ["helfen", "kaufen", "sehen"], "answer": 0, "hint": "'helfen' takes Dative: 'Ich helfe dir'."}]}, {"id": "verb_conjugation", "title": "4. Present Tense Verb Conjugation", "tag": "Verbs", "summary": "German verbs change their endings based on the subject pronoun: -e, -st, -t, -en, -t, -en.", "color": "#FFEAA7", "rules": [{"label": "Regular Endings", "tip": "ich -e | du -st | er/sie/es -t | wir -en | ihr -t | sie/Sie -en."}, {"label": "Vowel Changers (du / er)", "tip": "e -> i/ie (sprechen -> du sprichst, lesen -> er liest); a -> ä (fahren -> du fährst, schlafen -> er schläft)."}, {"label": "Verbs ending in -t / -d", "tip": "Add an extra 'e' for pronunciation: arbeiten -> du arbeitest, er arbeitet."}], "table": {"headers": ["Pronoun", "lernen (regular)", "fahren (a->ä)", "sprechen (e->i)"], "rows": [["ich", "lerne", "fahre", "spreche"], ["du", "lernst", "fährst", "sprichst"], ["er / sie / es", "lernt", "fährt", "spricht"], ["wir", "lernen", "fahren", "sprechen"], ["ihr", "lernt", "fahrt", "sprecht"], ["sie / Sie", "lernen", "fahren", "sprechen"]]}, "fritz_tip": "Remember the formula: 'E - ST - T - EN - T - EN'. Just drop the -en from the infinitive and snap on the matching ending! 🦊✨", "quiz": [{"q": "Conjugate: 'Du _____ (sprechen) sehr gut Deutsch.'", "options": ["sprechtest", "sprechst", "sprichst"], "answer": 2, "hint": "'sprechen' has an e -> i vowel change for 'du' and 'er/sie/es'."}, {"q": "Conjugate: 'Er _____ (fahren) mit dem Zug.'", "options": ["fahrt", "fährst", "fährt"], "answer": 2, "hint": "'fahren' takes an umlaut (ä) in the 3rd person singular."}, {"q": "What is the ending for 'wir' (we)?", "options": ["-e", "-t", "-en"], "answer": 2, "hint": "'wir' always takes the '-en' ending (identical to the infinitive)."}]}, {"id": "sein_haben", "title": "5. The Big Three: Sein, Haben & Werden", "tag": "Verbs", "summary": "These three irregular auxiliary verbs are the absolute backbone of German conversation and future/past tenses.", "color": "#A29BFE", "rules": [{"label": "sein (to be)", "tip": "Essential for identity, adjectives, professions, and location: 'Ich bin glücklich'."}, {"label": "haben (to have)", "tip": "Expresses possession and many idioms: 'Ich habe Hunger/Durst/Zeit'."}, {"label": "werden (to become)", "tip": "Used for changes of state and future tense: 'Es wird kalt'."}], "table": {"headers": ["Pronoun", "sein (to be)", "haben (to have)", "werden (to become)"], "rows": [["ich", "bin", "habe", "werde"], ["du", "bist", "hast", "wirst"], ["er / sie / es", "ist", "hat", "wird"], ["wir", "sind", "haben", "werden"], ["ihr", "seid", "habt", "werdet"], ["sie / Sie", "sind", "haben", "werden"]]}, "fritz_tip": "Watch out for 'ihr seid' (you all are) vs. 'sie sind' (they are). They are easy to mix up! 🦊", "quiz": [{"q": "Fill in: 'Wir _____ zwei Brüder.'", "options": ["sind", "haben", "werdet"], "answer": 1, "hint": "Having family members uses 'haben'."}, {"q": "Fill in: 'Wie alt _____ du?'", "options": ["hast", "bist", "wirst"], "answer": 1, "hint": "In German, you 'are' your age (sein), you don't 'have' it."}, {"q": "What is 'ihr' for the verb 'sein'?", "options": ["sind", "seid", "bist"], "answer": 1, "hint": "'ihr seid' is the 2nd person plural form."}]}, {"id": "modal_verbs", "title": "6. Modal Verbs & The Sentence Bracket", "tag": "Modal Verbs", "summary": "Modal verbs express ability, necessity, or desire. They send the main infinitive verb to the end of the sentence!", "color": "#FDCB6E", "rules": [{"label": "können (can / able)", "tip": "ich kann, du kannst, er kann, wir können"}, {"label": "müssen (must / have to)", "tip": "ich muss, du musst, er muss, wir müssen"}, {"label": "wollen (want to)", "tip": "ich will, du willst, er will, wir wollen"}, {"label": "möchten (would like)", "tip": "ich möchte, du möchtest, er möchte, wir möchten"}, {"label": "dürfen (may / allowed)", "tip": "ich darf, du darfst, er darf, wir dürfen"}, {"label": "sollen (should / ought)", "tip": "ich soll, du sollst, er soll, wir sollen"}], "table": {"headers": ["Position 1", "Position 2 (Modal)", "Middle (Time/Place/Object)", "End (Infinitive)"], "rows": [["Ich", "kann", "gut Deutsch", "sprechen."], ["Wir", "müssen", "heute die Hausaufgaben", "machen."], ["Er", "möchte", "einen Kaffee", "trinken."]]}, "fritz_tip": "Notice that 'ich' and 'er/sie/es' have the EXACT same form with all modal verbs: 'ich kann' = 'er kann'! 🦊🎉", "quiz": [{"q": "Where does the second verb go when using a modal verb?", "options": ["Right after the modal verb", "At the very end of the sentence", "Before the subject"], "answer": 1, "hint": "The main verb in infinitive form closes the bracket at the very end."}, {"q": "Conjugate: 'Er _____ (können) sehr schnell laufen.'", "options": ["kann", "könnt", "kannst"], "answer": 0, "hint": "3rd person singular of können is 'kann' (no -t ending!)."}, {"q": "Which modal verb expresses 'permission'?", "options": ["müssen", "wollen", "dürfen"], "answer": 2, "hint": "'dürfen' means to be allowed / permitted."}]}, {"id": "word_order", "title": "7. Word Order & The V2 Golden Rule", "tag": "Syntax", "summary": "In main clauses, the conjugated verb ALWAYS occupies the 2nd position. Even if you start with time or place!", "color": "#00B894", "rules": [{"label": "Standard SVO", "tip": "[Position 1: Subject] + [Position 2: VERB] + [Rest]. Example: 'Ich lerne heute Deutsch.'"}, {"label": "Inversion (Time first)", "tip": "[Position 1: Time/Place] + [Position 2: VERB] + [Position 3: Subject]. Example: 'Heute lerne ich Deutsch.'"}, {"label": "Questions", "tip": "Yes/No questions put Verb in Position 1: 'Lernst du Deutsch?' W-questions put W-word in Pos 1, Verb in Pos 2: 'Wo lernst du Deutsch?'"}], "table": {"headers": ["Type", "Pos 1", "Pos 2 (VERB)", "Pos 3", "End"], "rows": [["Subject First", "Ich", "trinke", "morgens Kaffee", "-"], ["Time First", "Morgens", "trinke", "ich", "Kaffee"], ["Yes/No Question", "Trinkst", "du", "morgens Kaffee", "?"], ["W-Question", "Wann", "trinkst", "du Kaffee", "?"]]}, "fritz_tip": "Position 2 does NOT mean the second word — it means the second grammatical block! 'Meine liebe Oma [1] kocht [2] die Suppe.' 🦊🍲", "quiz": [{"q": "What happens if a sentence starts with 'Gestern' (Yesterday)?", "options": ["Subject comes next", "Verb comes next", "Object comes next"], "answer": 1, "hint": "The verb MUST stay in Position 2: 'Gestern ging ich...'."}, {"q": "Which sentence has correct word order?", "options": ["Heute ich fahre nach Berlin.", "Heute fahre ich nach Berlin.", "Fahre heute ich nach Berlin."], "answer": 1, "hint": "Pos 1: Heute, Pos 2: fahre, Pos 3: ich."}, {"q": "Where does the verb sit in a Yes/No question?", "options": ["Position 1", "Position 2", "At the end"], "answer": 0, "hint": "'Kommst du morgen?' -> Verb is in Position 1."}]}, {"id": "negation", "title": "8. Negation: Nicht vs. Kein", "tag": "Grammar", "summary": "Never mix them up: use 'kein' for nouns with indefinite or zero articles, and 'nicht' for verbs, adjectives, and specific nouns.", "color": "#E17055", "rules": [{"label": "When to use KEIN", "tip": "Replaces 'ein' or zero-article nouns: 'Ich habe EIN Auto' -> 'Ich habe KEIN Auto'. 'Ich habe Zeit' -> 'Ich habe KEINE Zeit'."}, {"label": "When to use NICHT", "tip": "Negates verbs, adjectives, adverbs, pronouns, and nouns with definite articles ('der/die/das'): 'Ich schlafe NICHT', 'Das ist NICHT gut', 'Ich kenne DEN Mann NICHT'."}, {"label": "Doch!", "tip": "If someone asks a negative question ('Kommst du nicht?') and you want to say yes, use 'DOCH!' instead of 'Ja'."}], "table": {"headers": ["Item to Negate", "Use", "Affirmative Example", "Negative Example"], "rows": [["Noun with 'ein'", "kein", "Ich habe ein Buch.", "Ich habe kein Buch."], ["Noun with no article", "keine", "Ich trinke Milch.", "Ich trinke keine Milch."], ["Verb / Entire action", "nicht", "Ich schwimme gern.", "Ich schwimme nicht gern."], ["Adjective", "nicht", "Das Hotel ist teuer.", "Das Hotel ist nicht teuer."], ["Specific noun (der/die/das)", "nicht", "Ich suche den Schlüssel.", "Ich suche den Schlüssel nicht."]]}, "fritz_tip": "If you could say 'no/not any' in English, use 'kein'. For everything else, use 'nicht'! 🦊⛔", "quiz": [{"q": "Fill in: 'Ich habe _____ Zeit.' (Zeit is feminine, zero article)", "options": ["nicht", "keine", "keinen"], "answer": 1, "hint": "Negating a zero-article feminine noun takes 'keine'."}, {"q": "Fill in: 'Das Essen ist _____ teuer.'", "options": ["nicht", "kein", "keine"], "answer": 0, "hint": "Negating an adjective ('teuer') takes 'nicht'."}, {"q": "Someone asks: 'Hast du keinen Hunger?' You are very hungry. You answer:", "options": ["Ja!", "Doch!", "Nein!"], "answer": 1, "hint": "'Doch' contradicts a negative question."}]}, {"id": "prepositions", "title": "9. Common Prepositions & Cases", "tag": "Prepositions", "summary": "Prepositions dictate the case of the noun that follows them. Master the essential A1 prepositions!", "color": "#0984E3", "rules": [{"label": "Dative Prepositions", "tip": "aus (from), bei (at/with), mit (with), nach (after/to), seit (since), von (from/of), zu (to). ALWAYS Dative!"}, {"label": "Accusative Prepositions", "tip": "bis (until), durch (through), für (for), gegen (against/around), ohne (without), um (at/around). ALWAYS Accusative!"}, {"label": "Contractions", "tip": "in + dem = im | an + dem = am | zu + dem = zum | zu + der = zur | bei + dem = beim | für + das = fürs."}], "table": {"headers": ["Preposition", "Case", "Meaning", "Example"], "rows": [["mit", "Dativ", "with / by (transit)", "Ich fahre mit dem Bus."], ["für", "Akkusativ", "for", "Das Geschenk ist für dich."], ["zu", "Dativ", "to", "Ich gehe zum Arzt."], ["ohne", "Akkusativ", "without", "Kaffee ohne Zucker bitte."], ["bei", "Dativ", "at / with", "Ich wohne bei meinen Eltern."], ["nach", "Dativ", "after / to (city/country)", "Nach dem Essen schlafe ich."]]}, "fritz_tip": "Remember: 'zum' = zu dem (masc/neut), 'zur' = zu der (fem). 'Ich gehe zum Arzt, aber zur Bank!' 🦊🏦", "quiz": [{"q": "Fill in: 'Ein Kaffee _____ (without) Milch bitte.'", "options": ["mit", "ohne", "für"], "answer": 1, "hint": "'ohne' means without."}, {"q": "What is the contraction for 'in dem'?", "options": ["im", "am", "ans"], "answer": 0, "hint": "'in + dem' contracts to 'im'."}, {"q": "Which preposition means 'since' and takes Dative?", "options": ["nach", "seit", "von"], "answer": 1, "hint": "'seit' means since / for a period of time: 'seit einem Jahr'."}]}, {"id": "plurals", "title": "10. Plural Patterns & Noun Endings", "tag": "Nouns", "summary": "Unlike English (-s), German has 5 main plural patterns: -e, -(e)n, -er, -s, and no ending (often with umlauts).", "color": "#6C5CE7", "rules": [{"label": "Pattern 1: -e (often with Umlaut)", "tip": "Common for masculine & neuter nouns: der Tisch -> die Tische, der Baum -> die Bäume."}, {"label": "Pattern 2: -(e)n", "tip": "Standard for ~90% of feminine nouns: die Frau -> die Frauen, die Lampe -> die Lampen."}, {"label": "Pattern 3: -er (usually with Umlaut)", "tip": "Mostly short neuter nouns: das Kind -> die Kinder, das Buch -> die Bücher, das Bild -> die Bilder."}, {"label": "Pattern 4: -s", "tip": "Foreign loanwords and abbreviations: das Auto -> die Autos, das Sofa -> die Sofas, das Handy -> die Handys."}, {"label": "Pattern 5: No ending (or just Umlaut)", "tip": "Nouns ending in -el, -en, -er: der Lehrer -> die Lehrer, der Apfel -> die Äpfel, der Computer -> die Computer."}], "table": {"headers": ["Singular", "Plural", "Pattern", "English"], "rows": [["der Tag", "die Tage", "+e", "day -> days"], ["die Zeitung", "die Zeitungen", "+en", "newspaper -> newspapers"], ["das Kind", "die Kinder", "+er", "child -> children"], ["das Auto", "die Autos", "+s", "car -> cars"], ["der Apfel", "die Äpfel", "Umlaut only", "apple -> apples"]]}, "fritz_tip": "Whenever you learn a German noun, always learn it with its article AND its plural: 'der Tisch, die Tische'! 🦊📚", "quiz": [{"q": "What is the plural of 'das Buch'?", "options": ["die Buche", "die Büchen", "die Bücher"], "answer": 2, "hint": "Das Buch takes an umlaut and -er: die Bücher."}, {"q": "What is the plural ending for most feminine nouns ending in -ung?", "options": ["-e", "-en", "-s"], "answer": 1, "hint": "die Zeitung -> die Zeitungen."}, {"q": "What is the plural of 'das Auto'?", "options": ["die Autos", "die Auton", "die Autoe"], "answer": 0, "hint": "Loanwords usually take -s."}]}];
 
 function renderGrammar() {
     const container = document.getElementById('grammar-cards-container');
