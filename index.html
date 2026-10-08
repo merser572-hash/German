@@ -161,7 +161,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v25
+                App version: v26
             </div>
         </div>
 
@@ -180,7 +180,21 @@
                     <button class="icon-btn small-btn" id="ddd-tts-btn"><i data-lucide="volume-2"></i></button>
                 </div>
                 
-                <div class="ddd-controls">
+                <div id="ddd-extra-info" style="display:none; margin-top: 24px; text-align:left; animation: scaleIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                <div style="border: 2px dashed #B2BEC3; border-radius: 16px; padding: 16px; position:relative; background:#fff;">
+                    <span id="ddd-mnemonic-badge" style="font-size:11px; font-weight:900; background:#FFEAA7; color:#2D3436; padding:4px 10px; border-radius:12px; position:absolute; top:-14px; left:16px;">Mnemonic Hook</span>
+                    <div id="ddd-mnemonic-title" style="font-weight:900; font-size:18px; margin-bottom:6px; margin-top:4px;">DER Hals</div>
+                    <div id="ddd-mnemonic-text" style="font-size:14px; color:var(--text-muted); line-height:1.4; margin-bottom:16px;">Fritz Tip: Picture masculine words as active, bold characters or in vibrant blue.</div>
+                    <button class="action-btn" style="width:100%; background:var(--green-btn); color:white; padding:12px; box-shadow:0 4px 0 var(--green-shadow);" onclick="initDerDieDas()">Next Word ➡</button>
+                </div>
+                
+                <div style="background:#f1f2f6; border-radius:16px; padding:16px; margin-top:16px; border:2px solid #DFE6E9;">
+                    <div style="font-weight:900; font-size:12px; color:#636E72; margin-bottom:6px; text-transform:uppercase;">Misol jumla:</div>
+                    <div id="ddd-example-de" style="font-weight:800; font-size:16px; color:#2D3436; margin-bottom:4px;">Ich habe Halsschmerzen und Husten.</div>
+                    <div id="ddd-example-uz" style="font-style:italic; font-size:14px; color:var(--text-muted);">I have a sore throat and cough.</div>
+                </div>
+            </div>
+            <div class="ddd-controls" id="ddd-buttons-container">
                     <button class="btn-3d btn-der" onclick="checkArticle('der')">DER</button>
                     <button class="btn-3d btn-die" onclick="checkArticle('die')">DIE</button>
                     <button class="btn-3d btn-das" onclick="checkArticle('das')">DAS</button>
@@ -279,9 +293,9 @@
         </div>
     </div>
 
-    <script src="sortable.min.js?v=25"></script>
-    <script src="grammar-rules.js?v=25"></script>
-    <script src="app.js?v=25"></script>
+    <script src="sortable.min.js?v=26"></script>
+    <script src="grammar-rules.js?v=26"></script>
+    <script src="app.js?v=26"></script>
     
 </body>
 </html>

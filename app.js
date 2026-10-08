@@ -1218,6 +1218,17 @@ function switchView(viewId) {
 function executeSwitchView(viewId) {
     triggerVibrate(30);
     playSound('tap');
+    
+    const mascot = document.getElementById('global-mascot');
+    if (mascot) mascot.style.display = 'none';
+    
+    // reset fox state
+    const fox = document.getElementById('ddd-mascot-inner');
+    if (fox) {
+        fox.classList.remove('fail');
+        document.getElementById('mascot-mouth').style.borderRadius = '0 0 10px 10px';
+    }
+
     document.querySelectorAll('.view').forEach(v => v.style.display = 'none');
     document.getElementById('view-' + viewId).style.display = 'block';
     
@@ -1229,7 +1240,8 @@ function executeSwitchView(viewId) {
 
     appState.currentView = viewId;
     if (viewId === 'derdiedas') initDerDieDas();
-    if (viewId === 'dictionary') renderDictionary();
+    if (viewId === 'dictionary') renderCategories();
+        renderDictionary();
     if (viewId === 'satzbau') loadSatzbau();
     if (viewId === 'grammar') renderGrammar();
 }
@@ -1245,9 +1257,42 @@ function initDerDieDas() {
 
     const nouns = appState.words.filter(w => w.article && ['der', 'die', 'das'].includes(w.article.toLowerCase()));
     if(nouns.length === 0) return;
+    
+    // reset extra info
+    document.getElementById('ddd-extra-info').style.display = 'none';
+    document.getElementById('ddd-buttons-container').style.display = 'flex';
+
     appState.dddWord = nouns[Math.floor(Math.random() * nouns.length)];
     els.dddWord.textContent = appState.dddWord.word;
     els.dddTrans.textContent = appState.dddWord.translation;
+}
+
+
+function getMnemonicForArticle(w) {
+    if (w.article === 'der') return "Fritz Tip: Picture masculine words as active, bold characters or in vibrant blue. (Muzskoy so'zlarni ko'k rangda tasavvur qiling).";
+    if (w.article === 'die') return "Fritz Tip: Feminine words often end in -e, -ung, -heit. Picture them in soft red. (Jenskiy so'zlarni qizil rangda tasavvur qiling).";
+    if (w.article === 'das') return "Fritz Tip: Neuter words are solid and balanced. Picture them in natural green. (Sredniy so'zlarni yashil rangda tasavvur qiling).";
+    return "";
+}
+
+function showDDDExtra() {
+    const w = appState.dddWord;
+    document.getElementById('ddd-buttons-container').style.display = 'none';
+    document.getElementById('ddd-extra-info').style.display = 'block';
+    
+    document.getElementById('ddd-mnemonic-title').innerText = `${w.article.toUpperCase()} ${w.word}`;
+    document.getElementById('ddd-mnemonic-badge').innerText = w.article.toUpperCase();
+    document.getElementById('ddd-mnemonic-badge').style.color = w.article === 'der' ? '#0984E3' : (w.article === 'die' ? '#D63031' : '#00B894');
+    document.getElementById('ddd-mnemonic-text').innerText = w.mnemonic || getMnemonicForArticle(w);
+    
+    let exDe = w.example || `Ich lerne das Wort "${w.word}".`;
+    let exUz = w.example_uz || `Men "${w.word}" so'zini o'rganyapman.`;
+    if(w.article === 'der') { exDe = `Der ${w.word} ist hier.`; exUz = `${w.word} shu yerda.`; }
+    else if(w.article === 'die') { exDe = `Die ${w.word} ist schön.`; exUz = `${w.word} chiroyli.`; }
+    else if(w.article === 'das') { exDe = `Das ${w.word} ist neu.`; exUz = `${w.word} yangi.`; }
+    
+    document.getElementById('ddd-example-de').innerText = exDe;
+    document.getElementById('ddd-example-uz').innerText = exUz;
 }
 
 function checkArticle(guess) {
@@ -1301,6 +1346,93 @@ function checkArticle(guess) {
         // Notice: No setTimeout here! The app now waits for them to pick the right one.
     }
 }
+
+
+let flashcardWords = [];
+let currentFlashcardIndex = 0;
+
+function openFlashcards() {
+    playSound('tap');
+    const cat = appState.selectedCategory || 'all';
+    let wordsToPick = cat === 'all' ? appState.words : appState.words.filter(w => w.category === cat);
+    
+    // shuffle and pick 20
+    flashcardWords = wordsToPick.sort(() => 0.5 - Math.random()).slice(0, 20);
+    if(flashcardWords.length === 0) return;
+    
+    currentFlashcardIndex = 0;
+    document.getElementById('modal-flashcard').style.display = 'flex';
+    updateFlashcardUI();
+}
+
+function closeFlashcards() {
+    playSound('tap');
+    document.getElementById('modal-flashcard').style.display = 'none';
+}
+
+function updateFlashcardUI() {
+    const w = flashcardWords[currentFlashcardIndex];
+    document.getElementById('fc-counter').innerText = `${currentFlashcardIndex + 1} / ${flashcardWords.length}`;
+    document.getElementById('fc-word').innerText = w.word;
+    document.getElementById('fc-category').innerText = w.category || 'Vocab';
+    document.getElementById('fc-translation').innerText = w.translation;
+    
+    const inner = document.getElementById('fc-card-inner');
+    inner.style.transform = 'rotateY(0deg)'; // reset flip
+}
+
+function flipFlashcard() {
+    playSound('tap');
+    const inner = document.getElementById('fc-card-inner');
+    if (inner.style.transform === 'rotateY(180deg)') {
+        inner.style.transform = 'rotateY(0deg)';
+    } else {
+        inner.style.transform = 'rotateY(180deg)';
+    }
+}
+
+function nextFlashcard() {
+    playSound('tap');
+    if (currentFlashcardIndex < flashcardWords.length - 1) {
+        currentFlashcardIndex++;
+        updateFlashcardUI();
+    } else {
+        closeFlashcards();
+    }
+}
+
+function prevFlashcard() {
+    playSound('tap');
+    if (currentFlashcardIndex > 0) {
+        currentFlashcardIndex--;
+        updateFlashcardUI();
+    }
+}
+
+appState.selectedCategory = 'all';
+
+function renderCategories() {
+    const catContainer = document.getElementById('dict-categories');
+    if (!catContainer) return;
+    
+    const cats = [...new Set(appState.words.map(w => w.category).filter(Boolean))];
+    
+    let html = `<button class="category-chip ${appState.selectedCategory === 'all' ? 'active' : ''}" onclick="selectCategory('all')">all_categories</button>`;
+    cats.forEach(c => {
+        html += `<button class="category-chip ${appState.selectedCategory === c ? 'active' : ''}" onclick="selectCategory('${c.replace(/'/g, "\'")}')">${c}</button>`;
+    });
+    catContainer.innerHTML = html;
+}
+
+function selectCategory(cat) {
+    playSound('tap');
+    appState.selectedCategory = cat;
+    renderCategories();
+    renderCategories();
+        renderDictionary();
+}
+
+// Intercept renderDictionary to filter by category
 
 function renderDictionary() {
     const query = els.dddSearch.value.toLowerCase();
