@@ -223,6 +223,8 @@ function executeSwitchView(viewId) {
 }
 
 function initDerDieDas() {
+    appState.failedCurrentWord = false; // Reset failure state for the new word
+
     // Re-enable and restore button colors
     document.querySelectorAll('.ddd-controls .btn-3d').forEach(b => {
         b.disabled = false;
@@ -240,37 +242,46 @@ function checkArticle(guess) {
     if(!appState.dddWord) return;
     
     const correctArticle = appState.dddWord.article.toLowerCase();
-
-    // Immediately disable buttons and turn them gray
-    document.querySelectorAll('.ddd-controls .btn-3d').forEach(b => {
-        b.disabled = true;
-        b.classList.add('btn-disabled');
-    });
-    
     const correctMsg = TRANSLATIONS[appState.settings.language]['msg_correct'];
     const wrongMsg = TRANSLATIONS[appState.settings.language]['msg_ohno'];
 
     if(guess === correctArticle) {
-        appState.xp += 10;
-        updateStats();
+        // Correct answer! Disable all buttons to prevent double tap
+        document.querySelectorAll('.ddd-controls .btn-3d').forEach(b => {
+            b.disabled = true;
+            b.classList.add('btn-disabled');
+        });
+        // Keep the correct button highlighted
+        const correctBtn = document.querySelector(`.btn-${correctArticle}`);
+        if(correctBtn) correctBtn.classList.remove('btn-disabled');
+
+        // Only award XP if they got it right on the first try!
+        if (!appState.failedCurrentWord) {
+            appState.xp += 10;
+            updateStats();
+        }
+
         playSound('success');
         triggerVibrate(40);
-        showMascot(correctMsg, 1200); // Shorter mascot duration
-        setTimeout(initDerDieDas, 700); // Very fast next word on correct
+        showMascot(correctMsg, 1200); 
+        setTimeout(initDerDieDas, 700); 
     } else {
+        // Wrong answer!
+        appState.failedCurrentWord = true;
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
         playSound('error');
         triggerVibrate([100, 50, 100]);
         showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`, 3500);
         
-        // Highlight the correct button by removing the disabled styling from it
-        const correctBtn = document.querySelector(`.btn-${correctArticle}`);
-        if(correctBtn) {
-            correctBtn.classList.remove('btn-disabled');
+        // Disable ONLY the button they just incorrectly tapped
+        const wrongBtn = document.querySelector(`.btn-${guess}`);
+        if (wrongBtn) {
+            wrongBtn.disabled = true;
+            wrongBtn.classList.add('btn-disabled');
         }
-
-        setTimeout(initDerDieDas, 3500); // Wait a full 3.5 seconds so they can read and memorize the correct answer
+        
+        // Notice: No setTimeout here! The app now waits for them to pick the right one.
     }
 }
 
