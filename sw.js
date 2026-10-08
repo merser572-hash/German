@@ -1,8 +1,9 @@
-const CACHE_NAME = 'wunderdeutsch-v11';
+const CACHE_NAME = 'wunderdeutsch-v12';
 const ASSETS_TO_CACHE = [
     './',
     './index.html',
     './style.css',
+    './grammar-rules.js',
     './app.js',
     './manifest.json',
     './words.json'

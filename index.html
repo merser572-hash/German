@@ -228,11 +228,12 @@
         </div>
     </div>
 
+    <script src="grammar-rules.js"></script>
     <script src="app.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js?v=11').then(reg => {
+                navigator.serviceWorker.register('sw.js?v=12').then(reg => {
                     reg.update();
                 }).catch(err => console.error('Service Worker registration failed', err));
             });

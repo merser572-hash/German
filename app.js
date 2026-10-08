@@ -270,9 +270,12 @@ function checkArticle(guess) {
         appState.failedCurrentWord = true;
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
+        
+        const explanation = typeof getGrammarExplanation === 'function' ? getGrammarExplanation(appState.dddWord, appState.settings.language) : '';
+        
         playSound('error');
         triggerVibrate([100, 50, 100]);
-        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`, 3500);
+        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".<br><span style="font-size:14px; opacity:0.9; margin-top:5px; display:block; font-weight:normal;">${explanation}</span>`, 4500);
         
         // Disable ONLY the button they just incorrectly tapped
         const wrongBtn = document.querySelector(`.btn-${guess}`);
