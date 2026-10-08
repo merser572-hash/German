@@ -128,7 +128,6 @@ function setupAuth() {
     if (localStorage.getItem('wunderdeutsch_auth') === 'true') {
         document.getElementById('login-overlay').style.display = 'none';
         document.getElementById('app-container').style.display = 'block';
-        playIntroAnimation();
     } else {
         document.getElementById('login-overlay').style.display = 'flex';
         document.getElementById('app-container').style.display = 'none';
@@ -140,36 +139,11 @@ function setupAuth() {
             document.getElementById('login-overlay').style.display = 'none';
             document.getElementById('app-container').style.display = 'block';
             lucide.createIcons();
-            playIntroAnimation();
         } else {
             document.getElementById('login-error').style.display = 'block';
             setTimeout(() => { document.getElementById('login-error').style.display = 'none'; }, 3000);
         }
     });
-}
-
-function playIntroAnimation() {
-    // Fox playing phone -> drops it -> waves hello
-    const playing = document.getElementById('intro-playing');
-    const shock = document.getElementById('intro-shock');
-    const hello = document.getElementById('intro-hello');
-    const phone = document.getElementById('intro-phone');
-    if(!playing) return;
-
-    playing.style.opacity = 1; shock.style.opacity = 0; hello.style.opacity = 0; phone.style.opacity = 0;
-    phone.style.transform = 'translateY(0) rotate(0deg)';
-    hello.style.transform = 'translateY(20px)';
-
-    setTimeout(() => {
-        playing.style.opacity = 0; shock.style.opacity = 1; // Realizes user is there
-        setTimeout(() => {
-            shock.style.opacity = 0;
-            phone.style.opacity = 1;
-            phone.style.transform = 'translateY(50px) rotate(90deg)'; // Drops phone
-            hello.style.opacity = 1;
-            hello.style.transform = 'translateY(0px)'; // Comes up waving
-        }, 500);
-    }, 1200);
 }
 
 async function loadVocabulary() {
@@ -222,11 +196,6 @@ function switchView(viewId) {
 }
 
 function initDerDieDas() {
-    // Reset animations
-    document.getElementById('mom-fox').style.right = '-120px';
-    document.getElementById('fast-fox').style.left = '-120px';
-    document.getElementById('student-fox').style.opacity = 1;
-
     const nouns = appState.words.filter(w => w.article && ['der', 'die', 'das'].includes(w.article.toLowerCase()));
     if(nouns.length === 0) return;
     appState.dddWord = nouns[Math.floor(Math.random() * nouns.length)];
@@ -246,7 +215,6 @@ function checkArticle(guess) {
         playSound('success');
         triggerVibrate(40);
         showMascot(correctMsg);
-        playRightAnswerAnimation();
         setTimeout(initDerDieDas, 2000);
     } else {
         appState.lives = Math.max(0, appState.lives - 1);
@@ -254,33 +222,7 @@ function checkArticle(guess) {
         playSound('error');
         triggerVibrate([100, 50, 100]);
         showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`);
-        playWrongAnswerAnimation();
     }
-}
-
-function playWrongAnswerAnimation() {
-    const mom = document.getElementById('mom-fox');
-    mom.style.right = '20px'; // Runs in
-    setTimeout(() => {
-        mom.style.transform = 'scaleX(-1) rotate(15deg)';
-        setTimeout(() => mom.style.transform = 'scaleX(-1) rotate(-15deg)', 150);
-        setTimeout(() => mom.style.transform = 'scaleX(-1) rotate(15deg)', 300);
-        setTimeout(() => mom.style.transform = 'scaleX(-1) rotate(0deg)', 450);
-    }, 300);
-    setTimeout(() => mom.style.right = '-120px', 2000); // Leaves
-}
-
-function playRightAnswerAnimation() {
-    const fast = document.getElementById('fast-fox');
-    fast.style.left = 'calc(50% - 30px)'; // Runs to center
-    setTimeout(() => {
-        // Breathe
-        fast.style.transform = 'scale(1.1)';
-        setTimeout(() => fast.style.transform = 'scale(1.0)', 150);
-        setTimeout(() => fast.style.transform = 'scale(1.1)', 300);
-        setTimeout(() => fast.style.transform = 'scale(1.0)', 450);
-    }, 400);
-    setTimeout(() => fast.style.left = '-120px', 1800); // Leaves
 }
 
 function renderDictionary() {

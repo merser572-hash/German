@@ -211,13 +211,4 @@ input:checked + .slider { background-color: var(--green-btn); }
 input:checked + .slider:before { transform: translateX(22px); }
 
 
-/* Emoji Theatre Scene for Der Die Das */
-.emoji-scene {
-    position: relative; height: 110px; width: 100%; overflow: hidden;
-    margin-bottom: 24px; border-bottom: 2px solid var(--border-color);
-    display: flex; justify-content: center; align-items: flex-end;
-    background: #fdfaf6; border-radius: 16px;
-}
-#student-fox { font-size: 55px; z-index: 10; transition: opacity 0.3s; margin-bottom: -5px;}
-#mom-fox { font-size: 65px; position: absolute; right: -120px; bottom: -5px; z-index: 20; transition: right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); transform: scaleX(-1); }
-#fast-fox { font-size: 55px; position: absolute; left: -120px; bottom: -5px; z-index: 20; transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
