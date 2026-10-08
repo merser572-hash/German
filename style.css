@@ -152,6 +152,14 @@ body {
 .btn-die { background: var(--red-btn); box-shadow: 0 4px 0 var(--red-shadow); }
 .btn-das { background: var(--green-btn); box-shadow: 0 4px 0 var(--green-shadow); }
 
+.btn-disabled {
+    background: #e5e5e5 !important;
+    box-shadow: 0 4px 0 #d0d0d0 !important;
+    color: #999999 !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+}
+
 /* Dictionary List */
 .dict-search { margin-bottom: 20px; }
 .dict-search input { 

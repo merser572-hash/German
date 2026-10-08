@@ -223,6 +223,12 @@ function executeSwitchView(viewId) {
 }
 
 function initDerDieDas() {
+    // Re-enable and restore button colors
+    document.querySelectorAll('.ddd-controls .btn-3d').forEach(b => {
+        b.disabled = false;
+        b.classList.remove('btn-disabled');
+    });
+
     const nouns = appState.words.filter(w => w.article && ['der', 'die', 'das'].includes(w.article.toLowerCase()));
     if(nouns.length === 0) return;
     appState.dddWord = nouns[Math.floor(Math.random() * nouns.length)];
@@ -233,6 +239,12 @@ function initDerDieDas() {
 function checkArticle(guess) {
     if(!appState.dddWord) return;
     
+    // Immediately disable buttons and turn them gray
+    document.querySelectorAll('.ddd-controls .btn-3d').forEach(b => {
+        b.disabled = true;
+        b.classList.add('btn-disabled');
+    });
+    
     const correctMsg = TRANSLATIONS[appState.settings.language]['msg_correct'];
     const wrongMsg = TRANSLATIONS[appState.settings.language]['msg_ohno'];
 
@@ -241,14 +253,15 @@ function checkArticle(guess) {
         updateStats();
         playSound('success');
         triggerVibrate(40);
-        showMascot(correctMsg);
-        setTimeout(initDerDieDas, 2000);
+        showMascot(correctMsg, 1200); // Shorter mascot duration
+        setTimeout(initDerDieDas, 600); // Very fast next word (600ms)
     } else {
         appState.lives = Math.max(0, appState.lives - 1);
         updateStats();
         playSound('error');
         triggerVibrate([100, 50, 100]);
-        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`);
+        showMascot(`${wrongMsg} "${appState.dddWord.article} ${appState.dddWord.word}".`, 2000);
+        setTimeout(initDerDieDas, 1500); // Wait slightly longer on error so they can read the correction
     }
 }
 
@@ -274,11 +287,12 @@ function renderDictionary() {
     lucide.createIcons();
 }
 
-function showMascot(text) {
+function showMascot(text, duration = 3500) {
     document.getElementById('mascot-msg').innerHTML = text;
     const mascot = document.getElementById('global-mascot');
     mascot.classList.add('show');
-    setTimeout(() => { mascot.classList.remove('show'); }, 3500);
+    if(window.mascotTimeout) clearTimeout(window.mascotTimeout);
+    window.mascotTimeout = setTimeout(() => { mascot.classList.remove('show'); }, duration);
 }
 
 function triggerVibrate(pattern) {
