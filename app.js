@@ -1002,7 +1002,7 @@ const appState = {
     streak: parseInt(localStorage.getItem('wunder_streak') || 0), 
     xp: parseInt(localStorage.getItem('wunder_xp') || 0), 
     dailyXP: parseInt(localStorage.getItem('wunder_daily_xp') || 0),
-    lives: parseInt(localStorage.getItem('wunder_lives') || 5), 
+    lives: parseInt(localStorage.getItem('wunder_lives') || 20), 
     lastHeartRegen: parseInt(localStorage.getItem('wunder_last_regen') || Date.now()),
     lastActiveDate: localStorage.getItem('wunder_last_active_date') || new Date().toDateString(),
     words: [], currentWotd: null, dddWord: null, currentView: 'home',
@@ -1018,9 +1018,9 @@ function checkHeartRegen() {
     const diff = now - appState.lastHeartRegen;
     const mins = Math.floor(diff / 60000);
     
-    if (mins >= 30 && appState.lives < 5) {
+    if (mins >= 30 && appState.lives < 20) {
         const heartsToAdd = Math.floor(mins / 30);
-        appState.lives = Math.min(5, appState.lives + heartsToAdd);
+        appState.lives = Math.min(20, appState.lives + heartsToAdd);
         appState.lastHeartRegen = now - ((mins % 30) * 60000); // keep remainder
         saveGamificationState();
         updateStats();
@@ -1424,8 +1424,8 @@ async function syncUserData(uid) {
                 document.getElementById('streak').innerText = appState.streak;
             }
             if (data.hearts !== undefined) {
-                appState.hearts = data.hearts;
-                document.getElementById('lives').innerText = appState.hearts === 9999 ? '∞' : appState.hearts;
+                appState.lives = data.hearts;
+                document.getElementById('lives').innerText = appState.lives === 9999 ? '∞' : appState.lives;
             }
             if (data.lastStreakDate) appState.lastStreakDate = data.lastStreakDate;
             if (data.lastHeartUpdate) appState.lastHeartUpdate = data.lastHeartUpdate;
@@ -1450,7 +1450,7 @@ async function saveUserDataToCloud() {
         await db.collection('users').doc(currentUser.uid).set({
             xp: appState.xp,
             streak: appState.streak,
-            hearts: appState.hearts,
+            hearts: appState.lives,
             lastStreakDate: appState.lastStreakDate,
             lastHeartUpdate: appState.lastHeartUpdate,
             progress: appState.progress,
@@ -2375,4 +2375,38 @@ async function forceCloudSync() {
     
     if (btn) btn.style.opacity = '1';
     if (icon) icon.classList.remove('lucide-spin');
+}
+
+
+let heartTimerInterval;
+
+function openHeartModal() {
+    playSound('tap');
+    document.getElementById('heart-modal').style.display = 'flex';
+    document.getElementById('heart-modal-count').innerText = appState.isAdmin ? '∞' : appState.lives;
+    
+    updateHeartCountdown();
+    heartTimerInterval = setInterval(updateHeartCountdown, 1000);
+}
+
+function closeHeartModal() {
+    playSound('tap');
+    document.getElementById('heart-modal').style.display = 'none';
+    clearInterval(heartTimerInterval);
+}
+
+function updateHeartCountdown() {
+    if (appState.isAdmin || appState.lives >= 20) {
+        document.getElementById('heart-countdown').innerText = "Full!";
+        return;
+    }
+    
+    const now = Date.now();
+    const diff = now - appState.lastHeartRegen;
+    const remainingMs = (30 * 60000) - (diff % (30 * 60000));
+    
+    const mins = Math.floor(remainingMs / 60000);
+    const secs = Math.floor((remainingMs % 60000) / 1000);
+    
+    document.getElementById('heart-countdown').innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 }
