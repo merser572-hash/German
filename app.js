@@ -1099,7 +1099,6 @@ function saveGamificationState() {
         saveUserDataToCloud();
     }
 }
-}
 
 function addXP(amount) {
     appState.xp += amount;
