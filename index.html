@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WunderDeutsch</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css?v=45">
+    <link rel="stylesheet" href="style.css?v=46">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -261,7 +261,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v45
+                App version: v46
             </div>
         </div>
 
@@ -428,9 +428,9 @@
         </div>
     </div>
 
-    <script src="sortable.min.js?v=45"></script>
-    <script src="grammar-rules.js?v=45"></script>
-    <script src="app.js?v=45"></script>
+    <script src="sortable.min.js?v=46"></script>
+    <script src="grammar-rules.js?v=46"></script>
+    <script src="app.js?v=46"></script>
     
 
     <!-- MODAL: FLASHCARDS -->
@@ -503,17 +503,24 @@
                     <div style="font-weight:800; font-size:18px;">Medizin B2 🩺</div>
                     <div style="font-size:14px; opacity:0.9;">Medical German</div>
                 </button>
-                <button class="action-btn" style="background:#DFE6E9; box-shadow: 0 4px 0 #B2BEC3; color:#636E72; text-align:left; padding:16px;" onclick="alert('Coming soon!')">
+                <button class="action-btn" style="background:#DFE6E9; box-shadow: 0 4px 0 #B2BEC3; color:#636E72; text-align:left; padding:16px;" onclick="showComingSoonToast()">
                     <div style="font-weight:800; font-size:18px;">Level A2 (Soon)</div>
                 </button>
-                <button class="action-btn" style="background:#DFE6E9; box-shadow: 0 4px 0 #B2BEC3; color:#636E72; text-align:left; padding:16px;" onclick="alert('Coming soon!')">
+                <button class="action-btn" style="background:#DFE6E9; box-shadow: 0 4px 0 #B2BEC3; color:#636E72; text-align:left; padding:16px;" onclick="showComingSoonToast()">
                     <div style="font-weight:800; font-size:18px;">Level B1 (Soon)</div>
                 </button>
-                <button class="action-btn" style="background:#DFE6E9; box-shadow: 0 4px 0 #B2BEC3; color:#636E72; text-align:left; padding:16px;" onclick="alert('Coming soon!')">
+                <button class="action-btn" style="background:#DFE6E9; box-shadow: 0 4px 0 #B2BEC3; color:#636E72; text-align:left; padding:16px;" onclick="showComingSoonToast()">
                     <div style="font-weight:800; font-size:18px;">Level B2 (Soon)</div>
                 </button>
             </div>
         </div>
+    </div>
+
+
+    <!-- Toast Notification -->
+    <div id="toast-notification" style="position:fixed; bottom:-100px; left:50%; transform:translateX(-50%); background:#2D3436; color:white; padding:16px 24px; border-radius:100px; box-shadow:0 8px 16px rgba(0,0,0,0.2); font-weight:700; transition:bottom 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index:9999; display:flex; align-items:center; gap:12px; white-space:nowrap;">
+        <i data-lucide="info" style="color:var(--blue-btn);"></i>
+        <span id="toast-message">Tez orada! (Coming soon)</span>
     </div>
 
 </body>
