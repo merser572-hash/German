@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WunderDeutsch</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css?v=57">
+    <link rel="stylesheet" href="style.css?v=58">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -228,6 +228,17 @@
                 <h3 style="font-weight: 800;" data-i18n="title_settings">Settings</h3>
                 <div style="width:44px"></div>
             </header>
+
+            <div class="card" style="display:flex; align-items:center; gap:16px;">
+                <div style="width:56px; height:56px; border-radius:28px; background:var(--primary-btn); color:white; display:flex; justify-content:center; align-items:center; font-size:24px; font-weight:800;" id="settings-avatar">
+                    U
+                </div>
+                <div style="flex: 1; overflow: hidden;">
+                    <h3 style="margin:0; font-size:18px; font-weight:800; color:var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="settings-name">User</h3>
+                    <p style="margin:0; color:var(--text-muted); font-size:14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" id="settings-email">user@email.com</p>
+                </div>
+            </div>
+
             
             <div class="card">
                 <h3 style="margin-bottom:16px;" data-i18n="settings_pref">Preferences</h3>
@@ -284,8 +295,15 @@
                 </div>
             </div>
 
+            
+            <div class="card" style="background:var(--red-btn); color:white; text-align:center; cursor:pointer;" onclick="signOut()">
+                <div style="font-weight:800; font-size:16px; display:flex; justify-content:center; align-items:center; gap:8px;">
+                    <i data-lucide="log-out" style="width:20px;"></i> Sign Out
+                </div>
+            </div>
+
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v57
+                App version: v58
             </div>
         </div>
 
@@ -452,9 +470,9 @@
         </div>
     </div>
 
-    <script src="sortable.min.js?v=57"></script>
-    <script src="grammar-rules.js?v=57"></script>
-    <script src="app.js?v=57"></script>
+    <script src="sortable.min.js?v=58"></script>
+    <script src="grammar-rules.js?v=58"></script>
+    <script src="app.js?v=58"></script>
     
 
     <!-- MODAL: FLASHCARDS -->
