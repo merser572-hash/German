@@ -2283,15 +2283,20 @@ function selectLevel(levelStr) {
 
 
 let toastTimeout;
-function showComingSoonToast() {
+
+function showToast(customMsg) {
     playSound('tap');
     const toast = document.getElementById('toast-notification');
     if (!toast) return;
     
-    let msg = "Tez orada! (Coming soon)";
-    if (appState.settings.language === 'en') msg = "Coming soon!";
-    if (appState.settings.language === 'de') msg = "Kommt bald!";
+    let msg = customMsg;
+    if (!msg) {
+        msg = "Tez orada! (Coming soon)";
+        if (appState.settings.language === 'en') msg = "Coming soon!";
+        if (appState.settings.language === 'de') msg = "Kommt bald!";
+    }
     
+    document.getElementById('toast-message').innerText = msg;
     document.getElementById('toast-message').innerText = msg;
     
     toast.style.bottom = '40px';
@@ -2344,4 +2349,30 @@ function updateHomeUIForLevel() {
             btnDict.innerText = TRANSLATIONS[appState.settings.language]['title_dict'];
         }
     }
+}
+
+
+async function forceCloudSync() {
+    if (!currentUser) return;
+    const btn = document.getElementById('sync-btn');
+    const icon = btn.querySelector('i');
+    
+    if (btn) btn.style.opacity = '0.5';
+    if (icon) icon.classList.add('lucide-spin'); // Optional if we add css animation
+    
+    try {
+        await saveUserDataToCloud();
+        // syncUserData sets up the snapshot listener, so it will pull the latest automatically
+        
+        let msg = "Bulut bilan sinxronlandi! ☁️";
+        if (appState.settings.language === 'en') msg = "Cloud Synced! ☁️";
+        if (appState.settings.language === 'de') msg = "Cloud synchronisiert! ☁️";
+        
+        showToast(msg);
+    } catch (e) {
+        showToast("Sync Error!");
+    }
+    
+    if (btn) btn.style.opacity = '1';
+    if (icon) icon.classList.remove('lucide-spin');
 }

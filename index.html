@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WunderDeutsch</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css?v=53">
+    <link rel="stylesheet" href="style.css?v=54">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -82,7 +82,7 @@
                 <div class="stat heart"><i data-lucide="heart"></i> <span id="lives">5</span></div>
                 <div class="controls">
                     <div style="display:flex; gap:8px;">
-                    <button class="icon-btn" onclick="clearAllCaches()"><i data-lucide="refresh-cw"></i></button>
+                    <button class="icon-btn" onclick="forceCloudSync()" id="sync-btn" style="color:var(--primary-btn);"><i data-lucide="refresh-ccw"></i></button>
                     <button class="icon-btn" onclick="switchView('settings')"><i data-lucide="settings"></i></button>
                 </div>
                 </div>
@@ -285,7 +285,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v53
+                App version: v54
             </div>
         </div>
 
@@ -452,9 +452,9 @@
         </div>
     </div>
 
-    <script src="sortable.min.js?v=53"></script>
-    <script src="grammar-rules.js?v=53"></script>
-    <script src="app.js?v=53"></script>
+    <script src="sortable.min.js?v=54"></script>
+    <script src="grammar-rules.js?v=54"></script>
+    <script src="app.js?v=54"></script>
     
 
     <!-- MODAL: FLASHCARDS -->

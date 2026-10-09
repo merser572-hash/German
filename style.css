@@ -544,3 +544,10 @@ input:checked + .slider:before { transform: translateX(22px); }
 .flashcard-ui:active {
     transform: scale(0.98);
 }
+
+.lucide-spin {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
