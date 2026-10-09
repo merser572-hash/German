@@ -1276,8 +1276,6 @@ function setupAuth() {
     });
 }
 
-}
-
 function setupModals() {
     document.getElementById('modal-cancel-btn').addEventListener('click', () => {
         document.getElementById('custom-modal-overlay').style.display = 'none';
@@ -1326,7 +1324,6 @@ function updateStats() {
     
     let displayLives = appState.isAdmin ? '∞' : appState.lives;
     livesElements.forEach(el => el.textContent = displayLives);
-}
 }
 
 function switchView(viewId) {
