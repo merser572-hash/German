@@ -1,54 +1,260 @@
 [
-    {"uz": "Uning manzilini ayta olasizmi?", "de": "Können Sie mir seine Adresse sagen?"},
-    {"uz": "Men Zagrebda tug'ilganman.", "de": "Ich bin in Zagreb geboren."},
-    {"uz": "Mening ismim Thomas.", "de": "Mein Name ist Thomas."},
-    {"uz": "Familiyam Müller, ismim Eva.", "de": "Ich heiße Müller, mein Vorname ist Eva."},
-    {"uz": "Turmush qurganmisiz? Yo'q, bo'ydoqman.", "de": "Sind Sie verheiratet? Nein, ledig."},
-    {"uz": "Men uylanganman, uchta farzandim bor.", "de": "Ich bin verheiratet und habe drei Kinder."},
-    {"uz": "Men Shveytsariyadanman.", "de": "Ich komme aus der Schweiz."},
-    {"uz": "Bu mamlakatda hayot qimmat.", "de": "Das Leben in diesem Land ist teuer."},
-    {"uz": "Bu film faqat kattalar uchun.", "de": "Dieser Film ist nur für Erwachsene."},
-    {"uz": "Men har doim soat to'rtda turishim kerak.", "de": "Ich muss immer um vier Uhr aufstehen."},
-    {"uz": "Biz bu yerda yangimiz.", "de": "Wir sind neu hier."},
-    {"uz": "Keling, tanishaylik.", "de": "Wir wollen uns kennenlernen."},
-    {"uz": "Uning akasi ham shu yerda ishlaydi.", "de": "Sein Bruder arbeitet auch hier."},
-    {"uz": "Ota-onam Ispaniyada yashaydi.", "de": "Meine Eltern leben in Spanien."},
-    {"uz": "Buvim va bobom Yaponiyada yashaydi.", "de": "Meine Großeltern leben in Japan."},
-    {"uz": "Bobom allaqachon sakson yoshda.", "de": "Mein Großvater ist schon achtzig."},
-    {"uz": "Nechta farzandingiz bor?", "de": "Wie viele Kinder haben Sie?"},
-    {"uz": "Singlim seshanba kuni keladi.", "de": "Meine Schwester kommt am Dienstag."},
-    {"uz": "Otam ishchi.", "de": "Mein Vater ist Arbeiter."},
-    {"uz": "Bu Becker xonim.", "de": "Das ist Frau Becker."},
-    {"uz": "Assalomu alaykum, Schmitt xonim!", "de": "Guten Tag, Frau Schmitt!"},
-    {"uz": "Bu mening bir do'stim.", "de": "Das ist ein Freund von mir."},
-    {"uz": "Erim politsiyada ishlaydi.", "de": "Mein Mann arbeitet bei der Polizei."},
-    {"uz": "Xotinim kecha vafot etdi.", "de": "Meine Frau ist gestern gestorben."},
-    {"uz": "Yoshlar xayrlashganda tschüss deyishadi.", "de": "Junge Leute sagen meistens tschüss."},
-    {"uz": "Bir chashka qahva, iltimos!", "de": "Eine Tasse Kaffee, bitte!"},
-    {"uz": "Iltimos, sekinroq gapiring!", "de": "Sprechen Sie bitte leise!"},
-    {"uz": "Taklifingiz uchun rahmat.", "de": "Ich danke Ihnen für die Einladung."},
-    {"uz": "Sizga yordam beraymi? Yo'q, rahmat!", "de": "Soll ich Ihnen helfen? Nein, danke!"},
-    {"uz": "Afsuski, kela olmayman.", "de": "Leider kann ich nicht kommen."},
-    {"uz": "Tug'ilgan kuningiz bilan chin dildan tabriklayman.", "de": "Herzlichen Glückwunsch zum Geburtstag!"},
-    {"uz": "Rafiqangizga ko'p salom ayting.", "de": "Viele Grüße an Ihre Frau."},
-    {"uz": "Buni qilish mumkin emas.", "de": "Das dürfen Sie nicht tun."},
-    {"uz": "Afsuski, u javob bermayapti.", "de": "Er gibt leider keine Antwort."},
-    {"uz": "Bir savolim bor.", "de": "Ich habe eine Frage."},
-    {"uz": "Yordam bering! Iltimos, menga yordam bering!", "de": "Hilfe! Bitte helfen Sie mir!"},
-    {"uz": "Birga borasanmi? Albatta!", "de": "Kommst du mit? Klar!"},
-    {"uz": "Mening muammom til.", "de": "Mein Problem ist die Sprache."},
-    {"uz": "Ehtiyot bo'ling! Mashina kelyapti.", "de": "Vorsicht! Da kommt ein Auto."},
-    {"uz": "Ilgari biz tez-tez birga kinoga borardik.", "de": "Früher waren wir oft zusammen im Kino."},
-    {"uz": "Endi tanaffus qilamiz.", "de": "Jetzt machen wir eine Pause."},
-    {"uz": "Hozir ishim juda ko'p.", "de": "Zurzeit habe ich sehr viel zu tun."},
-    {"uz": "Kech bo'ldi, ketishim kerak.", "de": "Es ist schon spät, ich muss gehen."},
-    {"uz": "Müller janoblari doim o'z vaqtida keladi.", "de": "Herr Müller ist immer pünktlich."},
-    {"uz": "U hech qachon o'z vaqtida kelmaydi.", "de": "Er kommt nie pünktlich."},
-    {"uz": "Poyezd Gamburgdan Berlingacha qancha yuradi?", "de": "Wie lange fährt der Zug von Hamburg nach Berlin?"},
-    {"uz": "Film qancha davom etadi?", "de": "Wie lange dauert der Film?"},
-    {"uz": "U ko'chaning boshida yashaydi.", "de": "Sie wohnt am Anfang der Straße."},
-    {"uz": "Biz iyul boshida ta'tilga chiqamiz.", "de": "Wir machen Anfang Juli Urlaub."},
-    {"uz": "Endi tugatishim kerak.", "de": "Ich muss jetzt Schluss machen."},
-    {"uz": "Bir soatdan keyin qaytaman.", "de": "Ich bin in einer Stunde zurück."},
-    {"uz": "Bugun vaqtim yo'q.", "de": "Ich habe heute keine Zeit."}
+    {
+        "uz": "Uning manzilini ayta olasizmi?",
+        "de": "Können Sie mir seine Adresse sagen?"
+    },
+    {
+        "uz": "Men Zagrebda tug'ilganman.",
+        "de": "Ich bin in Zagreb geboren."
+    },
+    {
+        "uz": "Mening ismim Thomas.",
+        "de": "Mein Name ist Thomas."
+    },
+    {
+        "uz": "Familiyam Müller, ismim Eva.",
+        "de": "Ich heiße Müller, mein Vorname ist Eva."
+    },
+    {
+        "uz": "Turmush qurganmisiz? Yo'q, bo'ydoqman.",
+        "de": "Sind Sie verheiratet? Nein, ledig."
+    },
+    {
+        "uz": "Men uylanganman, uchta farzandim bor.",
+        "de": "Ich bin verheiratet und habe drei Kinder."
+    },
+    {
+        "uz": "Men Shveytsariyadanman.",
+        "de": "Ich komme aus der Schweiz."
+    },
+    {
+        "uz": "Bu mamlakatda hayot qimmat.",
+        "de": "Das Leben in diesem Land ist teuer."
+    },
+    {
+        "uz": "Bu film faqat kattalar uchun.",
+        "de": "Dieser Film ist nur für Erwachsene."
+    },
+    {
+        "uz": "Men har doim soat to'rtda turishim kerak.",
+        "de": "Ich muss immer um vier Uhr aufstehen."
+    },
+    {
+        "uz": "Biz bu yerda yangimiz.",
+        "de": "Wir sind neu hier."
+    },
+    {
+        "uz": "Keling, tanishaylik.",
+        "de": "Wir wollen uns kennenlernen."
+    },
+    {
+        "uz": "Uning akasi ham shu yerda ishlaydi.",
+        "de": "Sein Bruder arbeitet auch hier."
+    },
+    {
+        "uz": "Ota-onam Ispaniyada yashaydi.",
+        "de": "Meine Eltern leben in Spanien."
+    },
+    {
+        "uz": "Buvim va bobom Yaponiyada yashaydi.",
+        "de": "Meine Großeltern leben in Japan."
+    },
+    {
+        "uz": "Bobom allaqachon sakson yoshda.",
+        "de": "Mein Großvater ist schon achtzig."
+    },
+    {
+        "uz": "Nechta farzandingiz bor?",
+        "de": "Wie viele Kinder haben Sie?"
+    },
+    {
+        "uz": "Singlim seshanba kuni keladi.",
+        "de": "Meine Schwester kommt am Dienstag."
+    },
+    {
+        "uz": "Otam ishchi.",
+        "de": "Mein Vater ist Arbeiter."
+    },
+    {
+        "uz": "Bu Becker xonim.",
+        "de": "Das ist Frau Becker."
+    },
+    {
+        "uz": "Assalomu alaykum, Schmitt xonim!",
+        "de": "Guten Tag, Frau Schmitt!"
+    },
+    {
+        "uz": "Bu mening bir do'stim.",
+        "de": "Das ist ein Freund von mir."
+    },
+    {
+        "uz": "Erim politsiyada ishlaydi.",
+        "de": "Mein Mann arbeitet bei der Polizei."
+    },
+    {
+        "uz": "Xotinim kecha vafot etdi.",
+        "de": "Meine Frau ist gestern gestorben."
+    },
+    {
+        "uz": "Yoshlar xayrlashganda tschüss deyishadi.",
+        "de": "Junge Leute sagen meistens tschüss."
+    },
+    {
+        "uz": "Bir chashka qahva, iltimos!",
+        "de": "Eine Tasse Kaffee, bitte!"
+    },
+    {
+        "uz": "Iltimos, sekinroq gapiring!",
+        "de": "Sprechen Sie bitte leise!"
+    },
+    {
+        "uz": "Taklifingiz uchun rahmat.",
+        "de": "Ich danke Ihnen für die Einladung."
+    },
+    {
+        "uz": "Sizga yordam beraymi? Yo'q, rahmat!",
+        "de": "Soll ich Ihnen helfen? Nein, danke!"
+    },
+    {
+        "uz": "Afsuski, kela olmayman.",
+        "de": "Leider kann ich nicht kommen."
+    },
+    {
+        "uz": "Tug'ilgan kuningiz bilan chin dildan tabriklayman.",
+        "de": "Herzlichen Glückwunsch zum Geburtstag!"
+    },
+    {
+        "uz": "Rafiqangizga ko'p salom ayting.",
+        "de": "Viele Grüße an Ihre Frau."
+    },
+    {
+        "uz": "Buni qilish mumkin emas.",
+        "de": "Das dürfen Sie nicht tun."
+    },
+    {
+        "uz": "Afsuski, u javob bermayapti.",
+        "de": "Er gibt leider keine Antwort."
+    },
+    {
+        "uz": "Bir savolim bor.",
+        "de": "Ich habe eine Frage."
+    },
+    {
+        "uz": "Yordam bering! Iltimos, menga yordam bering!",
+        "de": "Hilfe! Bitte helfen Sie mir!"
+    },
+    {
+        "uz": "Birga borasanmi? Albatta!",
+        "de": "Kommst du mit? Klar!"
+    },
+    {
+        "uz": "Mening muammom til.",
+        "de": "Mein Problem ist die Sprache."
+    },
+    {
+        "uz": "Ehtiyot bo'ling! Mashina kelyapti.",
+        "de": "Vorsicht! Da kommt ein Auto."
+    },
+    {
+        "uz": "Ilgari biz tez-tez birga kinoga borardik.",
+        "de": "Früher waren wir oft zusammen im Kino."
+    },
+    {
+        "uz": "Endi tanaffus qilamiz.",
+        "de": "Jetzt machen wir eine Pause."
+    },
+    {
+        "uz": "Hozir ishim juda ko'p.",
+        "de": "Zurzeit habe ich sehr viel zu tun."
+    },
+    {
+        "uz": "Kech bo'ldi, ketishim kerak.",
+        "de": "Es ist schon spät, ich muss gehen."
+    },
+    {
+        "uz": "Müller janoblari doim o'z vaqtida keladi.",
+        "de": "Herr Müller ist immer pünktlich."
+    },
+    {
+        "uz": "U hech qachon o'z vaqtida kelmaydi.",
+        "de": "Er kommt nie pünktlich."
+    },
+    {
+        "uz": "Poyezd Gamburgdan Berlingacha qancha yuradi?",
+        "de": "Wie lange fährt der Zug von Hamburg nach Berlin?"
+    },
+    {
+        "uz": "Film qancha davom etadi?",
+        "de": "Wie lange dauert der Film?"
+    },
+    {
+        "uz": "U ko'chaning boshida yashaydi.",
+        "de": "Sie wohnt am Anfang der Straße."
+    },
+    {
+        "uz": "Biz iyul boshida ta'tilga chiqamiz.",
+        "de": "Wir machen Anfang Juli Urlaub."
+    },
+    {
+        "uz": "Endi tugatishim kerak.",
+        "de": "Ich muss jetzt Schluss machen."
+    },
+    {
+        "uz": "Bir soatdan keyin qaytaman.",
+        "de": "Ich bin in einer Stunde zurück."
+    },
+    {
+        "uz": "Bugun vaqtim yo'q.",
+        "de": "Ich habe heute keine Zeit."
+    },
+    {
+        "uz": "Qachondan beri oshqozoningiz og'riyapti?",
+        "de": "Seit wann haben Sie diese Magenschmerzen?",
+        "explanation": "Tibbiy anamnezda 'Seit wann' (Qachondan beri) so'roq so'zi kasallik tarixini bilish uchun ishlatiladi."
+    },
+    {
+        "uz": "Bemor o'tkir gastritdan aziyat chekmoqda.",
+        "de": "Der Patient leidet an akuter Gastritis.",
+        "explanation": "'leiden an' (+ Dativ) - biror kasallikdan aziyat chekmoq."
+    },
+    {
+        "uz": "Biz gastroskopiya o'tkazishimiz kerak.",
+        "de": "Wir müssen eine Magenspiegelung durchführen.",
+        "explanation": "Modal fe'l 'müssen' 2-o'rinda, asosiy fe'l 'durchführen' gap oxirida keladi."
+    },
+    {
+        "uz": "Og'riq orqaga tarqalyaptimi?",
+        "de": "Strahlen die Schmerzen in den Rücken aus?",
+        "explanation": "'ausstrahlen' (tarqalmoq) ajraladigan fe'l, shuning uchun 'aus' gap oxiriga o'tadi."
+    },
+    {
+        "uz": "Iltimos, chuqur nafas oling va chiqaring.",
+        "de": "Bitte atmen Sie tief ein und aus.",
+        "explanation": "'einatmen' (nafas olmoq) va 'ausatmen' (nafas chiqarmoq) tibbiy ko'rikda juda ko'p ishlatiladigan ajraladigan fe'llardir."
+    },
+    {
+        "uz": "Men sizning qon bosimingizni o'lchashim kerak.",
+        "de": "Ich muss Ihren Blutdruck messen.",
+        "explanation": "Modal fe'l 'muss' bilan 'messen' fe'li gapning oxiriga tushadi."
+    },
+    {
+        "uz": "Ushbu dori kuniga uch marta olinishi kerak.",
+        "de": "Dieses Medikament muss dreimal täglich eingenommen werden.",
+        "explanation": "Passiv nisbat va modal fe'l birgalikda: 'muss ... eingenommen werden'."
+    },
+    {
+        "uz": "Sizda qanday simptomlar bor?",
+        "de": "Welche Symptome haben Sie?",
+        "explanation": "Bemorga savol berish: 'Welche' (qanday/qaysi) + ot."
+    },
+    {
+        "uz": "Operatsiya muvaffaqiyatli o'tdi.",
+        "de": "Die Operation ist erfolgreich verlaufen.",
+        "explanation": "Perfekt zamoni: 'ist ... verlaufen' (o'tdi)."
+    },
+    {
+        "uz": "Bemorning isitmasi baland va boshi aylanmoqda.",
+        "de": "Der Patient hat hohes Fieber und Schwindel.",
+        "explanation": "'hohes Fieber' (baland isitma) kuchli sifat turlanishi."
+    }
 ]

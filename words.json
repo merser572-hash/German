@@ -18117,5 +18117,213 @@
         "plural": "",
         "translation": "olov; gugurt/zajigalka",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "word": "Magen",
+        "article": "der",
+        "plural": "die Mägen",
+        "translation": "oshqozon",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2090"
+    },
+    {
+        "word": "Leber",
+        "article": "die",
+        "plural": "die Lebern",
+        "translation": "jigar",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2091"
+    },
+    {
+        "word": "Niere",
+        "article": "die",
+        "plural": "die Nieren",
+        "translation": "buyrak",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2092"
+    },
+    {
+        "word": "Herz",
+        "article": "das",
+        "plural": "die Herzen",
+        "translation": "yurak",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2093"
+    },
+    {
+        "word": "Lunge",
+        "article": "die",
+        "plural": "die Lungen",
+        "translation": "o'pka",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2094"
+    },
+    {
+        "word": "Blinddarm",
+        "article": "der",
+        "plural": "die Blinddärme",
+        "translation": "ko'richak",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2095"
+    },
+    {
+        "word": "Blut",
+        "article": "das",
+        "plural": "die Blute",
+        "translation": "qon",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2096"
+    },
+    {
+        "word": "Gehirn",
+        "article": "das",
+        "plural": "die Gehirne",
+        "translation": "miya",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2097"
+    },
+    {
+        "word": "Knochen",
+        "article": "der",
+        "plural": "die Knochen",
+        "translation": "suyak",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2098"
+    },
+    {
+        "word": "Muskel",
+        "article": "der",
+        "plural": "die Muskeln",
+        "translation": "mushak",
+        "category": "Medizin B2 - 1. Anatomie & Organe",
+        "id": "2099"
+    },
+    {
+        "word": "Gastritis",
+        "article": "die",
+        "plural": "die Gastritiden",
+        "translation": "gastrit (oshqozon yallig'lanishi)",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2100"
+    },
+    {
+        "word": "Appendizitis",
+        "article": "die",
+        "plural": "die Appendizitiden",
+        "translation": "appenditsit (ko'richak yallig'lanishi)",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2101"
+    },
+    {
+        "word": "Bluthochdruck",
+        "article": "der",
+        "plural": "die Bluthochdrücke",
+        "translation": "qon bosimi oshishi (gipertoniya)",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2102"
+    },
+    {
+        "word": "Sodbrennen",
+        "article": "das",
+        "plural": "",
+        "translation": "jig'ildon qaynashi",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2103"
+    },
+    {
+        "word": "Übelkeit",
+        "article": "die",
+        "plural": "die Übelkeiten",
+        "translation": "ko'ngil aynishi",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2104"
+    },
+    {
+        "word": "Schwindel",
+        "article": "der",
+        "plural": "die Schwindel",
+        "translation": "bosh aylanishi",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2105"
+    },
+    {
+        "word": "Schmerz",
+        "article": "der",
+        "plural": "die Schmerzen",
+        "translation": "og'riq",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2106"
+    },
+    {
+        "word": "Fieber",
+        "article": "das",
+        "plural": "die Fieber",
+        "translation": "isitma",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2107"
+    },
+    {
+        "word": "Husten",
+        "article": "der",
+        "plural": "die Husten",
+        "translation": "yo'tal",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2108"
+    },
+    {
+        "word": "Entzündung",
+        "article": "die",
+        "plural": "die Entzündungen",
+        "translation": "yallig'lanish",
+        "category": "Medizin B2 - 2. Symptome & Diagnosen",
+        "id": "2109"
+    },
+    {
+        "word": "Hypertonie",
+        "article": "die",
+        "plural": "die Hypertonien",
+        "translation": "gipertoniya (baland qon bosimi)",
+        "category": "Medizin B2 - 3. Fachbegriff vs Umgangssprache",
+        "id": "2110"
+    },
+    {
+        "word": "Abdomen",
+        "article": "das",
+        "plural": "die Abdomina",
+        "translation": "qorin bo'shlig'i",
+        "category": "Medizin B2 - 3. Fachbegriff vs Umgangssprache",
+        "id": "2111"
+    },
+    {
+        "word": "Emesis",
+        "article": "die",
+        "plural": "die Emesen",
+        "translation": "qayt qilish (qusish)",
+        "category": "Medizin B2 - 3. Fachbegriff vs Umgangssprache",
+        "id": "2112"
+    },
+    {
+        "word": "Cephalgie",
+        "article": "die",
+        "plural": "die Cephalgien",
+        "translation": "bosh og'rig'i",
+        "category": "Medizin B2 - 3. Fachbegriff vs Umgangssprache",
+        "id": "2113"
+    },
+    {
+        "word": "Insomnie",
+        "article": "die",
+        "plural": "die Insomnien",
+        "translation": "uyqusizlik",
+        "category": "Medizin B2 - 3. Fachbegriff vs Umgangssprache",
+        "id": "2114"
+    },
+    {
+        "word": "Diarrhö",
+        "article": "die",
+        "plural": "die Diarrhöen",
+        "translation": "diareya (ich ketishi)",
+        "category": "Medizin B2 - 3. Fachbegriff vs Umgangssprache",
+        "id": "2115"
     }
 ]

@@ -955,7 +955,7 @@ const TRANSLATIONS = {
         "subtitle_ddd": "Gender Trainer", "subtitle_dict": "Your Vocabulary", "title_satzbau": "Sentence Puzzle", "subtitle_satzbau": "Sentence Puzzle",
         "title_grammar": "Grammar", "subtitle_grammar": "Rules", "daily_goal": "Daily Goal", "wotd": "WORD OF THE MOMENT",
         "settings_offline": "Offline Mode", "settings_clear_cache": "Clear Cache & Reload", "listen": "Listen", "search": "Search word...", "settings_pref": "Preferences", "settings_sound": "Sound",
-        "settings_vib": "Vibration", "settings_lang": "Language", "about_title": "About WunderDeutsch",
+        "settings_vib": "Vibration", "settings_lang": "Language", "settings_notif": "Notifications", "settings_reminder": "Daily Reminders", "about_title": "About WunderDeutsch",
         "about_text": "WunderDeutsch is an interactive learning app specifically designed to master German playfully. Learn vocabulary, train articles, and build sentences!",
         "contact_title": "Contact", "game_prompt": "Which article is correct?", 
         "leave_guard_title": "Are you sure?", "leave_guard": "Are you sure you want to leave your homework? Progress might be lost.",
@@ -970,7 +970,7 @@ const TRANSLATIONS = {
         "subtitle_ddd": "Artikel Trainer", "subtitle_dict": "Deine Vokabeln", "title_satzbau": "Satzbau", "subtitle_satzbau": "Satz-Puzzle",
         "title_grammar": "Grammatik", "subtitle_grammar": "Regeln", "daily_goal": "Tagesziel", "wotd": "WORT DES MOMENTS",
         "settings_offline": "Offline-Modus", "settings_clear_cache": "Cache leeren & neuladen", "listen": "Aussprache hören", "search": "Wort suchen...", "settings_pref": "Präferenzen", "settings_sound": "Ton",
-        "settings_vib": "Vibration", "settings_lang": "Sprache", "about_title": "Über WunderDeutsch",
+        "settings_vib": "Vibration", "settings_lang": "Sprache", "settings_notif": "Benachrichtigungen", "settings_reminder": "Tägliche Erinnerungen", "about_title": "Über WunderDeutsch",
         "about_text": "WunderDeutsch ist eine interaktive Lern-App, die speziell entwickelt wurde, um Deutsch auf spielerische Weise zu meistern. Lerne Vokabeln, trainiere Artikel und baue Sätze!",
         "contact_title": "Kontakt", "game_prompt": "Welcher Artikel ist richtig?", 
         "leave_guard_title": "Bist du sicher?", "leave_guard": "Bist du sicher, dass du deine Hausaufgaben verlassen möchtest?",
@@ -985,7 +985,7 @@ const TRANSLATIONS = {
         "subtitle_ddd": "Artikl Mashqi", "subtitle_dict": "Sizning so'zlaringiz", "title_satzbau": "Gap tuzish", "subtitle_satzbau": "Gap Pazzli",
         "title_grammar": "Grammatika", "subtitle_grammar": "Qoidalar", "daily_goal": "Kunlik maqsad", "wotd": "KUN SO'ZI",
         "settings_offline": "Offlayn rejim", "settings_clear_cache": "Keshni tozalash va yangilash", "listen": "Talaffuzni eshitish", "search": "So'z qidirish...", "settings_pref": "Afzalliklar", "settings_sound": "Ovoz",
-        "settings_vib": "Vibratsiya", "settings_lang": "Til", "about_title": "WunderDeutsch haqida",
+        "settings_vib": "Vibratsiya", "settings_lang": "Til", "settings_notif": "Bildirishnomalar", "settings_reminder": "Kunlik eslatmalar", "about_title": "WunderDeutsch haqida",
         "about_text": "WunderDeutsch - nemis tilini o'yin orqali o'rganish uchun maxsus ishlab chiqilgan interaktiv ilova. So'zlarni yodlang, artikllarni mashq qiling va gaplar tuzing!",
         "contact_title": "Aloqa", "game_prompt": "Qaysi artikl to'g'ri?", 
         "leave_guard_title": "Ishonchingiz komilmi?", "leave_guard": "Haqiqatan ham vazifani tark etmoqchimisiz?",
@@ -1250,6 +1250,7 @@ async function hashPassword(password) {
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
+
 function setupAuth() {
     if (localStorage.getItem('wunderdeutsch_auth') === 'true') {
         document.getElementById('login-overlay').style.display = 'none';
@@ -1258,6 +1259,27 @@ function setupAuth() {
         document.getElementById('login-overlay').style.display = 'flex';
         document.getElementById('app-container').style.display = 'none';
     }
+    
+    let isLoginMode = true;
+
+    document.getElementById('auth-switch-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        isLoginMode = !isLoginMode;
+        
+        if (isLoginMode) {
+            document.getElementById('auth-title').innerText = "Welcome back!";
+            document.getElementById('login-btn').style.display = 'block';
+            document.getElementById('signup-btn').style.display = 'none';
+            document.getElementById('auth-switch-text').innerText = "Don't have an account?";
+            document.getElementById('auth-switch-link').innerText = "Sign up";
+        } else {
+            document.getElementById('auth-title').innerText = "Create a new account";
+            document.getElementById('login-btn').style.display = 'none';
+            document.getElementById('signup-btn').style.display = 'block';
+            document.getElementById('auth-switch-text').innerText = "Already have an account?";
+            document.getElementById('auth-switch-link').innerText = "Login";
+        }
+    });
 
     document.getElementById('login-btn').addEventListener('click', async () => {
         const emailInput = document.getElementById('login-email').value.trim().toLowerCase();
@@ -1270,10 +1292,36 @@ function setupAuth() {
             document.getElementById('app-container').style.display = 'block';
             lucide.createIcons();
         } else {
+            document.getElementById('login-error').innerText = "Incorrect credentials.";
             document.getElementById('login-error').style.display = 'block';
             setTimeout(() => { document.getElementById('login-error').style.display = 'none'; }, 3000);
         }
     });
+    
+    document.getElementById('signup-btn').addEventListener('click', () => {
+        // Mock Signup for frontend demonstration
+        const emailInput = document.getElementById('login-email').value.trim();
+        const passInput = document.getElementById('login-password').value.trim();
+        
+        if (emailInput.length < 5 || passInput.length < 6) {
+            document.getElementById('login-error').innerText = "Email or password too short.";
+            document.getElementById('login-error').style.display = 'block';
+            setTimeout(() => { document.getElementById('login-error').style.display = 'none'; }, 3000);
+            return;
+        }
+        
+        alert("Success! Your account is created locally. In Phase 5, this will save to the Firebase database!");
+        localStorage.setItem('wunderdeutsch_auth', 'true');
+        appState.isAdmin = false; // New users are not admins!
+        updateStats();
+        
+        document.getElementById('login-overlay').style.display = 'none';
+        document.getElementById('app-container').style.display = 'block';
+        lucide.createIcons();
+    });
+}
+
+
 }
 
 function setupModals() {
