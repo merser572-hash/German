@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>WunderDeutsch</title>
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css?v=63">
+    <link rel="stylesheet" href="style.css?v=64">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -310,7 +310,7 @@
             </div>
 
             <div style="text-align:center; margin-top:20px; font-size:12px; color:var(--text-muted); font-weight:700;">
-                App version: v63
+                App version: v64
             </div>
         </div>
 
@@ -477,9 +477,9 @@
         </div>
     </div>
 
-    <script src="sortable.min.js?v=63"></script>
-    <script src="grammar-rules.js?v=63"></script>
-    <script src="app.js?v=63"></script>
+    <script src="sortable.min.js?v=64"></script>
+    <script src="grammar-rules.js?v=64"></script>
+    <script src="app.js?v=64"></script>
     
 
     <!-- MODAL: FLASHCARDS -->
@@ -560,9 +560,20 @@
             <h2 style="font-size:24px; font-weight:800; margin-bottom:8px;">WunderDeutsch Pro</h2>
             <p style="color:var(--text-muted); margin-bottom:24px;">A1-B1 to'liq kurs, tibbiy nemis tili va cheksiz jonlar!</p>
             
-            <button class="action-btn" onclick="buyPro('click')" style="width:100%; background:#00AEEF; color:white; box-shadow: 0 4px 0 #007BB5; margin-bottom:16px;">
-                <i data-lucide="credit-card"></i> Click orqali to'lash (49,000 UZS)
-            </button>
+            
+            <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:24px;">
+                <button class="action-btn" onclick="buyPro('click_1mo')" style="width:100%; background:#00AEEF; color:white; box-shadow: 0 4px 0 #007BB5;">
+                    1 Oylik — 15,000 so'm (Click)
+                </button>
+                <button class="action-btn" onclick="buyPro('click_3mo')" style="width:100%; background:#00AEEF; color:white; border: 2px solid #FDCB6E; box-shadow: 0 4px 0 #007BB5; position:relative;">
+                    <div style="position:absolute; top:-10px; right:-10px; background:#FDCB6E; color:var(--text-dark); font-size:10px; font-weight:800; padding:2px 8px; border-radius:8px;">TAVSIYA</div>
+                    90 kunlik Challenge — 50,000 so'm
+                </button>
+                <button class="action-btn" onclick="buyPro('click_lifetime')" style="width:100%; background:#00AEEF; color:white; box-shadow: 0 4px 0 #007BB5;">
+                    To'liq Yo'l (Lifetime) — 200,000 so'm
+                </button>
+            </div>
+
             
             <button class="action-btn" onclick="buyPro('stars')" style="width:100%; background:#FDCB6E; color:var(--text-dark); box-shadow: 0 4px 0 #E1B12C; margin-bottom:24px;">
                 <i data-lucide="star"></i> Pay with Telegram Stars

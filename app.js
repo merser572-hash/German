@@ -1004,6 +1004,8 @@ const appState = {
     dailyXP: parseInt(localStorage.getItem('wunder_daily_xp') || 0),
     lives: parseInt(localStorage.getItem('wunder_lives') || 20), 
     lastHeartRegen: parseInt(localStorage.getItem('wunder_last_regen') || Date.now()),
+    trialStarted: null,
+    isPro: false,
     lastActiveDate: localStorage.getItem('wunder_last_active_date') || new Date().toDateString(),
     words: [], currentWotd: null, dddWord: null, currentView: 'home',
     dddQueue: [],
@@ -2457,18 +2459,32 @@ function closePremiumModal() {
     document.getElementById('premium-modal').style.display = 'none';
 }
 
-function buyPro(provider) {
+function buyPro(plan_type) {
     playSound('tap');
     if (!isTMA) {
         showToast("Faqat Telegram bot orqali ishlaydi!");
         return;
     }
     
-    tg.sendData(JSON.stringify({
-        action: "buy_subscription",
-        plan: "monthly_49000",
-        provider: provider
-    }));
+    let amount = 0;
+    if (plan_type === 'click_1mo') amount = 15000;
+    if (plan_type === 'click_3mo') amount = 50000;
+    if (plan_type === 'click_lifetime') amount = 200000;
+    
+    if (plan_type.startsWith('click')) {
+        tg.sendData(JSON.stringify({
+            action: "BUY_PRO_CLICK",
+            plan: plan_type,
+            amount_uzs: amount,
+            userId: currentUser.uid,
+            timestamp: Date.now()
+        }));
+    } else if (plan_type === 'stars') {
+        tg.sendData(JSON.stringify({
+            action: "BUY_PRO_STARS",
+            userId: currentUser.uid
+        }));
+    }
     
     closePremiumModal();
     showToast("To'lov oynasi ochilmoqda...");
