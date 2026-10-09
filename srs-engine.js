@@ -4,8 +4,11 @@
 
 const SRS = {
     // Save to localStorage
-    save: function() {
+        save: function() {
         localStorage.setItem('wunder_srs_data', JSON.stringify(appState.progress.words));
+        if (typeof saveUserDataToCloud === 'function') {
+            saveUserDataToCloud();
+        }
     },
     
     // Initialize or get a card

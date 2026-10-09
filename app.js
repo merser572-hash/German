@@ -1389,6 +1389,7 @@ async function syncUserData(uid) {
             if (data.hearts !== undefined) appState.hearts = data.hearts;
             if (data.lastStreakDate) appState.lastStreakDate = data.lastStreakDate;
             if (data.lastHeartUpdate) appState.lastHeartUpdate = data.lastHeartUpdate;
+            if (data.progress !== undefined) appState.progress = data.progress;
             if (data.flashcardQueue) appState.flashcardQueue = data.flashcardQueue;
             if (data.currentLevel) appState.currentLevel = data.currentLevel;
         } else {
@@ -1409,6 +1410,7 @@ async function saveUserDataToCloud() {
             hearts: appState.hearts,
             lastStreakDate: appState.lastStreakDate,
             lastHeartUpdate: appState.lastHeartUpdate,
+            progress: appState.progress,
             flashcardQueue: appState.flashcardQueue,
             currentLevel: appState.currentLevel,
             lastActive: firebase.firestore.FieldValue.serverTimestamp()
