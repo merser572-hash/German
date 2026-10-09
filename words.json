@@ -12664,2161 +12664,5457 @@
     },
     {
         "id": "1408",
-        "word": "geboren",
-        "article": "",
-        "plural": "",
-        "plural_suffix": "",
-        "translation": "tug'ilgan",
+        "word": "Adresse",
+        "article": "die",
+        "plural": "die Adresseen",
+        "translation": "manzil",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1409",
-        "word": "Geburtsjahr",
+        "word": "Alter",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
-        "translation": "tug'ilgan yil",
+        "translation": "yosh (umr)",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1410",
-        "word": "Geburtsort",
+        "word": "Familienname",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
-        "translation": "tug'ilgan joy",
+        "translation": "familiya",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1411",
-        "word": "Gewicht",
-        "article": "das",
+        "word": "Familienstand",
+        "article": "der",
         "plural": "",
-        "plural_suffix": "",
-        "translation": "vazn",
+        "translation": "oilaviy holat",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1412",
-        "word": "männlich",
+        "word": "geboren",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
-        "translation": "erkak jinsi",
+        "translation": "tug'ilgan",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1413",
-        "word": "weiblich",
-        "article": "",
+        "word": "Geburtsjahr",
+        "article": "das",
         "plural": "",
-        "plural_suffix": "",
-        "translation": "ayol jinsi",
+        "translation": "tug'ilgan yil",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1414",
-        "word": "ledig",
-        "article": "",
+        "word": "Geburtsort",
+        "article": "der",
         "plural": "",
-        "plural_suffix": "",
-        "translation": "bo'ydoq, turmush qurmagan",
+        "translation": "tug'ilgan joy",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1415",
-        "word": "Ausländer",
-        "article": "der",
-        "plural": "die Ausländer",
-        "plural_suffix": "-",
-        "translation": "chet ellik",
+        "word": "Gewicht",
+        "article": "das",
+        "plural": "",
+        "translation": "vazn",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
         "id": "1416",
+        "word": "Name",
+        "article": "der",
+        "plural": "die Namen",
+        "translation": "ism",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1417",
+        "word": "Nummer",
+        "article": "die",
+        "plural": "die Nummern",
+        "translation": "raqam",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1418",
+        "word": "Vorname",
+        "article": "der",
+        "plural": "die Vornamen",
+        "translation": "ism (birinchi ism)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1419",
+        "word": "männlich",
+        "article": "",
+        "plural": "",
+        "translation": "erkak jinsi",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1420",
+        "word": "weiblich",
+        "article": "",
+        "plural": "",
+        "translation": "ayol jinsi",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1421",
+        "word": "ledig",
+        "article": "",
+        "plural": "",
+        "translation": "bo'ydoq, turmush qurmagan",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1422",
+        "word": "verheiratet",
+        "article": "",
+        "plural": "",
+        "translation": "uylangan / turmushga chiqqan",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1423",
+        "word": "Ausländer",
+        "article": "der",
+        "plural": "die Ausländer",
+        "translation": "chet ellik",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "1424",
+        "word": "Heimat",
+        "article": "die",
+        "plural": "",
+        "translation": "vatan",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1425",
+        "word": "Land",
+        "article": "das",
+        "plural": "die Lände",
+        "translation": "mamlakat; qishloq joy",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1426",
         "word": "Leben",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hayot",
         "category": "Goethe A1 - 1. Shaxs va tanishuv"
     },
     {
-        "id": "1417",
+        "id": "1427",
+        "word": "Mensch",
+        "article": "der",
+        "plural": "die Menschen",
+        "translation": "inson, odam",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1428",
+        "word": "Leute",
+        "article": "die",
+        "plural": "die faqat ko'plik",
+        "translation": "odamlar",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1429",
         "word": "Erwachsene",
         "article": "der",
         "plural": "die Erwachsenen",
-        "plural_suffix": "-n",
         "translation": "katta yoshli odam",
         "category": "Goethe A1 - 1. Shaxs va tanishuv"
     },
     {
-        "id": "1418",
+        "id": "1430",
         "word": "Jugendliche",
         "article": "der",
         "plural": "die Jugendlichen",
-        "plural_suffix": "-n",
         "translation": "o'smir, yosh",
         "category": "Goethe A1 - 1. Shaxs va tanishuv"
     },
     {
-        "id": "1419",
+        "id": "1431",
+        "word": "Bekannte",
+        "article": "",
+        "plural": "",
+        "translation": "tanish (odam)",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1432",
+        "word": "(sich) anziehen",
+        "article": "",
+        "plural": "",
+        "translation": "kiyinmoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1433",
+        "word": "aufstehen",
+        "article": "",
+        "plural": "",
+        "translation": "o'rnidan turmoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1434",
+        "word": "aussehen",
+        "article": "",
+        "plural": "",
+        "translation": "ko'rinmoq (tashqi ko'rinish)",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1435",
+        "word": "(sich) ausziehen",
+        "article": "",
+        "plural": "",
+        "translation": "yechinmoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1436",
+        "word": "heißen",
+        "article": "",
+        "plural": "",
+        "translation": "nomlanmoq, ismi ... bo'lmoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1437",
+        "word": "kennenlernen",
+        "article": "",
+        "plural": "",
+        "translation": "tanishmoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1438",
+        "word": "schlafen",
+        "article": "",
+        "plural": "",
+        "translation": "uxlamoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1439",
+        "word": "(sich) vorstellen",
+        "article": "",
+        "plural": "",
+        "translation": "o'zini tanishtirmoq",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1440",
         "word": "Baby",
         "article": "das",
         "plural": "die Babys",
-        "plural_suffix": "-s",
         "translation": "chaqaloq",
         "category": "Goethe A1 - 1. Shaxs va tanishuv"
     },
     {
-        "id": "1420",
+        "id": "1441",
+        "word": "Bruder",
+        "article": "der",
+        "plural": "die Brüder",
+        "translation": "aka/uka",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1442",
+        "word": "Eltern",
+        "article": "die",
+        "plural": "die faqat ko'plik",
+        "translation": "ota-ona",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1443",
+        "word": "Familie",
+        "article": "die",
+        "plural": "die Familien",
+        "translation": "oila",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1444",
+        "word": "Geschwister",
+        "article": "die",
+        "plural": "die faqat ko'plik",
+        "translation": "aka-uka, opa-singillar",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1445",
+        "word": "Großeltern",
+        "article": "die",
+        "plural": "die faqat ko'plik",
+        "translation": "buvi va bobo",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1446",
+        "word": "Großmutter",
+        "article": "die",
+        "plural": "",
+        "translation": "buvi",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1447",
+        "word": "Großvater",
+        "article": "der",
+        "plural": "",
+        "translation": "bobo",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1448",
         "word": "Junge",
         "article": "der",
         "plural": "die Jungen",
-        "plural_suffix": "-n",
         "translation": "o'g'il bola",
         "category": "Goethe A1 - 1. Shaxs va tanishuv"
     },
     {
-        "id": "1421",
+        "id": "1449",
+        "word": "Kind",
+        "article": "das",
+        "plural": "die Kinder",
+        "translation": "bola",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1450",
         "word": "Mädchen",
         "article": "das",
         "plural": "die Mädchen",
-        "plural_suffix": "-",
         "translation": "qiz bola",
         "category": "Goethe A1 - 1. Shaxs va tanishuv"
     },
     {
-        "id": "1422",
+        "id": "1451",
+        "word": "Mutter",
+        "article": "die",
+        "plural": "die Mütter",
+        "translation": "ona",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1452",
+        "word": "Oma",
+        "article": "die",
+        "plural": "die Omas",
+        "translation": "buvi (so'zl.)",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1453",
+        "word": "Opa",
+        "article": "der",
+        "plural": "die Opas",
+        "translation": "bobo (so'zl.)",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1454",
+        "word": "Schwester",
+        "article": "die",
+        "plural": "die Schwestern",
+        "translation": "opa/singil",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1455",
+        "word": "Sohn",
+        "article": "der",
+        "plural": "die Söhne",
+        "translation": "o'g'il",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1456",
+        "word": "Tochter",
+        "article": "die",
+        "plural": "die Töchter",
+        "translation": "qiz (farzand)",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1457",
+        "word": "Vater",
+        "article": "der",
+        "plural": "die Väter",
+        "translation": "ota",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1458",
+        "word": "Verwandte",
+        "article": "der",
+        "plural": "die Verwandten",
+        "translation": "qarindosh",
+        "category": "Goethe A1 - 1. Shaxs va tanishuv"
+    },
+    {
+        "id": "1459",
         "word": "Ehefrau / Ehemann",
-        "article": "die / der",
+        "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "xotin / er",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1423",
+        "id": "1460",
+        "word": "Frau",
+        "article": "die",
+        "plural": "die Frauen",
+        "translation": "ayol; xotin; ... xonim",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1461",
+        "word": "Freund",
+        "article": "der",
+        "plural": "die Freunde",
+        "translation": "do'st",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1462",
         "word": "Hausfrau / Hausmann",
-        "article": "die / der",
+        "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "uy bekasi / uy xo'jaligi bilan band erkak",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1424",
-        "word": "Partner / Partnerin",
-        "article": "der / die",
+        "id": "1463",
+        "word": "heiraten",
+        "article": "",
         "plural": "",
-        "plural_suffix": "",
+        "translation": "turmush qurmoq",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1464",
+        "word": "Hochzeit",
+        "article": "die",
+        "plural": "",
+        "translation": "to'y",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1465",
+        "word": "Mann",
+        "article": "der",
+        "plural": "die Männe",
+        "translation": "erkak; er",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1466",
+        "word": "Partner / Partnerin",
+        "article": "",
+        "plural": "",
         "translation": "sherik, hamroh",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1425",
+        "id": "1467",
         "word": "gestorben",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "vafot etgan",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1426",
+        "id": "1468",
         "word": "tot",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "o'lgan",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1427",
+        "id": "1469",
+        "word": "hallo",
+        "article": "",
+        "plural": "",
+        "translation": "salom",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1470",
         "word": "tschüss",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "xayr (norasmiy)",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1428",
+        "id": "1471",
         "word": "Wiederhören",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "(telefonda) xayr: Auf Wiederhören",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1429",
+        "id": "1472",
         "word": "Wiedersehen",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "xayr: Auf Wiedersehen",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1430",
+        "id": "1473",
         "word": "willkommen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "xush kelibsiz",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1431",
+        "id": "1474",
+        "word": "Herr",
+        "article": "der",
+        "plural": "die Herren",
+        "translation": "janob",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1475",
         "word": "Dame",
         "article": "die",
         "plural": "die Damen",
-        "plural_suffix": "-n",
         "translation": "xonim",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1432",
+        "id": "1476",
+        "word": "bitte",
+        "article": "",
+        "plural": "",
+        "translation": "iltimos; marhamat",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1477",
+        "word": "Bitte",
+        "article": "die",
+        "plural": "die Bitten",
+        "translation": "iltimos, so'rov",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1478",
+        "word": "danken",
+        "article": "",
+        "plural": "",
+        "translation": "minnatdorchilik bildirmoq",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1479",
         "word": "Dank",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "rahmat, minnatdorchilik",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1433",
+        "id": "1480",
+        "word": "danke",
+        "article": "",
+        "plural": "",
+        "translation": "rahmat",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1481",
         "word": "entschuldigen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kechirmoq",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1434",
+        "id": "1482",
         "word": "Entschuldigung",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kechirasiz; uzr",
         "category": "Goethe A1 - 2. Oila va munosabatlar"
     },
     {
-        "id": "1435",
+        "id": "1483",
+        "word": "leider",
+        "article": "",
+        "plural": "",
+        "translation": "afsuski",
+        "category": "Goethe A1 - 2. Oila va munosabatlar"
+    },
+    {
+        "id": "1484",
+        "word": "Anrede",
+        "article": "die",
+        "plural": "",
+        "translation": "murojaat (xatda)",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1485",
+        "word": "Glück",
+        "article": "das",
+        "plural": "",
+        "translation": "baxt, omad",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1486",
+        "word": "Glückwunsch",
+        "article": "der",
+        "plural": "",
+        "translation": "tabrik",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1487",
+        "word": "gratulieren",
+        "article": "",
+        "plural": "",
+        "translation": "tabriklamoq",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1488",
+        "word": "Gruß",
+        "article": "der",
+        "plural": "die Grüße",
+        "translation": "salom (xatda)",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1489",
         "word": "herzlich",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "samimiy",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1436",
+        "id": "1490",
         "word": "lieb-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "aziz, mehribon",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1437",
+        "id": "1491",
         "word": "Achtung",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "Diqqat!",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1438",
+        "id": "1492",
+        "word": "Antwort",
+        "article": "die",
+        "plural": "die Antworten",
+        "translation": "javob",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1493",
         "word": "zum Beispiel / z. B.",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "masalan",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1439",
+        "id": "1494",
+        "word": "Frage",
+        "article": "die",
+        "plural": "die Fragen",
+        "translation": "savol",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1495",
+        "word": "Gespräch",
+        "article": "das",
+        "plural": "die Gespräche",
+        "translation": "suhbat",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1496",
         "word": "Hilfe",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yordam",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1440",
+        "id": "1497",
+        "word": "ja",
+        "article": "",
+        "plural": "",
+        "translation": "ha",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1498",
+        "word": "nein",
+        "article": "",
+        "plural": "",
+        "translation": "yo'q",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1499",
+        "word": "klar",
+        "article": "",
+        "plural": "",
+        "translation": "aniq, albatta",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1500",
+        "word": "Moment",
+        "article": "der",
+        "plural": "",
+        "translation": "lahza, daqiqa",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1501",
         "word": "Ordnung",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tartib",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1441",
+        "id": "1502",
+        "word": "Problem",
+        "article": "das",
+        "plural": "die Probleme",
+        "translation": "muammo",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1503",
+        "word": "Vorsicht",
+        "article": "die",
+        "plural": "",
+        "translation": "ehtiyot bo'ling!",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1504",
+        "word": "bald",
+        "article": "",
+        "plural": "",
+        "translation": "tez orada",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1505",
         "word": "früher",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ilgari, avval",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1442",
+        "id": "1506",
         "word": "gerade",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hozirgina, aynan",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1443",
+        "id": "1507",
+        "word": "gestern",
+        "article": "",
+        "plural": "",
+        "translation": "kecha",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1508",
+        "word": "heute",
+        "article": "",
+        "plural": "",
+        "translation": "bugun",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1509",
+        "word": "jetzt",
+        "article": "",
+        "plural": "",
+        "translation": "hozir",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1510",
+        "word": "morgen",
+        "article": "",
+        "plural": "",
+        "translation": "ertaga",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1511",
         "word": "später",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "keyinroq",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1444",
+        "id": "1512",
+        "word": "sofort",
+        "article": "",
+        "plural": "",
+        "translation": "darhol",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1513",
+        "word": "zurzeit",
+        "article": "",
+        "plural": "",
+        "translation": "hozirgi paytda",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1514",
+        "word": "seit",
+        "article": "",
+        "plural": "",
+        "translation": "-dan beri",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1515",
+        "word": "spät",
+        "article": "",
+        "plural": "",
+        "translation": "kech",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1516",
+        "word": "pünktlich",
+        "article": "",
+        "plural": "",
+        "translation": "o'z vaqtida, aniq",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1517",
         "word": "einmal",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bir marta",
         "category": "Goethe A1 - 3. Muloqot iboralari"
     },
     {
-        "id": "1445",
+        "id": "1518",
+        "word": "immer",
+        "article": "",
+        "plural": "",
+        "translation": "doim",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1519",
+        "word": "nie",
+        "article": "",
+        "plural": "",
+        "translation": "hech qachon",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1520",
+        "word": "oft",
+        "article": "",
+        "plural": "",
+        "translation": "tez-tez",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1521",
+        "word": "lange",
+        "article": "",
+        "plural": "",
+        "translation": "uzoq (vaqt)",
+        "category": "Goethe A1 - 3. Muloqot iboralari"
+    },
+    {
+        "id": "1522",
         "word": "dauern",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "davom etmoq (vaqt)",
         "category": "Goethe A1 - 4. Vaqt"
     },
     {
-        "id": "1446",
+        "id": "1523",
+        "word": "Anfang",
+        "article": "der",
+        "plural": "",
+        "translation": "boshlanish, boshi",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1524",
+        "word": "Datum",
+        "article": "das",
+        "plural": "",
+        "translation": "sana",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1525",
         "word": "Ende",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "oxir, tugash",
         "category": "Goethe A1 - 4. Vaqt"
     },
     {
-        "id": "1447",
+        "id": "1526",
         "word": "Feier-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bayram ... (Feierabend, Feiertag)",
         "category": "Goethe A1 - 4. Vaqt"
     },
     {
-        "id": "1448",
+        "id": "1527",
         "word": "Schluss",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "oxir, yakun",
         "category": "Goethe A1 - 4. Vaqt"
     },
     {
-        "id": "1449",
+        "id": "1528",
         "word": "Stunde",
         "article": "die",
         "plural": "die Stunden",
-        "plural_suffix": "-n",
         "translation": "soat (60 daqiqa); dars soati",
         "category": "Goethe A1 - 4. Vaqt"
     },
     {
-        "id": "1450",
+        "id": "1529",
+        "word": "Uhr",
+        "article": "die",
+        "plural": "",
+        "translation": "soat (vaqt; asbob)",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1530",
+        "word": "Zeit",
+        "article": "die",
+        "plural": "",
+        "translation": "vaqt",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1531",
+        "word": "Apartment",
+        "article": "das",
+        "plural": "die Apartments",
+        "translation": "kvartira-studiya",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1532",
+        "word": "Bad",
+        "article": "das",
+        "plural": "",
+        "translation": "vanna xona",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1533",
+        "word": "Balkon",
+        "article": "der",
+        "plural": "",
+        "translation": "balkon",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1534",
+        "word": "Dusche",
+        "article": "die",
+        "plural": "",
+        "translation": "dush",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1535",
+        "word": "Garten",
+        "article": "der",
+        "plural": "",
+        "translation": "bog'",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1536",
+        "word": "Haus",
+        "article": "das",
+        "plural": "die Häuse",
+        "translation": "uy",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1537",
+        "word": "Küche",
+        "article": "die",
+        "plural": "",
+        "translation": "oshxona",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1538",
+        "word": "Stock",
+        "article": "der",
+        "plural": "",
+        "translation": "qavat",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1539",
+        "word": "Toilette",
+        "article": "die",
+        "plural": "die Toiletteen",
+        "translation": "hojatxona",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1540",
+        "word": "Treppe",
+        "article": "die",
+        "plural": "die Treppen",
+        "translation": "zina",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1541",
+        "word": "Wohnung",
+        "article": "die",
+        "plural": "die Wohnungen",
+        "translation": "kvartira",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1542",
+        "word": "Zimmer",
+        "article": "das",
+        "plural": "die Zimmer",
+        "translation": "xona",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1543",
+        "word": "Aufzug",
+        "article": "der",
+        "plural": "die Aufzüge",
+        "translation": "lift",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1544",
+        "word": "Bett",
+        "article": "das",
+        "plural": "die Betten",
+        "translation": "karavot",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1545",
+        "word": "Herd",
+        "article": "der",
+        "plural": "",
+        "translation": "plita",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1546",
+        "word": "Kühlschrank",
+        "article": "der",
+        "plural": "",
+        "translation": "muzlatgich",
+        "category": "Goethe A1 - 4. Vaqt"
+    },
+    {
+        "id": "1547",
+        "word": "Licht",
+        "article": "das",
+        "plural": "",
+        "translation": "chiroq, yorug'lik",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1548",
+        "word": "Maschine",
+        "article": "die",
+        "plural": "die Maschinen",
+        "translation": "mashina (texnika)",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1549",
+        "word": "Möbel",
+        "article": "die",
+        "plural": "die faqat ko'plik",
+        "translation": "mebel",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1550",
+        "word": "Schlüssel",
+        "article": "der",
+        "plural": "die Schlüssel",
+        "translation": "kalit",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1551",
+        "word": "Schrank",
+        "article": "der",
+        "plural": "die Schränke",
+        "translation": "shkaf",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1552",
+        "word": "Sofa",
+        "article": "das",
+        "plural": "",
+        "translation": "divan",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1553",
+        "word": "Tisch",
+        "article": "der",
+        "plural": "die Tische",
+        "translation": "stol",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1554",
+        "word": "anmachen",
+        "article": "",
+        "plural": "",
+        "translation": "yoqmoq (chiroq, qurilma)",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1555",
+        "word": "ausmachen",
+        "article": "",
+        "plural": "",
+        "translation": "o'chirmoq",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1556",
         "word": "an sein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yoniq bo'lmoq",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1451",
+        "id": "1557",
         "word": "auf sein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ochiq bo'lmoq",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1452",
+        "id": "1558",
         "word": "aus sein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "o'chiq bo'lmoq; tugagan bo'lmoq",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1453",
+        "id": "1559",
         "word": "zu sein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yopiq bo'lmoq",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1454",
+        "id": "1560",
+        "word": "baden",
+        "article": "",
+        "plural": "",
+        "translation": "cho'milmoq (vannada)",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1561",
+        "word": "(sich) duschen",
+        "article": "",
+        "plural": "",
+        "translation": "dush qabul qilmoq",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1562",
+        "word": "(sich) waschen",
+        "article": "",
+        "plural": "",
+        "translation": "yuvmoq; yuvinmoq",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1563",
+        "word": "wohnen",
+        "article": "",
+        "plural": "",
+        "translation": "yashamoq (manzilda)",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1564",
+        "word": "umziehen",
+        "article": "",
+        "plural": "",
+        "translation": "ko'chib o'tmoq",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1565",
+        "word": "mieten",
+        "article": "",
+        "plural": "",
+        "translation": "ijaraga olmoq",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1566",
+        "word": "Miete",
+        "article": "die",
+        "plural": "",
+        "translation": "ijara haqi",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1567",
         "word": "vermieten",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ijaraga bermoq",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1455",
+        "id": "1568",
         "word": "Vermieter",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "uy egasi (ijaraga beruvchi)",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1456",
+        "id": "1569",
+        "word": "Reparatur",
+        "article": "die",
+        "plural": "",
+        "translation": "ta'mir",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1570",
         "word": "Dorf",
         "article": "das",
         "plural": "die Dorfe",
-        "plural_suffix": "¨-er",
         "translation": "qishloq",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1457",
+        "id": "1571",
+        "word": "Stadt",
+        "article": "die",
+        "plural": "die Städte",
+        "translation": "shahar",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1572",
+        "word": "Straße",
+        "article": "die",
+        "plural": "die Straßen",
+        "translation": "ko'cha",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1573",
+        "word": "Apfel",
+        "article": "der",
+        "plural": "die Äpfel",
+        "translation": "olma",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1574",
         "word": "Banane",
         "article": "die",
         "plural": "die Bananen",
-        "plural_suffix": "-n",
         "translation": "banan",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1458",
+        "id": "1575",
         "word": "Birne",
         "article": "die",
         "plural": "die Birnen",
-        "plural_suffix": "-n",
         "translation": "nok",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1459",
+        "id": "1576",
+        "word": "Gemüse",
+        "article": "das",
+        "plural": "",
+        "translation": "sabzavot",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1577",
+        "word": "Kartoffel",
+        "article": "die",
+        "plural": "die Kartoffeln",
+        "translation": "kartoshka",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1578",
+        "word": "Obst",
+        "article": "das",
+        "plural": "",
+        "translation": "meva",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1579",
+        "word": "Tomate",
+        "article": "die",
+        "plural": "die Tomaten",
+        "translation": "pomidor",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1580",
+        "word": "Salat",
+        "article": "der",
+        "plural": "",
+        "translation": "salat",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1581",
+        "word": "Brot",
+        "article": "das",
+        "plural": "die Brote",
+        "translation": "non",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1582",
+        "word": "Brötchen",
+        "article": "das",
+        "plural": "die Brötchen",
+        "translation": "bulochka",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1583",
+        "word": "Butter",
+        "article": "die",
+        "plural": "",
+        "translation": "sariyog'",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1584",
+        "word": "Ei",
+        "article": "das",
+        "plural": "die Eier",
+        "translation": "tuxum",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1585",
+        "word": "Fisch",
+        "article": "der",
+        "plural": "die Fische",
+        "translation": "baliq",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1586",
+        "word": "Fleisch",
+        "article": "das",
+        "plural": "",
+        "translation": "go'sht",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1587",
         "word": "Hähnchen",
         "article": "das",
         "plural": "die Hähnchen",
-        "plural_suffix": "-",
         "translation": "tovuq (go'shti)",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1460",
+        "id": "1588",
+        "word": "Kuchen",
+        "article": "der",
+        "plural": "",
+        "translation": "pirog, tort",
+        "category": "Goethe A1 - 5. Uy-joy"
+    },
+    {
+        "id": "1589",
         "word": "Öl",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yog'",
         "category": "Goethe A1 - 5. Uy-joy"
     },
     {
-        "id": "1461",
+        "id": "1590",
+        "word": "Pommes frites",
+        "article": "die",
+        "plural": "die faqat ko'plik",
+        "translation": "kartoshka fri",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1591",
+        "word": "Reis",
+        "article": "der",
+        "plural": "",
+        "translation": "guruch",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1592",
         "word": "Salz",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tuz",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1462",
+        "id": "1593",
+        "word": "Schinken",
+        "article": "der",
+        "plural": "die Schinken",
+        "translation": "vetchina (dudlangan go'sht)",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1594",
+        "word": "Essen",
+        "article": "das",
+        "plural": "",
+        "translation": "ovqat",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1595",
+        "word": "Frühstück",
+        "article": "das",
+        "plural": "",
+        "translation": "nonushta",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1596",
         "word": "Bier",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "pivo",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1463",
+        "id": "1597",
+        "word": "Getränk",
+        "article": "das",
+        "plural": "die Getränke",
+        "translation": "ichimlik",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1598",
+        "word": "Kaffee",
+        "article": "der",
+        "plural": "",
+        "translation": "qahva",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1599",
+        "word": "Milch",
+        "article": "die",
+        "plural": "",
+        "translation": "sut",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1600",
+        "word": "Saft",
+        "article": "der",
+        "plural": "",
+        "translation": "sharbat",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1601",
+        "word": "Tee",
+        "article": "der",
+        "plural": "",
+        "translation": "choy",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1602",
+        "word": "Wasser",
+        "article": "das",
+        "plural": "",
+        "translation": "suv",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1603",
         "word": "Wein",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "vino",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1464",
+        "id": "1604",
+        "word": "Flasche",
+        "article": "die",
+        "plural": "die Flaschen",
+        "translation": "shisha (idish)",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1605",
+        "word": "Glas",
+        "article": "das",
+        "plural": "die Gläse",
+        "translation": "stakan; shisha (material)",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1606",
+        "word": "Café",
+        "article": "das",
+        "plural": "die Cafés",
+        "translation": "kafe",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1607",
+        "word": "Lokal",
+        "article": "das",
+        "plural": "",
+        "translation": "kafe-restoran",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1608",
+        "word": "Restaurant",
+        "article": "das",
+        "plural": "die Restaurants",
+        "translation": "restoran",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1609",
+        "word": "Speisekarte",
+        "article": "die",
+        "plural": "",
+        "translation": "menyu",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1610",
         "word": "Rechnung",
         "article": "die",
         "plural": "die Rechnungen",
-        "plural_suffix": "-en",
         "translation": "hisob (to'lov)",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1465",
+        "id": "1611",
+        "word": "bestellen",
+        "article": "",
+        "plural": "",
+        "translation": "buyurtma bermoq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1612",
         "word": "Appetit",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ishtaha",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1466",
+        "id": "1613",
+        "word": "essen",
+        "article": "",
+        "plural": "",
+        "translation": "ovqatlanmoq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1614",
+        "word": "trinken",
+        "article": "",
+        "plural": "",
+        "translation": "ichmoq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1615",
         "word": "frühstücken",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "nonushta qilmoq",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1467",
+        "id": "1616",
+        "word": "kochen",
+        "article": "",
+        "plural": "",
+        "translation": "pishirmoq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1617",
+        "word": "grillen",
+        "article": "",
+        "plural": "",
+        "translation": "grill qilmoq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1618",
         "word": "schmecken",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ta'mi bo'lmoq, mazali bo'lmoq",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1468",
+        "id": "1619",
         "word": "bitter",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "achchiq (ta'm)",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1469",
+        "id": "1620",
         "word": "Durst",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "chanqoq",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1470",
+        "id": "1621",
+        "word": "Hunger",
+        "article": "der",
+        "plural": "",
+        "translation": "ochlik (och qolish)",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1622",
         "word": "Bäckerei",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "novvoyxona",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1471",
+        "id": "1623",
+        "word": "Geschäft",
+        "article": "das",
+        "plural": "die Geschäfte",
+        "translation": "do'kon",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1624",
+        "word": "Kiosk",
+        "article": "der",
+        "plural": "",
+        "translation": "kiosk",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1625",
+        "word": "Laden",
+        "article": "der",
+        "plural": "die Läden",
+        "translation": "do'kon",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1626",
         "word": "Lebensmittel",
         "article": "die",
         "plural": "die faqat ko'plik",
-        "plural_suffix": "faqat ko'plik",
         "translation": "oziq-ovqat mahsulotlari",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1472",
+        "id": "1627",
+        "word": "geöffnet",
+        "article": "",
+        "plural": "",
+        "translation": "ochiq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1628",
+        "word": "geschlossen",
+        "article": "",
+        "plural": "",
+        "translation": "yopiq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1629",
         "word": "Kasse",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kassa",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1473",
+        "id": "1630",
+        "word": "Angebot",
+        "article": "das",
+        "plural": "die Angebote",
+        "translation": "taklif; aksiya, chegirma",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1631",
         "word": "bar",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "naqd",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1474",
-        "word": "zahlen",
+        "id": "1632",
+        "word": "bezahlen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "to'lamoq",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1475",
+        "id": "1633",
+        "word": "zahlen",
+        "article": "",
+        "plural": "",
+        "translation": "to'lamoq",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1634",
         "word": "billig",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "arzon",
         "category": "Goethe A1 - 6. Ovqat va ichimlik"
     },
     {
-        "id": "1476",
+        "id": "1635",
+        "word": "günstig",
+        "article": "",
+        "plural": "",
+        "translation": "arzon, qulay",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1636",
+        "word": "teuer",
+        "article": "",
+        "plural": "",
+        "translation": "qimmat",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1637",
+        "word": "Geld",
+        "article": "das",
+        "plural": "",
+        "translation": "pul",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1638",
+        "word": "Preis",
+        "article": "der",
+        "plural": "die Preise",
+        "translation": "narx",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1639",
+        "word": "kosten",
+        "article": "",
+        "plural": "",
+        "translation": "turmoq (narxi)",
+        "category": "Goethe A1 - 6. Ovqat va ichimlik"
+    },
+    {
+        "id": "1640",
         "word": "(Kredit)karte",
         "article": "die",
         "plural": "die n",
-        "plural_suffix": "-n",
         "translation": "(kredit) karta",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1477",
+        "id": "1641",
         "word": "Karte",
         "article": "die",
         "plural": "die Karten",
-        "plural_suffix": "-n",
         "translation": "kartochka, otkritka; menyu; chipta",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1478",
+        "id": "1642",
+        "word": "Farbe",
+        "article": "die",
+        "plural": "die Farben",
+        "translation": "rang",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1643",
         "word": "Größe",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "o'lcham, razmer",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1479",
+        "id": "1644",
+        "word": "Jacke",
+        "article": "die",
+        "plural": "die Jacken",
+        "translation": "kurtka",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1645",
+        "word": "Kleidung",
+        "article": "die",
+        "plural": "",
+        "translation": "kiyim",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1646",
+        "word": "Schuh",
+        "article": "der",
+        "plural": "die Schuhe",
+        "translation": "poyabzal",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1647",
+        "word": "Tasche",
+        "article": "die",
+        "plural": "die Taschen",
+        "translation": "sumka; cho'ntak",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1648",
+        "word": "einkaufen",
+        "article": "",
+        "plural": "",
+        "translation": "xarid qilmoq",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1649",
+        "word": "kaufen",
+        "article": "",
+        "plural": "",
+        "translation": "sotib olmoq",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1650",
         "word": "verkaufen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "sotmoq",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1480",
+        "id": "1651",
+        "word": "Verkäufer",
+        "article": "der",
+        "plural": "die Verkäufer",
+        "translation": "sotuvchi",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1652",
         "word": "Kunde",
         "article": "der",
         "plural": "die Kunden",
-        "plural_suffix": "-n",
         "translation": "mijoz, xaridor",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1481",
+        "id": "1653",
         "word": "Zigarette",
         "article": "die",
         "plural": "die Zigaretten",
-        "plural_suffix": "-n",
         "translation": "sigaret",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1482",
+        "id": "1654",
+        "word": "Auto",
+        "article": "das",
+        "plural": "die Autos",
+        "translation": "mashina, avtomobil",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1655",
         "word": "Autobahn",
         "article": "die",
         "plural": "die Autobahnen",
-        "plural_suffix": "-en",
         "translation": "avtomagistral",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1483",
+        "id": "1656",
         "word": "Bahn",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "temir yo'l, poyezd",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1484",
+        "id": "1657",
+        "word": "Bus",
+        "article": "der",
+        "plural": "die Busse",
+        "translation": "avtobus",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1658",
         "word": "Fahrrad",
         "article": "das",
         "plural": "die Fahrrade",
-        "plural_suffix": "¨-er",
         "translation": "velosiped",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1485",
+        "id": "1659",
+        "word": "Flugzeug",
+        "article": "das",
+        "plural": "",
+        "translation": "samolyot",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1660",
         "word": "Lkw",
         "article": "der",
         "plural": "die Lkws",
-        "plural_suffix": "-s",
         "translation": "yuk mashinasi",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1486",
+        "id": "1661",
+        "word": "S-Bahn",
+        "article": "die",
+        "plural": "",
+        "translation": "shahar elektr poyezdi",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1662",
+        "word": "Straßenbahn",
+        "article": "die",
+        "plural": "",
+        "translation": "tramvay",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1663",
+        "word": "Taxi",
+        "article": "das",
+        "plural": "die Taxis",
+        "translation": "taksi",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1664",
+        "word": "Zug",
+        "article": "der",
+        "plural": "die Züge",
+        "translation": "poyezd",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1665",
+        "word": "Fahrer",
+        "article": "der",
+        "plural": "",
+        "translation": "haydovchi",
+        "category": "Goethe A1 - 7. Xarid, pul, kiyim"
+    },
+    {
+        "id": "1666",
         "word": "Abfahrt",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "jo'nash",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1487",
+        "id": "1667",
         "word": "Ankunft",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kelish, yetib kelish",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1488",
+        "id": "1668",
         "word": "Abflug",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "uchib ketish (reys)",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1489",
+        "id": "1669",
         "word": "Ansage",
         "article": "die",
         "plural": "die Ansagen",
-        "plural_suffix": "-n",
         "translation": "e'lon (ovozli)",
         "category": "Goethe A1 - 7. Xarid, pul, kiyim"
     },
     {
-        "id": "1490",
+        "id": "1670",
         "word": "Anschluss",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ulanish; tutashuv (poyezd)",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1491",
+        "id": "1671",
         "word": "Automat",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "avtomat (sotuv apparati)",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1492",
+        "id": "1672",
+        "word": "Bahnhof",
+        "article": "der",
+        "plural": "",
+        "translation": "vokzal",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1673",
+        "word": "Bahnsteig",
+        "article": "der",
+        "plural": "",
+        "translation": "platforma, perron",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1674",
+        "word": "Durchsage",
+        "article": "die",
+        "plural": "die Durchsagen",
+        "translation": "e'lon (radio/vokzal)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1675",
         "word": "Fahrkarte",
         "article": "die",
         "plural": "die Fahrkarten",
-        "plural_suffix": "-n",
         "translation": "chipta",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1493",
+        "id": "1676",
+        "word": "Flughafen",
+        "article": "der",
+        "plural": "",
+        "translation": "aeroport",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1677",
+        "word": "Gleis",
+        "article": "das",
+        "plural": "die Gleise",
+        "translation": "yo'l (poyezd yo'li)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1678",
         "word": "Ticket",
         "article": "das",
         "plural": "die Tickets",
-        "plural_suffix": "-s",
         "translation": "chipta",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1494",
+        "id": "1679",
         "word": "Zoll",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bojxona",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1495",
+        "id": "1680",
         "word": "Halle",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "zal",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1496",
+        "id": "1681",
         "word": "Haltestelle",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bekat",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1497",
+        "id": "1682",
+        "word": "Ausgang",
+        "article": "der",
+        "plural": "",
+        "translation": "chiqish (eshik)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1683",
         "word": "Eingang",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kirish (eshik)",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1498",
+        "id": "1684",
+        "word": "Gepäck",
+        "article": "das",
+        "plural": "",
+        "translation": "yuk (bagaj)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1685",
+        "word": "Koffer",
+        "article": "der",
+        "plural": "die Koffer",
+        "translation": "chamadon",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1686",
+        "word": "abfahren",
+        "article": "",
+        "plural": "",
+        "translation": "jo'nab ketmoq (transportda)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1687",
+        "word": "ankommen",
+        "article": "",
+        "plural": "",
+        "translation": "yetib kelmoq",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1688",
+        "word": "aussteigen",
+        "article": "",
+        "plural": "",
+        "translation": "tushmoq (transportdan)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1689",
+        "word": "einsteigen",
+        "article": "",
+        "plural": "",
+        "translation": "minmoq (transportga)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1690",
+        "word": "fahren",
+        "article": "",
+        "plural": "",
+        "translation": "(transportda) bormoq; haydamoq",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1691",
         "word": "fliegen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "uchmoq",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1499",
+        "id": "1692",
+        "word": "abfliegen",
+        "article": "",
+        "plural": "",
+        "translation": "uchib ketmoq",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1693",
         "word": "halten",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "to'xtamoq; ushlamoq",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1500",
+        "id": "1694",
+        "word": "reisen",
+        "article": "",
+        "plural": "",
+        "translation": "sayohat qilmoq",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1695",
         "word": "übernachten",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tunamoq",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1501",
+        "id": "1696",
         "word": "Doppelzimmer",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ikki kishilik xona",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1502",
+        "id": "1697",
         "word": "Einzelzimmer",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bir kishilik xona",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1503",
+        "id": "1698",
         "word": "Halbpension",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yarim pansion",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1504",
+        "id": "1699",
+        "word": "Hotel",
+        "article": "das",
+        "plural": "die Hotels",
+        "translation": "mehmonxona",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1700",
         "word": "Rezeption",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qabulxona (mehmonxonada)",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1505",
+        "id": "1701",
+        "word": "Ecke",
+        "article": "die",
+        "plural": "die Ecken",
+        "translation": "burchak",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1702",
+        "word": "geradeaus",
+        "article": "",
+        "plural": "",
+        "translation": "to'g'riga",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1703",
         "word": "links",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "chapda, chapga",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1506",
+        "id": "1704",
         "word": "rechts",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "o'ngda, o'ngga",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1507",
+        "id": "1705",
         "word": "zurück",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "orqaga, qaytib",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1508",
+        "id": "1706",
+        "word": "Plan",
+        "article": "der",
+        "plural": "die Pläne",
+        "translation": "reja; xarita",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1707",
+        "word": "Platz",
+        "article": "der",
+        "plural": "die Plätze",
+        "translation": "joy, o'rin; maydon",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1708",
+        "word": "Ort",
+        "article": "der",
+        "plural": "die Orte",
+        "translation": "joy, manzil",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1709",
+        "word": "Schild",
+        "article": "das",
+        "plural": "die Schilder",
+        "translation": "belgi, yozuv (taxtacha)",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1710",
+        "word": "Ausland",
+        "article": "das",
+        "plural": "",
+        "translation": "chet el",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1711",
+        "word": "Blick",
+        "article": "der",
+        "plural": "",
+        "translation": "manzara, nigoh",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1712",
         "word": "Prospekt",
         "article": "der",
         "plural": "die Prospekte",
-        "plural_suffix": "-e",
         "translation": "prospekt, reklama bukleti",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1509",
+        "id": "1713",
+        "word": "Reise",
+        "article": "die",
+        "plural": "",
+        "translation": "sayohat",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1714",
+        "word": "Reisebüro",
+        "article": "das",
+        "plural": "die Reisebüros",
+        "translation": "sayohat agentligi",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1715",
         "word": "Reiseführer",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yo'lko'rsatkich (kitob); gid",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1510",
+        "id": "1716",
         "word": "Sehenswürdigkeit",
         "article": "die",
         "plural": "die Sehenswürdigkeiten",
-        "plural_suffix": "-en",
         "translation": "diqqatga sazovor joy",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1511",
+        "id": "1717",
         "word": "Absender",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "jo'natuvchi",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1512",
+        "id": "1718",
         "word": "Brief",
         "article": "der",
         "plural": "die Briefe",
-        "plural_suffix": "-e",
         "translation": "xat",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1513",
+        "id": "1719",
         "word": "Briefmarke",
         "article": "die",
         "plural": "die Briefmarken",
-        "plural_suffix": "-n",
         "translation": "pochta markasi",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1514",
+        "id": "1720",
         "word": "Empfänger",
         "article": "der",
         "plural": "die Empfänger",
-        "plural_suffix": "-",
         "translation": "qabul qiluvchi",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1515",
+        "id": "1721",
+        "word": "Post",
+        "article": "die",
+        "plural": "",
+        "translation": "pochta",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1722",
+        "word": "Postleitzahl",
+        "article": "die",
+        "plural": "",
+        "translation": "pochta indeksi",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1723",
+        "word": "schicken",
+        "article": "",
+        "plural": "",
+        "translation": "yubormoq",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1724",
+        "word": "E-Mail",
+        "article": "die",
+        "plural": "die E-Mails",
+        "translation": "elektron xat",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1725",
         "word": "Fax",
         "article": "das",
         "plural": "die Faxe",
-        "plural_suffix": "-e",
         "translation": "faks",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1516",
+        "id": "1726",
+        "word": "anrufen",
+        "article": "",
+        "plural": "",
+        "translation": "qo'ng'iroq qilmoq",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1727",
         "word": "Anruf",
         "article": "der",
         "plural": "die Anrufe",
-        "plural_suffix": "-e",
         "translation": "qo'ng'iroq",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1517",
+        "id": "1728",
         "word": "Anrufbeantworter",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "avtojavob beruvchi",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1518",
+        "id": "1729",
+        "word": "Handy",
+        "article": "das",
+        "plural": "die Handys",
+        "translation": "mobil telefon",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1730",
         "word": "telefonieren",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "telefonda gaplashmoq",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1519",
+        "id": "1731",
+        "word": "Telefon",
+        "article": "das",
+        "plural": "",
+        "translation": "telefon",
+        "category": "Goethe A1 - 8. Sayohat va transport"
+    },
+    {
+        "id": "1732",
         "word": "Vorwahl",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "shahar kodi (telefon)",
         "category": "Goethe A1 - 8. Sayohat va transport"
     },
     {
-        "id": "1520",
+        "id": "1733",
+        "word": "Bank",
+        "article": "die",
+        "plural": "",
+        "translation": "bank; o'rindiq (skameyka)",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1734",
         "word": "Konto",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hisob raqam",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1521",
+        "id": "1735",
         "word": "überweisen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "pul o'tkazmoq",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1522",
+        "id": "1736",
         "word": "Schalter",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kassa oynasi (darcha)",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1523",
+        "id": "1737",
+        "word": "(sich) anmelden",
+        "article": "",
+        "plural": "",
+        "translation": "ro'yxatdan o'tmoq, yozilmoq",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1738",
         "word": "Anmeldung",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ro'yxatdan o'tish; qabulxona",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1524",
+        "id": "1739",
         "word": "ausfüllen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "to'ldirmoq (anketa)",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1525",
+        "id": "1740",
+        "word": "Formular",
+        "article": "das",
+        "plural": "die Formulare",
+        "translation": "anketa, blanka",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1741",
         "word": "Ausweis",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "guvohnoma, ID-karta",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1526",
+        "id": "1742",
         "word": "Pass",
         "article": "der",
         "plural": "die Passe",
-        "plural_suffix": "¨-e",
         "translation": "pasport",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1527",
+        "id": "1743",
         "word": "Papiere",
         "article": "die",
         "plural": "die faqat ko'plik",
-        "plural_suffix": "faqat ko'plik",
         "translation": "hujjatlar",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1528",
+        "id": "1744",
         "word": "gültig",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "amal qiluvchi, haqiqiy",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1529",
+        "id": "1745",
         "word": "unterschreiben",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "imzolamoq",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1530",
+        "id": "1746",
         "word": "Unterschrift",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "imzo",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1531",
+        "id": "1747",
         "word": "Beamte",
         "article": "der",
         "plural": "die Beamten",
-        "plural_suffix": "-n",
         "translation": "davlat xizmatchisi",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1532",
+        "id": "1748",
+        "word": "Polizei",
+        "article": "die",
+        "plural": "",
+        "translation": "politsiya",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1749",
         "word": "Auskunft",
         "article": "die",
         "plural": "die Auskunfte",
-        "plural_suffix": "¨-e",
         "translation": "ma'lumot, axborot",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1533",
+        "id": "1750",
+        "word": "Information",
+        "article": "die",
+        "plural": "die Informationen",
+        "translation": "ma'lumot; ma'lumot byurosi",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1751",
+        "word": "Anzeige",
+        "article": "die",
+        "plural": "die Anzeigen",
+        "translation": "e'lon (gazetada)",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1752",
+        "word": "Arm",
+        "article": "der",
+        "plural": "die Arme",
+        "translation": "qo'l (yelka-bilak)",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1753",
+        "word": "Auge",
+        "article": "das",
+        "plural": "die Augen",
+        "translation": "ko'z",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1754",
+        "word": "Bauch",
+        "article": "der",
+        "plural": "",
+        "translation": "qorin",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1755",
+        "word": "Bein",
+        "article": "das",
+        "plural": "die Beine",
+        "translation": "oyoq",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1756",
+        "word": "Fuß",
+        "article": "der",
+        "plural": "die Fuße",
+        "translation": "oyoq (tovon)",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1757",
         "word": "Haar",
         "article": "das",
         "plural": "die Haare",
-        "plural_suffix": "-e",
         "translation": "soch",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1534",
+        "id": "1758",
+        "word": "Hand",
+        "article": "die",
+        "plural": "die Hände",
+        "translation": "qo'l (kaft)",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1759",
+        "word": "Kopf",
+        "article": "der",
+        "plural": "",
+        "translation": "bosh",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1760",
+        "word": "Mund",
+        "article": "der",
+        "plural": "",
+        "translation": "og'iz",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1761",
+        "word": "Arzt",
+        "article": "der",
+        "plural": "die Ärzte",
+        "translation": "shifokor",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1762",
+        "word": "Doktor",
+        "article": "der",
+        "plural": "",
+        "translation": "doktor, shifokor",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1763",
+        "word": "Fieber",
+        "article": "das",
+        "plural": "",
+        "translation": "isitma",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1764",
+        "word": "krank",
+        "article": "",
+        "plural": "",
+        "translation": "kasal",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1765",
+        "word": "Praxis",
+        "article": "die",
+        "plural": "",
+        "translation": "shifoxona (vrach kabineti)",
+        "category": "Goethe A1 - 9. Xizmatlar"
+    },
+    {
+        "id": "1766",
         "word": "weh tun",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "og'rimoq",
         "category": "Goethe A1 - 9. Xizmatlar"
     },
     {
-        "id": "1535",
+        "id": "1767",
+        "word": "Arbeit",
+        "article": "die",
+        "plural": "die Arbeiten",
+        "translation": "ish",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1768",
+        "word": "Arbeitsplatz",
+        "article": "der",
+        "plural": "die Arbeitsplatze",
+        "translation": "ish joyi",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1769",
+        "word": "Beruf",
+        "article": "der",
+        "plural": "die Berufe",
+        "translation": "kasb",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1770",
+        "word": "Chef",
+        "article": "der",
+        "plural": "",
+        "translation": "boshliq",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1771",
+        "word": "Firma",
+        "article": "die",
+        "plural": "",
+        "translation": "firma, kompaniya",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1772",
+        "word": "Job",
+        "article": "der",
+        "plural": "die Jobs",
+        "translation": "ish (vaqtinchalik)",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1773",
+        "word": "Kollege",
+        "article": "der",
+        "plural": "die Kollegen",
+        "translation": "hamkasb",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1774",
+        "word": "Stelle",
+        "article": "die",
+        "plural": "die Stellen",
+        "translation": "ish o'rni, lavozim",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1775",
+        "word": "Praktikum",
+        "article": "das",
+        "plural": "",
+        "translation": "amaliyot (praktika)",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1776",
+        "word": "Termin",
+        "article": "der",
+        "plural": "die Termine",
+        "translation": "uchrashuv vaqti (qabul)",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1777",
+        "word": "Urlaub",
+        "article": "der",
+        "plural": "",
+        "translation": "ta'til",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1778",
+        "word": "Computer",
+        "article": "der",
+        "plural": "die Computer",
+        "translation": "kompyuter",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1779",
         "word": "drucken",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "chop etmoq",
         "category": "Goethe A1 - 10. Tana va sog'liq"
     },
     {
-        "id": "1536",
+        "id": "1780",
+        "word": "Drucker",
+        "article": "der",
+        "plural": "die Drucker",
+        "translation": "printer",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1781",
+        "word": "arbeiten",
+        "article": "",
+        "plural": "",
+        "translation": "ishlamoq",
+        "category": "Goethe A1 - 10. Tana va sog'liq"
+    },
+    {
+        "id": "1782",
         "word": "arbeitslos",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ishsiz",
         "category": "Goethe A1 - 10. Tana va sog'liq"
     },
     {
-        "id": "1537",
+        "id": "1783",
+        "word": "selbstständig",
+        "article": "",
+        "plural": "",
+        "translation": "mustaqil (o'zi ishlaydigan)",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1784",
         "word": "verdienen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "pul topmoq (maosh olmoq)",
         "category": "Goethe A1 - 11. Ish va kasb"
     },
     {
-        "id": "1538",
+        "id": "1785",
+        "word": "Kindergarten",
+        "article": "der",
+        "plural": "",
+        "translation": "bolalar bog'chasi",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1786",
         "word": "Klasse",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "sinf; klass (poyezdda)",
         "category": "Goethe A1 - 11. Ish va kasb"
     },
     {
-        "id": "1539",
+        "id": "1787",
         "word": "Kurs",
         "article": "der",
         "plural": "die Kurse",
-        "plural_suffix": "-e",
         "translation": "kurs",
         "category": "Goethe A1 - 11. Ish va kasb"
     },
     {
-        "id": "1540",
+        "id": "1788",
+        "word": "Lehrer",
+        "article": "der",
+        "plural": "die Lehrer",
+        "translation": "o'qituvchi",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1789",
+        "word": "Schule",
+        "article": "die",
+        "plural": "",
+        "translation": "maktab",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1790",
+        "word": "Schüler",
+        "article": "der",
+        "plural": "die Schüler",
+        "translation": "o'quvchi",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1791",
+        "word": "Student",
+        "article": "der",
+        "plural": "die Studenten",
+        "translation": "talaba",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1792",
+        "word": "Studium",
+        "article": "das",
+        "plural": "",
+        "translation": "o'qish (oliy ta'lim)",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1793",
+        "word": "studieren",
+        "article": "",
+        "plural": "",
+        "translation": "o'qimoq (universitetda)",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1794",
+        "word": "Unterricht",
+        "article": "der",
+        "plural": "",
+        "translation": "dars, mashg'ulot",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1795",
         "word": "Gruppe",
         "article": "die",
         "plural": "die Gruppen",
-        "plural_suffix": "-n",
         "translation": "guruh",
         "category": "Goethe A1 - 11. Ish va kasb"
     },
     {
-        "id": "1541",
+        "id": "1796",
         "word": "Raum",
         "article": "der",
         "plural": "die Raume",
-        "plural_suffix": "¨-e",
         "translation": "xona (dars xonasi)",
         "category": "Goethe A1 - 11. Ish va kasb"
     },
     {
-        "id": "1542",
+        "id": "1797",
+        "word": "Pause",
+        "article": "die",
+        "plural": "die Pausen",
+        "translation": "tanaffus",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1798",
+        "word": "Hausaufgabe",
+        "article": "die",
+        "plural": "die Hausaufgaben",
+        "translation": "uy vazifasi",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1799",
+        "word": "Bleistift",
+        "article": "der",
+        "plural": "die Bleistifte",
+        "translation": "qalam",
+        "category": "Goethe A1 - 11. Ish va kasb"
+    },
+    {
+        "id": "1800",
+        "word": "Buch",
+        "article": "das",
+        "plural": "die Büche",
+        "translation": "kitob",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1801",
+        "word": "Kugelschreiber",
+        "article": "der",
+        "plural": "",
+        "translation": "ruchka",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1802",
+        "word": "Papier",
+        "article": "das",
+        "plural": "",
+        "translation": "qog'oz",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1803",
         "word": "Bogen",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "varaq (javoblar varag'i)",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1543",
+        "id": "1804",
         "word": "Buchstabe",
         "article": "der",
         "plural": "die Buchstaben",
-        "plural_suffix": "-n",
         "translation": "harf",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1544",
+        "id": "1805",
         "word": "buchstabieren",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "harflab aytmoq",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1545",
+        "id": "1806",
+        "word": "Satz",
+        "article": "der",
+        "plural": "die Sätze",
+        "translation": "gap (jumla)",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1807",
+        "word": "Sprache",
+        "article": "die",
+        "plural": "die Sprachen",
+        "translation": "til",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1808",
+        "word": "sprechen",
+        "article": "",
+        "plural": "",
+        "translation": "gapirmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1809",
         "word": "Text",
         "article": "der",
         "plural": "die Texte",
-        "plural_suffix": "-e",
         "translation": "matn",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1546",
+        "id": "1810",
+        "word": "Wort",
+        "article": "das",
+        "plural": "die Wörte",
+        "translation": "so'z",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1811",
+        "word": "bedeuten",
+        "article": "",
+        "plural": "",
+        "translation": "anglatmoq, ma'nosi bo'lmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1812",
         "word": "Beispiel",
         "article": "das",
         "plural": "die Beispiele",
-        "plural_suffix": "-e",
         "translation": "misol",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1547",
+        "id": "1813",
+        "word": "erklären",
+        "article": "",
+        "plural": "",
+        "translation": "tushuntirmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1814",
+        "word": "verstehen",
+        "article": "",
+        "plural": "",
+        "translation": "tushunmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1815",
         "word": "wiederholen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "takrorlamoq",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1548",
+        "id": "1816",
+        "word": "lernen",
+        "article": "",
+        "plural": "",
+        "translation": "o'rganmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1817",
+        "word": "lesen",
+        "article": "",
+        "plural": "",
+        "translation": "o'qimoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1818",
+        "word": "schreiben",
+        "article": "",
+        "plural": "",
+        "translation": "yozmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1819",
         "word": "anklicken",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bosmoq (sichqoncha bilan)",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1549",
+        "id": "1820",
         "word": "ankreuzen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "belgilamoq (x qo'yish)",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1550",
+        "id": "1821",
         "word": "Aufgabe",
         "article": "die",
         "plural": "die Aufgaben",
-        "plural_suffix": "-n",
         "translation": "vazifa, topshiriq",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1551",
+        "id": "1822",
         "word": "Aussage",
         "article": "die",
         "plural": "die Aussagen",
-        "plural_suffix": "-n",
         "translation": "gap, fikr (tasdiq)",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1552",
+        "id": "1823",
         "word": "Ergebnis",
         "article": "das",
         "plural": "die Ergebnisse",
-        "plural_suffix": "-se",
         "translation": "natija",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1553",
+        "id": "1824",
+        "word": "Fehler",
+        "article": "der",
+        "plural": "die Fehler",
+        "translation": "xato",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1825",
+        "word": "Lösung",
+        "article": "die",
+        "plural": "die Lösungen",
+        "translation": "yechim; javob (testda)",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1826",
+        "word": "Prüfung",
+        "article": "die",
+        "plural": "",
+        "translation": "imtihon",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1827",
         "word": "Teil",
         "article": "der",
         "plural": "die Teile",
-        "plural_suffix": "-e",
         "translation": "qism",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1554",
+        "id": "1828",
         "word": "Test",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "test",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1555",
+        "id": "1829",
         "word": "Thema",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "mavzu",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1556",
+        "id": "1830",
         "word": "Fußball",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "futbol",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1557",
+        "id": "1831",
         "word": "Hobby",
         "article": "das",
         "plural": "die Hobbys",
-        "plural_suffix": "-s",
         "translation": "xobbi, qiziqish",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1558",
+        "id": "1832",
         "word": "Rad fahren",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "velosiped haydamoq",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1559",
+        "id": "1833",
+        "word": "schwimmen",
+        "article": "",
+        "plural": "",
+        "translation": "suzmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1834",
+        "word": "Schwimmbad",
+        "article": "das",
+        "plural": "",
+        "translation": "basseyn",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1835",
         "word": "spielen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "o'ynamoq",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1560",
+        "id": "1836",
+        "word": "Sport",
+        "article": "der",
+        "plural": "",
+        "translation": "sport",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1837",
+        "word": "tanzen",
+        "article": "",
+        "plural": "",
+        "translation": "raqsga tushmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1838",
         "word": "wandern",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "piyoda sayr qilmoq (tog'da)",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1561",
+        "id": "1839",
         "word": "Verein",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "klub, jamiyat",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1562",
+        "id": "1840",
+        "word": "gewinnen",
+        "article": "",
+        "plural": "",
+        "translation": "yutmoq",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1841",
+        "word": "Bild",
+        "article": "das",
+        "plural": "die Bilder",
+        "translation": "rasm, surat",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1842",
         "word": "CD",
         "article": "die",
         "plural": "die CDs",
-        "plural_suffix": "-s",
         "translation": "CD disk",
         "category": "Goethe A1 - 12. Ta'lim va imtihon"
     },
     {
-        "id": "1563",
+        "id": "1843",
+        "word": "Film",
+        "article": "der",
+        "plural": "die Filme",
+        "translation": "film",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1844",
+        "word": "Foto",
+        "article": "das",
+        "plural": "die Fotos",
+        "translation": "surat, foto",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1845",
+        "word": "Internet",
+        "article": "das",
+        "plural": "",
+        "translation": "internet",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1846",
+        "word": "Kino",
+        "article": "das",
+        "plural": "die Kinos",
+        "translation": "kino(teatr)",
+        "category": "Goethe A1 - 12. Ta'lim va imtihon"
+    },
+    {
+        "id": "1847",
+        "word": "Lied",
+        "article": "das",
+        "plural": "die Lieder",
+        "translation": "qo'shiq",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1848",
+        "word": "Lieblings-",
+        "article": "",
+        "plural": "",
+        "translation": "eng sevimli ...",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1849",
+        "word": "Zeitung",
+        "article": "die",
+        "plural": "die Zeitungen",
+        "translation": "gazeta",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1850",
+        "word": "fernsehen",
+        "article": "",
+        "plural": "",
+        "translation": "televizor ko'rmoq",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1851",
         "word": "Disco",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "diskoteka",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1564",
+        "id": "1852",
+        "word": "einladen",
+        "article": "",
+        "plural": "",
+        "translation": "taklif qilmoq (mehmonga)",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1853",
         "word": "Einladung",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "taklif (taklifnoma)",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1565",
+        "id": "1854",
+        "word": "feiern",
+        "article": "",
+        "plural": "",
+        "translation": "nishonlamoq",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1855",
+        "word": "Gast",
+        "article": "der",
+        "plural": "die Gäste",
+        "translation": "mehmon",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1856",
+        "word": "Geburtstag",
+        "article": "der",
+        "plural": "",
+        "translation": "tug'ilgan kun",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1857",
+        "word": "Geschenk",
+        "article": "das",
+        "plural": "die Geschenke",
+        "translation": "sovg'a",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1858",
         "word": "Party",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ziyofat, bazm",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1566",
+        "id": "1859",
+        "word": "besuchen",
+        "article": "",
+        "plural": "",
+        "translation": "mehmonga bormoq, tashrif buyurmoq",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1860",
+        "word": "(sich) treffen",
+        "article": "",
+        "plural": "",
+        "translation": "uchrashmoq",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1861",
+        "word": "Ausflug",
+        "article": "der",
+        "plural": "",
+        "translation": "ekskursiya, sayr",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1862",
         "word": "besichtigen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tomosha qilmoq (diqqatga sazovor joy)",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1567",
+        "id": "1863",
         "word": "Eintritt",
         "article": "der",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kirish (chipta, narx)",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1568",
+        "id": "1864",
+        "word": "Freizeit",
+        "article": "die",
+        "plural": "",
+        "translation": "bo'sh vaqt",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1865",
         "word": "Führung",
         "article": "die",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ekskursiya (gid bilan)",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1569",
+        "id": "1866",
+        "word": "Grad (Celsius)",
+        "article": "das",
+        "plural": "",
+        "translation": "daraja (Selsiy)",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1867",
         "word": "regnen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yomg'ir yog'moq",
         "category": "Goethe A1 - 13. Bo'sh vaqt"
     },
     {
-        "id": "1570",
+        "id": "1868",
+        "word": "Regen",
+        "article": "der",
+        "plural": "",
+        "translation": "yomg'ir",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1869",
+        "word": "scheinen",
+        "article": "",
+        "plural": "",
+        "translation": "porlamoq",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1870",
+        "word": "Sonne",
+        "article": "die",
+        "plural": "",
+        "translation": "quyosh",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1871",
+        "word": "Wetter",
+        "article": "das",
+        "plural": "",
+        "translation": "ob-havo",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1872",
+        "word": "Wind",
+        "article": "der",
+        "plural": "",
+        "translation": "shamol",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1873",
+        "word": "Baum",
+        "article": "der",
+        "plural": "die Bäume",
+        "translation": "daraxt",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1874",
+        "word": "Blume",
+        "article": "die",
+        "plural": "die Blumen",
+        "translation": "gul",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1875",
+        "word": "Hund",
+        "article": "der",
+        "plural": "die Hunde",
+        "translation": "it",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1876",
+        "word": "Meer",
+        "article": "das",
+        "plural": "",
+        "translation": "dengiz",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1877",
+        "word": "See",
+        "article": "der",
+        "plural": "",
+        "translation": "ko'l",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1878",
+        "word": "Welt",
+        "article": "die",
+        "plural": "",
+        "translation": "dunyo",
+        "category": "Goethe A1 - 13. Bo'sh vaqt"
+    },
+    {
+        "id": "1879",
         "word": "abgeben",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "topshirmoq, qaytarib bermoq",
         "category": "Goethe A1 - 14. Tabiat va ob-havo"
     },
     {
-        "id": "1571",
+        "id": "1880",
+        "word": "abholen",
+        "article": "",
+        "plural": "",
+        "translation": "olib ketmoq, kutib olmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1881",
+        "word": "anbieten",
+        "article": "",
+        "plural": "",
+        "translation": "taklif qilmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1882",
+        "word": "bekommen",
+        "article": "",
+        "plural": "",
+        "translation": "olmoq (qabul qilmoq)",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1883",
         "word": "bringen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "olib kelmoq",
         "category": "Goethe A1 - 14. Tabiat va ob-havo"
     },
     {
-        "id": "1572",
+        "id": "1884",
         "word": "geben",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bermoq; bor (es gibt)",
         "category": "Goethe A1 - 14. Tabiat va ob-havo"
     },
     {
-        "id": "1573",
+        "id": "1885",
         "word": "holen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "olib kelmoq",
         "category": "Goethe A1 - 14. Tabiat va ob-havo"
     },
     {
-        "id": "1574",
+        "id": "1886",
         "word": "kriegen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "olmoq (so'zl.)",
         "category": "Goethe A1 - 14. Tabiat va ob-havo"
     },
     {
-        "id": "1575",
+        "id": "1887",
+        "word": "mitbringen",
+        "article": "",
+        "plural": "",
+        "translation": "olib kelmoq (o'zi bilan)",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1888",
+        "word": "mitnehmen",
+        "article": "",
+        "plural": "",
+        "translation": "o'zi bilan olib ketmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1889",
+        "word": "nehmen",
+        "article": "",
+        "plural": "",
+        "translation": "olmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1890",
+        "word": "gehören",
+        "article": "",
+        "plural": "",
+        "translation": "tegishli bo'lmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1891",
+        "word": "brauchen",
+        "article": "",
+        "plural": "",
+        "translation": "kerak bo'lmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1892",
+        "word": "benutzen",
+        "article": "",
+        "plural": "",
+        "translation": "foydalanmoq",
+        "category": "Goethe A1 - 14. Tabiat va ob-havo"
+    },
+    {
+        "id": "1893",
         "word": "suchen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qidirmoq",
         "category": "Goethe A1 - 14. Tabiat va ob-havo"
     },
     {
-        "id": "1576",
+        "id": "1894",
+        "word": "finden",
+        "article": "",
+        "plural": "",
+        "translation": "topmoq; deb hisoblamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1895",
+        "word": "anfangen",
+        "article": "",
+        "plural": "",
+        "translation": "boshlamoq, boshlanmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1896",
         "word": "aufhören",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "to'xtamoq, tugamoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1577",
+        "id": "1897",
+        "word": "beginnen",
+        "article": "",
+        "plural": "",
+        "translation": "boshlanmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1898",
+        "word": "enden",
+        "article": "",
+        "plural": "",
+        "translation": "tugamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1899",
+        "word": "öffnen",
+        "article": "",
+        "plural": "",
+        "translation": "ochmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1900",
         "word": "schließen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yopmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1578",
+        "id": "1901",
+        "word": "antworten",
+        "article": "",
+        "plural": "",
+        "translation": "javob bermoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1902",
+        "word": "bitten",
+        "article": "",
+        "plural": "",
+        "translation": "so'ramoq, iltimos qilmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1903",
         "word": "empfehlen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tavsiya qilmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1579",
+        "id": "1904",
         "word": "erlauben",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ruxsat bermoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1580",
+        "id": "1905",
         "word": "erzählen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "so'zlab bermoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1581",
+        "id": "1906",
+        "word": "fragen",
+        "article": "",
+        "plural": "",
+        "translation": "so'ramoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1907",
+        "word": "glauben",
+        "article": "",
+        "plural": "",
+        "translation": "ishonmoq; deb o'ylamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1908",
+        "word": "sagen",
+        "article": "",
+        "plural": "",
+        "translation": "aytmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1909",
+        "word": "kennen",
+        "article": "",
+        "plural": "",
+        "translation": "tanimoq, bilmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1910",
+        "word": "wissen",
+        "article": "",
+        "plural": "",
+        "translation": "bilmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1911",
+        "word": "hören",
+        "article": "",
+        "plural": "",
+        "translation": "eshitmoq, tinglamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1912",
+        "word": "sehen",
+        "article": "",
+        "plural": "",
+        "translation": "ko'rmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1913",
         "word": "riechen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hidlamoq; hid taratmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1582",
+        "id": "1914",
+        "word": "bleiben",
+        "article": "",
+        "plural": "",
+        "translation": "qolmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1915",
+        "word": "gehen",
+        "article": "",
+        "plural": "",
+        "translation": "bormoq (piyoda); bo'lmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1916",
+        "word": "kommen",
+        "article": "",
+        "plural": "",
+        "translation": "kelmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1917",
+        "word": "laufen",
+        "article": "",
+        "plural": "",
+        "translation": "yugurmoq; piyoda yurmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1918",
         "word": "mitkommen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "birga bormoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1583",
+        "id": "1919",
         "word": "legen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qo'ymoq (yotqizib)",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1584",
+        "id": "1920",
         "word": "liegen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yotmoq; joylashgan bo'lmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1585",
+        "id": "1921",
+        "word": "sitzen",
+        "article": "",
+        "plural": "",
+        "translation": "o'tirmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1922",
+        "word": "stehen",
+        "article": "",
+        "plural": "",
+        "translation": "turmoq; yozilgan bo'lmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1923",
         "word": "stellen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qo'ymoq (tik)",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1586",
+        "id": "1924",
         "word": "weg sein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ketgan bo'lmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1587",
+        "id": "1925",
         "word": "warten",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "kutmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1588",
+        "id": "1926",
         "word": "drücken",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bosmoq (tugmani)",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1589",
+        "id": "1927",
+        "word": "(sich) freuen",
+        "article": "",
+        "plural": "",
+        "translation": "xursand bo'lmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1928",
+        "word": "gefallen",
+        "article": "",
+        "plural": "",
+        "translation": "yoqmoq (ma'qul kelmoq)",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1929",
+        "word": "lachen",
+        "article": "",
+        "plural": "",
+        "translation": "kulmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1930",
+        "word": "lieben",
+        "article": "",
+        "plural": "",
+        "translation": "sevmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1931",
         "word": "sich kümmern",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "g'amxo'rlik qilmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1590",
+        "id": "1932",
+        "word": "helfen",
+        "article": "",
+        "plural": "",
+        "translation": "yordam bermoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1933",
+        "word": "fehlen",
+        "article": "",
+        "plural": "",
+        "translation": "yetishmaslik; yo'q bo'lmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1934",
+        "word": "haben",
+        "article": "",
+        "plural": "",
+        "translation": "ega bo'lmoq, bor",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1935",
+        "word": "machen",
+        "article": "",
+        "plural": "",
+        "translation": "qilmoq; tayyorlamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1936",
         "word": "tun",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qilmoq",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1591",
+        "id": "1937",
+        "word": "werden",
+        "article": "",
+        "plural": "",
+        "translation": "bo'lmoq (aylanmoq)",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1938",
+        "word": "leben",
+        "article": "",
+        "plural": "",
+        "translation": "yashamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1939",
+        "word": "mitmachen",
+        "article": "",
+        "plural": "",
+        "translation": "qatnashmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1940",
+        "word": "rauchen",
+        "article": "",
+        "plural": "",
+        "translation": "chekmoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1941",
+        "word": "reparieren",
+        "article": "",
+        "plural": "",
+        "translation": "ta'mirlamoq",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1942",
+        "word": "alt",
+        "article": "",
+        "plural": "",
+        "translation": "qari, eski; ... yoshda",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1943",
         "word": "jung",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yosh (yoshi kichik)",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1592",
+        "id": "1944",
+        "word": "neu",
+        "article": "",
+        "plural": "",
+        "translation": "yangi",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1945",
+        "word": "groß",
+        "article": "",
+        "plural": "",
+        "translation": "katta; baland bo'yli",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1946",
+        "word": "klein",
+        "article": "",
+        "plural": "",
+        "translation": "kichik",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1947",
         "word": "lang",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "uzun",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1593",
+        "id": "1948",
+        "word": "kurz",
+        "article": "",
+        "plural": "",
+        "translation": "qisqa",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1949",
+        "word": "laut",
+        "article": "",
+        "plural": "",
+        "translation": "baland ovozli, shovqinli",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1950",
         "word": "leise",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "past ovozli, jim",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1594",
+        "id": "1951",
         "word": "leicht",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yengil; oson",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1595",
+        "id": "1952",
         "word": "schwer",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "og'ir; qiyin",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1596",
+        "id": "1953",
         "word": "schnell",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tez",
         "category": "Goethe A1 - 15. Umumiy fe'llar"
     },
     {
-        "id": "1597",
+        "id": "1954",
+        "word": "langsam",
+        "article": "",
+        "plural": "",
+        "translation": "sekin",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1955",
+        "word": "richtig",
+        "article": "",
+        "plural": "",
+        "translation": "to'g'ri",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1956",
+        "word": "falsch",
+        "article": "",
+        "plural": "",
+        "translation": "noto'g'ri",
+        "category": "Goethe A1 - 15. Umumiy fe'llar"
+    },
+    {
+        "id": "1957",
+        "word": "gut",
+        "article": "",
+        "plural": "",
+        "translation": "yaxshi",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1958",
+        "word": "schlecht",
+        "article": "",
+        "plural": "",
+        "translation": "yomon",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1959",
         "word": "besser",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yaxshiroq",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1598",
+        "id": "1960",
         "word": "best-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "eng yaxshi",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1599",
+        "id": "1961",
         "word": "hell",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yorug'",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1600",
+        "id": "1962",
+        "word": "hoch",
+        "article": "",
+        "plural": "",
+        "translation": "baland",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1963",
         "word": "breit",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "keng",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1601",
+        "id": "1964",
+        "word": "weit",
+        "article": "",
+        "plural": "",
+        "translation": "uzoq",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1965",
         "word": "besetzt",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "band (joy, telefon)",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1602",
+        "id": "1966",
+        "word": "frei",
+        "article": "",
+        "plural": "",
+        "translation": "bo'sh, ozod",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1967",
         "word": "fertig",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "tayyor",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1603",
+        "id": "1968",
+        "word": "kaputt",
+        "article": "",
+        "plural": "",
+        "translation": "buzilgan, singan",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1969",
+        "word": "müde",
+        "article": "",
+        "plural": "",
+        "translation": "charchagan",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1970",
+        "word": "eilig",
+        "article": "",
+        "plural": "",
+        "translation": "shoshilinch",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1971",
         "word": "möglich",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "mumkin",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1604",
+        "id": "1972",
+        "word": "verboten",
+        "article": "",
+        "plural": "",
+        "translation": "taqiqlangan",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1973",
+        "word": "wichtig",
+        "article": "",
+        "plural": "",
+        "translation": "muhim",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1974",
+        "word": "normal",
+        "article": "",
+        "plural": "",
+        "translation": "normal, odatiy",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1975",
+        "word": "ruhig",
+        "article": "",
+        "plural": "",
+        "translation": "tinch, sokin",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1976",
+        "word": "allein",
+        "article": "",
+        "plural": "",
+        "translation": "yolg'iz, o'zi",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1977",
+        "word": "böse",
+        "article": "",
+        "plural": "",
+        "translation": "jahldor, jahli chiqqan",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1978",
+        "word": "glücklich",
+        "article": "",
+        "plural": "",
+        "translation": "baxtli",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1979",
+        "word": "lustig",
+        "article": "",
+        "plural": "",
+        "translation": "quvnoq, kulgili",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1980",
+        "word": "zufrieden",
+        "article": "",
+        "plural": "",
+        "translation": "mamnun",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1981",
+        "word": "schön",
+        "article": "",
+        "plural": "",
+        "translation": "chiroyli, yaxshi",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1982",
+        "word": "wunderbar",
+        "article": "",
+        "plural": "",
+        "translation": "ajoyib",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1983",
+        "word": "fremd",
+        "article": "",
+        "plural": "",
+        "translation": "begona, notanish",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1984",
         "word": "bekannt",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "mashhur, tanish",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1605",
+        "id": "1985",
         "word": "ausländisch",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "chet elga oid",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1606",
+        "id": "1986",
         "word": "automatisch",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "avtomatik",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1607",
+        "id": "1987",
         "word": "international",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "xalqaro",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1608",
+        "id": "1988",
         "word": "kulturell",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "madaniy",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1609",
+        "id": "1989",
         "word": "einfach",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "oson, oddiy; bir tomonga",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1610",
+        "id": "1990",
+        "word": "ich",
+        "article": "",
+        "plural": "",
+        "translation": "men",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1991",
         "word": "er",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "u (erkak)",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1611",
+        "id": "1992",
         "word": "es",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "u (o'rta jins); shaxssiz \"es\"",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1612",
+        "id": "1993",
+        "word": "sie",
+        "article": "",
+        "plural": "",
+        "translation": "u (ayol); ular",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1994",
+        "word": "Sie",
+        "article": "",
+        "plural": "",
+        "translation": "Siz",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "1995",
         "word": "wir",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "biz",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1613",
+        "id": "1996",
         "word": "dich",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "seni",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1614",
+        "id": "1997",
         "word": "dir",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "senga",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1615",
+        "id": "1998",
         "word": "ihr / ihm / ihn",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "unga (ayol) / unga / uni",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1616",
+        "id": "1999",
         "word": "sich",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "o'zini, o'ziga (qaytim olmoshi)",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1617",
+        "id": "2000",
+        "word": "man",
+        "article": "",
+        "plural": "",
+        "translation": "kishi (shaxssiz \"man\")",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "2001",
         "word": "mein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "mening",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1618",
+        "id": "2002",
         "word": "dein-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "sening",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1619",
+        "id": "2003",
+        "word": "sein",
+        "article": "",
+        "plural": "",
+        "translation": "bo'lmoq; uning",
+        "category": "Goethe A1 - 16. Sifatlar"
+    },
+    {
+        "id": "2004",
         "word": "euer",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "sizlarning",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1620",
+        "id": "2005",
         "word": "unser-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bizning",
         "category": "Goethe A1 - 16. Sifatlar"
     },
     {
-        "id": "1621",
+        "id": "2006",
         "word": "der, die, das",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "artikllar; ko'rsatish olmoshi",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1622",
+        "id": "2007",
         "word": "dies-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bu (ko'rsatish olmoshi)",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1623",
+        "id": "2008",
         "word": "ein-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bir, bitta (noaniq artikl)",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1624",
+        "id": "2009",
+        "word": "kein",
+        "article": "",
+        "plural": "",
+        "translation": "hech qanday, ... yo'q",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2010",
         "word": "all-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hamma, barcha",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1625",
+        "id": "2011",
         "word": "ander-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "boshqa",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1626",
+        "id": "2012",
         "word": "beide",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ikkalasi",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1627",
+        "id": "2013",
         "word": "jed-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "har bir",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1628",
+        "id": "2014",
         "word": "welch-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qaysi",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1629",
+        "id": "2015",
+        "word": "letzt-",
+        "article": "",
+        "plural": "",
+        "translation": "oxirgi",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2016",
+        "word": "nächst-",
+        "article": "",
+        "plural": "",
+        "translation": "keyingi",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2017",
         "word": "meist-",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "eng ko'p",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1630",
+        "id": "2018",
         "word": "wann",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qachon",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1631",
+        "id": "2019",
+        "word": "warum",
+        "article": "",
+        "plural": "",
+        "translation": "nega",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2020",
         "word": "was",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "nima",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1632",
+        "id": "2021",
         "word": "was für ein",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "qanaqa",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1633",
+        "id": "2022",
+        "word": "wer",
+        "article": "",
+        "plural": "",
+        "translation": "kim",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2023",
+        "word": "wie",
+        "article": "",
+        "plural": "",
+        "translation": "qanday; kabi",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2024",
+        "word": "wie viel",
+        "article": "",
+        "plural": "",
+        "translation": "qancha",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2025",
+        "word": "wo",
+        "article": "",
+        "plural": "",
+        "translation": "qayerda",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2026",
+        "word": "woher",
+        "article": "",
+        "plural": "",
+        "translation": "qayerdan",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2027",
+        "word": "wohin",
+        "article": "",
+        "plural": "",
+        "translation": "qayerga",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2028",
+        "word": "ab",
+        "article": "",
+        "plural": "",
+        "translation": "-dan boshlab (vaqt)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2029",
+        "word": "an",
+        "article": "",
+        "plural": "",
+        "translation": "yonida, -da (joy); -da (sana)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2030",
+        "word": "auf",
+        "article": "",
+        "plural": "",
+        "translation": "ustida, -ga; tilida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2031",
+        "word": "aus",
+        "article": "",
+        "plural": "",
+        "translation": "-dan (kelib chiqish)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2032",
+        "word": "bei",
+        "article": "",
+        "plural": "",
+        "translation": "-da, yonida, huzurida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2033",
+        "word": "bis",
+        "article": "",
+        "plural": "",
+        "translation": "-gacha",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2034",
+        "word": "durch",
+        "article": "",
+        "plural": "",
+        "translation": "orqali, ichidan",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2035",
         "word": "für",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "uchun",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1634",
+        "id": "2036",
+        "word": "gegen",
+        "article": "",
+        "plural": "",
+        "translation": "-ga qarshi",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2037",
+        "word": "in",
+        "article": "",
+        "plural": "",
+        "translation": "ichida, -da; ... dan keyin",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2038",
         "word": "mit",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "bilan",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1635",
+        "id": "2039",
+        "word": "nach",
+        "article": "",
+        "plural": "",
+        "translation": "-ga (shahar/mamlakat); keyin",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2040",
+        "word": "ohne",
+        "article": "",
+        "plural": "",
+        "translation": "-siz",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2041",
+        "word": "über",
+        "article": "",
+        "plural": "",
+        "translation": "ustidan, orqali; ... dan ortiq",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2042",
+        "word": "um",
+        "article": "",
+        "plural": "",
+        "translation": "soat ...da; atrofida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2043",
+        "word": "unter",
+        "article": "",
+        "plural": "",
+        "translation": "ostida, pastida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2044",
+        "word": "von",
+        "article": "",
+        "plural": "",
+        "translation": "-ning; -dan",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2045",
+        "word": "vor",
+        "article": "",
+        "plural": "",
+        "translation": "oldida; ... oldin",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2046",
+        "word": "zu",
+        "article": "",
+        "plural": "",
+        "translation": "-ga (yo'nalish); juda (ortiqcha)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2047",
+        "word": "zwischen",
+        "article": "",
+        "plural": "",
+        "translation": "orasida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2048",
+        "word": "aber",
+        "article": "",
+        "plural": "",
+        "translation": "lekin, ammo",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2049",
+        "word": "also",
+        "article": "",
+        "plural": "",
+        "translation": "demak, xullas",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2050",
         "word": "denn",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "chunki",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1636",
+        "id": "2051",
+        "word": "oder",
+        "article": "",
+        "plural": "",
+        "translation": "yoki",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2052",
+        "word": "und",
+        "article": "",
+        "plural": "",
+        "translation": "va",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2053",
+        "word": "dürfen",
+        "article": "",
+        "plural": "",
+        "translation": "ruxsat bor; mumkin",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2054",
+        "word": "können",
+        "article": "",
+        "plural": "",
+        "translation": "qila olmoq, bilmoq",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2055",
+        "word": "möchten",
+        "article": "",
+        "plural": "",
+        "translation": "xohlamoq (xushmuomala)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2056",
+        "word": "mögen",
+        "article": "",
+        "plural": "",
+        "translation": "yoqtirmoq",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2057",
+        "word": "müssen",
+        "article": "",
+        "plural": "",
+        "translation": "majbur bo'lmoq, kerak",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2058",
+        "word": "sollen",
+        "article": "",
+        "plural": "",
+        "translation": "kerak (birov aytganidek)",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2059",
+        "word": "wollen",
+        "article": "",
+        "plural": "",
+        "translation": "xohlamoq",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2060",
+        "word": "da",
+        "article": "",
+        "plural": "",
+        "translation": "u yerda; shu yerda; mana",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2061",
         "word": "daneben",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "yonida",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1637",
+        "id": "2062",
         "word": "dort, dorther, dorthin",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "u yerda / u yerdan / u yerga",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1638",
+        "id": "2063",
+        "word": "draußen",
+        "article": "",
+        "plural": "",
+        "translation": "tashqarida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2064",
+        "word": "hier",
+        "article": "",
+        "plural": "",
+        "translation": "bu yerda",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2065",
+        "word": "hinten",
+        "article": "",
+        "plural": "",
+        "translation": "orqada",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2066",
+        "word": "oben",
+        "article": "",
+        "plural": "",
+        "translation": "yuqorida",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2067",
+        "word": "unten",
+        "article": "",
+        "plural": "",
+        "translation": "pastda",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2068",
+        "word": "Mitte",
+        "article": "die",
+        "plural": "",
+        "translation": "o'rta, markaz",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2069",
         "word": "auch",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ham",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1639",
+        "id": "2070",
         "word": "bisschen",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "biroz, ozgina",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1640",
+        "id": "2071",
         "word": "circa / ca.",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "taxminan",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1641",
+        "id": "2072",
+        "word": "dann",
+        "article": "",
+        "plural": "",
+        "translation": "keyin, so'ng",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2073",
+        "word": "gern(e)",
+        "article": "",
+        "plural": "",
+        "translation": "bajonidil, yoqtirib",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2074",
+        "word": "gleich",
+        "article": "",
+        "plural": "",
+        "translation": "bir xil; hozir, darrov",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2075",
+        "word": "lieber",
+        "article": "",
+        "plural": "",
+        "translation": "afzalroq, ko'proq yoqtirib",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2076",
         "word": "mehr",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "ko'proq",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1642",
+        "id": "2077",
         "word": "nicht",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "emas",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1643",
+        "id": "2078",
         "word": "nichts",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hech narsa",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1644",
+        "id": "2079",
         "word": "noch",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "hali; yana",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1645",
+        "id": "2080",
+        "word": "nur",
+        "article": "",
+        "plural": "",
+        "translation": "faqat",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2081",
         "word": "schon",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "allaqachon, -mi (hali)",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1646",
+        "id": "2082",
         "word": "sehr",
         "article": "",
         "plural": "",
-        "plural_suffix": "",
         "translation": "juda",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     },
     {
-        "id": "1647",
+        "id": "2083",
+        "word": "so",
+        "article": "",
+        "plural": "",
+        "translation": "shunday; shuncha",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2084",
+        "word": "viel",
+        "article": "",
+        "plural": "",
+        "translation": "ko'p",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2085",
+        "word": "vielleicht",
+        "article": "",
+        "plural": "",
+        "translation": "balki",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2086",
+        "word": "weiter",
+        "article": "",
+        "plural": "",
+        "translation": "davom etib, yana",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2087",
+        "word": "wenig",
+        "article": "",
+        "plural": "",
+        "translation": "kam, oz",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2088",
+        "word": "zusammen",
+        "article": "",
+        "plural": "",
+        "translation": "birga; jami",
+        "category": "Goethe A1 - 17. Grammatik so'zlar"
+    },
+    {
+        "id": "2089",
         "word": "Feuer",
         "article": "das",
         "plural": "",
-        "plural_suffix": "",
         "translation": "olov; gugurt/zajigalka",
         "category": "Goethe A1 - 17. Grammatik so'zlar"
     }

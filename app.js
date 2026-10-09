@@ -999,6 +999,8 @@ const TRANSLATIONS = {
 
 const appState = {
     streak: 3, xp: 120, lives: 5, words: [], currentWotd: null, dddWord: null, currentView: 'home',
+    dddQueue: [],
+    satzQueue: [],
     settings: { sound: true, vibration: true, offline: true, language: 'en' }
 };
 
@@ -1274,7 +1276,16 @@ function initDerDieDas() {
     document.getElementById('ddd-extra-info').style.display = 'none';
     document.getElementById('ddd-buttons-container').style.display = 'grid';
 
-    appState.dddWord = nouns[Math.floor(Math.random() * nouns.length)];
+    // Shuffling algorithm: Deck/Bag system to prevent repeats
+    if (!appState.dddQueue || appState.dddQueue.length === 0) {
+        appState.dddQueue = [...nouns];
+        for (let i = appState.dddQueue.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [appState.dddQueue[i], appState.dddQueue[j]] = [appState.dddQueue[j], appState.dddQueue[i]];
+        }
+    }
+    appState.dddWord = appState.dddQueue.pop();
+    
     els.dddWord.textContent = appState.dddWord.word;
     els.dddTrans.textContent = appState.dddWord.translation;
 }
@@ -1444,6 +1455,7 @@ function renderCategories() {
 function selectCategory(cat) {
     playSound('tap');
     appState.selectedCategory = cat;
+    appState.dddQueue = []; // Reset queue on category change
     renderCategories();
     if (appState.currentView === 'dictionary') {
         renderDictionary();
@@ -1560,7 +1572,15 @@ function startSatzbauRound() {
     const eb = document.getElementById('satzbau-error-box');
     if(eb) eb.style.display = 'none';
     
-    const sentence = appState.satzSentences[Math.floor(Math.random() * appState.satzSentences.length)];
+    // Shuffling algorithm: Deck/Bag system to prevent repeats
+    if (!appState.satzQueue || appState.satzQueue.length === 0) {
+        appState.satzQueue = [...appState.satzSentences];
+        for (let i = appState.satzQueue.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [appState.satzQueue[i], appState.satzQueue[j]] = [appState.satzQueue[j], appState.satzQueue[i]];
+        }
+    }
+    const sentence = appState.satzQueue.pop();
     appState.currentSentence = sentence;
     
     document.getElementById('satz-translation').textContent = sentence.uz;
