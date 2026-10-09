@@ -1283,6 +1283,7 @@ const db = firebase.firestore();
 
 // Global user state
 let currentUser = null;
+let isCloudSynced = false;
 
 function setupAuth() {
     let isLoginMode = true;
@@ -1449,9 +1450,13 @@ async function syncUserData(uid) {
             if (data.lastHeartRegen) appState.lastHeartRegen = data.lastHeartRegen;
             if (data.progress !== undefined) appState.progress = data.progress;
             if (data.flashcardQueue) appState.flashcardQueue = data.flashcardQueue;
+            
             if (data.currentLevel) appState.currentLevel = data.currentLevel;
             
+            isCloudSynced = true;
+            
             // Save to local storage just in case they go offline
+ just in case they go offline
             localStorage.setItem('wunderdeutsch_state', JSON.stringify(appState));
         } else {
             // New user, save initial local state to cloud
@@ -1462,8 +1467,10 @@ async function syncUserData(uid) {
     });
 }
 
+
 async function saveUserDataToCloud() {
-    if (!currentUser) return;
+    if (!currentUser || !isCloudSynced) return;
+
     try {
         await db.collection('users').doc(currentUser.uid).set({
             xp: appState.xp,
