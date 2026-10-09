@@ -1103,8 +1103,7 @@ function addXP(amount) {
 }
 
 
-const AUTH_EMAIL = 'merser572@gmail.com';
-const AUTH_PASS = 'Hasanboy0412';
+
 let pendingView = null;
 
 const els = {
@@ -1239,6 +1238,18 @@ function applyLanguage() {
     });
 }
 
+
+const AUTH_EMAIL = 'merser572@gmail.com';
+const AUTH_HASH = '6453ba4d214e588984f5cb12790af9dff617a43f835a429e67b8b69166c58532';
+
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
 function setupAuth() {
     if (localStorage.getItem('wunderdeutsch_auth') === 'true') {
         document.getElementById('login-overlay').style.display = 'none';
@@ -1248,8 +1259,12 @@ function setupAuth() {
         document.getElementById('app-container').style.display = 'none';
     }
 
-    document.getElementById('login-btn').addEventListener('click', () => {
-        if (document.getElementById('login-email').value === AUTH_EMAIL && document.getElementById('login-password').value === AUTH_PASS) {
+    document.getElementById('login-btn').addEventListener('click', async () => {
+        const emailInput = document.getElementById('login-email').value.trim().toLowerCase();
+        const passInput = document.getElementById('login-password').value;
+        const hashedInput = await hashPassword(passInput);
+        
+        if (emailInput === AUTH_EMAIL && hashedInput === AUTH_HASH) {
             localStorage.setItem('wunderdeutsch_auth', 'true');
             document.getElementById('login-overlay').style.display = 'none';
             document.getElementById('app-container').style.display = 'block';
@@ -1259,6 +1274,8 @@ function setupAuth() {
             setTimeout(() => { document.getElementById('login-error').style.display = 'none'; }, 3000);
         }
     });
+}
+
 }
 
 function setupModals() {
