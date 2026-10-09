@@ -1282,6 +1282,7 @@ let currentUser = null;
 function setupAuth() {
     let isLoginMode = true;
 
+    
     document.getElementById('auth-switch-link').addEventListener('click', (e) => {
         e.preventDefault();
         isLoginMode = !isLoginMode;
@@ -1292,14 +1293,23 @@ function setupAuth() {
             document.getElementById('signup-btn').style.display = 'none';
             document.getElementById('auth-switch-text').innerText = "Don't have an account?";
             document.getElementById('auth-switch-link').innerText = "Sign up";
+            
+            document.getElementById('signup-name').style.display = 'none';
+            document.getElementById('signup-password-confirm').style.display = 'none';
+            document.getElementById('login-password').style.marginBottom = '24px';
         } else {
             document.getElementById('auth-title').innerText = "Create a new account";
             document.getElementById('login-btn').style.display = 'none';
             document.getElementById('signup-btn').style.display = 'block';
             document.getElementById('auth-switch-text').innerText = "Already have an account?";
             document.getElementById('auth-switch-link').innerText = "Login";
+            
+            document.getElementById('signup-name').style.display = 'block';
+            document.getElementById('signup-password-confirm').style.display = 'block';
+            document.getElementById('login-password').style.marginBottom = '12px';
         }
     });
+
     
     function showError(msg) {
         document.getElementById('login-error').innerText = msg;
@@ -1322,21 +1332,33 @@ function setupAuth() {
         }
     });
     
+    
     // Sign Up with Email
     document.getElementById('signup-btn').addEventListener('click', async () => {
+        const name = document.getElementById('signup-name').value.trim();
         const email = document.getElementById('login-email').value.trim();
         const pass = document.getElementById('login-password').value.trim();
+        const confirmPass = document.getElementById('signup-password-confirm').value.trim();
+        
+        if (!name) return showError("Please enter your name");
         if (!email || !pass) return showError("Please enter email and password");
         if (pass.length < 6) return showError("Password must be at least 6 characters");
+        if (pass !== confirmPass) return showError("Passwords do not match");
         
         try {
             document.getElementById('signup-btn').innerText = "Creating account...";
-            await auth.createUserWithEmailAndPassword(email, pass);
+            const userCredential = await auth.createUserWithEmailAndPassword(email, pass);
+            await userCredential.user.updateProfile({
+                displayName: name
+            });
+            // Force reload to get updated profile in onAuthStateChanged
+            window.location.reload();
         } catch (error) {
             document.getElementById('signup-btn').innerText = "Create Account";
             showError(error.message);
         }
     });
+
 
     // Google Sign-In
     document.getElementById('google-login-btn').addEventListener('click', async () => {
@@ -1348,6 +1370,7 @@ function setupAuth() {
         }
     });
 
+    
     // Auth State Observer
     auth.onAuthStateChanged(async (user) => {
         if (user) {
@@ -1363,7 +1386,9 @@ function setupAuth() {
             
             lucide.createIcons();
             updateStats();
+            updateHomeUIForLevel();
         } else {
+
             currentUser = null;
             document.getElementById('login-overlay').style.display = 'flex';
             document.getElementById('app-container').style.display = 'none';
@@ -2278,11 +2303,22 @@ function showComingSoonToast() {
 }
 
 
+
 function updateHomeUIForLevel() {
     const isMed = appState.currentLevel === 'Medizin';
     
     // Update Mascot text
+    const mascotTitle = document.querySelector('.mascot-section .speech-bubble .large');
     const mascotSub = document.querySelector('.mascot-section .speech-bubble .small');
+    
+    let userName = currentUser && currentUser.displayName ? currentUser.displayName.split(' ')[0] : '';
+    
+    if (mascotTitle) {
+        if (appState.settings.language === 'uz') mascotTitle.innerText = userName ? `Salom ${userName}! Men Fritsman.` : `Salom! Men Fritsman.`;
+        else if (appState.settings.language === 'en') mascotTitle.innerText = userName ? `Hello ${userName}! I'm Fritz.` : `Hello! I'm Fritz.`;
+        else mascotTitle.innerText = userName ? `Hallo ${userName}! Ich bin Fritz.` : `Hallo! Ich bin Fritz.`;
+    }
+    
     if (mascotSub) {
         if (isMed) {
             if (appState.settings.language === 'uz') mascotSub.innerText = "Salom doktor! Tibbiy nemis tilini o'rganamiz!";
@@ -2292,7 +2328,6 @@ function updateHomeUIForLevel() {
             mascotSub.innerText = TRANSLATIONS[appState.settings.language]['mascot_sub'];
         }
     }
-    
     // Update Menu Titles
     const btnDDD = document.querySelector('.menu-card.blue h3');
     const btnSatz = document.querySelector('.menu-card.green h3');
