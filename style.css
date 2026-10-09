@@ -414,3 +414,111 @@ input:checked + .slider:before { transform: translateX(22px); }
 .category-chip {
     flex-shrink: 0;
 }
+
+/* Category Select Button */
+.category-select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+    border: 2px solid #DFE6E9;
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--text-dark);
+    cursor: pointer;
+    box-shadow: 0 4px 0 #DFE6E9;
+    transition: transform 0.1s, box-shadow 0.1s;
+    margin-bottom: 16px;
+}
+.category-select-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #DFE6E9;
+}
+.category-select-btn i {
+    color: var(--text-muted);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(45, 52, 54, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    max-height: 80vh;
+    border-radius: 24px 24px 0 0;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
+    animation: slideUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.2);
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+
+.category-list {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+
+.category-list-item {
+    background: #f8f9fa;
+    border: 2px solid #DFE6E9;
+    border-radius: 12px;
+    padding: 14px 16px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.category-list-item:active {
+    transform: scale(0.98);
+}
+.category-list-item.active {
+    background: var(--blue-btn);
+    color: white;
+    border-color: var(--blue-btn);
+}
