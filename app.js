@@ -1456,10 +1456,10 @@ async function syncUserData(uid) {
             isCloudSynced = true;
             
             // Save to local storage just in case they go offline
- just in case they go offline
             localStorage.setItem('wunderdeutsch_state', JSON.stringify(appState));
         } else {
             // New user, save initial local state to cloud
+            isCloudSynced = true;
             saveUserDataToCloud();
         }
     }, (error) => {
