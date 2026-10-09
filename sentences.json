@@ -1,260 +1,322 @@
 [
     {
         "uz": "Uning manzilini ayta olasizmi?",
-        "de": "Können Sie mir seine Adresse sagen?"
+        "de": "Können Sie mir seine Adresse sagen?",
+        "level": "A1"
     },
     {
         "uz": "Men Zagrebda tug'ilganman.",
-        "de": "Ich bin in Zagreb geboren."
+        "de": "Ich bin in Zagreb geboren.",
+        "level": "A1"
     },
     {
         "uz": "Mening ismim Thomas.",
-        "de": "Mein Name ist Thomas."
+        "de": "Mein Name ist Thomas.",
+        "level": "A1"
     },
     {
         "uz": "Familiyam Müller, ismim Eva.",
-        "de": "Ich heiße Müller, mein Vorname ist Eva."
+        "de": "Ich heiße Müller, mein Vorname ist Eva.",
+        "level": "A1"
     },
     {
         "uz": "Turmush qurganmisiz? Yo'q, bo'ydoqman.",
-        "de": "Sind Sie verheiratet? Nein, ledig."
+        "de": "Sind Sie verheiratet? Nein, ledig.",
+        "level": "A1"
     },
     {
         "uz": "Men uylanganman, uchta farzandim bor.",
-        "de": "Ich bin verheiratet und habe drei Kinder."
+        "de": "Ich bin verheiratet und habe drei Kinder.",
+        "level": "A1"
     },
     {
         "uz": "Men Shveytsariyadanman.",
-        "de": "Ich komme aus der Schweiz."
+        "de": "Ich komme aus der Schweiz.",
+        "level": "A1"
     },
     {
         "uz": "Bu mamlakatda hayot qimmat.",
-        "de": "Das Leben in diesem Land ist teuer."
+        "de": "Das Leben in diesem Land ist teuer.",
+        "level": "A1"
     },
     {
         "uz": "Bu film faqat kattalar uchun.",
-        "de": "Dieser Film ist nur für Erwachsene."
+        "de": "Dieser Film ist nur für Erwachsene.",
+        "level": "A1"
     },
     {
         "uz": "Men har doim soat to'rtda turishim kerak.",
-        "de": "Ich muss immer um vier Uhr aufstehen."
+        "de": "Ich muss immer um vier Uhr aufstehen.",
+        "level": "A1"
     },
     {
         "uz": "Biz bu yerda yangimiz.",
-        "de": "Wir sind neu hier."
+        "de": "Wir sind neu hier.",
+        "level": "A1"
     },
     {
         "uz": "Keling, tanishaylik.",
-        "de": "Wir wollen uns kennenlernen."
+        "de": "Wir wollen uns kennenlernen.",
+        "level": "A1"
     },
     {
         "uz": "Uning akasi ham shu yerda ishlaydi.",
-        "de": "Sein Bruder arbeitet auch hier."
+        "de": "Sein Bruder arbeitet auch hier.",
+        "level": "A1"
     },
     {
         "uz": "Ota-onam Ispaniyada yashaydi.",
-        "de": "Meine Eltern leben in Spanien."
+        "de": "Meine Eltern leben in Spanien.",
+        "level": "A1"
     },
     {
         "uz": "Buvim va bobom Yaponiyada yashaydi.",
-        "de": "Meine Großeltern leben in Japan."
+        "de": "Meine Großeltern leben in Japan.",
+        "level": "A1"
     },
     {
         "uz": "Bobom allaqachon sakson yoshda.",
-        "de": "Mein Großvater ist schon achtzig."
+        "de": "Mein Großvater ist schon achtzig.",
+        "level": "A1"
     },
     {
         "uz": "Nechta farzandingiz bor?",
-        "de": "Wie viele Kinder haben Sie?"
+        "de": "Wie viele Kinder haben Sie?",
+        "level": "A1"
     },
     {
         "uz": "Singlim seshanba kuni keladi.",
-        "de": "Meine Schwester kommt am Dienstag."
+        "de": "Meine Schwester kommt am Dienstag.",
+        "level": "A1"
     },
     {
         "uz": "Otam ishchi.",
-        "de": "Mein Vater ist Arbeiter."
+        "de": "Mein Vater ist Arbeiter.",
+        "level": "A1"
     },
     {
         "uz": "Bu Becker xonim.",
-        "de": "Das ist Frau Becker."
+        "de": "Das ist Frau Becker.",
+        "level": "A1"
     },
     {
         "uz": "Assalomu alaykum, Schmitt xonim!",
-        "de": "Guten Tag, Frau Schmitt!"
+        "de": "Guten Tag, Frau Schmitt!",
+        "level": "A1"
     },
     {
         "uz": "Bu mening bir do'stim.",
-        "de": "Das ist ein Freund von mir."
+        "de": "Das ist ein Freund von mir.",
+        "level": "A1"
     },
     {
         "uz": "Erim politsiyada ishlaydi.",
-        "de": "Mein Mann arbeitet bei der Polizei."
+        "de": "Mein Mann arbeitet bei der Polizei.",
+        "level": "A1"
     },
     {
         "uz": "Xotinim kecha vafot etdi.",
-        "de": "Meine Frau ist gestern gestorben."
+        "de": "Meine Frau ist gestern gestorben.",
+        "level": "A1"
     },
     {
         "uz": "Yoshlar xayrlashganda tschüss deyishadi.",
-        "de": "Junge Leute sagen meistens tschüss."
+        "de": "Junge Leute sagen meistens tschüss.",
+        "level": "A1"
     },
     {
         "uz": "Bir chashka qahva, iltimos!",
-        "de": "Eine Tasse Kaffee, bitte!"
+        "de": "Eine Tasse Kaffee, bitte!",
+        "level": "A1"
     },
     {
         "uz": "Iltimos, sekinroq gapiring!",
-        "de": "Sprechen Sie bitte leise!"
+        "de": "Sprechen Sie bitte leise!",
+        "level": "A1"
     },
     {
         "uz": "Taklifingiz uchun rahmat.",
-        "de": "Ich danke Ihnen für die Einladung."
+        "de": "Ich danke Ihnen für die Einladung.",
+        "level": "A1"
     },
     {
         "uz": "Sizga yordam beraymi? Yo'q, rahmat!",
-        "de": "Soll ich Ihnen helfen? Nein, danke!"
+        "de": "Soll ich Ihnen helfen? Nein, danke!",
+        "level": "A1"
     },
     {
         "uz": "Afsuski, kela olmayman.",
-        "de": "Leider kann ich nicht kommen."
+        "de": "Leider kann ich nicht kommen.",
+        "level": "A1"
     },
     {
         "uz": "Tug'ilgan kuningiz bilan chin dildan tabriklayman.",
-        "de": "Herzlichen Glückwunsch zum Geburtstag!"
+        "de": "Herzlichen Glückwunsch zum Geburtstag!",
+        "level": "A1"
     },
     {
         "uz": "Rafiqangizga ko'p salom ayting.",
-        "de": "Viele Grüße an Ihre Frau."
+        "de": "Viele Grüße an Ihre Frau.",
+        "level": "A1"
     },
     {
         "uz": "Buni qilish mumkin emas.",
-        "de": "Das dürfen Sie nicht tun."
+        "de": "Das dürfen Sie nicht tun.",
+        "level": "A1"
     },
     {
         "uz": "Afsuski, u javob bermayapti.",
-        "de": "Er gibt leider keine Antwort."
+        "de": "Er gibt leider keine Antwort.",
+        "level": "A1"
     },
     {
         "uz": "Bir savolim bor.",
-        "de": "Ich habe eine Frage."
+        "de": "Ich habe eine Frage.",
+        "level": "A1"
     },
     {
         "uz": "Yordam bering! Iltimos, menga yordam bering!",
-        "de": "Hilfe! Bitte helfen Sie mir!"
+        "de": "Hilfe! Bitte helfen Sie mir!",
+        "level": "A1"
     },
     {
         "uz": "Birga borasanmi? Albatta!",
-        "de": "Kommst du mit? Klar!"
+        "de": "Kommst du mit? Klar!",
+        "level": "A1"
     },
     {
         "uz": "Mening muammom til.",
-        "de": "Mein Problem ist die Sprache."
+        "de": "Mein Problem ist die Sprache.",
+        "level": "A1"
     },
     {
         "uz": "Ehtiyot bo'ling! Mashina kelyapti.",
-        "de": "Vorsicht! Da kommt ein Auto."
+        "de": "Vorsicht! Da kommt ein Auto.",
+        "level": "A1"
     },
     {
         "uz": "Ilgari biz tez-tez birga kinoga borardik.",
-        "de": "Früher waren wir oft zusammen im Kino."
+        "de": "Früher waren wir oft zusammen im Kino.",
+        "level": "A1"
     },
     {
         "uz": "Endi tanaffus qilamiz.",
-        "de": "Jetzt machen wir eine Pause."
+        "de": "Jetzt machen wir eine Pause.",
+        "level": "A1"
     },
     {
         "uz": "Hozir ishim juda ko'p.",
-        "de": "Zurzeit habe ich sehr viel zu tun."
+        "de": "Zurzeit habe ich sehr viel zu tun.",
+        "level": "A1"
     },
     {
         "uz": "Kech bo'ldi, ketishim kerak.",
-        "de": "Es ist schon spät, ich muss gehen."
+        "de": "Es ist schon spät, ich muss gehen.",
+        "level": "A1"
     },
     {
         "uz": "Müller janoblari doim o'z vaqtida keladi.",
-        "de": "Herr Müller ist immer pünktlich."
+        "de": "Herr Müller ist immer pünktlich.",
+        "level": "A1"
     },
     {
         "uz": "U hech qachon o'z vaqtida kelmaydi.",
-        "de": "Er kommt nie pünktlich."
+        "de": "Er kommt nie pünktlich.",
+        "level": "A1"
     },
     {
         "uz": "Poyezd Gamburgdan Berlingacha qancha yuradi?",
-        "de": "Wie lange fährt der Zug von Hamburg nach Berlin?"
+        "de": "Wie lange fährt der Zug von Hamburg nach Berlin?",
+        "level": "A1"
     },
     {
         "uz": "Film qancha davom etadi?",
-        "de": "Wie lange dauert der Film?"
+        "de": "Wie lange dauert der Film?",
+        "level": "A1"
     },
     {
         "uz": "U ko'chaning boshida yashaydi.",
-        "de": "Sie wohnt am Anfang der Straße."
+        "de": "Sie wohnt am Anfang der Straße.",
+        "level": "A1"
     },
     {
         "uz": "Biz iyul boshida ta'tilga chiqamiz.",
-        "de": "Wir machen Anfang Juli Urlaub."
+        "de": "Wir machen Anfang Juli Urlaub.",
+        "level": "A1"
     },
     {
         "uz": "Endi tugatishim kerak.",
-        "de": "Ich muss jetzt Schluss machen."
+        "de": "Ich muss jetzt Schluss machen.",
+        "level": "A1"
     },
     {
         "uz": "Bir soatdan keyin qaytaman.",
-        "de": "Ich bin in einer Stunde zurück."
+        "de": "Ich bin in einer Stunde zurück.",
+        "level": "A1"
     },
     {
         "uz": "Bugun vaqtim yo'q.",
-        "de": "Ich habe heute keine Zeit."
+        "de": "Ich habe heute keine Zeit.",
+        "level": "A1"
     },
     {
         "uz": "Qachondan beri oshqozoningiz og'riyapti?",
         "de": "Seit wann haben Sie diese Magenschmerzen?",
-        "explanation": "Tibbiy anamnezda 'Seit wann' (Qachondan beri) so'roq so'zi kasallik tarixini bilish uchun ishlatiladi."
+        "explanation": "Tibbiy anamnezda 'Seit wann' (Qachondan beri) so'roq so'zi kasallik tarixini bilish uchun ishlatiladi.",
+        "level": "Medizin"
     },
     {
         "uz": "Bemor o'tkir gastritdan aziyat chekmoqda.",
         "de": "Der Patient leidet an akuter Gastritis.",
-        "explanation": "'leiden an' (+ Dativ) - biror kasallikdan aziyat chekmoq."
+        "explanation": "'leiden an' (+ Dativ) - biror kasallikdan aziyat chekmoq.",
+        "level": "Medizin"
     },
     {
         "uz": "Biz gastroskopiya o'tkazishimiz kerak.",
         "de": "Wir müssen eine Magenspiegelung durchführen.",
-        "explanation": "Modal fe'l 'müssen' 2-o'rinda, asosiy fe'l 'durchführen' gap oxirida keladi."
+        "explanation": "Modal fe'l 'müssen' 2-o'rinda, asosiy fe'l 'durchführen' gap oxirida keladi.",
+        "level": "A1"
     },
     {
         "uz": "Og'riq orqaga tarqalyaptimi?",
         "de": "Strahlen die Schmerzen in den Rücken aus?",
-        "explanation": "'ausstrahlen' (tarqalmoq) ajraladigan fe'l, shuning uchun 'aus' gap oxiriga o'tadi."
+        "explanation": "'ausstrahlen' (tarqalmoq) ajraladigan fe'l, shuning uchun 'aus' gap oxiriga o'tadi.",
+        "level": "A1"
     },
     {
         "uz": "Iltimos, chuqur nafas oling va chiqaring.",
         "de": "Bitte atmen Sie tief ein und aus.",
-        "explanation": "'einatmen' (nafas olmoq) va 'ausatmen' (nafas chiqarmoq) tibbiy ko'rikda juda ko'p ishlatiladigan ajraladigan fe'llardir."
+        "explanation": "'einatmen' (nafas olmoq) va 'ausatmen' (nafas chiqarmoq) tibbiy ko'rikda juda ko'p ishlatiladigan ajraladigan fe'llardir.",
+        "level": "A1"
     },
     {
         "uz": "Men sizning qon bosimingizni o'lchashim kerak.",
         "de": "Ich muss Ihren Blutdruck messen.",
-        "explanation": "Modal fe'l 'muss' bilan 'messen' fe'li gapning oxiriga tushadi."
+        "explanation": "Modal fe'l 'muss' bilan 'messen' fe'li gapning oxiriga tushadi.",
+        "level": "Medizin"
     },
     {
         "uz": "Ushbu dori kuniga uch marta olinishi kerak.",
         "de": "Dieses Medikament muss dreimal täglich eingenommen werden.",
-        "explanation": "Passiv nisbat va modal fe'l birgalikda: 'muss ... eingenommen werden'."
+        "explanation": "Passiv nisbat va modal fe'l birgalikda: 'muss ... eingenommen werden'.",
+        "level": "A1"
     },
     {
         "uz": "Sizda qanday simptomlar bor?",
         "de": "Welche Symptome haben Sie?",
-        "explanation": "Bemorga savol berish: 'Welche' (qanday/qaysi) + ot."
+        "explanation": "Bemorga savol berish: 'Welche' (qanday/qaysi) + ot.",
+        "level": "Medizin"
     },
     {
         "uz": "Operatsiya muvaffaqiyatli o'tdi.",
         "de": "Die Operation ist erfolgreich verlaufen.",
-        "explanation": "Perfekt zamoni: 'ist ... verlaufen' (o'tdi)."
+        "explanation": "Perfekt zamoni: 'ist ... verlaufen' (o'tdi).",
+        "level": "Medizin"
     },
     {
         "uz": "Bemorning isitmasi baland va boshi aylanmoqda.",
         "de": "Der Patient hat hohes Fieber und Schwindel.",
-        "explanation": "'hohes Fieber' (baland isitma) kuchli sifat turlanishi."
+        "explanation": "'hohes Fieber' (baland isitma) kuchli sifat turlanishi.",
+        "level": "Medizin"
     }
 ]

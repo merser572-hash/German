@@ -998,7 +998,7 @@ const TRANSLATIONS = {
 };
 
 const appState = {
-    isAdmin: true, // Since only merser572@gmail.com is allowed currently
+    isAdmin: true, currentLevel: localStorage.getItem('wunderdeutsch_level') || 'A1', // Since only merser572@gmail.com is allowed currently
     streak: parseInt(localStorage.getItem('wunder_streak') || 0), 
     xp: parseInt(localStorage.getItem('wunder_xp') || 0), 
     dailyXP: parseInt(localStorage.getItem('wunder_daily_xp') || 0),
@@ -1122,6 +1122,11 @@ async function initApp() {
     setupModals();
     updateStats();
     updateOfflineMode();
+    
+    let display = appState.currentLevel === 'A1' ? 'Level: A1' : 'Medizin B2 🩺';
+    const lvlDisp = document.getElementById('current-level-display');
+    if (lvlDisp) lvlDisp.innerText = display;
+    
     await loadVocabulary();
     lucide.createIcons();
     
@@ -1239,15 +1244,16 @@ function applyLanguage() {
 }
 
 
-const AUTH_EMAIL = 'merser572@gmail.com';
-const AUTH_HASH = '6453ba4d214e588984f5cb12790af9dff617a43f835a429e67b8b69166c58532';
 
-async function hashPassword(password) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(password);
-    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+const AUTH_EMAIL = 'merser572@gmail.com';
+const AUTH_HASH = '1776510484'; // custom hash for Hasanboy0412
+
+async function hashPassword(str) {
+    let hash = 5381;
+    for (let i = 0; i < str.length; i++) {
+        hash = ((hash << 5) + hash) + str.charCodeAt(i); /* hash * 33 + c */
+    }
+    return Math.abs(hash).toString();
 }
 
 
@@ -2010,8 +2016,12 @@ function startFlashcards() {
     
     // Build Queue based on selected category
     let wordsArray = appState.words;
+    let levelPrefix = appState.currentLevel === 'A1' ? 'Goethe A1' : 'Medizin';
+    
     if (appState.selectedCategory && appState.selectedCategory !== 'all') {
         wordsArray = appState.words.filter(w => w.category === appState.selectedCategory);
+    } else {
+        wordsArray = appState.words.filter(w => w.category && w.category.startsWith(levelPrefix));
     }
     
     if (window.SRS) {
@@ -2101,4 +2111,37 @@ function rateCard(quality) {
     addXP(5);
     
     loadNextFlashcard();
+}
+
+
+function openLevelModal() {
+    playSound('tap');
+    document.getElementById('level-modal').style.display = 'flex';
+}
+
+function closeLevelModal() {
+    playSound('tap');
+    document.getElementById('level-modal').style.display = 'none';
+}
+
+function selectLevel(levelStr) {
+    playSound('tap');
+    localStorage.setItem('wunderdeutsch_level', levelStr);
+    appState.currentLevel = levelStr;
+    
+    let display = levelStr === 'A1' ? 'Level: A1' : 'Medizin B2 🩺';
+    document.getElementById('current-level-display').innerText = display;
+    
+    // Automatically select 'all' categories of the new level
+    appState.selectedCategory = 'all';
+    
+    renderCategories();
+    closeLevelModal();
+    
+    // Refresh current view if needed
+    if (appState.currentView === 'flashcards') {
+        startFlashcards();
+    } else if (appState.currentView === 'derdiedas') {
+        initDerDieDas();
+    }
 }
