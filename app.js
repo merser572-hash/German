@@ -1468,8 +1468,17 @@ async function syncUserData(uid) {
 }
 
 
+
 async function saveUserDataToCloud() {
     if (!currentUser || !isCloudSynced) return;
+    
+    if (isTMA) {
+        tg.CloudStorage.setItem('wunder_state', JSON.stringify(appState), (err) => {
+            if (err) console.error("CloudStorage error", err);
+        });
+        return;
+    }
+
 
     try {
         await db.collection('users').doc(currentUser.uid).set({
@@ -2435,4 +2444,32 @@ function updateHeartCountdown() {
     const secs = Math.floor((remainingMs % 60000) / 1000);
     
     document.getElementById('heart-countdown').innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+}
+
+
+function openPremiumModal() {
+    playSound('tap');
+    document.getElementById('premium-modal').style.display = 'flex';
+}
+
+function closePremiumModal() {
+    playSound('tap');
+    document.getElementById('premium-modal').style.display = 'none';
+}
+
+function buyPro(provider) {
+    playSound('tap');
+    if (!isTMA) {
+        showToast("Faqat Telegram bot orqali ishlaydi!");
+        return;
+    }
+    
+    tg.sendData(JSON.stringify({
+        action: "buy_subscription",
+        plan: "monthly_49000",
+        provider: provider
+    }));
+    
+    closePremiumModal();
+    showToast("To'lov oynasi ochilmoqda...");
 }
