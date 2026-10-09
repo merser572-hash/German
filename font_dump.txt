@@ -1,0 +1,96 @@
+Text: Sanjar Quchqorov               Font: Poppins-Bold         Color: 0x5b2c6f
+Text: Ism va shaxsiy ma'lumotlar     Font: Poppins-Bold         Color: 0x7b3fa0
+Text:                                Font: Poppins-Regular      Color: 0x999999
+Text: 15                             Font: Poppins-Regular      Color: 0x999999
+Text: die                            Font: Poppins-Bold         Color: 0xffffff
+Text: Adresse                        Font: Carlito-Bold         Color: 0x222222
+Text: -en                            Font: Carlito-Regular      Color: 0x888888
+Text: manzil                         Font: Carlito-Regular      Color: 0x333333
+Text: Können Sie mir seine Adresse s Font: Carlito-Italic       Color: 0x333333
+Text: das                            Font: Poppins-Bold         Color: 0xffffff
+Text: Alter                          Font: Carlito-Bold         Color: 0x222222
+Text: yosh (umr)                     Font: Carlito-Regular      Color: 0x333333
+Text: Alter: 26 Jahre.               Font: Carlito-Italic       Color: 0x333333
+Text: der                            Font: Poppins-Bold         Color: 0xffffff
+Text: Familienname                   Font: Carlito-Bold         Color: 0x222222
+Text: familiya                       Font: Carlito-Regular      Color: 0x333333
+Text: Meine Familiennamen sind Garcí Font: Carlito-Italic       Color: 0x333333
+Text: der                            Font: Poppins-Bold         Color: 0xffffff
+Text: Familienstand                  Font: Carlito-Bold         Color: 0x222222
+Text: oilaviy holat                  Font: Carlito-Regular      Color: 0x333333
+Text: Bei „Familienstand“ musst du „ Font: Carlito-Italic       Color: 0x333333
+Text: geboren                        Font: Carlito-Bold         Color: 0x222222
+Text: tug'ilgan                      Font: Carlito-Regular      Color: 0x333333
+Text: Ich bin in Zagreb geboren.     Font: Carlito-Italic       Color: 0x333333
+Text: das                            Font: Poppins-Bold         Color: 0xffffff
+Text: Geburtsjahr                    Font: Carlito-Bold         Color: 0x222222
+Text: tug'ilgan yil                  Font: Carlito-Regular      Color: 0x333333
+Text: Das Geburtsjahr Ihres Sohnes,  Font: Carlito-Italic       Color: 0x333333
+Text: der                            Font: Poppins-Bold         Color: 0xffffff
+Text: Geburtsort                     Font: Carlito-Bold         Color: 0x222222
+Text: tug'ilgan joy                  Font: Carlito-Regular      Color: 0x333333
+Text: Bitte schreiben Sie Ihren Gebu Font: Carlito-Italic       Color: 0x333333
+Text: das                            Font: Poppins-Bold         Color: 0xffffff
+Text: Gewicht                        Font: Carlito-Bold         Color: 0x222222
+Text: vazn                           Font: Carlito-Regular      Color: 0x333333
+Text: Bei „Gewicht“ schreibst du: 62 Font: Carlito-Italic       Color: 0x333333
+Text: der                            Font: Poppins-Bold         Color: 0xffffff
+Text: Name                           Font: Carlito-Bold         Color: 0x222222
+Text: -n                             Font: Carlito-Regular      Color: 0x888888
+Text: ism                            Font: Carlito-Regular      Color: 0x333333
+Text: Mein Name ist Thomas Schmidt.  Font: Carlito-Italic       Color: 0x333333
+Text: Mein Vorname ist Thomas; Schmi Font: Carlito-Italic       Color: 0x333333
+Text: die                            Font: Poppins-Bold         Color: 0xffffff
+Text: Nummer                         Font: Carlito-Bold         Color: 0x222222
+Text: -n                             Font: Carlito-Regular      Color: 0x888888
+Text: raqam                          Font: Carlito-Regular      Color: 0x333333
+Text: Sie haben Zimmer Nummer zwölf. Font: Carlito-Italic       Color: 0x333333
+Text: Welche Hausnummer haben Sie?   Font: Carlito-Italic       Color: 0x333333
+Text: der                            Font: Poppins-Bold         Color: 0xffffff
+Text: Vorname                        Font: Carlito-Bold         Color: 0x222222
+Text: -n                             Font: Carlito-Regular      Color: 0x888888
+Text: ism (birinchi ism)             Font: Carlito-Regular      Color: 0x333333
+Text: Ich heiße Müller, mein Vorname Font: Carlito-Italic       Color: 0x333333
+Text: männlich                       Font: Carlito-Bold         Color: 0x222222
+Text: erkak jinsi                    Font: Carlito-Regular      Color: 0x333333
+Text: Kreuzen Sie bitte an: „weiblic Font: Carlito-Italic       Color: 0x333333
+Text: weiblich                       Font: Carlito-Bold         Color: 0x222222
+Text: ayol jinsi                     Font: Carlito-Regular      Color: 0x333333
+Text: Kreuzen Sie bitte an: „weiblic Font: Carlito-Italic       Color: 0x333333
+Text: ledig                          Font: Carlito-Bold         Color: 0x222222
+Text: bo'ydoq, turmush               Font: Carlito-Regular      Color: 0x333333
+Text: qurmagan                       Font: Carlito-Regular      Color: 0x333333
+Text: Sind Sie verheiratet? – Nein.  Font: Carlito-Italic       Color: 0x333333
+Text: verheiratet                    Font: Carlito-Bold         Color: 0x222222
+Text: uylangan / turmushga           Font: Carlito-Regular      Color: 0x333333
+Text: chiqqan                        Font: Carlito-Regular      Color: 0x333333
+Text: Ich bin verheiratet und habe d Font: Carlito-Italic       Color: 0x333333
+Text: Odamlar va kelib chiqish       Font: Poppins-Bold         Color: 0x7b3fa0
+Text:                                Font: Poppins-Regular      Color: 0x999999
+Text: 9                              Font: Poppins-Regular      Color: 0x999999
+Text: der                            Font: Poppins-Bold         Color: 0xffffff
+Text: Ausländer                      Font: Carlito-Bold         Color: 0x222222
+Text: -                              Font: Carlito-Regular      Color: 0x888888
+Text: chet ellik                     Font: Carlito-Regular      Color: 0x333333
+Text: Sind Sie Ausländerin?          Font: Carlito-Italic       Color: 0x333333
+Text: Shaxs va tanishuv              Font: Poppins-Bold         Color: 0xffffff
+Text: 01                             Font: Poppins-Bold         Color: 0xffffff
+Text: P E R S O N                    Font: Carlito-Regular      Color: 0xffffff
+Text: 32 ta so'z                     Font: Carlito-Regular      Color: 0xffffff
+Text: Sanjar Quchqorov               Font: Poppins-Bold         Color: 0x7b3fa0
+Text: Uning manzilini ayta olasizmi? Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Yoshi: 26.                     Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Mening familiyalarim García Go Font: Carlito-Regular      Color: 0x7b3fa0
+Text: "Oilaviy holat" qatorida "bo'y Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Men Zagrebda tug'ilganman.     Font: Carlito-Regular      Color: 0x7b3fa0
+Text: O'g'lingizning tug'ilgan yili  Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Iltimos, tug'ilgan joyingizni  Font: Carlito-Regular      Color: 0x7b3fa0
+Text: "Vazn" qatoriga 62 kilo deb yo Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Mening ismim Thomas Schmidt.   Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Ismim Thomas, Schmidt esa fami Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Sizning xonangiz o'n ikkinchi  Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Uyingizning raqami nechchi?    Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Familiyam Müller, ismim Eva.   Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Iltimos, belgilang: "ayol" yok Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Iltimos, belgilang: "ayol" yok Font: Carlito-Regular      Color: 0x7b3fa0
+Text: Turmush qurganmisiz? – Yo'q, b Font: Carlito-Regular      Color: 0x7b3fa0

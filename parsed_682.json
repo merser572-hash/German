@@ -1,0 +1,4094 @@
+[
+    {
+        "article": "die",
+        "word": "Adresse",
+        "plural_suffix": "-en",
+        "translation": "manzil"
+    },
+    {
+        "article": "das",
+        "word": "Alter",
+        "plural_suffix": "",
+        "translation": "yosh (umr)"
+    },
+    {
+        "article": "der",
+        "word": "Familienname",
+        "plural_suffix": "",
+        "translation": "familiya"
+    },
+    {
+        "article": "der",
+        "word": "Familienstand",
+        "plural_suffix": "",
+        "translation": "oilaviy holat"
+    },
+    {
+        "article": "",
+        "word": "geboren",
+        "plural_suffix": "",
+        "translation": "tug'ilgan"
+    },
+    {
+        "article": "das",
+        "word": "Geburtsjahr",
+        "plural_suffix": "",
+        "translation": "tug'ilgan yil"
+    },
+    {
+        "article": "der",
+        "word": "Geburtsort",
+        "plural_suffix": "",
+        "translation": "tug'ilgan joy"
+    },
+    {
+        "article": "das",
+        "word": "Gewicht",
+        "plural_suffix": "",
+        "translation": "vazn"
+    },
+    {
+        "article": "der",
+        "word": "Name",
+        "plural_suffix": "-n",
+        "translation": "ism"
+    },
+    {
+        "article": "die",
+        "word": "Nummer",
+        "plural_suffix": "-n",
+        "translation": "raqam"
+    },
+    {
+        "article": "der",
+        "word": "Vorname",
+        "plural_suffix": "-n",
+        "translation": "ism (birinchi ism)"
+    },
+    {
+        "article": "",
+        "word": "männlich",
+        "plural_suffix": "",
+        "translation": "erkak jinsi"
+    },
+    {
+        "article": "",
+        "word": "weiblich",
+        "plural_suffix": "",
+        "translation": "ayol jinsi"
+    },
+    {
+        "article": "",
+        "word": "ledig",
+        "plural_suffix": "",
+        "translation": "bo'ydoq, turmush qurmagan"
+    },
+    {
+        "article": "",
+        "word": "verheiratet",
+        "plural_suffix": "",
+        "translation": "uylangan / turmushga chiqqan"
+    },
+    {
+        "article": "der",
+        "word": "Ausländer",
+        "plural_suffix": "-",
+        "translation": "chet ellik"
+    },
+    {
+        "article": "die",
+        "word": "Heimat",
+        "plural_suffix": "",
+        "translation": "vatan"
+    },
+    {
+        "article": "das",
+        "word": "Land",
+        "plural_suffix": "¨-er",
+        "translation": "mamlakat; qishloq joy"
+    },
+    {
+        "article": "das",
+        "word": "Leben",
+        "plural_suffix": "",
+        "translation": "hayot"
+    },
+    {
+        "article": "der",
+        "word": "Mensch",
+        "plural_suffix": "-en",
+        "translation": "inson, odam"
+    },
+    {
+        "article": "die",
+        "word": "Leute",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "odamlar"
+    },
+    {
+        "article": "der",
+        "word": "Erwachsene",
+        "plural_suffix": "-n",
+        "translation": "katta yoshli odam"
+    },
+    {
+        "article": "der",
+        "word": "Jugendliche",
+        "plural_suffix": "-n",
+        "translation": "o'smir, yosh"
+    },
+    {
+        "article": "der / die",
+        "word": "Bekannte",
+        "plural_suffix": "-n",
+        "translation": "tanish (odam)"
+    },
+    {
+        "article": "",
+        "word": "(sich) anziehen",
+        "plural_suffix": "",
+        "translation": "kiyinmoq"
+    },
+    {
+        "article": "",
+        "word": "aufstehen",
+        "plural_suffix": "",
+        "translation": "o'rnidan turmoq"
+    },
+    {
+        "article": "",
+        "word": "aussehen",
+        "plural_suffix": "",
+        "translation": "ko'rinmoq (tashqi ko'rinish)"
+    },
+    {
+        "article": "",
+        "word": "(sich) ausziehen",
+        "plural_suffix": "",
+        "translation": "yechinmoq"
+    },
+    {
+        "article": "",
+        "word": "heißen",
+        "plural_suffix": "",
+        "translation": "nomlanmoq, ismi ... bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "kennenlernen",
+        "plural_suffix": "",
+        "translation": "tanishmoq"
+    },
+    {
+        "article": "",
+        "word": "schlafen",
+        "plural_suffix": "",
+        "translation": "uxlamoq"
+    },
+    {
+        "article": "",
+        "word": "(sich) vorstellen",
+        "plural_suffix": "",
+        "translation": "o'zini tanishtirmoq"
+    },
+    {
+        "article": "das",
+        "word": "Baby",
+        "plural_suffix": "-s",
+        "translation": "chaqaloq"
+    },
+    {
+        "article": "der",
+        "word": "Bruder",
+        "plural_suffix": "¨-",
+        "translation": "aka/uka"
+    },
+    {
+        "article": "die",
+        "word": "Eltern",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "ota-ona"
+    },
+    {
+        "article": "die",
+        "word": "Familie",
+        "plural_suffix": "-n",
+        "translation": "oila"
+    },
+    {
+        "article": "die",
+        "word": "Geschwister",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "aka-uka, opa-singillar"
+    },
+    {
+        "article": "die",
+        "word": "Großeltern",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "buvi va bobo"
+    },
+    {
+        "article": "die",
+        "word": "Großmutter",
+        "plural_suffix": "",
+        "translation": "buvi"
+    },
+    {
+        "article": "der",
+        "word": "Großvater",
+        "plural_suffix": "",
+        "translation": "bobo"
+    },
+    {
+        "article": "der",
+        "word": "Junge",
+        "plural_suffix": "-n",
+        "translation": "o'g'il bola"
+    },
+    {
+        "article": "das",
+        "word": "Kind",
+        "plural_suffix": "-er",
+        "translation": "bola"
+    },
+    {
+        "article": "das",
+        "word": "Mädchen",
+        "plural_suffix": "-",
+        "translation": "qiz bola"
+    },
+    {
+        "article": "die",
+        "word": "Mutter",
+        "plural_suffix": "¨-",
+        "translation": "ona"
+    },
+    {
+        "article": "die",
+        "word": "Oma",
+        "plural_suffix": "-s",
+        "translation": "buvi (so'zl.)"
+    },
+    {
+        "article": "der",
+        "word": "Opa",
+        "plural_suffix": "-s",
+        "translation": "bobo (so'zl.)"
+    },
+    {
+        "article": "die",
+        "word": "Schwester",
+        "plural_suffix": "-n",
+        "translation": "opa/singil"
+    },
+    {
+        "article": "der",
+        "word": "Sohn",
+        "plural_suffix": "¨-e",
+        "translation": "o'g'il"
+    },
+    {
+        "article": "die",
+        "word": "Tochter",
+        "plural_suffix": "¨-",
+        "translation": "qiz (farzand)"
+    },
+    {
+        "article": "der",
+        "word": "Vater",
+        "plural_suffix": "¨-",
+        "translation": "ota"
+    },
+    {
+        "article": "der",
+        "word": "Verwandte",
+        "plural_suffix": "-n",
+        "translation": "qarindosh"
+    },
+    {
+        "article": "die / der",
+        "word": "Ehefrau / Ehemann",
+        "plural_suffix": "",
+        "translation": "xotin / er"
+    },
+    {
+        "article": "die",
+        "word": "Frau",
+        "plural_suffix": "-en",
+        "translation": "ayol; xotin; ... xonim"
+    },
+    {
+        "article": "der",
+        "word": "Freund",
+        "plural_suffix": "-e",
+        "translation": "do'st"
+    },
+    {
+        "article": "die / der",
+        "word": "Hausfrau / Hausmann",
+        "plural_suffix": "",
+        "translation": "uy bekasi / uy xo'jaligi bilan band erkak"
+    },
+    {
+        "article": "",
+        "word": "heiraten",
+        "plural_suffix": "",
+        "translation": "turmush qurmoq"
+    },
+    {
+        "article": "die",
+        "word": "Hochzeit",
+        "plural_suffix": "",
+        "translation": "to'y"
+    },
+    {
+        "article": "der",
+        "word": "Mann",
+        "plural_suffix": "¨-er",
+        "translation": "erkak; er"
+    },
+    {
+        "article": "der / die",
+        "word": "Partner / Partnerin",
+        "plural_suffix": "",
+        "translation": "sherik, hamroh"
+    },
+    {
+        "article": "",
+        "word": "gestorben",
+        "plural_suffix": "",
+        "translation": "vafot etgan"
+    },
+    {
+        "article": "",
+        "word": "tot",
+        "plural_suffix": "",
+        "translation": "o'lgan"
+    },
+    {
+        "article": "",
+        "word": "hallo",
+        "plural_suffix": "",
+        "translation": "salom"
+    },
+    {
+        "article": "",
+        "word": "tschüss",
+        "plural_suffix": "",
+        "translation": "xayr (norasmiy)"
+    },
+    {
+        "article": "das",
+        "word": "Wiederhören",
+        "plural_suffix": "",
+        "translation": "(telefonda) xayr: Auf Wiederhören"
+    },
+    {
+        "article": "das",
+        "word": "Wiedersehen",
+        "plural_suffix": "",
+        "translation": "xayr: Auf Wiedersehen"
+    },
+    {
+        "article": "",
+        "word": "willkommen",
+        "plural_suffix": "",
+        "translation": "xush kelibsiz"
+    },
+    {
+        "article": "der",
+        "word": "Herr",
+        "plural_suffix": "-en",
+        "translation": "janob"
+    },
+    {
+        "article": "die",
+        "word": "Dame",
+        "plural_suffix": "-n",
+        "translation": "xonim"
+    },
+    {
+        "article": "",
+        "word": "bitte",
+        "plural_suffix": "",
+        "translation": "iltimos; marhamat"
+    },
+    {
+        "article": "die",
+        "word": "Bitte",
+        "plural_suffix": "-n",
+        "translation": "iltimos, so'rov"
+    },
+    {
+        "article": "",
+        "word": "danken",
+        "plural_suffix": "",
+        "translation": "minnatdorchilik bildirmoq"
+    },
+    {
+        "article": "der",
+        "word": "Dank",
+        "plural_suffix": "",
+        "translation": "rahmat, minnatdorchilik"
+    },
+    {
+        "article": "",
+        "word": "danke",
+        "plural_suffix": "",
+        "translation": "rahmat"
+    },
+    {
+        "article": "",
+        "word": "entschuldigen",
+        "plural_suffix": "",
+        "translation": "kechirmoq"
+    },
+    {
+        "article": "die",
+        "word": "Entschuldigung",
+        "plural_suffix": "",
+        "translation": "kechirasiz; uzr"
+    },
+    {
+        "article": "",
+        "word": "leider",
+        "plural_suffix": "",
+        "translation": "afsuski"
+    },
+    {
+        "article": "die",
+        "word": "Anrede",
+        "plural_suffix": "",
+        "translation": "murojaat (xatda)"
+    },
+    {
+        "article": "das",
+        "word": "Glück",
+        "plural_suffix": "",
+        "translation": "baxt, omad"
+    },
+    {
+        "article": "der",
+        "word": "Glückwunsch",
+        "plural_suffix": "",
+        "translation": "tabrik"
+    },
+    {
+        "article": "",
+        "word": "gratulieren",
+        "plural_suffix": "",
+        "translation": "tabriklamoq"
+    },
+    {
+        "article": "der",
+        "word": "Gruß",
+        "plural_suffix": "¨-e",
+        "translation": "salom (xatda)"
+    },
+    {
+        "article": "",
+        "word": "herzlich",
+        "plural_suffix": "",
+        "translation": "samimiy"
+    },
+    {
+        "article": "",
+        "word": "lieb-",
+        "plural_suffix": "",
+        "translation": "aziz, mehribon"
+    },
+    {
+        "article": "",
+        "word": "Achtung",
+        "plural_suffix": "",
+        "translation": "Diqqat!"
+    },
+    {
+        "article": "die",
+        "word": "Antwort",
+        "plural_suffix": "-en",
+        "translation": "javob"
+    },
+    {
+        "article": "",
+        "word": "zum Beispiel / z. B.",
+        "plural_suffix": "",
+        "translation": "masalan"
+    },
+    {
+        "article": "die",
+        "word": "Frage",
+        "plural_suffix": "-n",
+        "translation": "savol"
+    },
+    {
+        "article": "das",
+        "word": "Gespräch",
+        "plural_suffix": "-e",
+        "translation": "suhbat"
+    },
+    {
+        "article": "die",
+        "word": "Hilfe",
+        "plural_suffix": "",
+        "translation": "yordam"
+    },
+    {
+        "article": "",
+        "word": "ja",
+        "plural_suffix": "",
+        "translation": "ha"
+    },
+    {
+        "article": "",
+        "word": "nein",
+        "plural_suffix": "",
+        "translation": "yo'q"
+    },
+    {
+        "article": "",
+        "word": "klar",
+        "plural_suffix": "",
+        "translation": "aniq, albatta"
+    },
+    {
+        "article": "der",
+        "word": "Moment",
+        "plural_suffix": "",
+        "translation": "lahza, daqiqa"
+    },
+    {
+        "article": "die",
+        "word": "Ordnung",
+        "plural_suffix": "",
+        "translation": "tartib"
+    },
+    {
+        "article": "das",
+        "word": "Problem",
+        "plural_suffix": "-e",
+        "translation": "muammo"
+    },
+    {
+        "article": "die",
+        "word": "Vorsicht",
+        "plural_suffix": "",
+        "translation": "ehtiyot bo'ling!"
+    },
+    {
+        "article": "",
+        "word": "bald",
+        "plural_suffix": "",
+        "translation": "tez orada"
+    },
+    {
+        "article": "",
+        "word": "früher",
+        "plural_suffix": "",
+        "translation": "ilgari, avval"
+    },
+    {
+        "article": "",
+        "word": "gerade",
+        "plural_suffix": "",
+        "translation": "hozirgina, aynan"
+    },
+    {
+        "article": "",
+        "word": "gestern",
+        "plural_suffix": "",
+        "translation": "kecha"
+    },
+    {
+        "article": "",
+        "word": "heute",
+        "plural_suffix": "",
+        "translation": "bugun"
+    },
+    {
+        "article": "",
+        "word": "jetzt",
+        "plural_suffix": "",
+        "translation": "hozir"
+    },
+    {
+        "article": "",
+        "word": "morgen",
+        "plural_suffix": "",
+        "translation": "ertaga"
+    },
+    {
+        "article": "",
+        "word": "später",
+        "plural_suffix": "",
+        "translation": "keyinroq"
+    },
+    {
+        "article": "",
+        "word": "sofort",
+        "plural_suffix": "",
+        "translation": "darhol"
+    },
+    {
+        "article": "",
+        "word": "zurzeit",
+        "plural_suffix": "",
+        "translation": "hozirgi paytda"
+    },
+    {
+        "article": "",
+        "word": "seit",
+        "plural_suffix": "",
+        "translation": "-dan beri"
+    },
+    {
+        "article": "",
+        "word": "spät",
+        "plural_suffix": "",
+        "translation": "kech"
+    },
+    {
+        "article": "",
+        "word": "pünktlich",
+        "plural_suffix": "",
+        "translation": "o'z vaqtida, aniq"
+    },
+    {
+        "article": "",
+        "word": "einmal",
+        "plural_suffix": "",
+        "translation": "bir marta"
+    },
+    {
+        "article": "",
+        "word": "immer",
+        "plural_suffix": "",
+        "translation": "doim"
+    },
+    {
+        "article": "",
+        "word": "nie",
+        "plural_suffix": "",
+        "translation": "hech qachon"
+    },
+    {
+        "article": "",
+        "word": "oft",
+        "plural_suffix": "",
+        "translation": "tez-tez"
+    },
+    {
+        "article": "",
+        "word": "lange",
+        "plural_suffix": "",
+        "translation": "uzoq (vaqt)"
+    },
+    {
+        "article": "",
+        "word": "dauern",
+        "plural_suffix": "",
+        "translation": "davom etmoq (vaqt)"
+    },
+    {
+        "article": "der",
+        "word": "Anfang",
+        "plural_suffix": "",
+        "translation": "boshlanish, boshi"
+    },
+    {
+        "article": "das",
+        "word": "Datum",
+        "plural_suffix": "",
+        "translation": "sana"
+    },
+    {
+        "article": "das",
+        "word": "Ende",
+        "plural_suffix": "",
+        "translation": "oxir, tugash"
+    },
+    {
+        "article": "",
+        "word": "Feier-",
+        "plural_suffix": "",
+        "translation": "bayram ... (Feierabend, Feiertag)"
+    },
+    {
+        "article": "der",
+        "word": "Schluss",
+        "plural_suffix": "",
+        "translation": "oxir, yakun"
+    },
+    {
+        "article": "die",
+        "word": "Stunde",
+        "plural_suffix": "-n",
+        "translation": "soat (60 daqiqa); dars soati"
+    },
+    {
+        "article": "die",
+        "word": "Uhr",
+        "plural_suffix": "",
+        "translation": "soat (vaqt; asbob)"
+    },
+    {
+        "article": "die",
+        "word": "Zeit",
+        "plural_suffix": "",
+        "translation": "vaqt"
+    },
+    {
+        "article": "das",
+        "word": "Apartment",
+        "plural_suffix": "-s",
+        "translation": "kvartira-studiya"
+    },
+    {
+        "article": "das",
+        "word": "Bad",
+        "plural_suffix": "",
+        "translation": "vanna xona"
+    },
+    {
+        "article": "der",
+        "word": "Balkon",
+        "plural_suffix": "",
+        "translation": "balkon"
+    },
+    {
+        "article": "die",
+        "word": "Dusche",
+        "plural_suffix": "",
+        "translation": "dush"
+    },
+    {
+        "article": "der",
+        "word": "Garten",
+        "plural_suffix": "",
+        "translation": "bog'"
+    },
+    {
+        "article": "das",
+        "word": "Haus",
+        "plural_suffix": "¨-er",
+        "translation": "uy"
+    },
+    {
+        "article": "die",
+        "word": "Küche",
+        "plural_suffix": "",
+        "translation": "oshxona"
+    },
+    {
+        "article": "der",
+        "word": "Stock",
+        "plural_suffix": "",
+        "translation": "qavat"
+    },
+    {
+        "article": "die",
+        "word": "Toilette",
+        "plural_suffix": "-en",
+        "translation": "hojatxona"
+    },
+    {
+        "article": "die",
+        "word": "Treppe",
+        "plural_suffix": "-n",
+        "translation": "zina"
+    },
+    {
+        "article": "die",
+        "word": "Wohnung",
+        "plural_suffix": "-en",
+        "translation": "kvartira"
+    },
+    {
+        "article": "das",
+        "word": "Zimmer",
+        "plural_suffix": "-",
+        "translation": "xona"
+    },
+    {
+        "article": "der",
+        "word": "Aufzug",
+        "plural_suffix": "¨-e",
+        "translation": "lift"
+    },
+    {
+        "article": "das",
+        "word": "Bett",
+        "plural_suffix": "-en",
+        "translation": "karavot"
+    },
+    {
+        "article": "der",
+        "word": "Herd",
+        "plural_suffix": "",
+        "translation": "plita"
+    },
+    {
+        "article": "der",
+        "word": "Kühlschrank",
+        "plural_suffix": "",
+        "translation": "muzlatgich"
+    },
+    {
+        "article": "das",
+        "word": "Licht",
+        "plural_suffix": "",
+        "translation": "chiroq, yorug'lik"
+    },
+    {
+        "article": "die",
+        "word": "Maschine",
+        "plural_suffix": "-n",
+        "translation": "mashina (texnika)"
+    },
+    {
+        "article": "die",
+        "word": "Möbel",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "mebel"
+    },
+    {
+        "article": "der",
+        "word": "Schlüssel",
+        "plural_suffix": "-",
+        "translation": "kalit"
+    },
+    {
+        "article": "der",
+        "word": "Schrank",
+        "plural_suffix": "¨-e",
+        "translation": "shkaf"
+    },
+    {
+        "article": "das",
+        "word": "Sofa",
+        "plural_suffix": "",
+        "translation": "divan"
+    },
+    {
+        "article": "der",
+        "word": "Tisch",
+        "plural_suffix": "-e",
+        "translation": "stol"
+    },
+    {
+        "article": "",
+        "word": "anmachen",
+        "plural_suffix": "",
+        "translation": "yoqmoq (chiroq, qurilma)"
+    },
+    {
+        "article": "",
+        "word": "ausmachen",
+        "plural_suffix": "",
+        "translation": "o'chirmoq"
+    },
+    {
+        "article": "",
+        "word": "an sein",
+        "plural_suffix": "",
+        "translation": "yoniq bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "auf sein",
+        "plural_suffix": "",
+        "translation": "ochiq bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "aus sein",
+        "plural_suffix": "",
+        "translation": "o'chiq bo'lmoq; tugagan bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "zu sein",
+        "plural_suffix": "",
+        "translation": "yopiq bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "baden",
+        "plural_suffix": "",
+        "translation": "cho'milmoq (vannada)"
+    },
+    {
+        "article": "",
+        "word": "(sich) duschen",
+        "plural_suffix": "",
+        "translation": "dush qabul qilmoq"
+    },
+    {
+        "article": "",
+        "word": "(sich) waschen",
+        "plural_suffix": "",
+        "translation": "yuvmoq; yuvinmoq"
+    },
+    {
+        "article": "",
+        "word": "wohnen",
+        "plural_suffix": "",
+        "translation": "yashamoq (manzilda)"
+    },
+    {
+        "article": "",
+        "word": "umziehen",
+        "plural_suffix": "",
+        "translation": "ko'chib o'tmoq"
+    },
+    {
+        "article": "",
+        "word": "mieten",
+        "plural_suffix": "",
+        "translation": "ijaraga olmoq"
+    },
+    {
+        "article": "die",
+        "word": "Miete",
+        "plural_suffix": "",
+        "translation": "ijara haqi"
+    },
+    {
+        "article": "",
+        "word": "vermieten",
+        "plural_suffix": "",
+        "translation": "ijaraga bermoq"
+    },
+    {
+        "article": "der",
+        "word": "Vermieter",
+        "plural_suffix": "",
+        "translation": "uy egasi (ijaraga beruvchi)"
+    },
+    {
+        "article": "die",
+        "word": "Reparatur",
+        "plural_suffix": "",
+        "translation": "ta'mir"
+    },
+    {
+        "article": "das",
+        "word": "Dorf",
+        "plural_suffix": "¨-er",
+        "translation": "qishloq"
+    },
+    {
+        "article": "die",
+        "word": "Stadt",
+        "plural_suffix": "¨-e",
+        "translation": "shahar"
+    },
+    {
+        "article": "die",
+        "word": "Straße",
+        "plural_suffix": "-n",
+        "translation": "ko'cha"
+    },
+    {
+        "article": "der",
+        "word": "Apfel",
+        "plural_suffix": "¨-",
+        "translation": "olma"
+    },
+    {
+        "article": "die",
+        "word": "Banane",
+        "plural_suffix": "-n",
+        "translation": "banan"
+    },
+    {
+        "article": "die",
+        "word": "Birne",
+        "plural_suffix": "-n",
+        "translation": "nok"
+    },
+    {
+        "article": "das",
+        "word": "Gemüse",
+        "plural_suffix": "",
+        "translation": "sabzavot"
+    },
+    {
+        "article": "die",
+        "word": "Kartoffel",
+        "plural_suffix": "-n",
+        "translation": "kartoshka"
+    },
+    {
+        "article": "das",
+        "word": "Obst",
+        "plural_suffix": "",
+        "translation": "meva"
+    },
+    {
+        "article": "die",
+        "word": "Tomate",
+        "plural_suffix": "-n",
+        "translation": "pomidor"
+    },
+    {
+        "article": "der",
+        "word": "Salat",
+        "plural_suffix": "",
+        "translation": "salat"
+    },
+    {
+        "article": "das",
+        "word": "Brot",
+        "plural_suffix": "-e",
+        "translation": "non"
+    },
+    {
+        "article": "das",
+        "word": "Brötchen",
+        "plural_suffix": "-",
+        "translation": "bulochka"
+    },
+    {
+        "article": "die",
+        "word": "Butter",
+        "plural_suffix": "",
+        "translation": "sariyog'"
+    },
+    {
+        "article": "das",
+        "word": "Ei",
+        "plural_suffix": "-er",
+        "translation": "tuxum"
+    },
+    {
+        "article": "der",
+        "word": "Fisch",
+        "plural_suffix": "-e",
+        "translation": "baliq"
+    },
+    {
+        "article": "das",
+        "word": "Fleisch",
+        "plural_suffix": "",
+        "translation": "go'sht"
+    },
+    {
+        "article": "das",
+        "word": "Hähnchen",
+        "plural_suffix": "-",
+        "translation": "tovuq (go'shti)"
+    },
+    {
+        "article": "der",
+        "word": "Kuchen",
+        "plural_suffix": "",
+        "translation": "pirog, tort"
+    },
+    {
+        "article": "das",
+        "word": "Öl",
+        "plural_suffix": "",
+        "translation": "yog'"
+    },
+    {
+        "article": "die",
+        "word": "Pommes frites",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "kartoshka fri"
+    },
+    {
+        "article": "der",
+        "word": "Reis",
+        "plural_suffix": "",
+        "translation": "guruch"
+    },
+    {
+        "article": "das",
+        "word": "Salz",
+        "plural_suffix": "",
+        "translation": "tuz"
+    },
+    {
+        "article": "der",
+        "word": "Schinken",
+        "plural_suffix": "-",
+        "translation": "vetchina (dudlangan go'sht)"
+    },
+    {
+        "article": "das",
+        "word": "Essen",
+        "plural_suffix": "",
+        "translation": "ovqat"
+    },
+    {
+        "article": "das",
+        "word": "Frühstück",
+        "plural_suffix": "",
+        "translation": "nonushta"
+    },
+    {
+        "article": "das",
+        "word": "Bier",
+        "plural_suffix": "",
+        "translation": "pivo"
+    },
+    {
+        "article": "das",
+        "word": "Getränk",
+        "plural_suffix": "-e",
+        "translation": "ichimlik"
+    },
+    {
+        "article": "der",
+        "word": "Kaffee",
+        "plural_suffix": "",
+        "translation": "qahva"
+    },
+    {
+        "article": "die",
+        "word": "Milch",
+        "plural_suffix": "",
+        "translation": "sut"
+    },
+    {
+        "article": "der",
+        "word": "Saft",
+        "plural_suffix": "",
+        "translation": "sharbat"
+    },
+    {
+        "article": "der",
+        "word": "Tee",
+        "plural_suffix": "",
+        "translation": "choy"
+    },
+    {
+        "article": "das",
+        "word": "Wasser",
+        "plural_suffix": "",
+        "translation": "suv"
+    },
+    {
+        "article": "der",
+        "word": "Wein",
+        "plural_suffix": "",
+        "translation": "vino"
+    },
+    {
+        "article": "die",
+        "word": "Flasche",
+        "plural_suffix": "-n",
+        "translation": "shisha (idish)"
+    },
+    {
+        "article": "das",
+        "word": "Glas",
+        "plural_suffix": "¨-er",
+        "translation": "stakan; shisha (material)"
+    },
+    {
+        "article": "das",
+        "word": "Café",
+        "plural_suffix": "-s",
+        "translation": "kafe"
+    },
+    {
+        "article": "das",
+        "word": "Lokal",
+        "plural_suffix": "",
+        "translation": "kafe-restoran"
+    },
+    {
+        "article": "das",
+        "word": "Restaurant",
+        "plural_suffix": "-s",
+        "translation": "restoran"
+    },
+    {
+        "article": "die",
+        "word": "Speisekarte",
+        "plural_suffix": "",
+        "translation": "menyu"
+    },
+    {
+        "article": "die",
+        "word": "Rechnung",
+        "plural_suffix": "-en",
+        "translation": "hisob (to'lov)"
+    },
+    {
+        "article": "",
+        "word": "bestellen",
+        "plural_suffix": "",
+        "translation": "buyurtma bermoq"
+    },
+    {
+        "article": "der",
+        "word": "Appetit",
+        "plural_suffix": "",
+        "translation": "ishtaha"
+    },
+    {
+        "article": "",
+        "word": "essen",
+        "plural_suffix": "",
+        "translation": "ovqatlanmoq"
+    },
+    {
+        "article": "",
+        "word": "trinken",
+        "plural_suffix": "",
+        "translation": "ichmoq"
+    },
+    {
+        "article": "",
+        "word": "frühstücken",
+        "plural_suffix": "",
+        "translation": "nonushta qilmoq"
+    },
+    {
+        "article": "",
+        "word": "kochen",
+        "plural_suffix": "",
+        "translation": "pishirmoq"
+    },
+    {
+        "article": "",
+        "word": "grillen",
+        "plural_suffix": "",
+        "translation": "grill qilmoq"
+    },
+    {
+        "article": "",
+        "word": "schmecken",
+        "plural_suffix": "",
+        "translation": "ta'mi bo'lmoq, mazali bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "bitter",
+        "plural_suffix": "",
+        "translation": "achchiq (ta'm)"
+    },
+    {
+        "article": "der",
+        "word": "Durst",
+        "plural_suffix": "",
+        "translation": "chanqoq"
+    },
+    {
+        "article": "der",
+        "word": "Hunger",
+        "plural_suffix": "",
+        "translation": "ochlik (och qolish)"
+    },
+    {
+        "article": "die",
+        "word": "Bäckerei",
+        "plural_suffix": "",
+        "translation": "novvoyxona"
+    },
+    {
+        "article": "das",
+        "word": "Geschäft",
+        "plural_suffix": "-e",
+        "translation": "do'kon"
+    },
+    {
+        "article": "der",
+        "word": "Kiosk",
+        "plural_suffix": "",
+        "translation": "kiosk"
+    },
+    {
+        "article": "der",
+        "word": "Laden",
+        "plural_suffix": "¨-",
+        "translation": "do'kon"
+    },
+    {
+        "article": "die",
+        "word": "Lebensmittel",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "oziq-ovqat mahsulotlari"
+    },
+    {
+        "article": "",
+        "word": "geöffnet",
+        "plural_suffix": "",
+        "translation": "ochiq"
+    },
+    {
+        "article": "",
+        "word": "geschlossen",
+        "plural_suffix": "",
+        "translation": "yopiq"
+    },
+    {
+        "article": "die",
+        "word": "Kasse",
+        "plural_suffix": "",
+        "translation": "kassa"
+    },
+    {
+        "article": "das",
+        "word": "Angebot",
+        "plural_suffix": "-e",
+        "translation": "taklif; aksiya, chegirma"
+    },
+    {
+        "article": "",
+        "word": "bar",
+        "plural_suffix": "",
+        "translation": "naqd"
+    },
+    {
+        "article": "",
+        "word": "bezahlen",
+        "plural_suffix": "",
+        "translation": "to'lamoq"
+    },
+    {
+        "article": "",
+        "word": "zahlen",
+        "plural_suffix": "",
+        "translation": "to'lamoq"
+    },
+    {
+        "article": "",
+        "word": "billig",
+        "plural_suffix": "",
+        "translation": "arzon"
+    },
+    {
+        "article": "",
+        "word": "günstig",
+        "plural_suffix": "",
+        "translation": "arzon, qulay"
+    },
+    {
+        "article": "",
+        "word": "teuer",
+        "plural_suffix": "",
+        "translation": "qimmat"
+    },
+    {
+        "article": "das",
+        "word": "Geld",
+        "plural_suffix": "",
+        "translation": "pul"
+    },
+    {
+        "article": "der",
+        "word": "Preis",
+        "plural_suffix": "-e",
+        "translation": "narx"
+    },
+    {
+        "article": "",
+        "word": "kosten",
+        "plural_suffix": "",
+        "translation": "turmoq (narxi)"
+    },
+    {
+        "article": "die",
+        "word": "(Kredit)karte",
+        "plural_suffix": "-n",
+        "translation": "(kredit) karta"
+    },
+    {
+        "article": "die",
+        "word": "Karte",
+        "plural_suffix": "-n",
+        "translation": "kartochka, otkritka; menyu; chipta"
+    },
+    {
+        "article": "die",
+        "word": "Farbe",
+        "plural_suffix": "-n",
+        "translation": "rang"
+    },
+    {
+        "article": "die",
+        "word": "Größe",
+        "plural_suffix": "",
+        "translation": "o'lcham, razmer"
+    },
+    {
+        "article": "die",
+        "word": "Jacke",
+        "plural_suffix": "-n",
+        "translation": "kurtka"
+    },
+    {
+        "article": "die",
+        "word": "Kleidung",
+        "plural_suffix": "",
+        "translation": "kiyim"
+    },
+    {
+        "article": "der",
+        "word": "Schuh",
+        "plural_suffix": "-e",
+        "translation": "poyabzal"
+    },
+    {
+        "article": "die",
+        "word": "Tasche",
+        "plural_suffix": "-n",
+        "translation": "sumka; cho'ntak"
+    },
+    {
+        "article": "",
+        "word": "einkaufen",
+        "plural_suffix": "",
+        "translation": "xarid qilmoq"
+    },
+    {
+        "article": "",
+        "word": "kaufen",
+        "plural_suffix": "",
+        "translation": "sotib olmoq"
+    },
+    {
+        "article": "",
+        "word": "verkaufen",
+        "plural_suffix": "",
+        "translation": "sotmoq"
+    },
+    {
+        "article": "der",
+        "word": "Verkäufer",
+        "plural_suffix": "-",
+        "translation": "sotuvchi"
+    },
+    {
+        "article": "der",
+        "word": "Kunde",
+        "plural_suffix": "-n",
+        "translation": "mijoz, xaridor"
+    },
+    {
+        "article": "die",
+        "word": "Zigarette",
+        "plural_suffix": "-n",
+        "translation": "sigaret"
+    },
+    {
+        "article": "das",
+        "word": "Auto",
+        "plural_suffix": "-s",
+        "translation": "mashina, avtomobil"
+    },
+    {
+        "article": "die",
+        "word": "Autobahn",
+        "plural_suffix": "-en",
+        "translation": "avtomagistral"
+    },
+    {
+        "article": "die",
+        "word": "Bahn",
+        "plural_suffix": "",
+        "translation": "temir yo'l, poyezd"
+    },
+    {
+        "article": "der",
+        "word": "Bus",
+        "plural_suffix": "-se",
+        "translation": "avtobus"
+    },
+    {
+        "article": "das",
+        "word": "Fahrrad",
+        "plural_suffix": "¨-er",
+        "translation": "velosiped"
+    },
+    {
+        "article": "das",
+        "word": "Flugzeug",
+        "plural_suffix": "",
+        "translation": "samolyot"
+    },
+    {
+        "article": "der",
+        "word": "Lkw",
+        "plural_suffix": "-s",
+        "translation": "yuk mashinasi"
+    },
+    {
+        "article": "die",
+        "word": "S-Bahn",
+        "plural_suffix": "",
+        "translation": "shahar elektr poyezdi"
+    },
+    {
+        "article": "die",
+        "word": "Straßenbahn",
+        "plural_suffix": "",
+        "translation": "tramvay"
+    },
+    {
+        "article": "das",
+        "word": "Taxi",
+        "plural_suffix": "-s",
+        "translation": "taksi"
+    },
+    {
+        "article": "der",
+        "word": "Zug",
+        "plural_suffix": "¨-e",
+        "translation": "poyezd"
+    },
+    {
+        "article": "der",
+        "word": "Fahrer",
+        "plural_suffix": "",
+        "translation": "haydovchi"
+    },
+    {
+        "article": "die",
+        "word": "Abfahrt",
+        "plural_suffix": "",
+        "translation": "jo'nash"
+    },
+    {
+        "article": "die",
+        "word": "Ankunft",
+        "plural_suffix": "",
+        "translation": "kelish, yetib kelish"
+    },
+    {
+        "article": "der",
+        "word": "Abflug",
+        "plural_suffix": "",
+        "translation": "uchib ketish (reys)"
+    },
+    {
+        "article": "die",
+        "word": "Ansage",
+        "plural_suffix": "-n",
+        "translation": "e'lon (ovozli)"
+    },
+    {
+        "article": "der",
+        "word": "Anschluss",
+        "plural_suffix": "",
+        "translation": "ulanish; tutashuv (poyezd)"
+    },
+    {
+        "article": "der",
+        "word": "Automat",
+        "plural_suffix": "",
+        "translation": "avtomat (sotuv apparati)"
+    },
+    {
+        "article": "der",
+        "word": "Bahnhof",
+        "plural_suffix": "",
+        "translation": "vokzal"
+    },
+    {
+        "article": "der",
+        "word": "Bahnsteig",
+        "plural_suffix": "",
+        "translation": "platforma, perron"
+    },
+    {
+        "article": "die",
+        "word": "Durchsage",
+        "plural_suffix": "-n",
+        "translation": "e'lon (radio/vokzal)"
+    },
+    {
+        "article": "die",
+        "word": "Fahrkarte",
+        "plural_suffix": "-n",
+        "translation": "chipta"
+    },
+    {
+        "article": "der",
+        "word": "Flughafen",
+        "plural_suffix": "",
+        "translation": "aeroport"
+    },
+    {
+        "article": "das",
+        "word": "Gleis",
+        "plural_suffix": "-e",
+        "translation": "yo'l (poyezd yo'li)"
+    },
+    {
+        "article": "das",
+        "word": "Ticket",
+        "plural_suffix": "-s",
+        "translation": "chipta"
+    },
+    {
+        "article": "der",
+        "word": "Zoll",
+        "plural_suffix": "",
+        "translation": "bojxona"
+    },
+    {
+        "article": "die",
+        "word": "Halle",
+        "plural_suffix": "",
+        "translation": "zal"
+    },
+    {
+        "article": "die",
+        "word": "Haltestelle",
+        "plural_suffix": "",
+        "translation": "bekat"
+    },
+    {
+        "article": "der",
+        "word": "Ausgang",
+        "plural_suffix": "",
+        "translation": "chiqish (eshik)"
+    },
+    {
+        "article": "der",
+        "word": "Eingang",
+        "plural_suffix": "",
+        "translation": "kirish (eshik)"
+    },
+    {
+        "article": "das",
+        "word": "Gepäck",
+        "plural_suffix": "",
+        "translation": "yuk (bagaj)"
+    },
+    {
+        "article": "der",
+        "word": "Koffer",
+        "plural_suffix": "-",
+        "translation": "chamadon"
+    },
+    {
+        "article": "",
+        "word": "abfahren",
+        "plural_suffix": "",
+        "translation": "jo'nab ketmoq (transportda)"
+    },
+    {
+        "article": "",
+        "word": "ankommen",
+        "plural_suffix": "",
+        "translation": "yetib kelmoq"
+    },
+    {
+        "article": "",
+        "word": "aussteigen",
+        "plural_suffix": "",
+        "translation": "tushmoq (transportdan)"
+    },
+    {
+        "article": "",
+        "word": "einsteigen",
+        "plural_suffix": "",
+        "translation": "minmoq (transportga)"
+    },
+    {
+        "article": "",
+        "word": "fahren",
+        "plural_suffix": "",
+        "translation": "(transportda) bormoq; haydamoq"
+    },
+    {
+        "article": "",
+        "word": "fliegen",
+        "plural_suffix": "",
+        "translation": "uchmoq"
+    },
+    {
+        "article": "",
+        "word": "abfliegen",
+        "plural_suffix": "",
+        "translation": "uchib ketmoq"
+    },
+    {
+        "article": "",
+        "word": "halten",
+        "plural_suffix": "",
+        "translation": "to'xtamoq; ushlamoq"
+    },
+    {
+        "article": "",
+        "word": "reisen",
+        "plural_suffix": "",
+        "translation": "sayohat qilmoq"
+    },
+    {
+        "article": "",
+        "word": "übernachten",
+        "plural_suffix": "",
+        "translation": "tunamoq"
+    },
+    {
+        "article": "das",
+        "word": "Doppelzimmer",
+        "plural_suffix": "",
+        "translation": "ikki kishilik xona"
+    },
+    {
+        "article": "das",
+        "word": "Einzelzimmer",
+        "plural_suffix": "",
+        "translation": "bir kishilik xona"
+    },
+    {
+        "article": "die",
+        "word": "Halbpension",
+        "plural_suffix": "",
+        "translation": "yarim pansion"
+    },
+    {
+        "article": "das",
+        "word": "Hotel",
+        "plural_suffix": "-s",
+        "translation": "mehmonxona"
+    },
+    {
+        "article": "die",
+        "word": "Rezeption",
+        "plural_suffix": "",
+        "translation": "qabulxona (mehmonxonada)"
+    },
+    {
+        "article": "die",
+        "word": "Ecke",
+        "plural_suffix": "-n",
+        "translation": "burchak"
+    },
+    {
+        "article": "",
+        "word": "geradeaus",
+        "plural_suffix": "",
+        "translation": "to'g'riga"
+    },
+    {
+        "article": "",
+        "word": "links",
+        "plural_suffix": "",
+        "translation": "chapda, chapga"
+    },
+    {
+        "article": "",
+        "word": "rechts",
+        "plural_suffix": "",
+        "translation": "o'ngda, o'ngga"
+    },
+    {
+        "article": "",
+        "word": "zurück",
+        "plural_suffix": "",
+        "translation": "orqaga, qaytib"
+    },
+    {
+        "article": "der",
+        "word": "Plan",
+        "plural_suffix": "¨-e",
+        "translation": "reja; xarita"
+    },
+    {
+        "article": "der",
+        "word": "Platz",
+        "plural_suffix": "¨-e",
+        "translation": "joy, o'rin; maydon"
+    },
+    {
+        "article": "der",
+        "word": "Ort",
+        "plural_suffix": "-e",
+        "translation": "joy, manzil"
+    },
+    {
+        "article": "das",
+        "word": "Schild",
+        "plural_suffix": "-er",
+        "translation": "belgi, yozuv (taxtacha)"
+    },
+    {
+        "article": "das",
+        "word": "Ausland",
+        "plural_suffix": "",
+        "translation": "chet el"
+    },
+    {
+        "article": "der",
+        "word": "Blick",
+        "plural_suffix": "",
+        "translation": "manzara, nigoh"
+    },
+    {
+        "article": "der",
+        "word": "Prospekt",
+        "plural_suffix": "-e",
+        "translation": "prospekt, reklama bukleti"
+    },
+    {
+        "article": "die",
+        "word": "Reise",
+        "plural_suffix": "",
+        "translation": "sayohat"
+    },
+    {
+        "article": "das",
+        "word": "Reisebüro",
+        "plural_suffix": "-s",
+        "translation": "sayohat agentligi"
+    },
+    {
+        "article": "der",
+        "word": "Reiseführer",
+        "plural_suffix": "",
+        "translation": "yo'lko'rsatkich (kitob); gid"
+    },
+    {
+        "article": "die",
+        "word": "Sehenswürdigkeit",
+        "plural_suffix": "-en",
+        "translation": "diqqatga sazovor joy"
+    },
+    {
+        "article": "der",
+        "word": "Absender",
+        "plural_suffix": "",
+        "translation": "jo'natuvchi"
+    },
+    {
+        "article": "der",
+        "word": "Brief",
+        "plural_suffix": "-e",
+        "translation": "xat"
+    },
+    {
+        "article": "die",
+        "word": "Briefmarke",
+        "plural_suffix": "-n",
+        "translation": "pochta markasi"
+    },
+    {
+        "article": "der",
+        "word": "Empfänger",
+        "plural_suffix": "-",
+        "translation": "qabul qiluvchi"
+    },
+    {
+        "article": "die",
+        "word": "Post",
+        "plural_suffix": "",
+        "translation": "pochta"
+    },
+    {
+        "article": "die",
+        "word": "Postleitzahl",
+        "plural_suffix": "",
+        "translation": "pochta indeksi"
+    },
+    {
+        "article": "",
+        "word": "schicken",
+        "plural_suffix": "",
+        "translation": "yubormoq"
+    },
+    {
+        "article": "die",
+        "word": "E-Mail",
+        "plural_suffix": "-s",
+        "translation": "elektron xat"
+    },
+    {
+        "article": "das",
+        "word": "Fax",
+        "plural_suffix": "-e",
+        "translation": "faks"
+    },
+    {
+        "article": "",
+        "word": "anrufen",
+        "plural_suffix": "",
+        "translation": "qo'ng'iroq qilmoq"
+    },
+    {
+        "article": "der",
+        "word": "Anruf",
+        "plural_suffix": "-e",
+        "translation": "qo'ng'iroq"
+    },
+    {
+        "article": "der",
+        "word": "Anrufbeantworter",
+        "plural_suffix": "",
+        "translation": "avtojavob beruvchi"
+    },
+    {
+        "article": "das",
+        "word": "Handy",
+        "plural_suffix": "-s",
+        "translation": "mobil telefon"
+    },
+    {
+        "article": "",
+        "word": "telefonieren",
+        "plural_suffix": "",
+        "translation": "telefonda gaplashmoq"
+    },
+    {
+        "article": "das",
+        "word": "Telefon",
+        "plural_suffix": "",
+        "translation": "telefon"
+    },
+    {
+        "article": "die",
+        "word": "Vorwahl",
+        "plural_suffix": "",
+        "translation": "shahar kodi (telefon)"
+    },
+    {
+        "article": "die",
+        "word": "Bank",
+        "plural_suffix": "",
+        "translation": "bank; o'rindiq (skameyka)"
+    },
+    {
+        "article": "das",
+        "word": "Konto",
+        "plural_suffix": "",
+        "translation": "hisob raqam"
+    },
+    {
+        "article": "",
+        "word": "überweisen",
+        "plural_suffix": "",
+        "translation": "pul o'tkazmoq"
+    },
+    {
+        "article": "der",
+        "word": "Schalter",
+        "plural_suffix": "",
+        "translation": "kassa oynasi (darcha)"
+    },
+    {
+        "article": "",
+        "word": "(sich) anmelden",
+        "plural_suffix": "",
+        "translation": "ro'yxatdan o'tmoq, yozilmoq"
+    },
+    {
+        "article": "die",
+        "word": "Anmeldung",
+        "plural_suffix": "",
+        "translation": "ro'yxatdan o'tish; qabulxona"
+    },
+    {
+        "article": "",
+        "word": "ausfüllen",
+        "plural_suffix": "",
+        "translation": "to'ldirmoq (anketa)"
+    },
+    {
+        "article": "das",
+        "word": "Formular",
+        "plural_suffix": "-e",
+        "translation": "anketa, blanka"
+    },
+    {
+        "article": "der",
+        "word": "Ausweis",
+        "plural_suffix": "",
+        "translation": "guvohnoma, ID-karta"
+    },
+    {
+        "article": "der",
+        "word": "Pass",
+        "plural_suffix": "¨-e",
+        "translation": "pasport"
+    },
+    {
+        "article": "die",
+        "word": "Papiere",
+        "plural_suffix": "faqat ko'plik",
+        "translation": "hujjatlar"
+    },
+    {
+        "article": "",
+        "word": "gültig",
+        "plural_suffix": "",
+        "translation": "amal qiluvchi, haqiqiy"
+    },
+    {
+        "article": "",
+        "word": "unterschreiben",
+        "plural_suffix": "",
+        "translation": "imzolamoq"
+    },
+    {
+        "article": "die",
+        "word": "Unterschrift",
+        "plural_suffix": "",
+        "translation": "imzo"
+    },
+    {
+        "article": "der",
+        "word": "Beamte",
+        "plural_suffix": "-n",
+        "translation": "davlat xizmatchisi"
+    },
+    {
+        "article": "die",
+        "word": "Polizei",
+        "plural_suffix": "",
+        "translation": "politsiya"
+    },
+    {
+        "article": "die",
+        "word": "Auskunft",
+        "plural_suffix": "¨-e",
+        "translation": "ma'lumot, axborot"
+    },
+    {
+        "article": "die",
+        "word": "Information",
+        "plural_suffix": "-en",
+        "translation": "ma'lumot; ma'lumot byurosi"
+    },
+    {
+        "article": "die",
+        "word": "Anzeige",
+        "plural_suffix": "-n",
+        "translation": "e'lon (gazetada)"
+    },
+    {
+        "article": "der",
+        "word": "Arm",
+        "plural_suffix": "-e",
+        "translation": "qo'l (yelka-bilak)"
+    },
+    {
+        "article": "das",
+        "word": "Auge",
+        "plural_suffix": "-n",
+        "translation": "ko'z"
+    },
+    {
+        "article": "der",
+        "word": "Bauch",
+        "plural_suffix": "",
+        "translation": "qorin"
+    },
+    {
+        "article": "das",
+        "word": "Bein",
+        "plural_suffix": "-e",
+        "translation": "oyoq"
+    },
+    {
+        "article": "der",
+        "word": "Fuß",
+        "plural_suffix": "¨-e",
+        "translation": "oyoq (tovon)"
+    },
+    {
+        "article": "das",
+        "word": "Haar",
+        "plural_suffix": "-e",
+        "translation": "soch"
+    },
+    {
+        "article": "die",
+        "word": "Hand",
+        "plural_suffix": "¨-e",
+        "translation": "qo'l (kaft)"
+    },
+    {
+        "article": "der",
+        "word": "Kopf",
+        "plural_suffix": "",
+        "translation": "bosh"
+    },
+    {
+        "article": "der",
+        "word": "Mund",
+        "plural_suffix": "",
+        "translation": "og'iz"
+    },
+    {
+        "article": "der",
+        "word": "Arzt",
+        "plural_suffix": "¨-e",
+        "translation": "shifokor"
+    },
+    {
+        "article": "der",
+        "word": "Doktor",
+        "plural_suffix": "",
+        "translation": "doktor, shifokor"
+    },
+    {
+        "article": "das",
+        "word": "Fieber",
+        "plural_suffix": "",
+        "translation": "isitma"
+    },
+    {
+        "article": "",
+        "word": "krank",
+        "plural_suffix": "",
+        "translation": "kasal"
+    },
+    {
+        "article": "die",
+        "word": "Praxis",
+        "plural_suffix": "",
+        "translation": "shifoxona (vrach kabineti)"
+    },
+    {
+        "article": "",
+        "word": "weh tun",
+        "plural_suffix": "",
+        "translation": "og'rimoq"
+    },
+    {
+        "article": "die",
+        "word": "Arbeit",
+        "plural_suffix": "-en",
+        "translation": "ish"
+    },
+    {
+        "article": "der",
+        "word": "Arbeitsplatz",
+        "plural_suffix": "¨-e",
+        "translation": "ish joyi"
+    },
+    {
+        "article": "der",
+        "word": "Beruf",
+        "plural_suffix": "-e",
+        "translation": "kasb"
+    },
+    {
+        "article": "der",
+        "word": "Chef",
+        "plural_suffix": "",
+        "translation": "boshliq"
+    },
+    {
+        "article": "die",
+        "word": "Firma",
+        "plural_suffix": "",
+        "translation": "firma, kompaniya"
+    },
+    {
+        "article": "der",
+        "word": "Job",
+        "plural_suffix": "-s",
+        "translation": "ish (vaqtinchalik)"
+    },
+    {
+        "article": "der",
+        "word": "Kollege",
+        "plural_suffix": "-n",
+        "translation": "hamkasb"
+    },
+    {
+        "article": "die",
+        "word": "Stelle",
+        "plural_suffix": "-n",
+        "translation": "ish o'rni, lavozim"
+    },
+    {
+        "article": "das",
+        "word": "Praktikum",
+        "plural_suffix": "",
+        "translation": "amaliyot (praktika)"
+    },
+    {
+        "article": "der",
+        "word": "Termin",
+        "plural_suffix": "-e",
+        "translation": "uchrashuv vaqti (qabul)"
+    },
+    {
+        "article": "der",
+        "word": "Urlaub",
+        "plural_suffix": "",
+        "translation": "ta'til"
+    },
+    {
+        "article": "der",
+        "word": "Computer",
+        "plural_suffix": "-",
+        "translation": "kompyuter"
+    },
+    {
+        "article": "",
+        "word": "drucken",
+        "plural_suffix": "",
+        "translation": "chop etmoq"
+    },
+    {
+        "article": "der",
+        "word": "Drucker",
+        "plural_suffix": "-",
+        "translation": "printer"
+    },
+    {
+        "article": "",
+        "word": "arbeiten",
+        "plural_suffix": "",
+        "translation": "ishlamoq"
+    },
+    {
+        "article": "",
+        "word": "arbeitslos",
+        "plural_suffix": "",
+        "translation": "ishsiz"
+    },
+    {
+        "article": "",
+        "word": "selbstständig",
+        "plural_suffix": "",
+        "translation": "mustaqil (o'zi ishlaydigan)"
+    },
+    {
+        "article": "",
+        "word": "verdienen",
+        "plural_suffix": "",
+        "translation": "pul topmoq (maosh olmoq)"
+    },
+    {
+        "article": "der",
+        "word": "Kindergarten",
+        "plural_suffix": "",
+        "translation": "bolalar bog'chasi"
+    },
+    {
+        "article": "die",
+        "word": "Klasse",
+        "plural_suffix": "",
+        "translation": "sinf; klass (poyezdda)"
+    },
+    {
+        "article": "der",
+        "word": "Kurs",
+        "plural_suffix": "-e",
+        "translation": "kurs"
+    },
+    {
+        "article": "der",
+        "word": "Lehrer",
+        "plural_suffix": "-",
+        "translation": "o'qituvchi"
+    },
+    {
+        "article": "die",
+        "word": "Schule",
+        "plural_suffix": "",
+        "translation": "maktab"
+    },
+    {
+        "article": "der",
+        "word": "Schüler",
+        "plural_suffix": "-",
+        "translation": "o'quvchi"
+    },
+    {
+        "article": "der",
+        "word": "Student",
+        "plural_suffix": "-en",
+        "translation": "talaba"
+    },
+    {
+        "article": "das",
+        "word": "Studium",
+        "plural_suffix": "",
+        "translation": "o'qish (oliy ta'lim)"
+    },
+    {
+        "article": "",
+        "word": "studieren",
+        "plural_suffix": "",
+        "translation": "o'qimoq (universitetda)"
+    },
+    {
+        "article": "der",
+        "word": "Unterricht",
+        "plural_suffix": "",
+        "translation": "dars, mashg'ulot"
+    },
+    {
+        "article": "die",
+        "word": "Gruppe",
+        "plural_suffix": "-n",
+        "translation": "guruh"
+    },
+    {
+        "article": "der",
+        "word": "Raum",
+        "plural_suffix": "¨-e",
+        "translation": "xona (dars xonasi)"
+    },
+    {
+        "article": "die",
+        "word": "Pause",
+        "plural_suffix": "-n",
+        "translation": "tanaffus"
+    },
+    {
+        "article": "die",
+        "word": "Hausaufgabe",
+        "plural_suffix": "-n",
+        "translation": "uy vazifasi"
+    },
+    {
+        "article": "der",
+        "word": "Bleistift",
+        "plural_suffix": "-e",
+        "translation": "qalam"
+    },
+    {
+        "article": "das",
+        "word": "Buch",
+        "plural_suffix": "¨-er",
+        "translation": "kitob"
+    },
+    {
+        "article": "der",
+        "word": "Kugelschreiber",
+        "plural_suffix": "",
+        "translation": "ruchka"
+    },
+    {
+        "article": "das",
+        "word": "Papier",
+        "plural_suffix": "",
+        "translation": "qog'oz"
+    },
+    {
+        "article": "der",
+        "word": "Bogen",
+        "plural_suffix": "",
+        "translation": "varaq (javoblar varag'i)"
+    },
+    {
+        "article": "der",
+        "word": "Buchstabe",
+        "plural_suffix": "-n",
+        "translation": "harf"
+    },
+    {
+        "article": "",
+        "word": "buchstabieren",
+        "plural_suffix": "",
+        "translation": "harflab aytmoq"
+    },
+    {
+        "article": "der",
+        "word": "Satz",
+        "plural_suffix": "¨-e",
+        "translation": "gap (jumla)"
+    },
+    {
+        "article": "die",
+        "word": "Sprache",
+        "plural_suffix": "-n",
+        "translation": "til"
+    },
+    {
+        "article": "",
+        "word": "sprechen",
+        "plural_suffix": "",
+        "translation": "gapirmoq"
+    },
+    {
+        "article": "der",
+        "word": "Text",
+        "plural_suffix": "-e",
+        "translation": "matn"
+    },
+    {
+        "article": "das",
+        "word": "Wort",
+        "plural_suffix": "¨-er / -e",
+        "translation": "so'z"
+    },
+    {
+        "article": "",
+        "word": "bedeuten",
+        "plural_suffix": "",
+        "translation": "anglatmoq, ma'nosi bo'lmoq"
+    },
+    {
+        "article": "das",
+        "word": "Beispiel",
+        "plural_suffix": "-e",
+        "translation": "misol"
+    },
+    {
+        "article": "",
+        "word": "erklären",
+        "plural_suffix": "",
+        "translation": "tushuntirmoq"
+    },
+    {
+        "article": "",
+        "word": "verstehen",
+        "plural_suffix": "",
+        "translation": "tushunmoq"
+    },
+    {
+        "article": "",
+        "word": "wiederholen",
+        "plural_suffix": "",
+        "translation": "takrorlamoq"
+    },
+    {
+        "article": "",
+        "word": "lernen",
+        "plural_suffix": "",
+        "translation": "o'rganmoq"
+    },
+    {
+        "article": "",
+        "word": "lesen",
+        "plural_suffix": "",
+        "translation": "o'qimoq"
+    },
+    {
+        "article": "",
+        "word": "schreiben",
+        "plural_suffix": "",
+        "translation": "yozmoq"
+    },
+    {
+        "article": "",
+        "word": "anklicken",
+        "plural_suffix": "",
+        "translation": "bosmoq (sichqoncha bilan)"
+    },
+    {
+        "article": "",
+        "word": "ankreuzen",
+        "plural_suffix": "",
+        "translation": "belgilamoq (x qo'yish)"
+    },
+    {
+        "article": "die",
+        "word": "Aufgabe",
+        "plural_suffix": "-n",
+        "translation": "vazifa, topshiriq"
+    },
+    {
+        "article": "die",
+        "word": "Aussage",
+        "plural_suffix": "-n",
+        "translation": "gap, fikr (tasdiq)"
+    },
+    {
+        "article": "das",
+        "word": "Ergebnis",
+        "plural_suffix": "-se",
+        "translation": "natija"
+    },
+    {
+        "article": "der",
+        "word": "Fehler",
+        "plural_suffix": "-",
+        "translation": "xato"
+    },
+    {
+        "article": "die",
+        "word": "Lösung",
+        "plural_suffix": "-en",
+        "translation": "yechim; javob (testda)"
+    },
+    {
+        "article": "die",
+        "word": "Prüfung",
+        "plural_suffix": "",
+        "translation": "imtihon"
+    },
+    {
+        "article": "der",
+        "word": "Teil",
+        "plural_suffix": "-e",
+        "translation": "qism"
+    },
+    {
+        "article": "der",
+        "word": "Test",
+        "plural_suffix": "",
+        "translation": "test"
+    },
+    {
+        "article": "das",
+        "word": "Thema",
+        "plural_suffix": "",
+        "translation": "mavzu"
+    },
+    {
+        "article": "der",
+        "word": "Fußball",
+        "plural_suffix": "",
+        "translation": "futbol"
+    },
+    {
+        "article": "das",
+        "word": "Hobby",
+        "plural_suffix": "-s",
+        "translation": "xobbi, qiziqish"
+    },
+    {
+        "article": "",
+        "word": "Rad fahren",
+        "plural_suffix": "",
+        "translation": "velosiped haydamoq"
+    },
+    {
+        "article": "",
+        "word": "schwimmen",
+        "plural_suffix": "",
+        "translation": "suzmoq"
+    },
+    {
+        "article": "das",
+        "word": "Schwimmbad",
+        "plural_suffix": "",
+        "translation": "basseyn"
+    },
+    {
+        "article": "",
+        "word": "spielen",
+        "plural_suffix": "",
+        "translation": "o'ynamoq"
+    },
+    {
+        "article": "der",
+        "word": "Sport",
+        "plural_suffix": "",
+        "translation": "sport"
+    },
+    {
+        "article": "",
+        "word": "tanzen",
+        "plural_suffix": "",
+        "translation": "raqsga tushmoq"
+    },
+    {
+        "article": "",
+        "word": "wandern",
+        "plural_suffix": "",
+        "translation": "piyoda sayr qilmoq (tog'da)"
+    },
+    {
+        "article": "der",
+        "word": "Verein",
+        "plural_suffix": "",
+        "translation": "klub, jamiyat"
+    },
+    {
+        "article": "",
+        "word": "gewinnen",
+        "plural_suffix": "",
+        "translation": "yutmoq"
+    },
+    {
+        "article": "das",
+        "word": "Bild",
+        "plural_suffix": "-er",
+        "translation": "rasm, surat"
+    },
+    {
+        "article": "die",
+        "word": "CD",
+        "plural_suffix": "-s",
+        "translation": "CD disk"
+    },
+    {
+        "article": "der",
+        "word": "Film",
+        "plural_suffix": "-e",
+        "translation": "film"
+    },
+    {
+        "article": "das",
+        "word": "Foto",
+        "plural_suffix": "-s",
+        "translation": "surat, foto"
+    },
+    {
+        "article": "das",
+        "word": "Internet",
+        "plural_suffix": "",
+        "translation": "internet"
+    },
+    {
+        "article": "das",
+        "word": "Kino",
+        "plural_suffix": "-s",
+        "translation": "kino(teatr)"
+    },
+    {
+        "article": "das",
+        "word": "Lied",
+        "plural_suffix": "-er",
+        "translation": "qo'shiq"
+    },
+    {
+        "article": "",
+        "word": "Lieblings-",
+        "plural_suffix": "",
+        "translation": "eng sevimli ..."
+    },
+    {
+        "article": "die",
+        "word": "Zeitung",
+        "plural_suffix": "-en",
+        "translation": "gazeta"
+    },
+    {
+        "article": "",
+        "word": "fernsehen",
+        "plural_suffix": "",
+        "translation": "televizor ko'rmoq"
+    },
+    {
+        "article": "die",
+        "word": "Disco",
+        "plural_suffix": "",
+        "translation": "diskoteka"
+    },
+    {
+        "article": "",
+        "word": "einladen",
+        "plural_suffix": "",
+        "translation": "taklif qilmoq (mehmonga)"
+    },
+    {
+        "article": "die",
+        "word": "Einladung",
+        "plural_suffix": "",
+        "translation": "taklif (taklifnoma)"
+    },
+    {
+        "article": "",
+        "word": "feiern",
+        "plural_suffix": "",
+        "translation": "nishonlamoq"
+    },
+    {
+        "article": "der",
+        "word": "Gast",
+        "plural_suffix": "¨-e",
+        "translation": "mehmon"
+    },
+    {
+        "article": "der",
+        "word": "Geburtstag",
+        "plural_suffix": "",
+        "translation": "tug'ilgan kun"
+    },
+    {
+        "article": "das",
+        "word": "Geschenk",
+        "plural_suffix": "-e",
+        "translation": "sovg'a"
+    },
+    {
+        "article": "die",
+        "word": "Party",
+        "plural_suffix": "",
+        "translation": "ziyofat, bazm"
+    },
+    {
+        "article": "",
+        "word": "besuchen",
+        "plural_suffix": "",
+        "translation": "mehmonga bormoq, tashrif buyurmoq"
+    },
+    {
+        "article": "",
+        "word": "(sich) treffen",
+        "plural_suffix": "",
+        "translation": "uchrashmoq"
+    },
+    {
+        "article": "der",
+        "word": "Ausflug",
+        "plural_suffix": "",
+        "translation": "ekskursiya, sayr"
+    },
+    {
+        "article": "",
+        "word": "besichtigen",
+        "plural_suffix": "",
+        "translation": "tomosha qilmoq (diqqatga sazovor joy)"
+    },
+    {
+        "article": "der",
+        "word": "Eintritt",
+        "plural_suffix": "",
+        "translation": "kirish (chipta, narx)"
+    },
+    {
+        "article": "die",
+        "word": "Freizeit",
+        "plural_suffix": "",
+        "translation": "bo'sh vaqt"
+    },
+    {
+        "article": "die",
+        "word": "Führung",
+        "plural_suffix": "",
+        "translation": "ekskursiya (gid bilan)"
+    },
+    {
+        "article": "das",
+        "word": "Grad (Celsius)",
+        "plural_suffix": "",
+        "translation": "daraja (Selsiy)"
+    },
+    {
+        "article": "",
+        "word": "regnen",
+        "plural_suffix": "",
+        "translation": "yomg'ir yog'moq"
+    },
+    {
+        "article": "der",
+        "word": "Regen",
+        "plural_suffix": "",
+        "translation": "yomg'ir"
+    },
+    {
+        "article": "",
+        "word": "scheinen",
+        "plural_suffix": "",
+        "translation": "porlamoq"
+    },
+    {
+        "article": "die",
+        "word": "Sonne",
+        "plural_suffix": "",
+        "translation": "quyosh"
+    },
+    {
+        "article": "das",
+        "word": "Wetter",
+        "plural_suffix": "",
+        "translation": "ob-havo"
+    },
+    {
+        "article": "der",
+        "word": "Wind",
+        "plural_suffix": "",
+        "translation": "shamol"
+    },
+    {
+        "article": "der",
+        "word": "Baum",
+        "plural_suffix": "¨-e",
+        "translation": "daraxt"
+    },
+    {
+        "article": "die",
+        "word": "Blume",
+        "plural_suffix": "-n",
+        "translation": "gul"
+    },
+    {
+        "article": "der",
+        "word": "Hund",
+        "plural_suffix": "-e",
+        "translation": "it"
+    },
+    {
+        "article": "das",
+        "word": "Meer",
+        "plural_suffix": "",
+        "translation": "dengiz"
+    },
+    {
+        "article": "der",
+        "word": "See",
+        "plural_suffix": "",
+        "translation": "ko'l"
+    },
+    {
+        "article": "die",
+        "word": "Welt",
+        "plural_suffix": "",
+        "translation": "dunyo"
+    },
+    {
+        "article": "",
+        "word": "abgeben",
+        "plural_suffix": "",
+        "translation": "topshirmoq, qaytarib bermoq"
+    },
+    {
+        "article": "",
+        "word": "abholen",
+        "plural_suffix": "",
+        "translation": "olib ketmoq, kutib olmoq"
+    },
+    {
+        "article": "",
+        "word": "anbieten",
+        "plural_suffix": "",
+        "translation": "taklif qilmoq"
+    },
+    {
+        "article": "",
+        "word": "bekommen",
+        "plural_suffix": "",
+        "translation": "olmoq (qabul qilmoq)"
+    },
+    {
+        "article": "",
+        "word": "bringen",
+        "plural_suffix": "",
+        "translation": "olib kelmoq"
+    },
+    {
+        "article": "",
+        "word": "geben",
+        "plural_suffix": "",
+        "translation": "bermoq; bor (es gibt)"
+    },
+    {
+        "article": "",
+        "word": "holen",
+        "plural_suffix": "",
+        "translation": "olib kelmoq"
+    },
+    {
+        "article": "",
+        "word": "kriegen",
+        "plural_suffix": "",
+        "translation": "olmoq (so'zl.)"
+    },
+    {
+        "article": "",
+        "word": "mitbringen",
+        "plural_suffix": "",
+        "translation": "olib kelmoq (o'zi bilan)"
+    },
+    {
+        "article": "",
+        "word": "mitnehmen",
+        "plural_suffix": "",
+        "translation": "o'zi bilan olib ketmoq"
+    },
+    {
+        "article": "",
+        "word": "nehmen",
+        "plural_suffix": "",
+        "translation": "olmoq"
+    },
+    {
+        "article": "",
+        "word": "gehören",
+        "plural_suffix": "",
+        "translation": "tegishli bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "brauchen",
+        "plural_suffix": "",
+        "translation": "kerak bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "benutzen",
+        "plural_suffix": "",
+        "translation": "foydalanmoq"
+    },
+    {
+        "article": "",
+        "word": "suchen",
+        "plural_suffix": "",
+        "translation": "qidirmoq"
+    },
+    {
+        "article": "",
+        "word": "finden",
+        "plural_suffix": "",
+        "translation": "topmoq; deb hisoblamoq"
+    },
+    {
+        "article": "",
+        "word": "anfangen",
+        "plural_suffix": "",
+        "translation": "boshlamoq, boshlanmoq"
+    },
+    {
+        "article": "",
+        "word": "aufhören",
+        "plural_suffix": "",
+        "translation": "to'xtamoq, tugamoq"
+    },
+    {
+        "article": "",
+        "word": "beginnen",
+        "plural_suffix": "",
+        "translation": "boshlanmoq"
+    },
+    {
+        "article": "",
+        "word": "enden",
+        "plural_suffix": "",
+        "translation": "tugamoq"
+    },
+    {
+        "article": "",
+        "word": "öffnen",
+        "plural_suffix": "",
+        "translation": "ochmoq"
+    },
+    {
+        "article": "",
+        "word": "schließen",
+        "plural_suffix": "",
+        "translation": "yopmoq"
+    },
+    {
+        "article": "",
+        "word": "antworten",
+        "plural_suffix": "",
+        "translation": "javob bermoq"
+    },
+    {
+        "article": "",
+        "word": "bitten",
+        "plural_suffix": "",
+        "translation": "so'ramoq, iltimos qilmoq"
+    },
+    {
+        "article": "",
+        "word": "empfehlen",
+        "plural_suffix": "",
+        "translation": "tavsiya qilmoq"
+    },
+    {
+        "article": "",
+        "word": "erlauben",
+        "plural_suffix": "",
+        "translation": "ruxsat bermoq"
+    },
+    {
+        "article": "",
+        "word": "erzählen",
+        "plural_suffix": "",
+        "translation": "so'zlab bermoq"
+    },
+    {
+        "article": "",
+        "word": "fragen",
+        "plural_suffix": "",
+        "translation": "so'ramoq"
+    },
+    {
+        "article": "",
+        "word": "glauben",
+        "plural_suffix": "",
+        "translation": "ishonmoq; deb o'ylamoq"
+    },
+    {
+        "article": "",
+        "word": "sagen",
+        "plural_suffix": "",
+        "translation": "aytmoq"
+    },
+    {
+        "article": "",
+        "word": "kennen",
+        "plural_suffix": "",
+        "translation": "tanimoq, bilmoq"
+    },
+    {
+        "article": "",
+        "word": "wissen",
+        "plural_suffix": "",
+        "translation": "bilmoq"
+    },
+    {
+        "article": "",
+        "word": "hören",
+        "plural_suffix": "",
+        "translation": "eshitmoq, tinglamoq"
+    },
+    {
+        "article": "",
+        "word": "sehen",
+        "plural_suffix": "",
+        "translation": "ko'rmoq"
+    },
+    {
+        "article": "",
+        "word": "riechen",
+        "plural_suffix": "",
+        "translation": "hidlamoq; hid taratmoq"
+    },
+    {
+        "article": "",
+        "word": "bleiben",
+        "plural_suffix": "",
+        "translation": "qolmoq"
+    },
+    {
+        "article": "",
+        "word": "gehen",
+        "plural_suffix": "",
+        "translation": "bormoq (piyoda); bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "kommen",
+        "plural_suffix": "",
+        "translation": "kelmoq"
+    },
+    {
+        "article": "",
+        "word": "laufen",
+        "plural_suffix": "",
+        "translation": "yugurmoq; piyoda yurmoq"
+    },
+    {
+        "article": "",
+        "word": "mitkommen",
+        "plural_suffix": "",
+        "translation": "birga bormoq"
+    },
+    {
+        "article": "",
+        "word": "legen",
+        "plural_suffix": "",
+        "translation": "qo'ymoq (yotqizib)"
+    },
+    {
+        "article": "",
+        "word": "liegen",
+        "plural_suffix": "",
+        "translation": "yotmoq; joylashgan bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "sitzen",
+        "plural_suffix": "",
+        "translation": "o'tirmoq"
+    },
+    {
+        "article": "",
+        "word": "stehen",
+        "plural_suffix": "",
+        "translation": "turmoq; yozilgan bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "stellen",
+        "plural_suffix": "",
+        "translation": "qo'ymoq (tik)"
+    },
+    {
+        "article": "",
+        "word": "weg sein",
+        "plural_suffix": "",
+        "translation": "ketgan bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "warten",
+        "plural_suffix": "",
+        "translation": "kutmoq"
+    },
+    {
+        "article": "",
+        "word": "drücken",
+        "plural_suffix": "",
+        "translation": "bosmoq (tugmani)"
+    },
+    {
+        "article": "",
+        "word": "(sich) freuen",
+        "plural_suffix": "",
+        "translation": "xursand bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "gefallen",
+        "plural_suffix": "",
+        "translation": "yoqmoq (ma'qul kelmoq)"
+    },
+    {
+        "article": "",
+        "word": "lachen",
+        "plural_suffix": "",
+        "translation": "kulmoq"
+    },
+    {
+        "article": "",
+        "word": "lieben",
+        "plural_suffix": "",
+        "translation": "sevmoq"
+    },
+    {
+        "article": "",
+        "word": "sich kümmern",
+        "plural_suffix": "",
+        "translation": "g'amxo'rlik qilmoq"
+    },
+    {
+        "article": "",
+        "word": "helfen",
+        "plural_suffix": "",
+        "translation": "yordam bermoq"
+    },
+    {
+        "article": "",
+        "word": "fehlen",
+        "plural_suffix": "",
+        "translation": "yetishmaslik; yo'q bo'lmoq"
+    },
+    {
+        "article": "",
+        "word": "haben",
+        "plural_suffix": "",
+        "translation": "ega bo'lmoq, bor"
+    },
+    {
+        "article": "",
+        "word": "machen",
+        "plural_suffix": "",
+        "translation": "qilmoq; tayyorlamoq"
+    },
+    {
+        "article": "",
+        "word": "tun",
+        "plural_suffix": "",
+        "translation": "qilmoq"
+    },
+    {
+        "article": "",
+        "word": "werden",
+        "plural_suffix": "",
+        "translation": "bo'lmoq (aylanmoq)"
+    },
+    {
+        "article": "",
+        "word": "leben",
+        "plural_suffix": "",
+        "translation": "yashamoq"
+    },
+    {
+        "article": "",
+        "word": "mitmachen",
+        "plural_suffix": "",
+        "translation": "qatnashmoq"
+    },
+    {
+        "article": "",
+        "word": "rauchen",
+        "plural_suffix": "",
+        "translation": "chekmoq"
+    },
+    {
+        "article": "",
+        "word": "reparieren",
+        "plural_suffix": "",
+        "translation": "ta'mirlamoq"
+    },
+    {
+        "article": "",
+        "word": "alt",
+        "plural_suffix": "",
+        "translation": "qari, eski; ... yoshda"
+    },
+    {
+        "article": "",
+        "word": "jung",
+        "plural_suffix": "",
+        "translation": "yosh (yoshi kichik)"
+    },
+    {
+        "article": "",
+        "word": "neu",
+        "plural_suffix": "",
+        "translation": "yangi"
+    },
+    {
+        "article": "",
+        "word": "groß",
+        "plural_suffix": "",
+        "translation": "katta; baland bo'yli"
+    },
+    {
+        "article": "",
+        "word": "klein",
+        "plural_suffix": "",
+        "translation": "kichik"
+    },
+    {
+        "article": "",
+        "word": "lang",
+        "plural_suffix": "",
+        "translation": "uzun"
+    },
+    {
+        "article": "",
+        "word": "kurz",
+        "plural_suffix": "",
+        "translation": "qisqa"
+    },
+    {
+        "article": "",
+        "word": "laut",
+        "plural_suffix": "",
+        "translation": "baland ovozli, shovqinli"
+    },
+    {
+        "article": "",
+        "word": "leise",
+        "plural_suffix": "",
+        "translation": "past ovozli, jim"
+    },
+    {
+        "article": "",
+        "word": "leicht",
+        "plural_suffix": "",
+        "translation": "yengil; oson"
+    },
+    {
+        "article": "",
+        "word": "schwer",
+        "plural_suffix": "",
+        "translation": "og'ir; qiyin"
+    },
+    {
+        "article": "",
+        "word": "schnell",
+        "plural_suffix": "",
+        "translation": "tez"
+    },
+    {
+        "article": "",
+        "word": "langsam",
+        "plural_suffix": "",
+        "translation": "sekin"
+    },
+    {
+        "article": "",
+        "word": "richtig",
+        "plural_suffix": "",
+        "translation": "to'g'ri"
+    },
+    {
+        "article": "",
+        "word": "falsch",
+        "plural_suffix": "",
+        "translation": "noto'g'ri"
+    },
+    {
+        "article": "",
+        "word": "gut",
+        "plural_suffix": "",
+        "translation": "yaxshi"
+    },
+    {
+        "article": "",
+        "word": "schlecht",
+        "plural_suffix": "",
+        "translation": "yomon"
+    },
+    {
+        "article": "",
+        "word": "besser",
+        "plural_suffix": "",
+        "translation": "yaxshiroq"
+    },
+    {
+        "article": "",
+        "word": "best-",
+        "plural_suffix": "",
+        "translation": "eng yaxshi"
+    },
+    {
+        "article": "",
+        "word": "hell",
+        "plural_suffix": "",
+        "translation": "yorug'"
+    },
+    {
+        "article": "",
+        "word": "hoch",
+        "plural_suffix": "",
+        "translation": "baland"
+    },
+    {
+        "article": "",
+        "word": "breit",
+        "plural_suffix": "",
+        "translation": "keng"
+    },
+    {
+        "article": "",
+        "word": "weit",
+        "plural_suffix": "",
+        "translation": "uzoq"
+    },
+    {
+        "article": "",
+        "word": "besetzt",
+        "plural_suffix": "",
+        "translation": "band (joy, telefon)"
+    },
+    {
+        "article": "",
+        "word": "frei",
+        "plural_suffix": "",
+        "translation": "bo'sh, ozod"
+    },
+    {
+        "article": "",
+        "word": "fertig",
+        "plural_suffix": "",
+        "translation": "tayyor"
+    },
+    {
+        "article": "",
+        "word": "kaputt",
+        "plural_suffix": "",
+        "translation": "buzilgan, singan"
+    },
+    {
+        "article": "",
+        "word": "müde",
+        "plural_suffix": "",
+        "translation": "charchagan"
+    },
+    {
+        "article": "",
+        "word": "eilig",
+        "plural_suffix": "",
+        "translation": "shoshilinch"
+    },
+    {
+        "article": "",
+        "word": "möglich",
+        "plural_suffix": "",
+        "translation": "mumkin"
+    },
+    {
+        "article": "",
+        "word": "verboten",
+        "plural_suffix": "",
+        "translation": "taqiqlangan"
+    },
+    {
+        "article": "",
+        "word": "wichtig",
+        "plural_suffix": "",
+        "translation": "muhim"
+    },
+    {
+        "article": "",
+        "word": "normal",
+        "plural_suffix": "",
+        "translation": "normal, odatiy"
+    },
+    {
+        "article": "",
+        "word": "ruhig",
+        "plural_suffix": "",
+        "translation": "tinch, sokin"
+    },
+    {
+        "article": "",
+        "word": "allein",
+        "plural_suffix": "",
+        "translation": "yolg'iz, o'zi"
+    },
+    {
+        "article": "",
+        "word": "böse",
+        "plural_suffix": "",
+        "translation": "jahldor, jahli chiqqan"
+    },
+    {
+        "article": "",
+        "word": "glücklich",
+        "plural_suffix": "",
+        "translation": "baxtli"
+    },
+    {
+        "article": "",
+        "word": "lustig",
+        "plural_suffix": "",
+        "translation": "quvnoq, kulgili"
+    },
+    {
+        "article": "",
+        "word": "zufrieden",
+        "plural_suffix": "",
+        "translation": "mamnun"
+    },
+    {
+        "article": "",
+        "word": "schön",
+        "plural_suffix": "",
+        "translation": "chiroyli, yaxshi"
+    },
+    {
+        "article": "",
+        "word": "wunderbar",
+        "plural_suffix": "",
+        "translation": "ajoyib"
+    },
+    {
+        "article": "",
+        "word": "fremd",
+        "plural_suffix": "",
+        "translation": "begona, notanish"
+    },
+    {
+        "article": "",
+        "word": "bekannt",
+        "plural_suffix": "",
+        "translation": "mashhur, tanish"
+    },
+    {
+        "article": "",
+        "word": "ausländisch",
+        "plural_suffix": "",
+        "translation": "chet elga oid"
+    },
+    {
+        "article": "",
+        "word": "automatisch",
+        "plural_suffix": "",
+        "translation": "avtomatik"
+    },
+    {
+        "article": "",
+        "word": "international",
+        "plural_suffix": "",
+        "translation": "xalqaro"
+    },
+    {
+        "article": "",
+        "word": "kulturell",
+        "plural_suffix": "",
+        "translation": "madaniy"
+    },
+    {
+        "article": "",
+        "word": "einfach",
+        "plural_suffix": "",
+        "translation": "oson, oddiy; bir tomonga"
+    },
+    {
+        "article": "",
+        "word": "ich",
+        "plural_suffix": "",
+        "translation": "men"
+    },
+    {
+        "article": "",
+        "word": "er",
+        "plural_suffix": "",
+        "translation": "u (erkak)"
+    },
+    {
+        "article": "",
+        "word": "es",
+        "plural_suffix": "",
+        "translation": "u (o'rta jins); shaxssiz \"es\""
+    },
+    {
+        "article": "",
+        "word": "sie",
+        "plural_suffix": "",
+        "translation": "u (ayol); ular"
+    },
+    {
+        "article": "",
+        "word": "Sie",
+        "plural_suffix": "",
+        "translation": "Siz"
+    },
+    {
+        "article": "",
+        "word": "wir",
+        "plural_suffix": "",
+        "translation": "biz"
+    },
+    {
+        "article": "",
+        "word": "dich",
+        "plural_suffix": "",
+        "translation": "seni"
+    },
+    {
+        "article": "",
+        "word": "dir",
+        "plural_suffix": "",
+        "translation": "senga"
+    },
+    {
+        "article": "",
+        "word": "ihr / ihm / ihn",
+        "plural_suffix": "",
+        "translation": "unga (ayol) / unga / uni"
+    },
+    {
+        "article": "",
+        "word": "sich",
+        "plural_suffix": "",
+        "translation": "o'zini, o'ziga (qaytim olmoshi)"
+    },
+    {
+        "article": "",
+        "word": "man",
+        "plural_suffix": "",
+        "translation": "kishi (shaxssiz \"man\")"
+    },
+    {
+        "article": "",
+        "word": "mein",
+        "plural_suffix": "",
+        "translation": "mening"
+    },
+    {
+        "article": "",
+        "word": "dein-",
+        "plural_suffix": "",
+        "translation": "sening"
+    },
+    {
+        "article": "",
+        "word": "sein",
+        "plural_suffix": "",
+        "translation": "bo'lmoq; uning"
+    },
+    {
+        "article": "",
+        "word": "euer",
+        "plural_suffix": "",
+        "translation": "sizlarning"
+    },
+    {
+        "article": "",
+        "word": "unser-",
+        "plural_suffix": "",
+        "translation": "bizning"
+    },
+    {
+        "article": "",
+        "word": "der, die, das",
+        "plural_suffix": "",
+        "translation": "artikllar; ko'rsatish olmoshi"
+    },
+    {
+        "article": "",
+        "word": "dies-",
+        "plural_suffix": "",
+        "translation": "bu (ko'rsatish olmoshi)"
+    },
+    {
+        "article": "",
+        "word": "ein-",
+        "plural_suffix": "",
+        "translation": "bir, bitta (noaniq artikl)"
+    },
+    {
+        "article": "",
+        "word": "kein",
+        "plural_suffix": "",
+        "translation": "hech qanday, ... yo'q"
+    },
+    {
+        "article": "",
+        "word": "all-",
+        "plural_suffix": "",
+        "translation": "hamma, barcha"
+    },
+    {
+        "article": "",
+        "word": "ander-",
+        "plural_suffix": "",
+        "translation": "boshqa"
+    },
+    {
+        "article": "",
+        "word": "beide",
+        "plural_suffix": "",
+        "translation": "ikkalasi"
+    },
+    {
+        "article": "",
+        "word": "jed-",
+        "plural_suffix": "",
+        "translation": "har bir"
+    },
+    {
+        "article": "",
+        "word": "welch-",
+        "plural_suffix": "",
+        "translation": "qaysi"
+    },
+    {
+        "article": "",
+        "word": "letzt-",
+        "plural_suffix": "",
+        "translation": "oxirgi"
+    },
+    {
+        "article": "",
+        "word": "nächst-",
+        "plural_suffix": "",
+        "translation": "keyingi"
+    },
+    {
+        "article": "",
+        "word": "meist-",
+        "plural_suffix": "",
+        "translation": "eng ko'p"
+    },
+    {
+        "article": "",
+        "word": "wann",
+        "plural_suffix": "",
+        "translation": "qachon"
+    },
+    {
+        "article": "",
+        "word": "warum",
+        "plural_suffix": "",
+        "translation": "nega"
+    },
+    {
+        "article": "",
+        "word": "was",
+        "plural_suffix": "",
+        "translation": "nima"
+    },
+    {
+        "article": "",
+        "word": "was für ein",
+        "plural_suffix": "",
+        "translation": "qanaqa"
+    },
+    {
+        "article": "",
+        "word": "wer",
+        "plural_suffix": "",
+        "translation": "kim"
+    },
+    {
+        "article": "",
+        "word": "wie",
+        "plural_suffix": "",
+        "translation": "qanday; kabi"
+    },
+    {
+        "article": "",
+        "word": "wie viel",
+        "plural_suffix": "",
+        "translation": "qancha"
+    },
+    {
+        "article": "",
+        "word": "wo",
+        "plural_suffix": "",
+        "translation": "qayerda"
+    },
+    {
+        "article": "",
+        "word": "woher",
+        "plural_suffix": "",
+        "translation": "qayerdan"
+    },
+    {
+        "article": "",
+        "word": "wohin",
+        "plural_suffix": "",
+        "translation": "qayerga"
+    },
+    {
+        "article": "",
+        "word": "ab",
+        "plural_suffix": "",
+        "translation": "-dan boshlab (vaqt)"
+    },
+    {
+        "article": "",
+        "word": "an",
+        "plural_suffix": "",
+        "translation": "yonida, -da (joy); -da (sana)"
+    },
+    {
+        "article": "",
+        "word": "auf",
+        "plural_suffix": "",
+        "translation": "ustida, -ga; tilida"
+    },
+    {
+        "article": "",
+        "word": "aus",
+        "plural_suffix": "",
+        "translation": "-dan (kelib chiqish)"
+    },
+    {
+        "article": "",
+        "word": "bei",
+        "plural_suffix": "",
+        "translation": "-da, yonida, huzurida"
+    },
+    {
+        "article": "",
+        "word": "bis",
+        "plural_suffix": "",
+        "translation": "-gacha"
+    },
+    {
+        "article": "",
+        "word": "durch",
+        "plural_suffix": "",
+        "translation": "orqali, ichidan"
+    },
+    {
+        "article": "",
+        "word": "für",
+        "plural_suffix": "",
+        "translation": "uchun"
+    },
+    {
+        "article": "",
+        "word": "gegen",
+        "plural_suffix": "",
+        "translation": "-ga qarshi"
+    },
+    {
+        "article": "",
+        "word": "in",
+        "plural_suffix": "",
+        "translation": "ichida, -da; ... dan keyin"
+    },
+    {
+        "article": "",
+        "word": "mit",
+        "plural_suffix": "",
+        "translation": "bilan"
+    },
+    {
+        "article": "",
+        "word": "nach",
+        "plural_suffix": "",
+        "translation": "-ga (shahar/mamlakat); keyin"
+    },
+    {
+        "article": "",
+        "word": "ohne",
+        "plural_suffix": "",
+        "translation": "-siz"
+    },
+    {
+        "article": "",
+        "word": "über",
+        "plural_suffix": "",
+        "translation": "ustidan, orqali; ... dan ortiq"
+    },
+    {
+        "article": "",
+        "word": "um",
+        "plural_suffix": "",
+        "translation": "soat ...da; atrofida"
+    },
+    {
+        "article": "",
+        "word": "unter",
+        "plural_suffix": "",
+        "translation": "ostida, pastida"
+    },
+    {
+        "article": "",
+        "word": "von",
+        "plural_suffix": "",
+        "translation": "-ning; -dan"
+    },
+    {
+        "article": "",
+        "word": "vor",
+        "plural_suffix": "",
+        "translation": "oldida; ... oldin"
+    },
+    {
+        "article": "",
+        "word": "zu",
+        "plural_suffix": "",
+        "translation": "-ga (yo'nalish); juda (ortiqcha)"
+    },
+    {
+        "article": "",
+        "word": "zwischen",
+        "plural_suffix": "",
+        "translation": "orasida"
+    },
+    {
+        "article": "",
+        "word": "aber",
+        "plural_suffix": "",
+        "translation": "lekin, ammo"
+    },
+    {
+        "article": "",
+        "word": "also",
+        "plural_suffix": "",
+        "translation": "demak, xullas"
+    },
+    {
+        "article": "",
+        "word": "denn",
+        "plural_suffix": "",
+        "translation": "chunki"
+    },
+    {
+        "article": "",
+        "word": "oder",
+        "plural_suffix": "",
+        "translation": "yoki"
+    },
+    {
+        "article": "",
+        "word": "und",
+        "plural_suffix": "",
+        "translation": "va"
+    },
+    {
+        "article": "",
+        "word": "dürfen",
+        "plural_suffix": "",
+        "translation": "ruxsat bor; mumkin"
+    },
+    {
+        "article": "",
+        "word": "können",
+        "plural_suffix": "",
+        "translation": "qila olmoq, bilmoq"
+    },
+    {
+        "article": "",
+        "word": "möchten",
+        "plural_suffix": "",
+        "translation": "xohlamoq (xushmuomala)"
+    },
+    {
+        "article": "",
+        "word": "mögen",
+        "plural_suffix": "",
+        "translation": "yoqtirmoq"
+    },
+    {
+        "article": "",
+        "word": "müssen",
+        "plural_suffix": "",
+        "translation": "majbur bo'lmoq, kerak"
+    },
+    {
+        "article": "",
+        "word": "sollen",
+        "plural_suffix": "",
+        "translation": "kerak (birov aytganidek)"
+    },
+    {
+        "article": "",
+        "word": "wollen",
+        "plural_suffix": "",
+        "translation": "xohlamoq"
+    },
+    {
+        "article": "",
+        "word": "da",
+        "plural_suffix": "",
+        "translation": "u yerda; shu yerda; mana"
+    },
+    {
+        "article": "",
+        "word": "daneben",
+        "plural_suffix": "",
+        "translation": "yonida"
+    },
+    {
+        "article": "",
+        "word": "dort, dorther, dorthin",
+        "plural_suffix": "",
+        "translation": "u yerda / u yerdan / u yerga"
+    },
+    {
+        "article": "",
+        "word": "draußen",
+        "plural_suffix": "",
+        "translation": "tashqarida"
+    },
+    {
+        "article": "",
+        "word": "hier",
+        "plural_suffix": "",
+        "translation": "bu yerda"
+    },
+    {
+        "article": "",
+        "word": "hinten",
+        "plural_suffix": "",
+        "translation": "orqada"
+    },
+    {
+        "article": "",
+        "word": "oben",
+        "plural_suffix": "",
+        "translation": "yuqorida"
+    },
+    {
+        "article": "",
+        "word": "unten",
+        "plural_suffix": "",
+        "translation": "pastda"
+    },
+    {
+        "article": "die",
+        "word": "Mitte",
+        "plural_suffix": "",
+        "translation": "o'rta, markaz"
+    },
+    {
+        "article": "",
+        "word": "auch",
+        "plural_suffix": "",
+        "translation": "ham"
+    },
+    {
+        "article": "",
+        "word": "bisschen",
+        "plural_suffix": "",
+        "translation": "biroz, ozgina"
+    },
+    {
+        "article": "",
+        "word": "circa / ca.",
+        "plural_suffix": "",
+        "translation": "taxminan"
+    },
+    {
+        "article": "",
+        "word": "dann",
+        "plural_suffix": "",
+        "translation": "keyin, so'ng"
+    },
+    {
+        "article": "",
+        "word": "gern(e)",
+        "plural_suffix": "",
+        "translation": "bajonidil, yoqtirib"
+    },
+    {
+        "article": "",
+        "word": "gleich",
+        "plural_suffix": "",
+        "translation": "bir xil; hozir, darrov"
+    },
+    {
+        "article": "",
+        "word": "lieber",
+        "plural_suffix": "",
+        "translation": "afzalroq, ko'proq yoqtirib"
+    },
+    {
+        "article": "",
+        "word": "mehr",
+        "plural_suffix": "",
+        "translation": "ko'proq"
+    },
+    {
+        "article": "",
+        "word": "nicht",
+        "plural_suffix": "",
+        "translation": "emas"
+    },
+    {
+        "article": "",
+        "word": "nichts",
+        "plural_suffix": "",
+        "translation": "hech narsa"
+    },
+    {
+        "article": "",
+        "word": "noch",
+        "plural_suffix": "",
+        "translation": "hali; yana"
+    },
+    {
+        "article": "",
+        "word": "nur",
+        "plural_suffix": "",
+        "translation": "faqat"
+    },
+    {
+        "article": "",
+        "word": "schon",
+        "plural_suffix": "",
+        "translation": "allaqachon, -mi (hali)"
+    },
+    {
+        "article": "",
+        "word": "sehr",
+        "plural_suffix": "",
+        "translation": "juda"
+    },
+    {
+        "article": "",
+        "word": "so",
+        "plural_suffix": "",
+        "translation": "shunday; shuncha"
+    },
+    {
+        "article": "",
+        "word": "viel",
+        "plural_suffix": "",
+        "translation": "ko'p"
+    },
+    {
+        "article": "",
+        "word": "vielleicht",
+        "plural_suffix": "",
+        "translation": "balki"
+    },
+    {
+        "article": "",
+        "word": "weiter",
+        "plural_suffix": "",
+        "translation": "davom etib, yana"
+    },
+    {
+        "article": "",
+        "word": "wenig",
+        "plural_suffix": "",
+        "translation": "kam, oz"
+    },
+    {
+        "article": "",
+        "word": "zusammen",
+        "plural_suffix": "",
+        "translation": "birga; jami"
+    },
+    {
+        "article": "das",
+        "word": "Feuer",
+        "plural_suffix": "",
+        "translation": "olov; gugurt/zajigalka"
+    }
+]

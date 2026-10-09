@@ -400,3 +400,17 @@ input:checked + .slider:before { transform: translateX(22px); }
     border-color: var(--blue-btn);
     box-shadow: 0 3px 0 var(--blue-shadow);
 }
+
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+.category-chip {
+    flex-shrink: 0;
+}

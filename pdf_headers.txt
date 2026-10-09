@@ -1,0 +1,113 @@
+Page 1: [30.0] Nemischa–o'zbekcha
+Page 1: [30.0] so'zlar qo'llanmasi
+Page 1: [150.0] A1
+Page 1: [12.997499465942383] Goethe-Institutning rasmiy A1 ro'yxatidagi 682 ta so'z: 17 mavzu, tarjima,
+Page 1: [12.997499465942383] misol gaplar o'zbekcha tarjimasi bilan va mashqlar.
+Page 2: [16.994998931884766] Qo'llanmadan qanday foydalanish
+Page 2: [16.994998931884766] Mundarija
+Page 3: [16.994998931884766] Asosiy so'z guruhlari
+Page 4: [11.497499465942383] Ism va shaxsiy ma'lumotlar
+Page 4: [11.497499465942383] Odamlar va kelib chiqish
+Page 4: [19.994998931884766] Shaxs va tanishuv
+Page 5: [11.497499465942383] Kundalik harakatlar
+Page 6: [12.0] Mashq — Shaxs va tanishuv
+Page 7: [11.497499465942383] Oila a'zolari
+Page 7: [19.994998931884766] Oila va munosabatlar
+Page 8: [11.497499465942383] Er-xotin va munosabatlar
+Page 8: [12.0] Mashq — Oila va munosabatlar
+Page 9: [11.497499465942383] Salomlashish va xayrlashish
+Page 9: [11.497499465942383] Rahmat, iltimos, uzr
+Page 9: [19.994998931884766] Muloqot iboralari
+Page 10: [11.497499465942383] Tabrik va xat
+Page 10: [11.497499465942383] Suhbat iboralari
+Page 11: [12.0] Mashq — Muloqot iboralari
+Page 12: [11.497499465942383] Qachon?
+Page 12: [11.497499465942383] Qanchalik tez-tez? Qancha vaqt?
+Page 12: [19.994998931884766] Vaqt
+Page 13: [11.497499465942383] Vaqt so'zlari
+Page 13: [12.0] Mashq — Vaqt
+Page 14: [11.497499465942383] Uy va xonalar
+Page 14: [11.497499465942383] Mebel va jihozlar
+Page 14: [19.994998931884766] Uy-joy
+Page 15: [11.497499465942383] Uydagi harakatlar
+Page 16: [11.497499465942383] Ijara
+Page 16: [11.497499465942383] Shahar va qishloq
+Page 16: [12.0] Mashq — Uy-joy
+Page 17: [11.497499465942383] Meva va sabzavot
+Page 17: [11.497499465942383] Ovqatlar
+Page 17: [19.994998931884766] Ovqat va ichimlik
+Page 18: [11.497499465942383] Ichimliklar
+Page 18: [11.497499465942383] Kafe va restoranda
+Page 19: [11.497499465942383] Fe'llar va his
+Page 20: [12.0] Mashq — Ovqat va ichimlik
+Page 21: [11.497499465942383] Do'konlar
+Page 21: [11.497499465942383] Pul va narx
+Page 21: [19.994998931884766] Xarid, pul, kiyim
+Page 22: [11.497499465942383] Kiyim
+Page 22: [11.497499465942383] Sotish va sotib olish
+Page 23: [12.0] Mashq — Xarid, pul, kiyim
+Page 24: [11.497499465942383] Transport
+Page 24: [11.497499465942383] Vokzal va aeroport
+Page 24: [19.994998931884766] Sayohat va transport
+Page 25: [11.497499465942383] Yo'lda: fe'llar
+Page 26: [11.497499465942383] Mehmonxona
+Page 26: [11.497499465942383] Yo'nalish va joy
+Page 27: [11.497499465942383] Sayohat
+Page 27: [12.0] Mashq — Sayohat va transport
+Page 28: [11.497499465942383] Pochta va xat
+Page 28: [11.497499465942383] Telefon
+Page 28: [19.994998931884766] Xizmatlar
+Page 29: [11.497499465942383] Bank
+Page 29: [11.497499465942383] Idora va hujjatlar
+Page 30: [12.0] Mashq — Xizmatlar
+Page 31: [11.497499465942383] Tana a'zolari
+Page 31: [11.497499465942383] Shifokorda
+Page 31: [19.994998931884766] Tana va sog'liq
+Page 32: [12.0] Mashq — Tana va sog'liq
+Page 33: [11.497499465942383] Ish joyi
+Page 33: [11.497499465942383] Ofisda
+Page 33: [11.497499465942383] Ish haqida
+Page 33: [19.994998931884766] Ish va kasb
+Page 34: [12.0] Mashq — Ish va kasb
+Page 35: [11.497499465942383] Maktab va kurs
+Page 35: [11.497499465942383] O'quv qurollari
+Page 35: [19.994998931884766] Ta'lim va imtihon
+Page 36: [11.497499465942383] Til o'rganish
+Page 37: [11.497499465942383] Imtihon topshiriqlari
+Page 37: [12.0] Mashq — Ta'lim va imtihon
+Page 38: [11.497499465942383] Qiziqishlar va sport
+Page 38: [11.497499465942383] Madaniyat va media
+Page 38: [19.994998931884766] Bo'sh vaqt
+Page 39: [11.497499465942383] Bayram va mehmon
+Page 39: [11.497499465942383] Sayr va ekskursiya
+Page 40: [12.0] Mashq — Bo'sh vaqt
+Page 41: [11.497499465942383] Ob-havo
+Page 41: [11.497499465942383] Tabiat
+Page 41: [19.994998931884766] Tabiat va ob-havo
+Page 42: [12.0] Mashq — Tabiat va ob-havo
+Page 43: [11.497499465942383] Berish va olish
+Page 43: [19.994998931884766] Umumiy fe'llar
+Page 44: [11.497499465942383] Boshlash va tugatish
+Page 44: [11.497499465942383] Gapirish, bilish, sezish
+Page 45: [11.497499465942383] Harakat va holat
+Page 46: [11.497499465942383] His va munosabat
+Page 46: [11.497499465942383] Asosiy fe'llar
+Page 47: [12.0] Mashq — Umumiy fe'llar
+Page 48: [11.497499465942383] Qarama-qarshi juftlar
+Page 48: [19.994998931884766] Sifatlar
+Page 49: [11.497499465942383] Holat
+Page 50: [11.497499465942383] Xarakter va his
+Page 50: [11.497499465942383] Boshqa sifatlar
+Page 51: [12.0] Mashq — Sifatlar
+Page 52: [11.497499465942383] Kishilik va egalik olmoshlari
+Page 52: [19.994998931884766] Grammatik so'zlar
+Page 53: [11.497499465942383] Artikl va aniqlovchilar
+Page 53: [11.497499465942383] So'roq so'zlar
+Page 54: [11.497499465942383] Predloglar
+Page 55: [11.497499465942383] Bog'lovchilar
+Page 56: [11.497499465942383] Modal fe'llar
+Page 56: [11.497499465942383] Joy so'zlari
+Page 57: [11.497499465942383] Ravishlar va boshqalar
+Page 58: [12.0] Mashq — Grammatik so'zlar
+Page 59: [16.994998931884766] Mashqlar javoblari
+Page 59: [13.994999885559082] Sanjar Quchqorov · Goethe A1 lug'at qo'llanmasi · © 2026

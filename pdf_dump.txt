@@ -1,0 +1,621 @@
+--- PAGE 3 ---
+Sanjar Quchqorov
+Ism va shaxsiy ma'lumotlar 15
+die
+Adresse
+-en
+manzil
+Können Sie mir seine Adresse sagen?
+das
+Alter
+yosh (umr)
+Alter: 26 Jahre.
+der
+Familienname
+familiya
+Meine Familiennamen sind García González.
+der
+Familienstand
+oilaviy holat
+Bei „Familienstand“ musst du „ledig“ ankreuzen.
+geboren
+tug'ilgan
+Ich bin in Zagreb geboren.
+das
+Geburtsjahr
+tug'ilgan yil
+Das Geburtsjahr Ihres Sohnes, bitte?
+der
+Geburtsort
+tug'ilgan joy
+Bitte schreiben Sie Ihren Geburtsort auf das Formular.
+das
+Gewicht
+vazn
+Bei „Gewicht“ schreibst du: 62 Kilo.
+der
+Name
+-n
+ism
+Mein Name ist Thomas Schmidt.
+Mein Vorname ist Thomas; Schmidt ist der Familienname.
+die
+Nummer
+-n
+raqam
+Sie haben Zimmer Nummer zwölf.
+Welche Hausnummer haben Sie?
+der
+Vorname
+-n
+ism (birinchi ism)
+Ich heiße Müller, mein Vorname ist Eva.
+männlich
+erkak jinsi
+Kreuzen Sie bitte an: „weiblich“ oder „männlich“.
+weiblich
+ayol jinsi
+Kreuzen Sie bitte an: „weiblich“ oder „männlich“.
+ledig
+bo'ydoq, turmush
+qurmagan
+Sind Sie verheiratet? – Nein. Ledig.
+verheiratet
+uylangan / turmushga
+chiqqan
+Ich bin verheiratet und habe drei Kinder.
+Odamlar va kelib chiqish 9
+der
+Ausländer
+-
+chet ellik
+Sind Sie Ausländerin?
+Shaxs va tanishuv
+01
+P E R S O N
+32 ta so'z
+Sanjar Quchqorov
+Uning manzilini ayta olasizmi?
+Yoshi: 26.
+Mening familiyalarim García González.
+"Oilaviy holat" qatorida "bo'ydoq"ni belgilashing kerak.
+Men Zagrebda tug'ilganman.
+O'g'lingizning tug'ilgan yili qaysi?
+Iltimos, tug'ilgan joyingizni anketaga yozing.
+"Vazn" qatoriga 62 kilo deb yozasan.
+Mening ismim Thomas Schmidt.
+Ismim Thomas, Schmidt esa familiyam.
+Sizning xonangiz o'n ikkinchi raqam.
+Uyingizning raqami nechchi?
+Familiyam Müller, ismim Eva.
+Iltimos, belgilang: "ayol" yoki "erkak".
+Iltimos, belgilang: "ayol" yoki "erkak".
+Turmush qurganmisiz? – Yo'q, bo'ydoqman.
+Men uylanganman, uchta farzandim bor.
+Siz chet ellikmisiz?
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+4
+--- PAGE 4 ---
+Sanjar Quchqorov
+die
+Heimat
+vatan
+Ich komme aus der Schweiz. Das ist meine Heimat.
+das
+Land
+¨-er
+mamlakat; qishloq joy
+Italien ist ein schönes Land.
+das
+Leben
+hayot
+Das Leben in diesem Land ist teuer.
+der
+Mensch
+-en
+inson, odam
+Die Menschen sind hier anders als bei uns.
+die
+Leute
+faqat ko'plik
+odamlar
+In der Disko sind viele Leute.
+der
+Erwachsene
+-n
+katta yoshli odam
+Dieser Film ist nur für Erwachsene.
+der
+Jugendliche
+-n
+o'smir, yosh
+Viele Jugendliche kaufen gern ein.
+der / die
+Bekannte
+-n
+tanish (odam)
+Ein Bekannter von mir heißt Klaus.
+Kundalik harakatlar 8
+(sich) anziehen
+kiyinmoq
+Ich muss mich noch anziehen.
+aufstehen
+o'rnidan turmoq
+Ich muss immer um vier Uhr aufstehen.
+Soll ich aufstehen?
+aussehen
+ko'rinmoq (tashqi
+ko'rinish)
+Das sieht schön aus.
+(sich) ausziehen
+yechinmoq
+Zieh die Schuhe aus, bitte!
+heißen
+nomlanmoq, ismi ...
+bo'lmoq
+Ich heiße Charlotte Meier.
+Wie heißt das auf Deutsch?
+kennenlernen
+tanishmoq
+Wir sind neu hier. Wir möchten Sie kennenlernen.
+schlafen
+uxlamoq
+Ich schlafe meistens acht Stunden.
+(sich) vorstellen
+o'zini tanishtirmoq
+Wir wollen uns kennenlernen. Können Sie sich bitte vorstellen?
+Men Shveytsariyadanman. U mening vatanim.
+Italiya chiroyli mamlakat.
+Bu mamlakatda hayot qimmat.
+Bu yerdagi odamlar biznikidan boshqacha.
+Diskotekada odam ko'p.
+Bu film faqat kattalar uchun.
+Ko'p o'smirlar xarid qilishni yoqtiradi.
+Bir tanishimning ismi Klaus.
+Men hali kiyinishim kerak.
+Men har doim soat to'rtda turishim kerak.
+O'rnimdan turaymi?
+Bu chiroyli ko'rinadi.
+Iltimos, poyabzalingni yech!
+Mening ismim Charlotte Meier.
+Buni nemischa qanday aytiladi?
+Biz bu yerda yangimiz. Siz bilan tanishmoqchimiz.
+Men odatda sakkiz soat uxlayman.
+Keling, tanishaylik. O'zingizni tanishtira olasizmi?
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+5
+--- PAGE 5 ---
+Sanjar Quchqorov
+Mashq — Shaxs va tanishuv
+A. Artiklni yozing: der, die yoki das?
+1. ____ Ausländer
+2. ____ Geburtsjahr
+3. ____ Gewicht
+4. ____ Jugendliche
+5. ____ Adresse
+6. ____ Alter
+7. ____ Nummer
+8. ____ Heimat
+B. Nemischaga tarjima qiling (otlarni artikl bilan yozing)
+1. tanish (odam) → ______________
+2. hayot → ______________
+3. yosh (umr) → ______________
+4. vatan → ______________
+5. tug'ilgan joy → ______________
+6. tanishmoq → ______________
+C. Gapni to'ldiring
+1. Bei „__________“ musst du „ledig“ ankreuzen. (oilaviy holat)
+2. Ich komme aus der Schweiz. Das ist meine __________. (vatan)
+3. Ich muss immer um vier Uhr __________. (o'rnidan turmoq)
+4. Wir sind neu hier. Wir möchten Sie __________. (tanishmoq)
+5. Mein __________ ist Thomas Schmidt. (ism)
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+6
+--- PAGE 6 ---
+Sanjar Quchqorov
+Oila a'zolari 19
+das
+Baby
+-s
+chaqaloq
+Mein Kind ist noch ein Baby.
+der
+Bruder
+¨-
+aka/uka
+Sein Bruder arbeitet auch hier.
+die
+Eltern
+faqat ko'plik
+ota-ona
+Meine Eltern leben in Spanien.
+die
+Familie
+-n
+oila
+Meine Familie lebt in Spanien.
+die
+Geschwister
+faqat ko'plik
+aka-uka, opa-singillar
+Ich habe leider keine Geschwister.
+die
+Großeltern
+faqat ko'plik
+buvi va bobo
+Meine Großeltern leben in Japan.
+die
+Großmutter
+buvi
+Meine Großmutter heißt Eva.
+der
+Großvater
+bobo
+Mein Großvater ist schon 80.
+der
+Junge
+-n
+o'g'il bola
+Ich habe zwei Kinder. Einen Jungen und ein Mädchen.
+das
+Kind
+-er
+bola
+Wie viele Kinder haben Sie?
+das
+Mädchen
+-
+qiz bola
+Familie Kurz bekommt ein Baby. – Junge oder Mädchen?
+die
+Mutter
+¨-
+ona
+Frau Berghäuser ist die Mutter von Michaela.
+die
+Oma
+-s
+buvi (so'zl.)
+Meine Oma ist schon tot.
+der
+Opa
+-s
+bobo (so'zl.)
+Mein Opa heißt Hans.
+die
+Schwester
+-n
+opa/singil
+Meine Schwester kommt am Dienstag.
+der
+Sohn
+¨-e
+o'g'il
+Das ist Hans, mein Sohn.
+die
+Tochter
+¨-
+qiz (farzand)
+Das ist meine Tochter Katharina.
+der
+Vater
+¨-
+ota
+Mein Vater ist Arbeiter.
+der
+Verwandte
+-n
+qarindosh
+Peter besucht seine Verwandten in Polen.
+Oila va munosabatlar
+02
+FA M I L I E
+29 ta so'z
+Sanjar Quchqorov
+Bolam hali chaqaloq.
+Uning akasi ham shu yerda ishlaydi.
+Ota-onam Ispaniyada yashaydi.
+Oilam Ispaniyada yashaydi.
+Afsuski, aka-ukam, opa-singlim yo'q.
+Buvim va bobom Yaponiyada yashaydi.
+Buvimning ismi Eva.
+Bobom allaqachon 80 yoshda.
+Ikkita farzandim bor: bir o'g'il va bir qiz.
+Nechta farzandingiz bor?
+Kurzlar oilasida chaqaloq tug'iladi. – O'g'ilmi yoki qiz?
+Berghäuser xonim Michaelaning onasi.
+Buvim allaqachon vafot etgan.
+Bobomning ismi Hans.
+Singlim seshanba kuni keladi.
+Bu Hans, mening o'g'lim.
+Bu mening qizim Katharina.
+Otam ishchi.
+Peter Polshadagi qarindoshlarini ko'rgani boradi.
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+7
+--- PAGE 7 ---
+Sanjar Quchqorov
+Er-xotin va munosabatlar 10
+die / der
+Ehefrau / Ehemann
+xotin / er
+Das ist mein (Ehe-) Mann/meine (Ehe-) Frau.
+die
+Frau
+-en
+ayol; xotin; ... xonim
+Das ist Frau Becker.
+Guten Tag, Frau Schmitt!
+der
+Freund
+-e
+do'st
+Das ist ein Freund von mir.
+Das ist meine Freundin.
+die / der
+Hausfrau / Hausmann
+uy bekasi / uy xo'jaligi
+bilan band erkak
+Die Hausfrau/der Hausmann wäscht, kocht und kauft ein.
+heiraten
+turmush qurmoq
+Meine Schwester heiratet einen Japaner.
+die
+Hochzeit
+to'y
+Zu dieser Hochzeit kommen mehr als fünfzig Gäste.
+der
+Mann
+¨-er
+erkak; er
+Mein Mann arbeitet bei der Polizei.
+der / die
+Partner / Partnerin
+sherik, hamroh
+Sie ist meine Partnerin.
+gestorben
+vafot etgan
+Meine Frau ist gestern gestorben.
+tot
+o'lgan
+Sein Vater ist schon lange tot.
+Mashq — Oila va munosabatlar
+A. Artiklni yozing: der, die yoki das?
+1. ____ Großmutter
+2. ____ Frau
+3. ____ Mädchen
+4. ____ Mutter
+5. ____ Hochzeit
+6. ____ Großvater
+7. ____ Schwester
+8. ____ Bruder
+B. Nemischaga tarjima qiling (otlarni artikl bilan yozing)
+1. do'st → ______________
+2. opa/singil → ______________
+3. bola → ______________
+4. vafot etgan → ______________
+5. o'lgan → ______________
+6. buvi (so'zl.) → ______________
+C. Gapni to'ldiring
+1. Meine __________ kommt am Dienstag. (opa/singil)
+2. Meine __________ lebt in Spanien. (oila)
+3. Familie Kurz bekommt ein Baby. – Junge oder __________? (qiz bola)
+4. Mein __________ ist schon 80. (bobo)
+5. Meine __________ ist schon tot. (buvi (so'zl.))
+Bu mening erim / xotinim.
+Bu Becker xonim.
+Assalomu alaykum, Schmitt xonim!
+Bu mening bir do'stim.
+Bu mening dugonam (qiz do'stim).
+Uy bekasi / uy ishlarini qiluvchi erkak kir yuvadi, ovqat pishiradi va
+xarid qiladi.
+Singlim bir yaponga turmushga chiqyapti.
+Bu to'yga ellikdan ortiq mehmon keladi.
+Erim politsiyada ishlaydi.
+U mening hamrohim (sherigim).
+Xotinim kecha vafot etdi.
+Uning otasi allaqachon ancha oldin vafot etgan.
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+8
+--- PAGE 8 ---
+Sanjar Quchqorov
+Salomlashish va xayrlashish 7
+hallo
+salom
+Hallo Inge! Wie geht’s?
+tschüss
+xayr (norasmiy)
+Junge Leute sagen meistens „tschüss!“ und nicht „auf
+Wiedersehen“.
+das
+Wiederhören
+(telefonda) xayr: Auf
+Wiederhören
+Also auf Wiederhören!
+das
+Wiedersehen
+xayr: Auf Wiedersehen
+Auf Wiedersehen!
+willkommen
+xush kelibsiz
+Herzlich willkommen!
+der
+Herr
+-en
+janob
+Guten Tag, Herr Sommer!
+die
+Dame
+-n
+xonim
+Sehr geehrte Damen und Herren!
+Rahmat, iltimos, uzr 8
+bitte
+iltimos; marhamat
+Eine Tasse Kaffee, bitte!
+Sprechen Sie bitte leise!
+die
+Bitte
+-n
+iltimos, so'rov
+Ich habe noch eine Bitte.
+danken
+minnatdorchilik
+bildirmoq
+Ich danke Ihnen für die Einladung.
+der
+Dank
+rahmat,
+minnatdorchilik
+Vielen Dank!
+Herzlichen Dank!
+danke
+rahmat
+Soll ich Ihnen helfen? - Nein, danke!
+entschuldigen
+kechirmoq
+Entschuldigen Sie bitte!
+die
+Entschuldigung
+kechirasiz; uzr
+Entschuldigung! – Bitte.
+leider
+afsuski
+Leider kann ich nicht kommen. Ich muss zum Arzt.
+Muloqot iboralari
+03
+KO M M U N I K AT I O N
+35 ta so'z
+Sanjar Quchqorov
+Salom, Inge! Qalaysan?
+Yoshlar ko'pincha "auf Wiedersehen" emas, "tschüss!" deyishadi.
+Xo'p, xayr! (telefonda)
+Xayr! Ko'rishguncha!
+Xush kelibsiz!
+Assalomu alaykum, Sommer janoblari!
+Hurmatli xonimlar va janoblar!
+Bir chashka qahva, iltimos!
+Iltimos, sekinroq (past ovozda) gapiring!
+Yana bir iltimosim bor.
+Taklifingiz uchun rahmat.
+Katta rahmat!
+Chin dildan rahmat!
+Sizga yordam beraymi? – Yo'q, rahmat!
+Kechirasiz!
+Kechirasiz! – Hechqisi yo'q.
+Afsuski, kela olmayman. Shifokorga borishim kerak.
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+9
+--- PAGE 9 ---
+Sanjar Quchqorov
+Tabrik va xat 7
+die
+Anrede
+murojaat (xatda)
+Schreiben Sie auch eine Anrede und einen Gruß.
+das
+Glück
+baxt, omad
+Viel Glück!
+der
+Glückwunsch
+tabrik
+Herzlichen Glückwunsch zum Geburtstag.
+gratulieren
+tabriklamoq
+Ich gratuliere dir!
+der
+Gruß
+¨-e
+salom (xatda)
+Viele Grüße an Ihre Frau.
+Mit freundlichen Grüßen
+herzlich
+samimiy
+Herzlichen Glückwunsch!
+lieb-
+aziz, mehribon
+Liebe Susanne, lieber Hans, ...
+Suhbat iboralari 13
+Achtung
+Diqqat!
+Achtung! Das dürfen Sie nicht tun.
+die
+Antwort
+-en
+javob
+Er gibt leider keine Antwort.
+zum Beispiel / z. B.
+masalan
+Viele meiner Verwandten, z. B. meine beiden Brüder, arbeiten
+auch hier.
+die
+Frage
+-n
+savol
+Ich habe eine Frage.
+das
+Gespräch
+-e
+suhbat
+Das Gespräch mit Frau Kunz ist um 14 Uhr.
+die
+Hilfe
+yordam
+Hilfe! Bitte helfen Sie mir!
+Brauchen Sie meine Hilfe?
+ja
+ha
+Sind Sie Herr Watanabe? – Ja.
+nein
+yo'q
+Fährst du auch nach München? – Nein, ich habe keine Zeit.
+klar
+aniq, albatta
+Kommst du mit? – Klar!
+der
+Moment
+lahza, daqiqa
+Moment mal bitte!
+Einen Moment bitte.
+die
+Ordnung
+tartib
+Das ist in Ordnung.
+Murojaat va salom so'zlarini ham yozing.
+Omad!
+Tug'ilgan kuningiz bilan chin dildan tabriklayman.
+Seni tabriklayman!
+Rafiqangizga ko'p salom ayting.
+Hurmat bilan
+Chin dildan tabriklayman!
+Aziz Susanne, aziz Hans, ...
+Diqqat! Buni qilish mumkin emas.
+Afsuski, u javob bermayapti.
+Ko'p qarindoshlarim, masalan ikkala akam ham shu yerda ishlaydi.
+Bir savolim bor.
+Kunz xonim bilan suhbat soat 14 da.
+Yordam bering! Iltimos, menga yordam bering!
+Yordamim kerakmi?
+Siz Watanabe janobimisiz? – Ha.
+Sen ham Myunxenga borasanmi? – Yo'q, vaqtim yo'q.
+Birga borasanmi? – Albatta!
+Bir daqiqa, iltimos!
+Bir lahza, iltimos.
+Hammasi joyida.
+SANJAR QUCHQOROV
+Goethe A1 lug'at qo'llanmasi
+© 2026 Sanjar Quchqorov · barcha huquqlar himoyalangan
+10

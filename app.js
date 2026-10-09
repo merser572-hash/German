@@ -1557,6 +1557,9 @@ function loadSatzbau() {
 let satzSortableDropzone, satzSortableTiles;
 
 function startSatzbauRound() {
+    const eb = document.getElementById('satzbau-error-box');
+    if(eb) eb.style.display = 'none';
+    
     const sentence = appState.satzSentences[Math.floor(Math.random() * appState.satzSentences.length)];
     appState.currentSentence = sentence;
     
