@@ -1093,6 +1093,12 @@ function saveGamificationState() {
     localStorage.setItem('wunder_lives', appState.lives);
     localStorage.setItem('wunder_last_regen', appState.lastHeartRegen);
     localStorage.setItem('wunder_last_active_date', appState.lastActiveDate);
+    
+    // Always mirror gamification state to cloud immediately
+    if (typeof saveUserDataToCloud === 'function') {
+        saveUserDataToCloud();
+    }
+}
 }
 
 function addXP(amount) {
