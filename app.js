@@ -998,11 +998,110 @@ const TRANSLATIONS = {
 };
 
 const appState = {
-    streak: 3, xp: 120, lives: 5, words: [], currentWotd: null, dddWord: null, currentView: 'home',
+    isAdmin: true, // Since only merser572@gmail.com is allowed currently
+    streak: parseInt(localStorage.getItem('wunder_streak') || 0), 
+    xp: parseInt(localStorage.getItem('wunder_xp') || 0), 
+    dailyXP: parseInt(localStorage.getItem('wunder_daily_xp') || 0),
+    lives: parseInt(localStorage.getItem('wunder_lives') || 5), 
+    lastHeartRegen: parseInt(localStorage.getItem('wunder_last_regen') || Date.now()),
+    lastActiveDate: localStorage.getItem('wunder_last_active_date') || new Date().toDateString(),
+    words: [], currentWotd: null, dddWord: null, currentView: 'home',
     dddQueue: [],
     satzQueue: [],
     settings: { sound: true, vibration: true, offline: true, language: 'en' }
 };
+
+// --- GAMIFICATION LOGIC ---
+function checkHeartRegen() {
+    if (appState.isAdmin) return; // Admin has infinite
+    const now = Date.now();
+    const diff = now - appState.lastHeartRegen;
+    const mins = Math.floor(diff / 60000);
+    
+    if (mins >= 30 && appState.lives < 5) {
+        const heartsToAdd = Math.floor(mins / 30);
+        appState.lives = Math.min(5, appState.lives + heartsToAdd);
+        appState.lastHeartRegen = now - ((mins % 30) * 60000); // keep remainder
+        saveGamificationState();
+        updateStats();
+    }
+}
+
+setInterval(checkHeartRegen, 60000); // Check every minute
+
+function loseHeart() {
+    if (appState.isAdmin) return true; // Admin never loses hearts
+    
+    if (appState.lives > 0) {
+        appState.lives--;
+        appState.lastHeartRegen = Date.now(); // Reset timer if they weren't regenerating
+        saveGamificationState();
+        updateStats();
+        
+        if (appState.lives === 0) {
+            showNoHeartsModal();
+            return false;
+        }
+        return true;
+    } else {
+        showNoHeartsModal();
+        return false;
+    }
+}
+
+function showNoHeartsModal() {
+    const m = document.getElementById('no-hearts-modal');
+    if(m) m.style.display = 'flex';
+}
+function closeNoHeartsModal() {
+    const m = document.getElementById('no-hearts-modal');
+    if(m) m.style.display = 'none';
+    switchView('home'); // Send them home so they don't get stuck in a broken game loop
+}
+
+
+function checkStreak() {
+    const today = new Date().toDateString();
+    
+    if (appState.lastActiveDate !== today) {
+        // A new day!
+        // Did they miss yesterday?
+        const yesterday = new Date(Date.now() - 86400000).toDateString();
+        if (appState.lastActiveDate !== yesterday && appState.lastActiveDate !== today) {
+            appState.streak = 0; // Lost streak :(
+        }
+        
+        appState.dailyXP = 0; // Reset daily XP
+        appState.lastActiveDate = today;
+        saveGamificationState();
+    }
+    
+    // Check if daily goal met (e.g. 20 XP)
+    if (appState.dailyXP >= 20 && localStorage.getItem('wunder_goal_met_' + today) !== 'true') {
+        appState.streak++;
+        localStorage.setItem('wunder_goal_met_' + today, 'true');
+        showMascot("Tabriklaymiz! Kunlik maqsadga yetdingiz! 🚀", 3000);
+        saveGamificationState();
+    }
+}
+
+function saveGamificationState() {
+    localStorage.setItem('wunder_streak', appState.streak);
+    localStorage.setItem('wunder_xp', appState.xp);
+    localStorage.setItem('wunder_daily_xp', appState.dailyXP);
+    localStorage.setItem('wunder_lives', appState.lives);
+    localStorage.setItem('wunder_last_regen', appState.lastHeartRegen);
+    localStorage.setItem('wunder_last_active_date', appState.lastActiveDate);
+}
+
+function addXP(amount) {
+    appState.xp += amount;
+    appState.dailyXP += amount;
+    saveGamificationState();
+    checkStreak();
+    updateStats();
+}
+
 
 const AUTH_EMAIL = 'merser572@gmail.com';
 const AUTH_PASS = 'Hasanboy0412';
@@ -1201,10 +1300,16 @@ function setWordOfTheMoment() {
 }
 
 function updateStats() {
-    els.streak.textContent = appState.streak;
-    els.xp.textContent = appState.xp;
-    els.lives.textContent = appState.lives;
-    els.dddLives.textContent = appState.lives;
+    const streakElements = document.querySelectorAll('#streak');
+    const xpElements = document.querySelectorAll('#xp, #fc-xp');
+    const livesElements = document.querySelectorAll('#lives, #ddd-lives, #satz-lives');
+    
+    streakElements.forEach(el => el.textContent = appState.streak);
+    xpElements.forEach(el => el.textContent = appState.xp);
+    
+    let displayLives = appState.isAdmin ? '∞' : appState.lives;
+    livesElements.forEach(el => el.textContent = displayLives);
+}
 }
 
 function switchView(viewId) {
@@ -1337,8 +1442,7 @@ function checkArticle(guess) {
 
         // Only award XP if they got it right on the first try!
         if (!appState.failedCurrentWord) {
-            appState.xp += 10;
-            updateStats();
+            addXP(10);
         }
 
         playSound('success');
@@ -1348,8 +1452,7 @@ function checkArticle(guess) {
     } else {
         // Wrong answer!
         appState.failedCurrentWord = true;
-        appState.lives = Math.max(0, appState.lives - 1);
-        updateStats();
+        if (!loseHeart()) return;
         
         const explanation = typeof getGrammarExplanation === 'function' ? getGrammarExplanation(appState.dddWord, appState.settings.language) : '';
         
@@ -1589,8 +1692,8 @@ function loadSatzbau() {
     if (!appState.satzSentences || appState.satzSentences.length === 0) return;
     
     // Reset state
-    appState.satzLives = 5;
-    document.getElementById('satz-lives').textContent = appState.satzLives;
+    // appState.satzLives is deprecated; we use global lives now
+    updateStats();
     
     startSatzbauRound();
 }
@@ -1683,8 +1786,7 @@ function checkSatzbau() {
     
     if (current === target) {
         playSound('success');
-        appState.xp += 15;
-        updateStats();
+        addXP(15);
         dropzone.style.borderColor = 'var(--green-btn)';
         dropzone.style.backgroundColor = '#e8fce8';
         if (checkBtn) checkBtn.style.display = 'none';
@@ -1700,8 +1802,7 @@ function checkSatzbau() {
         }, 1500);
     } else {
         playSound('error');
-        appState.satzLives = Math.max(0, appState.satzLives - 1);
-        document.getElementById('satz-lives').textContent = appState.satzLives;
+        if (!loseHeart()) return;
         
         dropzone.style.borderColor = 'var(--red-btn)';
         dropzone.style.backgroundColor = '#ffebeb';
@@ -1825,8 +1926,7 @@ function answerGrammarQuiz(qIdx, oIdx, btn) {
         btn.style.background = '#55EFC4';
         feed.style.color = '#00B894';
         feed.innerText = '✅ Richtig! ' + qObj.hint;
-        appState.xp += 10;
-        updateStats();
+        addXP(10);
     } else {
         playSound('error');
         btn.style.background = '#FF7675';
@@ -1936,8 +2036,7 @@ function rateCard(quality) {
     }
     
     // XP reward
-    appState.xp += 5;
-    updateStats();
+    addXP(5);
     
     loadNextFlashcard();
 }
