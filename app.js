@@ -1378,10 +1378,22 @@ function setupAuth() {
             document.getElementById('login-overlay').style.display = 'none';
             document.getElementById('app-container').style.display = 'block';
             
+            
             // Check if admin
             appState.isAdmin = (user.email === 'merser572@gmail.com');
             
+            // Update Settings Profile
+            let displayName = user.displayName || "Student";
+            const settingsName = document.getElementById('settings-name');
+            const settingsEmail = document.getElementById('settings-email');
+            const settingsAvatar = document.getElementById('settings-avatar');
+            
+            if (settingsName) settingsName.innerText = displayName;
+            if (settingsEmail) settingsEmail.innerText = user.email || "";
+            if (settingsAvatar) settingsAvatar.innerText = displayName.charAt(0).toUpperCase();
+            
             // Sync data with Firestore
+
             await syncUserData(user.uid);
             
             lucide.createIcons();
