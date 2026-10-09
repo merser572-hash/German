@@ -1437,10 +1437,12 @@ function renderCategories() {
     // Update labels
     const dLabel = document.getElementById('dict-category-label');
     const dddLabel = document.getElementById('ddd-category-label');
+    const fcLabel = document.getElementById('fc-category-label');
     
     let displayTxt = appState.selectedCategory === 'all' ? "Barcha bo'limlar" : appState.selectedCategory;
     if (dLabel) dLabel.textContent = displayTxt;
     if (dddLabel) dddLabel.textContent = displayTxt;
+    if (fcLabel) fcLabel.textContent = displayTxt;
 }
 
 function openCategoryModal() {
@@ -1485,6 +1487,8 @@ function selectCategory(cat) {
         renderDictionary();
     } else if (appState.currentView === 'derdiedas') {
         initDerDieDas();
+    } else if (appState.currentView === 'flashcards') {
+        startFlashcards();
     }
 }
 
@@ -1834,4 +1838,106 @@ function answerGrammarQuiz(qIdx, oIdx, btn) {
 function closeGrammarModal() {
     playSound('tap');
     document.getElementById('modal-grammar-detail').style.display = 'none';
+}
+
+
+// --- FLASHCARDS LOGIC ---
+
+function startFlashcards() {
+    switchView('flashcards');
+    
+    // Build Queue based on selected category
+    let wordsArray = appState.words;
+    if (appState.selectedCategory && appState.selectedCategory !== 'all') {
+        wordsArray = appState.words.filter(w => w.category === appState.selectedCategory);
+    }
+    
+    if (window.SRS) {
+        appState.fcQueue = window.SRS.buildQueue(wordsArray, 15);
+    } else {
+        // Fallback if srs-engine didn't load
+        appState.fcQueue = [...wordsArray].slice(0, 15);
+    }
+    
+    loadNextFlashcard();
+}
+
+function loadNextFlashcard() {
+    document.getElementById('fc-queue-count').textContent = appState.fcQueue.length;
+    
+    const cardEl = document.getElementById('fc-card');
+    const frontEl = cardEl.querySelector('.fc-front');
+    const backEl = cardEl.querySelector('.fc-back');
+    const btnsEl = document.getElementById('fc-rating-buttons');
+    const msgEl = document.getElementById('fc-done-msg');
+    
+    if (appState.fcQueue.length === 0) {
+        cardEl.style.display = 'none';
+        btnsEl.style.display = 'none';
+        msgEl.style.display = 'block';
+        return;
+    }
+    
+    msgEl.style.display = 'none';
+    cardEl.style.display = 'flex';
+    frontEl.style.display = 'block';
+    backEl.style.display = 'none';
+    btnsEl.style.display = 'none';
+    
+    // Get next word (first in queue)
+    appState.currentFcWord = appState.fcQueue[0];
+    
+    document.getElementById('fc-word').textContent = appState.currentFcWord.word;
+    
+    let artHtml = appState.currentFcWord.article ? appState.currentFcWord.article + ' ' : '';
+    document.getElementById('fc-word-back').textContent = artHtml + appState.currentFcWord.word;
+    
+    if (appState.currentFcWord.plural) {
+        document.getElementById('fc-plural').textContent = `(Pl: ${appState.currentFcWord.plural})`;
+        document.getElementById('fc-plural').style.display = 'block';
+    } else {
+        document.getElementById('fc-plural').style.display = 'none';
+    }
+    
+    document.getElementById('fc-translation').textContent = appState.currentFcWord.translation;
+}
+
+function flipFlashcard() {
+    const cardEl = document.getElementById('fc-card');
+    const frontEl = cardEl.querySelector('.fc-front');
+    const backEl = cardEl.querySelector('.fc-back');
+    const btnsEl = document.getElementById('fc-rating-buttons');
+    
+    if (frontEl.style.display !== 'none') {
+        playSound('tap');
+        frontEl.style.display = 'none';
+        backEl.style.display = 'block';
+        btnsEl.style.display = 'grid';
+        
+        speakText(document.getElementById('fc-word-back').textContent);
+    }
+}
+
+function rateCard(quality) {
+    if (!appState.currentFcWord) return;
+    
+    playSound('tap');
+    
+    if (window.SRS) {
+        window.SRS.reviewCard(appState.currentFcWord.id, quality);
+    }
+    
+    // Remove from front of queue
+    appState.fcQueue.shift();
+    
+    // If it was a 'fail' (quality 1), maybe we push it to the back of the queue so they see it again today?
+    if (quality === 1) {
+        appState.fcQueue.push(appState.currentFcWord);
+    }
+    
+    // XP reward
+    appState.xp += 5;
+    updateStats();
+    
+    loadNextFlashcard();
 }

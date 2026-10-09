@@ -522,3 +522,25 @@ input:checked + .slider:before { transform: translateX(22px); }
     color: white;
     border-color: var(--blue-btn);
 }
+
+/* Flashcard UI */
+.flashcard-ui {
+    width: 100%;
+    min-height: 250px;
+    background: white;
+    border: 2px solid #DFE6E9;
+    border-radius: 24px;
+    box-shadow: 0 8px 0 #DFE6E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    user-select: none;
+}
+.flashcard-ui:active {
+    transform: scale(0.98);
+}
