@@ -1261,7 +1261,7 @@ function setupAuth() {
 
     document.getElementById('login-btn').addEventListener('click', async () => {
         const emailInput = document.getElementById('login-email').value.trim().toLowerCase();
-        const passInput = document.getElementById('login-password').value;
+        const passInput = document.getElementById('login-password').value.trim();
         const hashedInput = await hashPassword(passInput);
         
         if (emailInput === AUTH_EMAIL && hashedInput === AUTH_HASH) {
