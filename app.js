@@ -1429,6 +1429,7 @@ async function syncUserData(uid) {
             }
             if (data.lastStreakDate) appState.lastStreakDate = data.lastStreakDate;
             if (data.lastHeartUpdate) appState.lastHeartUpdate = data.lastHeartUpdate;
+            if (data.lastHeartRegen) appState.lastHeartRegen = data.lastHeartRegen;
             if (data.progress !== undefined) appState.progress = data.progress;
             if (data.flashcardQueue) appState.flashcardQueue = data.flashcardQueue;
             if (data.currentLevel) appState.currentLevel = data.currentLevel;
@@ -1453,6 +1454,7 @@ async function saveUserDataToCloud() {
             hearts: appState.lives,
             lastStreakDate: appState.lastStreakDate,
             lastHeartUpdate: appState.lastHeartUpdate,
+            lastHeartRegen: appState.lastHeartRegen,
             progress: appState.progress,
             flashcardQueue: appState.flashcardQueue,
             currentLevel: appState.currentLevel,
