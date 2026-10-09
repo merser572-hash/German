@@ -1239,8 +1239,8 @@ function executeSwitchView(viewId) {
     }
 
     appState.currentView = viewId;
-    if (viewId === 'derdiedas') initDerDieDas();
-    if (viewId === 'dictionary') renderCategories();
+    if (viewId === 'derdiedas') { renderCategories(); initDerDieDas(); }
+    if (viewId === 'dictionary') { renderCategories(); renderDictionary(); }
         renderDictionary();
     if (viewId === 'satzbau') loadSatzbau();
     if (viewId === 'grammar') renderGrammar();
@@ -1255,7 +1255,19 @@ function initDerDieDas() {
         b.classList.remove('btn-disabled');
     });
 
-    const nouns = appState.words.filter(w => w.article && ['der', 'die', 'das'].includes(w.article.toLowerCase()));
+    let categoryFiltered = appState.words;
+    if (appState.selectedCategory && appState.selectedCategory !== 'all') {
+        categoryFiltered = appState.words.filter(w => w.category === appState.selectedCategory);
+    }
+    const nouns = categoryFiltered.filter(w => w.article && ['der', 'die', 'das'].includes(w.article.toLowerCase()));
+    
+    if (nouns.length === 0) {
+        // fallback if no nouns in this category
+        document.getElementById('ddd-word').innerText = "Hech qanday so'z yo'q";
+        document.getElementById('ddd-translation').innerText = "Boshqa bo'limni tanlang";
+        appState.dddWord = null;
+        return;
+    }
     if(nouns.length === 0) return;
     
     // reset extra info
@@ -1410,32 +1422,52 @@ function prevFlashcard() {
 appState.selectedCategory = 'all';
 
 function renderCategories() {
-    const catContainer = document.getElementById('dict-categories');
-    if (!catContainer) return;
+    const dictCatContainer = document.getElementById('dict-categories');
+    const dddCatContainer = document.getElementById('ddd-categories');
+    if (!dictCatContainer && !dddCatContainer) return;
     
-    const cats = [...new Set(appState.words.map(w => w.category).filter(Boolean))];
+    let cats = [...new Set(appState.words.map(w => w.category).filter(Boolean))];
+    // Natural sort: Lektion 2 comes before Lektion 10
+    cats.sort((a, b) => {
+        return a.localeCompare(b, undefined, {numeric: true, sensitivity: 'base'});
+    });
     
     let html = `<button class="category-chip ${appState.selectedCategory === 'all' ? 'active' : ''}" onclick="selectCategory('all')">All</button>`;
     cats.forEach(c => {
         html += `<button class="category-chip ${appState.selectedCategory === c ? 'active' : ''}" onclick="selectCategory('${c.replace(/'/g, "\'")}')">${c}</button>`;
     });
-    catContainer.innerHTML = html;
+    
+    if (dictCatContainer) dictCatContainer.innerHTML = html;
+    if (dddCatContainer) dddCatContainer.innerHTML = html;
 }
 
 function selectCategory(cat) {
     playSound('tap');
     appState.selectedCategory = cat;
     renderCategories();
-    renderDictionary();
+    if (appState.currentView === 'dictionary') {
+        renderDictionary();
+    } else if (appState.currentView === 'derdiedas') {
+        initDerDieDas();
+    }
 }
 
 // Intercept renderDictionary to filter by category
 
 function renderDictionary() {
-    const query = els.dddSearch.value.toLowerCase();
+    const query = (els.dddSearch && els.dddSearch.value) ? els.dddSearch.value.toLowerCase() : "";
     const list = document.getElementById('dict-list');
     list.innerHTML = '';
-    const filtered = appState.words.filter(w => w.word.toLowerCase().includes(query) || w.translation.toLowerCase().includes(query));
+    
+    // FIRST filter by category
+    let categoryFiltered = appState.words;
+    if (appState.selectedCategory && appState.selectedCategory !== 'all') {
+        categoryFiltered = appState.words.filter(w => w.category === appState.selectedCategory);
+    }
+    
+    // THEN filter by search query
+    const filtered = categoryFiltered.filter(w => w.word.toLowerCase().includes(query) || (w.translation && w.translation.toLowerCase().includes(query)));
+    
     filtered.forEach(w => {
         const div = document.createElement('div');
         div.className = 'dict-item';
@@ -1450,7 +1482,7 @@ function renderDictionary() {
         `;
         list.appendChild(div);
     });
-    lucide.createIcons();
+    if(typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 function showMascot(text, duration = 3500) {
@@ -1594,6 +1626,8 @@ function checkSatzbau() {
         currentWords.push(btn.textContent);
     });
     const current = currentWords.join(' ').toLowerCase().trim();
+    const checkBtn = document.getElementById('satz-check-btn');
+    const errorBox = document.getElementById('satzbau-error-box');
     
     if (current === target) {
         playSound('success');
@@ -1601,6 +1635,11 @@ function checkSatzbau() {
         updateStats();
         dropzone.style.borderColor = 'var(--green-btn)';
         dropzone.style.backgroundColor = '#e8fce8';
+        if (checkBtn) checkBtn.style.display = 'none';
+        
+        // Show correct mascot!
+        const correctMsg = TRANSLATIONS[appState.settings.language]['msg_correct'];
+        showMascot(correctMsg, 1500);
         
         setTimeout(() => {
             dropzone.style.borderColor = '#ccc';
@@ -1613,6 +1652,7 @@ function checkSatzbau() {
         document.getElementById('satz-lives').textContent = appState.satzLives;
         
         dropzone.style.borderColor = 'var(--red-btn)';
+        dropzone.style.backgroundColor = '#ffebeb';
         
         // Shake animation
         dropzone.style.transition = 'transform 0.05s';
@@ -1622,10 +1662,17 @@ function checkSatzbau() {
         setTimeout(() => dropzone.style.transform = 'translateX(-5px)', 150);
         setTimeout(() => dropzone.style.transform = 'translateX(0)', 200);
         
-        setTimeout(() => {
-            dropzone.style.transition = '';
-            dropzone.style.borderColor = '#ccc';
-        }, 1000);
+        // Show the error box
+        if (checkBtn) checkBtn.style.display = 'none';
+        if (errorBox) {
+            errorBox.style.display = 'block';
+            document.getElementById('satzbau-correct-text').innerText = appState.currentSentence.de;
+            if (appState.currentSentence.explanation) {
+                document.getElementById('satzbau-explanation').innerText = appState.currentSentence.explanation;
+            } else {
+                document.getElementById('satzbau-explanation').innerText = "Nemis tilida darak gaplarda fe'l 2-o'rinda keladi.";
+            }
+        }
     }
 }
 
